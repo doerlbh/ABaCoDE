@@ -15,9 +15,9 @@
 % loc: {'Hyak','Hyakqsub','americano','galao','latte','espresso','mocha','doerlbh','compbio3','c2b2','gcp-gpu'}
 %
 % e.g.
-% F_main_classifier(0, 'MNIST', 'stationary','shuffled', 2, 'oracle', 1000, 'doerlbh')
+% F_main_classifier(0, 'MNIST', 'stationary','shuffled', 2, 'oracle', 1000, 'doerlbh', 8000)
 
-function F_main_classifier(isGPU, dataset, dist, rewd, k, type, window, loc)
+function F_main_classifier(isGPU, dataset, dist, rewd, k, type, window, loc, range)
 
 % rng(1);
 
@@ -88,7 +88,7 @@ switch dataset
         
     case 'MNIST-s'
         load mnist_uint8;
-        pick = randi(60000,20000,1);
+        pick = randi(60000,range,1);
         learn_x = double(train_x(pick,:));
         learn_y = double(train_y(pick,:));
         prior_x  = double(test_x);
@@ -103,7 +103,7 @@ switch dataset
         load train
         learn_x  = double(data);
         learn_y  = double(vec2mat(fine_labels+1,length(unique(fine_labels))));
-        pick = randi(50000,20000,1);
+        pick = randi(50000,range,1);
         learn_x = learn_x(pick,:);
         learn_y = learn_y(pick,:);
         clearvars data fine_labels coarse_labels filenames batch_label
@@ -115,12 +115,12 @@ switch dataset
         
         load train
         learn_x  = double(data);
-                if isGPU == 1
-                     learn_y  = double(vec2mat_gpu(coarse_labels+1,length(unique(coarse_labels))));
+        if isGPU == 1
+            learn_y  = double(vec2mat_gpu(coarse_labels+1,length(unique(coarse_labels))));
         else
-        learn_y  = double(vec2mat(coarse_labels+1,length(unique(coarse_labels))));
-                end
-        pick = randi(50000,20000,1);
+            learn_y  = double(vec2mat(coarse_labels+1,length(unique(coarse_labels))));
+        end
+        pick = randi(50000,range,1);
         learn_x = learn_x(pick,:);
         learn_y = learn_y(pick,:);
         clearvars data fine_labels coarse_labels filenames batch_label
@@ -163,20 +163,26 @@ switch dataset
                 otherwise
                     disp('wrong pick')
             end
+            pick = randi(size(learn_x,1),range,1);
+            learn_x = learn_x(pick,:);
+            learn_y = learn_y(pick,:);
         end
         
     case 'STL10'
         disp('picked dataset:');
         pick = randi(5)
         [learn_x,learn_y,prior_x] = K_readmatv73(['stl10_data_' num2str(pick)]);
+        pick = randi(size(learn_x,1),range,1);
+        learn_x = learn_x(pick,:);
+        learn_y = learn_y(pick,:);
         
     case 'Caltech101S'
         load caltech101_silhouettes_28
         all_x = double(X);
         if isGPU == 1
-                    all_y = vec2mat_gpu(Y,length(unique(Y)));
+            all_y = vec2mat_gpu(Y,length(unique(Y)));
         else
-        all_y = vec2mat(Y,length(unique(Y)));
+            all_y = vec2mat(Y,length(unique(Y)));
         end
         
         prior_x  = all_x(1:671,:);
@@ -189,9 +195,9 @@ switch dataset
 end
 
 if isGPU == 1
-prior_x = gpuArray(prior_x);
-learn_x = gpuArray(learn_x);
-learn_y = gpuArray(learn_y);
+    prior_x = gpuArray(prior_x);
+    learn_x = gpuArray(learn_x);
+    learn_y = gpuArray(learn_y);
 end
 
 if strcmp(dist, 'nonstationary')
@@ -200,7 +206,7 @@ if strcmp(dist, 'nonstationary')
 end
 if strcmp(rewd, 'shuffled')
     disp('==== shuffling labels each stage =======')
-    [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(learn_x,learn_y,window);
+    [learn_x, learn_y] = K_nonstationary_track(learn_x,learn_y,window);
 end
 
 
@@ -219,23 +225,23 @@ switch type
         if isGPU == 1
             [oracle_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
         else
-        [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+            [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
         end
         learn_z = oracle_z(size(prior_x,1)+1:end);
     case 'oracle_staged'
-                if isGPU == 1
-                    [oracle_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                else
-                    [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end
-                learn_z = oracle_z(size(prior_x,1)+1:end);
-    otherwise
-                if isGPU == 1
-        [prior_z,clusters] = K_update_cluster_emb_gpu(k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        if isGPU == 1
+            [oracle_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
         else
-        [prior_z,clusters] = K_update_cluster_emb(k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end
-                end
+            [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        end
+        learn_z = oracle_z(size(prior_x,1)+1:end);
+    otherwise
+        if isGPU == 1
+            [prior_z,clusters] = K_update_cluster_emb_gpu(k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        else
+            [prior_z,clusters] = K_update_cluster_emb(k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        end
+end
 
 %% parameter setting
 
@@ -267,36 +273,36 @@ end
 %% bandit initialization
 
 if isGPU == 1
-[B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB_gpu(E,D);
-[B_p,g_p,hat_mu_p,vsqr_p] = K_init_MAB_gpu(P,Z_size);
+    [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB_gpu(E,D);
+    [B_p,g_p,hat_mu_p,vsqr_p] = K_init_MAB_gpu(P,Z_size);
 else
-[B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB(E,D);
-[B_p,g_p,hat_mu_p,vsqr_p] = K_init_MAB(P,Z_size);
+    [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB(E,D);
+    [B_p,g_p,hat_mu_p,vsqr_p] = K_init_MAB(P,Z_size);
 end
 
 n = 0;
 if isGPU == 1
-r = zeros(E,P,'gpuArray');
-cluster_count = zeros(1,E,'gpuArray');
+    r = zeros(E,P,'gpuArray');
+    cluster_count = zeros(1,E,'gpuArray');
 else
-r = zeros(E,P);
-cluster_count = zeros(1,E);
+    r = zeros(E,P);
+    cluster_count = zeros(1,E);
 end
 
 %% statistics
 
 if isGPU == 1
     learn_W = zeros(E,N*maZ_iter,'gpuArray');          % record all selected embeds
-learn_P = zeros(1,N*maZ_iter,'gpuArray');          % record all made decision
-learn_result = zeros(1,N*maZ_iter,'gpuArray');     % record all comparison results
-learn_time = zeros(1,N*maZ_iter,'gpuArray');       % record all time elapsed
-learn_accuracy = zeros(P+1,N*maZ_iter,'gpuArray'); % record all accuracy, end = all
+    learn_P = zeros(1,N*maZ_iter,'gpuArray');          % record all made decision
+    learn_result = zeros(1,N*maZ_iter,'gpuArray');     % record all comparison results
+    learn_time = zeros(1,N*maZ_iter,'gpuArray');       % record all time elapsed
+    learn_accuracy = zeros(P+1,N*maZ_iter,'gpuArray'); % record all accuracy, end = all
 else
-learn_W = zeros(E,N*maZ_iter);          % record all selected embeds
-learn_P = zeros(1,N*maZ_iter);          % record all made decision
-learn_result = zeros(1,N*maZ_iter);     % record all comparison results
-learn_time = zeros(1,N*maZ_iter);       % record all time elapsed
-learn_accuracy = zeros(P+1,N*maZ_iter); % record all accuracy, end = all
+    learn_W = zeros(E,N*maZ_iter);          % record all selected embeds
+    learn_P = zeros(1,N*maZ_iter);          % record all made decision
+    learn_result = zeros(1,N*maZ_iter);     % record all comparison results
+    learn_time = zeros(1,N*maZ_iter);       % record all time elapsed
+    learn_accuracy = zeros(P+1,N*maZ_iter); % record all accuracy, end = all
 end
 % embed_accuracy = zeros(E+1,N*maZ_iter); % record all accuracy of embedding selection, end = all
 
@@ -330,138 +336,138 @@ for iter=1:maZ_iter
                 
             case 'oracle'
                 if isGPU == 1
-                W = vec2mat_gpu(learn_z((iter-1)*N+t),E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                else
-                W = vec2mat(learn_z((iter-1)*N+t),E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                end
-                                
-            case 'oracle_staged'
-                if isGPU == 1
-                                       W = vec2mat_gpu(learn_z((iter-1)*N+t),E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
-                    [oracle_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t+window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                    learn_z = oracle_z(size(prior_x,1)+1:end);
-                end 
+                    W = vec2mat_gpu(learn_z((iter-1)*N+t),E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
                 else
                     W = vec2mat(learn_z((iter-1)*N+t),E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
-                    [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t+window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                    learn_z = oracle_z(size(prior_x,1)+1:end);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
                 end
+                
+            case 'oracle_staged'
+                if isGPU == 1
+                    W = vec2mat_gpu(learn_z((iter-1)*N+t),E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
+                        [oracle_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t+window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                        learn_z = oracle_z(size(prior_x,1)+1:end);
+                    end
+                else
+                    W = vec2mat(learn_z((iter-1)*N+t),E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
+                        [oracle_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t+window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                        learn_z = oracle_z(size(prior_x,1)+1:end);
+                    end
                 end
                 
             case 'minibatch_embedding'
                 if isGPU == 1
-                                    [case_z, ~] = online_kmeans_gpu(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                W = vec2mat_gpu(case_z,E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [~,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end
+                    [case_z, ~] = online_kmeans_gpu(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    W = vec2mat_gpu(case_z,E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [~,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 else
-                [case_z, ~] = online_kmeans(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                W = vec2mat(case_z,E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [~,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end
+                    [case_z, ~] = online_kmeans(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    W = vec2mat(case_z,E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [~,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 end
                 
             case 'online_embedding'
                 if isGPU == 1
-                                    [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                W = vec2mat_gpu(case_z,E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [~,~] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end   
-                    else
-                [case_z, clusters] = online_kmeans(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                W = vec2mat(case_z,E);
-                learn_W(:,(iter-1)*N+t) = W.';
-                Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [~,~] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end            
+                    [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    W = vec2mat_gpu(case_z,E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k_gpu(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [~,~] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
+                else
+                    [case_z, clusters] = online_kmeans(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    W = vec2mat(case_z,E);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    Z = K_embedding_static_k(path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [~,~] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 end
                 
             case 'minibatch_history_CB'
                 if isGPU == 1
-                [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
-                learn_W(:,(iter-1)*N+t) = W.';
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [learn_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                    [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB_gpu(E,D);
-                end
-                  else
-                [W,Z] = K_embSelect(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
-                learn_W(:,(iter-1)*N+t) = W.';
-                
-                if mod((iter-1)*N+t,window) == 0
-                    [learn_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                    [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB(E,D);
-                end
+                    [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [learn_z,clusters] = K_update_cluster_emb_gpu(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                        [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB_gpu(E,D);
+                    end
+                else
+                    [W,Z] = K_embSelect(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        [learn_z,clusters] = K_update_cluster_emb(k,[prior_x;learn_x(1:(iter-1)*N+t,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                        [B_k,g_k,hat_mu_k,vsqr_k] = K_init_MAB(E,D);
+                    end
                 end
                 
             case 'full_history_CB'
                 if isGPU == 1
                     [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
-                learn_W(:,(iter-1)*N+t) = W.';
-                
-                if mod((iter-1)*N+t,window) == 0
-                    new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
-                    new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
-                    [~,~] = K_update_cluster_emb_gpu(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-                end
+                    learn_z((iter-1)*N+t) = case_z;
+                    [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                        new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
+                        [~,~] = K_update_cluster_emb_gpu(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 else
-                [case_z, clusters] = online_kmeans(C, clusters, cluster_count);
-                learn_z((iter-1)*N+t) = case_z;
-                [W,Z] = K_embSelect(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
-                learn_W(:,(iter-1)*N+t) = W.';
-                
-                if mod((iter-1)*N+t,window) == 0
-                    new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
-                    new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
-                    [~,~] = K_update_cluster_emb(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    [case_z, clusters] = online_kmeans(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    [W,Z] = K_embSelect(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                        new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
+                        [~,~] = K_update_cluster_emb(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 end
-        end
                 
             otherwise
                 disp('wrong type.');
         end
         
         if isGPU == 1
-             decision = K_decSelect_gpu(Z,B_p,hat_mu_p,vsqr_p);
-        learn_P((iter-1)*N+t) = decision;
-        expect = mat2vec_gpu(learn_y((iter-1)*N+t,:),P);
+            decision = K_decSelect_gpu(Z,B_p,hat_mu_p,vsqr_p);
+            learn_P((iter-1)*N+t) = decision;
+            expect = mat2vec_gpu(learn_y((iter-1)*N+t,:),P);
         else
-        decision = K_decSelect(Z,B_p,hat_mu_p,vsqr_p);
-        learn_P((iter-1)*N+t) = decision;
-        expect = mat2vec(learn_y((iter-1)*N+t,:),P);
+            decision = K_decSelect(Z,B_p,hat_mu_p,vsqr_p);
+            learn_P((iter-1)*N+t) = decision;
+            expect = mat2vec(learn_y((iter-1)*N+t,:),P);
         end
         
         if decision == expect
@@ -475,9 +481,9 @@ for iter=1:maZ_iter
         learn_time((iter-1)*N+t) = toc;
         
         if isGPU == 1
-                    acc = accuracy_gpu(learn_P(1:(iter-1)*N+t),learn_y(1:(iter-1)*N+t,:));
+            acc = accuracy_gpu(learn_P(1:(iter-1)*N+t),learn_y(1:(iter-1)*N+t,:));
         else
-        acc = accuracy(learn_P(1:(iter-1)*N+t),learn_y(1:(iter-1)*N+t,:));
+            acc = accuracy(learn_P(1:(iter-1)*N+t),learn_y(1:(iter-1)*N+t,:));
         end
         learn_accuracy(:,(iter-1)*N+t) = acc.';
         
