@@ -10,14 +10,14 @@
 % dist: {'stationary', 'nonstationary'}
 % rewd: {'unshuffled','shuffled'}
 % k: {0,1,2,4,8}
-% type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB'}
+% type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_embedding_MAB','online_embedding_MAB'}
 % window: {1000,5000}
 % loc: {'Hyak','Hyakqsub','americano','galao','latte','espresso','mocha','doerlbh','compbio3','c2b2','gcp-gpu'}
 %
 % e.g.
-% F_main_classifier(0, 'MNIST', 'stationary','shuffled', 2, 'oracle', 1000, 'doerlbh')
+% F_main_classifier(0, 'MNIST', 'stationary', 2, 'oracle', 1000, 'doerlbh')
 
-function F_main_classifier(isGPU, dataset, dist, rewd, k, type, window, loc)
+function F_main_classifier(isGPU, dataset, dist, k, type, window, loc)
 
 % rng(1);
 
@@ -198,11 +198,6 @@ if strcmp(dist, 'nonstationary')
     disp('==== nonstationizing dataset =======')
     [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(learn_x,learn_y,window);
 end
-if strcmp(rewd, 'shuffled')
-    disp('==== shuffling labels each stage =======')
-    [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(learn_x,learn_y,window);
-end
-
 
 %% pre-clustering and generate embedding
 
@@ -406,7 +401,7 @@ for iter=1:maZ_iter
                 end            
                 end
                 
-            case 'minibatch_history_CB'
+            case 'minibatch_embedding_MAB'
                 if isGPU == 1
                 [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
                 learn_W(:,(iter-1)*N+t) = W.';
@@ -425,7 +420,7 @@ for iter=1:maZ_iter
                 end
                 end
                 
-            case 'full_history_CB'
+            case 'online_embedding_MAB'
                 if isGPU == 1
                     [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
                 learn_z((iter-1)*N+t) = case_z;
