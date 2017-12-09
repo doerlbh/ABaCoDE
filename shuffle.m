@@ -5,6 +5,9 @@
 
 function new_m =shuffle(m)
 
+if size(m,1) == 1;
+    m = m';
+end
 seq = randperm(size(m,1));
 new_m = m(seq,:);
 

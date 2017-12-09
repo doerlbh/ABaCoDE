@@ -206,7 +206,7 @@ if strcmp(dist, 'nonstationary')
 end
 if strcmp(rewd, 'shuffled')
     disp('==== shuffling labels each stage =======')
-    [learn_x, learn_y] = K_nonstationary_track(learn_x,learn_y,window);
+    [learn_x, learn_y] = F_likeHash(learn_x,learn_y,window);
 end
 
 
