@@ -15,7 +15,7 @@
 % loc: {'Hyak','Hyakqsub','americano','galao','latte','espresso','mocha','doerlbh','compbio3','c2b2','gcp-gpu'}
 %
 % e.g.
-% F_main_classifier(0, 'MNIST', 'stationary','shuffled', 2, 'oracle', 1000, 'doerlbh', 8000)
+% F_main_classifier(0, 'MNIST-s', 'stationary','shuffled', 2, 'oracle', 1000, 'doerlbh', 8000)
 
 function F_main_classifier(isGPU, dataset, dist, rewd, k, type, window, loc, range)
 
@@ -217,6 +217,10 @@ disp('==== Pretraining Phase =======')
 hiddenSize1 = 100;
 MaxEpochs1 = 500;
 
+if strcmp(type, 'universal_embedding')
+    k = 1;
+end
+
 switch type
     case 'baseline'
         clusters = 0;
@@ -389,7 +393,7 @@ for iter=1:maZ_iter
                     end
                 end
                 
-            case 'online_embedding'
+            case {'online_embedding', 'universal_embedding'}
                 if isGPU == 1
                     [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
                     learn_z((iter-1)*N+t) = case_z;
@@ -455,9 +459,6 @@ for iter=1:maZ_iter
                         [~,~] = K_update_cluster_emb(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
                     end
                 end
-                
-            case 'universal_embedding'
-                
                 
             case 'multimode_CB'
                 if isGPU == 1

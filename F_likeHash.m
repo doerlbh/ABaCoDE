@@ -20,7 +20,7 @@ for w = 1:n
     disp(['For window ' num2str(w) ': ']);
     disp(new_map);
     for t = 1:N
-        new_y(t) = new_map(y(t));
+        new_y(t) = new_map(uint64(y(t)));
     end
 end
 
