@@ -7,7 +7,7 @@
 function [z,c] = K_update_cluster_emb_gpu(k,x,z,dataset,type,dist,hiddenSize1,MaxEpochs1,path)
 
 if gather(z) == 0
-    tic; [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20); toc;
+    [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
     z = gpuArray(z);
     c = gpuArray(c);
 else 

@@ -7,7 +7,7 @@
 function [z,c] = K_update_cluster_emb(k,x,z,dataset,type,dist,hiddenSize1,MaxEpochs1,path)
 
 if z == 0
-    tic; [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20); toc;
+    [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
 else 
     c = 0;
     disp('no reclustering involved')
