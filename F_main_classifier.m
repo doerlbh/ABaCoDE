@@ -10,7 +10,7 @@
 % dist: {'stationary', 'nonstationary'}
 % rewd: {'unshuffled','shuffled'}
 % k: {0,1,2,4,8}
-% type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB'}
+% type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB','universal_embedding','multimode_CB'}
 % window: {1000,5000}
 % loc: {'Hyak','Hyakqsub','americano','galao','latte','espresso','mocha','doerlbh','compbio3','c2b2','gcp-gpu'}
 %
@@ -432,6 +432,34 @@ for iter=1:maZ_iter
                 end
                 
             case 'full_history_CB'
+                if isGPU == 1
+                    [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    [W,Z] = K_embSelect_gpu(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                        new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
+                        [~,~] = K_update_cluster_emb_gpu(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
+                else
+                    [case_z, clusters] = online_kmeans(C, clusters, cluster_count);
+                    learn_z((iter-1)*N+t) = case_z;
+                    [W,Z] = K_embSelect(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                    learn_W(:,(iter-1)*N+t) = W.';
+                    
+                    if mod((iter-1)*N+t,window) == 0
+                        new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                        new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
+                        [~,~] = K_update_cluster_emb(k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
+                end
+                
+            case 'universal_embedding'
+                
+                
+            case 'multimode_CB'
                 if isGPU == 1
                     [case_z, clusters] = online_kmeans_gpu(C, clusters, cluster_count);
                     learn_z((iter-1)*N+t) = case_z;
