@@ -2,6 +2,7 @@
 % Baihan Lin
 % Columbia University
 % October 2017 at IBM Research
+% updated December 2017
 
 % clear all; close all;
 
@@ -48,113 +49,190 @@ addpath([path 'log/10-Dec-2017'])
 switch dataset
     case 'MNIST-shuffled'
         
-
+        output_file_b = ''
+        
+        output_file_orS1 = ''
+        output_file_orS2 = ''
+        output_file_orS4 = ''
+        output_file_orS8 = ''
+        
+        output_file_mE2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_mE4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_mE8 = ''
+        
+        output_file_uE = ''
+        
+        output_file_oE2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
+        output_file_oE4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_online_embedding_1000_gcp-gpu.mat'
+        output_file_oE8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_online_embedding_1000_gcp-gpu.mat'
+        
+        output_file_mhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mhCB8 = ''
+        
+        output_file_fhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
+        output_file_fhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_full_history_CB_1000_gcp-gpu.mat'
+        output_file_fhCB8 = ''
+        
+        output_file_mmmhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mmmhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mmmhCB8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+        
+        output_file_mmfhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+        output_file_mmfhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_multimode_full_history_CB_1000_gcp-gpu.mat'
+        output_file_mmfhCB8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_multimode_full_history_CB_1000_gcp-gpu.mat'
+        
+    case 'CIFAR10-shuffled'
+        
+        %         output_file_b =
+        %
+        %         output_file_orS1 =
+        %         output_file_orS2 =
+        %         output_file_orS4 =
+        %         output_file_orS8 =
+        %
+        %         output_file_mE2 =
+        %         output_file_mE4 =
+        %         output_file_mE8 =
+        %
+        %         output_file_uE =
+        %
+        %         output_file_oE2 =
+        %         output_file_oE4 =
+        %         output_file_oE8 =
+        %
+        %         output_file_mhCB2 =
+        %         output_file_mhCB4 =
+        %         output_file_mhCB8 =
+        %
+        %         output_file_fhCB2 =
+        %         output_file_fhCB4 =
+        %         output_file_fhCB8 =
+        %
+        %         output_file_mmmhCB2 =
+        %         output_file_mmmhCB4 =
+        %         output_file_mmmhCB8 =
+        %
+        %         output_file_mmfhCB2 =
+        %         output_file_mmfhCB4 =
+        %         output_file_mmfhCB8 =
+        
     case 'MNIST-unshuffled'
-        output_file_00 ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_baseline_1000_americano.mat';
+        output_file_b ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_b_mE200_americano.mat';
         
-        output_file_06 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
+        output_file_orS1 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_1_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_07 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_oracle_staged_1000_americano.mat';
-        output_file_08 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_oracle_staged_1000_americano.mat';
-        output_file_09 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_oracle_staged_1000_americano.mat';
+        output_file_orS2 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_oracle_staged_mE200_americano.mat';
+        output_file_orS4 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_oracle_staged_mE200_americano.mat';
+        output_file_orS8 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_10 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_offline_1000_americano.mat';
-        output_file_11 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_offline_1000_americano.mat';
-        output_file_12 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_offline_1000_americano.mat';
+        output_file_mE2 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_offline_mE200_americano.mat';
+        output_file_mE4 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_offline_mE200_americano.mat';
+        output_file_mE8 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_offline_mE200_americano.mat';
         
-        output_file_13 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_online_1000_americano.mat';
-        output_file_14 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_online_1000_americano.mat';
-        output_file_15 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_online_1000_americano.mat';
+        output_file_oE2 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_online_mE200_americano.mat';
+        output_file_oE4 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_online_mE200_americano.mat';
+        output_file_oE8 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_online_mE200_americano.mat';
         
-        output_file_16 ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_offline_MAB_1000_americano.mat';
-        output_file_17 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_offline_MAB_1000_americano.mat';
-        output_file_18 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_offline_MAB_1000_americano.mat';
+        output_file_mhCB2 ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_offline_MAB_mE200_americano.mat';
+        output_file_mhCB4 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_offline_MAB_mE200_americano.mat';
+        output_file_mhCB8 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_offline_MAB_mE200_americano.mat';
         
-        output_file_19 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_online_MAB_1000_americano.mat';
-        output_file_20 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
-        output_file_21 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
+        output_file_fhCB2 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_2_cluster_online_MAB_mE200_americano.mat';
+        output_file_fhCB4 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_online_MAB_mE200_americano.mat';
+        output_file_fhCB8 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_online_MAB_mE200_americano.mat';
+        
+        output_file_uE = ''
+        
+        output_file_mmmhCB2 = ''
+        output_file_mmmhCB4 = ''
+        output_file_mmmhCB8 = ''
+        
+        output_file_mmfhCB2 = ''
+        output_file_mmfhCB4 = ''
+        output_file_mmfhCB8 = ''
         
     case 'Caltech101S-unshuffled'
         
-        output_file_00 = './log/04-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_0_baseline_1000_americano.mat';
-        output_file_06 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
+        output_file_b = './log/04-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_0_b_mE200_americano.mat';
+        output_file_orS1 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_1_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_03 = './log/28-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_oracle_1000_doerlbh.mat';
-        output_file_04 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_oracle_1000_gcp-gpu.mat';
-        output_file_05 = './log/02-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_oracle_1000_americano.mat';
+        output_file_03 = './log/28-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_oracle_mE200_doerlbh.mat';
+        output_file_04 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_oracle_mE200_gcp-gpu.mat';
+        output_file_05 = './log/02-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_oracle_mE200_americano.mat';
         
-        output_file_07 = './log/07-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_oracle_staged_1000_americano.mat';
-        output_file_08 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_oracle_staged_1000_gcp-gpu.mat';
-        output_file_09 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_oracle_staged_1000_americano.mat';
+        output_file_orS2 = './log/07-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_oracle_staged_mE200_americano.mat';
+        output_file_orS4 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_oracle_staged_mE200_gcp-gpu.mat';
+        output_file_orS8 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_10 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_offline_1000_gcp-gpu.mat';
-        output_file_11 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_offline_1000_americano.mat';
-        output_file_12 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_offline_1000_americano.mat';
+        output_file_mE2 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_offline_mE200_gcp-gpu.mat';
+        output_file_mE4 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_offline_mE200_americano.mat';
+        output_file_mE8 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_offline_mE200_americano.mat';
         
-        output_file_13 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_online_1000_americano.mat';
-        output_file_14 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_1000_americano.mat';
-        output_file_15 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_1000_gcp-gpu.mat';
+        output_file_oE2 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_online_mE200_americano.mat';
+        output_file_oE4 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_mE200_americano.mat';
+        output_file_oE8 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_mE200_gcp-gpu.mat';
         
-        output_file_16 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_offline_MAB_1000_gcp-gpu.mat';
-        output_file_17 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_offline_MAB_1000_gcp-gpu.mat';
-        output_file_18 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_offline_MAB_1000_americano.mat';
+        output_file_mhCB2 = './log/30-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_offline_MAB_mE200_gcp-gpu.mat';
+        output_file_mhCB4 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_offline_MAB_mE200_gcp-gpu.mat';
+        output_file_mhCB8 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_offline_MAB_mE200_americano.mat';
         
-        output_file_19 = './log/29-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_online_MAB_1000_gcp-gpu.mat';
-        output_file_20 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
-        output_file_21 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
+        output_file_fhCB2 = './log/29-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_online_MAB_mE200_gcp-gpu.mat';
+        output_file_fhCB4 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_MAB_mE200_americano.mat';
+        output_file_fhCB8 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_MAB_mE200_americano.mat';
         
     case 'CIFAR-10-unshuffled'
         
-        output_file_00 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_0_baseline_1000_americano.mat';
+        output_file_b = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_0_b_mE200_americano.mat';
         
-        output_file_06 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_1_cluster_oracle_staged_1000_gcp-gpu.mat';
-        output_file_07 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_oracle_staged_1000_gcp-gpu.mat';
-        output_file_08 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_oracle_staged_1000_latte.mat';
-        output_file_09 = './log/02-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_oracle_staged_1000_latte.mat';
+        output_file_orS1 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_1_cluster_oracle_staged_mE200_gcp-gpu.mat';
+        output_file_orS2 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_oracle_staged_mE200_gcp-gpu.mat';
+        output_file_orS4 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_oracle_staged_mE200_latte.mat';
+        output_file_orS8 = './log/02-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_oracle_staged_mE200_latte.mat';
         
-        output_file_10 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_offline_1000_latte.mat';
-        output_file_11 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_offline_1000_latte.mat';
-        output_file_12 = './log/02-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_offline_1000_latte.mat';
+        output_file_mE2 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_offline_mE200_latte.mat';
+        output_file_mE4 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_offline_mE200_latte.mat';
+        output_file_mE8 = './log/02-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_offline_mE200_latte.mat';
         
-        output_file_13 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_online_1000_latte.mat';
-        output_file_14 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_online_1000_americano.mat';
-        output_file_15 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_online_1000_americano.mat';
+        output_file_oE2 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_online_mE200_latte.mat';
+        output_file_oE4 = './log/09-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_online_mE200_americano.mat';
+        output_file_oE8 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_online_mE200_americano.mat';
         
-        output_file_16 = './log/01-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_offline_MAB_1000_gcp-gpu.mat';
-        output_file_17 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_offline_MAB_1000_gcp-gpu.mat';
-        output_file_18 = './log/10-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_offline_MAB_1000_gcp-gpu.mat';
+        output_file_mhCB2 = './log/01-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_offline_MAB_mE200_gcp-gpu.mat';
+        output_file_mhCB4 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_offline_MAB_mE200_gcp-gpu.mat';
+        output_file_mhCB8 = './log/10-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_offline_MAB_mE200_gcp-gpu.mat';
         
-        output_file_19 = './log/08-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_online_MAB_1000_gcp-gpu.mat';
-        output_file_20 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_online_MAB_1000_gcp-gpu.mat';
-        output_file_21 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_online_MAB_1000_gcp-gpu.mat';
+        output_file_fhCB2 = './log/08-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_online_MAB_mE200_gcp-gpu.mat';
+        output_file_fhCB4 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_online_MAB_mE200_gcp-gpu.mat';
+        output_file_fhCB8 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_online_MAB_mE200_gcp-gpu.mat';
         
     case 'CIFAR-100C-unshuffled'
         
     case 'STL10-unshuffled'
         
-        output_file_00 ='./log/01-Nov-2017/K_main_classifier_STL10_nonstationary_k_0_baseline_1000_americano.mat';
+        output_file_b ='./log/01-Nov-2017/K_main_classifier_STL10_nonstationary_k_0_b_mE200_americano.mat';
         
-        output_file_06 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
+        output_file_orS1 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_1_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_07 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_oracle_staged_1000_americano.mat';
-        output_file_08 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_oracle_staged_1000_americano.mat';
-        output_file_09 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_oracle_staged_1000_americano.mat';
+        output_file_orS2 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_oracle_staged_mE200_americano.mat';
+        output_file_orS4 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_oracle_staged_mE200_americano.mat';
+        output_file_orS8 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_oracle_staged_mE200_americano.mat';
         
-        output_file_10 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_offline_1000_americano.mat';
-        output_file_11 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_offline_1000_americano.mat';
-        output_file_12 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_1000_americano.mat';
+        output_file_mE2 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_offline_mE200_americano.mat';
+        output_file_mE4 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_offline_mE200_americano.mat';
+        output_file_mE8 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_mE200_americano.mat';
         
-        output_file_13 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_online_1000_americano.mat';
-        output_file_14 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_online_1000_americano.mat';
-        output_file_15 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_online_1000_americano.mat';
+        output_file_oE2 ='./log/04-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_online_mE200_americano.mat';
+        output_file_oE4 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_online_mE200_americano.mat';
+        output_file_oE8 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_online_mE200_americano.mat';
         
-        output_file_16 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_offline_MAB_1000_gcp-gpu.mat';
-        output_file_17 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_MAB_1000_americano.mat';
-        output_file_18 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_MAB_1000_americano.mat';
+        output_file_mhCB2 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_offline_MAB_mE200_gcp-gpu.mat';
+        output_file_mhCB4 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_MAB_mE200_americano.mat';
+        output_file_mhCB8 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_offline_MAB_mE200_americano.mat';
         
-        output_file_19 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_online_MAB_1000_americano.mat';
-        output_file_20 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
-        output_file_21 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
+        output_file_fhCB2 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_2_cluster_online_MAB_mE200_americano.mat';
+        output_file_fhCB4 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_4_cluster_online_MAB_mE200_americano.mat';
+        output_file_fhCB8 ='./log/03-Nov-2017/K_main_classifier_STL10_nonstationary_k_8_cluster_online_MAB_mE200_americano.mat';
         
     otherwise
         
@@ -164,27 +242,22 @@ end
 
 %% load data files
 
-% [W_01,P_01,result_01,01,accuracy_01,embacc_01] = read_results([path 'results/W_main_classifier_01_latte'],1);
-% [W_02,P_02,result_02,02,accuracy_02,embacc_02] = read_results([path 'results/W_main_classifier_02_espresso'],2);
-% [W_03,P_03,result_03,03,accuracy_03,embacc_03] = read_results([path 'results/W_main_classifier_03_latte'],3);
-% [W_04,P_04,result_04,04,accuracy_04,embacc_04] = read_results([path 'results/W_main_classifier_04_americano'],4);
-
-[accuracy_00,learn_ns_z_00] = K_read_results(output_file_00,1);
-[accuracy_06,learn_ns_z_06] = K_read_results(output_file_06,1);
-[accuracy_07,learn_ns_z_07] = K_read_results(output_file_07,1);
-[accuracy_08,learn_ns_z_08] = K_read_results(output_file_08,0);
-[accuracy_09,learn_ns_z_09] = K_read_results(output_file_09,0);
-[accuracy_10,learn_ns_z_10] = K_read_results(output_file_10,0);
-[accuracy_11,learn_ns_z_11] = K_read_results(output_file_11,0);
-[accuracy_12,learn_ns_z_12] = K_read_results(output_file_12,0);
-[accuracy_13,learn_ns_z_13] = K_read_results(output_file_13,0);
-[accuracy_14,learn_ns_z_14] = K_read_results(output_file_14,1);
-[accuracy_15,learn_ns_z_15] = K_read_results(output_file_15,1);
-[accuracy_16,learn_ns_z_16] = K_read_results(output_file_16,1);
-[accuracy_17,learn_ns_z_17] = K_read_results(output_file_17,1);
-[accuracy_18,learn_ns_z_18] = K_read_results(output_file_18,1);
-[accuracy_19,learn_ns_z_19] = K_read_results(output_file_19,1);
-[accuracy_20,learn_ns_z_20] = K_read_results(output_file_20,1);
-[accuracy_21,learn_ns_z_21] = K_read_results(output_file_21,1);
+[accuracy_b,learn_ns_z_b] = F_read_results(output_file_b,1);
+[accuracy_orS1,learn_ns_z_orS1] = F_read_results(output_file_orS1,1);
+[accuracy_orS2,learn_ns_z_orS2] = F_read_results(output_file_orS2,1);
+[accuracy_orS4,learn_ns_z_orS4] = F_read_results(output_file_orS4,1);
+[accuracy_orS8,learn_ns_z_orS8] = F_read_results(output_file_orS8,1);
+[accuracy_mE2,learn_ns_z_mE2] = F_read_results(output_file_mE2,1);
+[accuracy_mE4,learn_ns_z_mE4] = F_read_results(output_file_mE4,1);
+[accuracy_mE8,learn_ns_z_mE8] = F_read_results(output_file_mE8,1);
+[accuracy_oE2,learn_ns_z_oE2] = F_read_results(output_file_oE2,1);
+[accuracy_oE4,learn_ns_z_oE4] = F_read_results(output_file_oE4,1);
+[accuracy_oE8,learn_ns_z_oE8] = F_read_results(output_file_oE8,1);
+[accuracy_mhCB2,learn_ns_z_mhCB2] = F_read_results(output_file_mhCB2,1);
+[accuracy_mhCB4,learn_ns_z_mhCB4] = F_read_results(output_file_mhCB4,1);
+[accuracy_mhCB8,learn_ns_z_mhCB8] = F_read_results(output_file_mhCB8,1);
+[accuracy_fhCB2,learn_ns_z_fhCB2] = F_read_results(output_file_fhCB2,1);
+[accuracy_fhCB4,learn_ns_z_fhCB4] = F_read_results(output_file_fhCB4,1);
+[accuracy_fhCB8,learn_ns_z_fhCB8] = F_read_results(output_file_fhCB8,1);
 
 save(['result-' dataset]);

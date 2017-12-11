@@ -3,7 +3,7 @@
 % Columbia University
 % November 2017 at IBM Research
 
-function [learn_accuracy,learn_ns_z] = K_read_results(filename,isGPU)
+function [learn_accuracy,learn_ns_z] = F_read_results(filename,isGPU)
 
 m = matfile(filename);
 learn_accuracy = m.learn_accuracy;
