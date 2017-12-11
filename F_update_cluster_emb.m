@@ -16,6 +16,22 @@ if isGPU == 1
         c = 0;
         disp('no reclustering involved')
     end;
+    
+    for t = 1:k
+        o = num2str(t);
+        disp(['===== Training starting for ' o ' =====']);
+        x_t = K_halfshuffle_gpu(x,z,[t],1);
+        disp(['training size is ', num2str(size(x_t,1))]);
+        x_t = gather(x_t.');
+        
+        autoenc1 = trainAutoencoder(x_t,hiddenSize1,'MaxEpochs',MaxEpochs1,'UseGPU',true);
+
+        clearvars x_t;
+        disp(['===== Training finished for ' o ' =====']);
+        save([path 'parameters/embedding_' dataset '_' dist '_' type '_k_' num2str(k) '_' o],'autoenc1');
+        clearvars autoenc1;
+    end
+    
 else
     if z == 0
         [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
@@ -23,21 +39,21 @@ else
         c = 0;
         disp('no reclustering involved')
     end
-end
-
-for t = 1:k
-    o = num2str(t);
-    disp(['===== Training starting for ' o ' =====']);
-    x_t = F_halfshuffle(x,z,[t],1);
-    disp(['training size is ', num2str(size(x_t,1))]);
-    x_t = x_t.';
     
-    autoenc1 = trainAutoencoder(x_t,hiddenSize1,'MaxEpochs',MaxEpochs1);
-    clearvars x_t;
-    
-    disp(['===== Training finished for ' o ' =====']);
-    save([path 'parameters/embedding_' dataset '_' dist '_' type '_k_' num2str(k) '_' o],'autoenc1');
-    clearvars autoenc1;
+    for t = 1:k
+        o = num2str(t);
+        disp(['===== Training starting for ' o ' =====']);
+        x_t = F_halfshuffle(x,z,[t],1);
+        disp(['training size is ', num2str(size(x_t,1))]);
+        x_t = x_t.';
+        
+        autoenc1 = trainAutoencoder(x_t,hiddenSize1,'MaxEpochs',MaxEpochs1);
+        clearvars x_t;
+        
+        disp(['===== Training finished for ' o ' =====']);
+        save([path 'parameters/embedding_' dataset '_' dist '_' type '_k_' num2str(k) '_' o],'autoenc1');
+        clearvars autoenc1;
+    end
 end
 
 end

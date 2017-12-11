@@ -1,0 +1,1681 @@
+
+00.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      278    100.00%
+-> finish diversity installing, second half size: 488
+  Value    Count   Percent
+      1        8      1.64%
+      2       19      3.89%
+      3       13      2.66%
+      4       27      5.53%
+      5       34      6.97%
+      6       21      4.30%
+      7       33      6.76%
+      8       17      3.48%
+      9       18      3.69%
+     10       44      9.02%
+     11       23      4.71%
+     12       21      4.30%
+     13       38      7.79%
+     14       24      4.92%
+     15       18      3.69%
+     16       31      6.35%
+     17       24      4.92%
+     18       25      5.12%
+     19       21      4.30%
+     20       29      5.94%
+-> in summary for window :5
+  Value    Count   Percent
+      1        8      0.80%
+      2       19      1.90%
+      3       13      1.30%
+      4       27      2.70%
+      5      312     31.20%
+      6       21      2.10%
+      7       33      3.30%
+      8       17      1.70%
+      9      252     25.20%
+     10       44      4.40%
+     11       23      2.30%
+     12       21      2.10%
+     13       38      3.80%
+     14       24      2.40%
+     15       18      1.80%
+     16       31      3.10%
+     17       24      2.40%
+     18       25      2.50%
+     19       21      2.10%
+     20       29      2.90%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+{Error using gpuArray/unique
+Unsupported flag 'legacy'. Valid flags are 'rows', 'first', 'last', 'stable',
+'sorted' .
+
+Error in statslib.internal.grp2idx (line 47)
+    [glevels,dum,gidx] = unique(s,'first','legacy');
+
+Error in grp2idx (line 28)
+[varargout{1:nargout}] = statslib.internal.grp2idx(s);
+
+Error in tabulate (line 40)
+   [y,yn,yl] = grp2idx(y);
+
+Error in K_nonstationary_track (line 78)
+    tabulate(z_t_1)
+
+Error in F_main_classifier (line 199)
+    [learn_x, learn_y, learn_ns_z] =
+    K_nonstationary_track(learn_x,learn_y,window);
+
+Error in americano1 (line 3)
+F_main_classifier(1, 'CIFAR-10', 'nonstationary','shuffled', 1, 'baseline',
+1000, 'americano', 20000)
+} 
+americano1
+mkdir: cannot create directory '/home/sunnylin/Dropbox/Git/IBM_ABaCoDE/log/10-Dec-2017': File exists
+10-Dec-2017
+running experiment on americano
+info: CIFAR-10 nonstationary shuffled k = 1 baseline 1000
+===================
+==== Loading data =======
+==== nonstationizing dataset =======
+--> finish shuffling stationary input
+n = 20
+clustering diversity 1st half:
+  Value    Count   Percent
+      1      596      5.96%
+      2      658      6.58%
+      3      509      5.09%
+      4      194      1.94%
+      5      511      5.11%
+      6      471      4.71%
+      7      345      3.45%
+      8      843      8.43%
+      9      560      5.60%
+     10      439      4.39%
+     11      575      5.75%
+     12      312      3.12%
+     13      479      4.79%
+     14      388      3.88%
+     15      350      3.50%
+     16      304      3.04%
+     17      590      5.90%
+     18      772      7.72%
+     19      627      6.27%
+     20      477      4.77%
+clustering diversity 2nd half:
+  Value    Count   Percent
+      1      584      5.84%
+      2      650      6.50%
+      3      525      5.25%
+      4      193      1.93%
+      5      473      4.73%
+      6      484      4.84%
+      7      375      3.75%
+      8      859      8.59%
+      9      495      4.95%
+     10      425      4.25%
+     11      616      6.16%
+     12      361      3.61%
+     13      475      4.75%
+     14      398      3.98%
+     15      335      3.35%
+     16      328      3.28%
+     17      624      6.24%
+     18      775      7.75%
+     19      585      5.85%
+     20      440      4.40%
+clustering diversity 1st 1st half:
+  Value    Count   Percent
+      1      322      6.44%
+      2      328      6.56%
+      3      265      5.30%
+      4       92      1.84%
+      5      252      5.04%
+      6      222      4.44%
+      7      163      3.26%
+      8      440      8.80%
+      9      281      5.62%
+     10      217      4.34%
+     11      288      5.76%
+     12      147      2.94%
+     13      222      4.44%
+     14      198      3.96%
+     15      200      4.00%
+     16      144      2.88%
+     17      299      5.98%
+     18      382      7.64%
+     19      299      5.98%
+     20      239      4.78%
+clustering diversity 1st 2nd half:
+  Value    Count   Percent
+      1      274      5.48%
+      2      330      6.60%
+      3      244      4.88%
+      4      102      2.04%
+      5      259      5.18%
+      6      249      4.98%
+      7      182      3.64%
+      8      403      8.06%
+      9      279      5.58%
+     10      222      4.44%
+     11      287      5.74%
+     12      165      3.30%
+     13      257      5.14%
+     14      190      3.80%
+     15      150      3.00%
+     16      160      3.20%
+     17      291      5.82%
+     18      390      7.80%
+     19      328      6.56%
+     20      238      4.76%
+--> finish reclustering stationary input
+seq_first: 
+
+ans =
+
+  Columns 1 through 3
+
+                   14                   20                    8
+
+  Columns 4 through 6
+
+                   13                   17                    5
+
+  Columns 7 through 9
+
+                   15                    2                    4
+
+  Columns 10 through 12
+
+                    6                   19                    1
+
+  Columns 13 through 15
+
+                   16                   10                    9
+
+  Columns 16 through 18
+
+                   18                   11                    7
+
+  Columns 19 through 20
+
+                    3                   12
+
+seq_second: 
+
+ans =
+
+  Columns 1 through 3
+
+                    8                    5                    2
+
+  Columns 4 through 6
+
+                   17                    3                   18
+
+  Columns 7 through 9
+
+                   11                   14                    9
+
+  Columns 10 through 12
+
+                    7                   15                   19
+
+  Columns 13 through 15
+
+                    1                    4                   10
+
+  Columns 16 through 18
+
+                   20                   16                    6
+
+  Columns 19 through 20
+
+                   12                   13
+
+==================
+window: 1
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14      198    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      403    100.00%
+-> finish diversity installing, second half size: 399
+  Value    Count   Percent
+      1       20      5.01%
+      2       28      7.02%
+      3       22      5.51%
+      4        7      1.75%
+      5       13      3.26%
+      6       20      5.01%
+      7       19      4.76%
+      8       37      9.27%
+      9       24      6.02%
+     10       14      3.51%
+     11       31      7.77%
+     12        9      2.26%
+     13       13      3.26%
+     14       17      4.26%
+     15        7      1.75%
+     16       19      4.76%
+     17       30      7.52%
+     18       37      9.27%
+     19       23      5.76%
+     20        9      2.26%
+-> in summary for window :1
+  Value    Count   Percent
+      1       20      2.00%
+      2       28      2.80%
+      3       22      2.20%
+      4        7      0.70%
+      5       13      1.30%
+      6       20      2.00%
+      7       19      1.90%
+      8      440     44.00%
+      9       24      2.40%
+     10       14      1.40%
+     11       31      3.10%
+     12        9      0.90%
+     13       13      1.30%
+     14      215     21.50%
+     15        7      0.70%
+     16       19      1.90%
+     17       30      3.00%
+     18       37      3.70%
+     19       23      2.30%
+     20        9      0.90%
+----> finish generating nonstationary dist for window 1
+==================
+window: 2
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18        0      0.00%
+     19        0      0.00%
+     20      239    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      259    100.00%
+-> finish diversity installing, second half size: 502
+  Value    Count   Percent
+      1       24      4.78%
+      2       33      6.57%
+      3       25      4.98%
+      4        6      1.20%
+      5       25      4.98%
+      6       27      5.38%
+      7       13      2.59%
+      8       43      8.57%
+      9       31      6.18%
+     10       32      6.37%
+     11       29      5.78%
+     12       25      4.98%
+     13       24      4.78%
+     14       17      3.39%
+     15       12      2.39%
+     16       11      2.19%
+     17       31      6.18%
+     18       41      8.17%
+     19       27      5.38%
+     20       26      5.18%
+-> in summary for window :2
+  Value    Count   Percent
+      1       24      2.40%
+      2       33      3.30%
+      3       25      2.50%
+      4        6      0.60%
+      5      284     28.40%
+      6       27      2.70%
+      7       13      1.30%
+      8       43      4.30%
+      9       31      3.10%
+     10       32      3.20%
+     11       29      2.90%
+     12       25      2.50%
+     13       24      2.40%
+     14       17      1.70%
+     15       12      1.20%
+     16       11      1.10%
+     17       31      3.10%
+     18       41      4.10%
+     19       27      2.70%
+     20      265     26.50%
+----> finish generating nonstationary dist for window 2
+==================
+window: 3
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      440    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      330    100.00%
+-> finish diversity installing, second half size: 230
+  Value    Count   Percent
+      1       13      5.65%
+      2       14      6.09%
+      3       17      7.39%
+      4        9      3.91%
+      5        9      3.91%
+      6       11      4.78%
+      7        9      3.91%
+      8       15      6.52%
+      9        7      3.04%
+     10        5      2.17%
+     11       15      6.52%
+     12       11      4.78%
+     13       11      4.78%
+     14       17      7.39%
+     15        9      3.91%
+     16        6      2.61%
+     17       13      5.65%
+     18       21      9.13%
+     19        8      3.48%
+     20       10      4.35%
+-> in summary for window :3
+  Value    Count   Percent
+      1       13      1.30%
+      2      344     34.40%
+      3       17      1.70%
+      4        9      0.90%
+      5        9      0.90%
+      6       11      1.10%
+      7        9      0.90%
+      8      455     45.50%
+      9        7      0.70%
+     10        5      0.50%
+     11       15      1.50%
+     12       11      1.10%
+     13       11      1.10%
+     14       17      1.70%
+     15        9      0.90%
+     16        6      0.60%
+     17       13      1.30%
+     18       21      2.10%
+     19        8      0.80%
+     20       10      1.00%
+----> finish generating nonstationary dist for window 3
+==================
+window: 4
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13      222    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17      291    100.00%
+-> finish diversity installing, second half size: 487
+  Value    Count   Percent
+      1       29      5.95%
+      2       26      5.34%
+      3       29      5.95%
+      4        9      1.85%
+      5       18      3.70%
+      6       25      5.13%
+      7       24      4.93%
+      8       32      6.57%
+      9       22      4.52%
+     10       22      4.52%
+     11       25      5.13%
+     12       15      3.08%
+     13       22      4.52%
+     14       21      4.31%
+     15       23      4.72%
+     16       14      2.87%
+     17       40      8.21%
+     18       46      9.45%
+     19       30      6.16%
+     20       15      3.08%
+-> in summary for window :4
+  Value    Count   Percent
+      1       29      2.90%
+      2       26      2.60%
+      3       29      2.90%
+      4        9      0.90%
+      5       18      1.80%
+      6       25      2.50%
+      7       24      2.40%
+      8       32      3.20%
+      9       22      2.20%
+     10       22      2.20%
+     11       25      2.50%
+     12       15      1.50%
+     13      244     24.40%
+     14       21      2.10%
+     15       23      2.30%
+     16       14      1.40%
+     17      331     33.10%
+     18       46      4.60%
+     19       30      3.00%
+     20       15      1.50%
+----> finish generating nonstationary dist for window 4
+==================
+window: 5
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17      299    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      244    100.00%
+-> finish diversity installing, second half size: 457
+  Value    Count   Percent
+      1       27      5.91%
+      2       42      9.19%
+      3       27      5.91%
+      4       11      2.41%
+      5       17      3.72%
+      6       26      5.69%
+      7       16      3.50%
+      8       38      8.32%
+      9       26      5.69%
+     10       25      5.47%
+     11       17      3.72%
+     12       13      2.84%
+     13       23      5.03%
+     14       20      4.38%
+     15       14      3.06%
+     16       19      4.16%
+     17       28      6.13%
+     18       28      6.13%
+     19       22      4.81%
+     20       18      3.94%
+-> in summary for window :5
+  Value    Count   Percent
+      1       27      2.70%
+      2       42      4.20%
+      3      271     27.10%
+      4       11      1.10%
+      5       17      1.70%
+      6       26      2.60%
+      7       16      1.60%
+      8       38      3.80%
+      9       26      2.60%
+     10       25      2.50%
+     11       17      1.70%
+     12       13      1.30%
+     13       23      2.30%
+     14       20      2.00%
+     15       14      1.40%
+     16       19      1.90%
+     17      327     32.70%
+     18       28      2.80%
+     19       22      2.20%
+     20       18      1.80%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      252    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18      390    100.00%
+-> finish diversity installing, second half size: 358
+  Value    Count   Percent
+      1       23      6.42%
+      2       22      6.15%
+      3       22      6.15%
+      4        9      2.51%
+      5       14      3.91%
+      6       16      4.47%
+      7        6      1.68%
+      8       42     11.73%
+      9       11      3.07%
+     10       15      4.19%
+     11       17      4.75%
+     12       18      5.03%
+     13       12      3.35%
+     14       12      3.35%
+     15       14      3.91%
+     16       12      3.35%
+     17       18      5.03%
+     18       33      9.22%
+     19       30      8.38%
+     20       12      3.35%
+-> in summary for window :6
+  Value    Count   Percent
+      1       23      2.30%
+      2       22      2.20%
+      3       22      2.20%
+      4        9      0.90%
+      5      266     26.60%
+      6       16      1.60%
+      7        6      0.60%
+      8       42      4.20%
+      9       11      1.10%
+     10       15      1.50%
+     11       17      1.70%
+     12       18      1.80%
+     13       12      1.20%
+     14       12      1.20%
+     15       14      1.40%
+     16       12      1.20%
+     17       18      1.80%
+     18      423     42.30%
+     19       30      3.00%
+     20       12      1.20%
+----> finish generating nonstationary dist for window 6
+==================
+window: 7
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15      200    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11      287    100.00%
+-> finish diversity installing, second half size: 513
+  Value    Count   Percent
+      1       33      6.43%
+      2       28      5.46%
+      3       31      6.04%
+      4       13      2.53%
+      5       24      4.68%
+      6       25      4.87%
+      7       16      3.12%
+      8       37      7.21%
+      9       24      4.68%
+     10       24      4.68%
+     11       28      5.46%
+     12       27      5.26%
+     13       21      4.09%
+     14       18      3.51%
+     15       13      2.53%
+     16       18      3.51%
+     17       37      7.21%
+     18       41      7.99%
+     19       28      5.46%
+     20       27      5.26%
+-> in summary for window :7
+  Value    Count   Percent
+      1       33      3.30%
+      2       28      2.80%
+      3       31      3.10%
+      4       13      1.30%
+      5       24      2.40%
+      6       25      2.50%
+      7       16      1.60%
+      8       37      3.70%
+      9       24      2.40%
+     10       24      2.40%
+     11      315     31.50%
+     12       27      2.70%
+     13       21      2.10%
+     14       18      1.80%
+     15      213     21.30%
+     16       18      1.80%
+     17       37      3.70%
+     18       41      4.10%
+     19       28      2.80%
+     20       27      2.70%
+----> finish generating nonstationary dist for window 7
+==================
+window: 8
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      328    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14      190    100.00%
+-> finish diversity installing, second half size: 482
+  Value    Count   Percent
+      1       40      8.30%
+      2       22      4.56%
+      3       24      4.98%
+      4        9      1.87%
+      5       24      4.98%
+      6       18      3.73%
+      7       16      3.32%
+      8       39      8.09%
+      9       28      5.81%
+     10       22      4.56%
+     11       29      6.02%
+     12       19      3.94%
+     13       27      5.60%
+     14       20      4.15%
+     15       19      3.94%
+     16       15      3.11%
+     17       29      6.02%
+     18       39      8.09%
+     19       24      4.98%
+     20       19      3.94%
+-> in summary for window :8
+  Value    Count   Percent
+      1       40      4.00%
+      2      350     35.00%
+      3       24      2.40%
+      4        9      0.90%
+      5       24      2.40%
+      6       18      1.80%
+      7       16      1.60%
+      8       39      3.90%
+      9       28      2.80%
+     10       22      2.20%
+     11       29      2.90%
+     12       19      1.90%
+     13       27      2.70%
+     14      210     21.00%
+     15       19      1.90%
+     16       15      1.50%
+     17       29      2.90%
+     18       39      3.90%
+     19       24      2.40%
+     20       19      1.90%
+----> finish generating nonstationary dist for window 8
+==================
+window: 9
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4       92    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      279    100.00%
+-> finish diversity installing, second half size: 629
+  Value    Count   Percent
+      1       42      6.68%
+      2       47      7.47%
+      3       31      4.93%
+      4       11      1.75%
+      5       22      3.50%
+      6       26      4.13%
+      7       33      5.25%
+      8       54      8.59%
+      9       27      4.29%
+     10       32      5.09%
+     11       47      7.47%
+     12       17      2.70%
+     13       32      5.09%
+     14       22      3.50%
+     15       24      3.82%
+     16       26      4.13%
+     17       35      5.56%
+     18       40      6.36%
+     19       32      5.09%
+     20       29      4.61%
+-> in summary for window :9
+  Value    Count   Percent
+      1       42      4.20%
+      2       47      4.70%
+      3       31      3.10%
+      4      103     10.30%
+      5       22      2.20%
+      6       26      2.60%
+      7       33      3.30%
+      8       54      5.40%
+      9      306     30.60%
+     10       32      3.20%
+     11       47      4.70%
+     12       17      1.70%
+     13       32      3.20%
+     14       22      2.20%
+     15       24      2.40%
+     16       26      2.60%
+     17       35      3.50%
+     18       40      4.00%
+     19       32      3.20%
+     20       29      2.90%
+----> finish generating nonstationary dist for window 9
+==================
+window: 10
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      222    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      182    100.00%
+-> finish diversity installing, second half size: 596
+  Value    Count   Percent
+      1       40      6.71%
+      2       29      4.87%
+      3       23      3.86%
+      4       14      2.35%
+      5       35      5.87%
+      6       28      4.70%
+      7       21      3.52%
+      8       44      7.38%
+      9       25      4.19%
+     10       28      4.70%
+     11       36      6.04%
+     12       26      4.36%
+     13       38      6.38%
+     14       18      3.02%
+     15       26      4.36%
+     16       18      3.02%
+     17       47      7.89%
+     18       42      7.05%
+     19       31      5.20%
+     20       27      4.53%
+-> in summary for window :10
+  Value    Count   Percent
+      1       40      4.00%
+      2       29      2.90%
+      3       23      2.30%
+      4       14      1.40%
+      5       35      3.50%
+      6      250     25.00%
+      7      203     20.30%
+      8       44      4.40%
+      9       25      2.50%
+     10       28      2.80%
+     11       36      3.60%
+     12       26      2.60%
+     13       38      3.80%
+     14       18      1.80%
+     15       26      2.60%
+     16       18      1.80%
+     17       47      4.70%
+     18       42      4.20%
+     19       31      3.10%
+     20       27      2.70%
+----> finish generating nonstationary dist for window 10
+==================
+window: 11
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18        0      0.00%
+     19      299    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15      150    100.00%
+-> finish diversity installing, second half size: 551
+  Value    Count   Percent
+      1       36      6.53%
+      2       34      6.17%
+      3       32      5.81%
+      4       11      2.00%
+      5       26      4.72%
+      6       27      4.90%
+      7       27      4.90%
+      8       54      9.80%
+      9       22      3.99%
+     10       23      4.17%
+     11       39      7.08%
+     12       18      3.27%
+     13       20      3.63%
+     14       16      2.90%
+     15       13      2.36%
+     16       18      3.27%
+     17       31      5.63%
+     18       45      8.17%
+     19       38      6.90%
+     20       21      3.81%
+-> in summary for window :11
+  Value    Count   Percent
+      1       36      3.60%
+      2       34      3.40%
+      3       32      3.20%
+      4       11      1.10%
+      5       26      2.60%
+      6       27      2.70%
+      7       27      2.70%
+      8       54      5.40%
+      9       22      2.20%
+     10       23      2.30%
+     11       39      3.90%
+     12       18      1.80%
+     13       20      2.00%
+     14       16      1.60%
+     15      163     16.30%
+     16       18      1.80%
+     17       31      3.10%
+     18       45      4.50%
+     19      337     33.70%
+     20       21      2.10%
+----> finish generating nonstationary dist for window 11
+==================
+window: 12
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1      322    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18        0      0.00%
+     19      328    100.00%
+-> finish diversity installing, second half size: 350
+  Value    Count   Percent
+      1       20      5.71%
+      2       31      8.86%
+      3       18      5.14%
+      4        4      1.14%
+      5       26      7.43%
+      6       12      3.43%
+      7        7      2.00%
+      8       35     10.00%
+      9       14      4.00%
+     10       14      4.00%
+     11       20      5.71%
+     12       10      2.86%
+     13       15      4.29%
+     14       14      4.00%
+     15       11      3.14%
+     16        8      2.29%
+     17       19      5.43%
+     18       32      9.14%
+     19       24      6.86%
+     20       16      4.57%
+-> in summary for window :12
+  Value    Count   Percent
+      1      342     34.20%
+      2       31      3.10%
+      3       18      1.80%
+      4        4      0.40%
+      5       26      2.60%
+      6       12      1.20%
+      7        7      0.70%
+      8       35      3.50%
+      9       14      1.40%
+     10       14      1.40%
+     11       20      2.00%
+     12       10      1.00%
+     13       15      1.50%
+     14       14      1.40%
+     15       11      1.10%
+     16        8      0.80%
+     17       19      1.90%
+     18       32      3.20%
+     19      352     35.20%
+     20       16      1.60%
+----> finish generating nonstationary dist for window 12
+==================
+window: 13
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16      144    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1      274    100.00%
+-> finish diversity installing, second half size: 582
+  Value    Count   Percent
+      1       29      4.98%
+      2       30      5.15%
+      3       28      4.81%
+      4       11      1.89%
+      5       26      4.47%
+      6       35      6.01%
+      7       29      4.98%
+      8       49      8.42%
+      9       32      5.50%
+     10       19      3.26%
+     11       41      7.04%
+     12       19      3.26%
+     13       26      4.47%
+     14       20      3.44%
+     15       17      2.92%
+     16       16      2.75%
+     17       35      6.01%
+     18       41      7.04%
+     19       39      6.70%
+     20       40      6.87%
+-> in summary for window :13
+  Value    Count   Percent
+      1      303     30.30%
+      2       30      3.00%
+      3       28      2.80%
+      4       11      1.10%
+      5       26      2.60%
+      6       35      3.50%
+      7       29      2.90%
+      8       49      4.90%
+      9       32      3.20%
+     10       19      1.90%
+     11       41      4.10%
+     12       19      1.90%
+     13       26      2.60%
+     14       20      2.00%
+     15       17      1.70%
+     16      160     16.00%
+     17       35      3.50%
+     18       41      4.10%
+     19       39      3.90%
+     20       40      4.00%
+----> finish generating nonstationary dist for window 13
+==================
+window: 14
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      217    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      102    100.00%
+-> finish diversity installing, second half size: 681
+  Value    Count   Percent
+      1       34      4.99%
+      2       43      6.31%
+      3       41      6.02%
+      4        9      1.32%
+      5       35      5.14%
+      6       35      5.14%
+      7       25      3.67%
+      8       72     10.57%
+      9       29      4.26%
+     10       26      3.82%
+     11       32      4.70%
+     12       35      5.14%
+     13       36      5.29%
+     14       22      3.23%
+     15       22      3.23%
+     16       10      1.47%
+     17       43      6.31%
+     18       59      8.66%
+     19       42      6.17%
+     20       31      4.55%
+-> in summary for window :14
+  Value    Count   Percent
+      1       34      3.40%
+      2       43      4.30%
+      3       41      4.10%
+      4      111     11.10%
+      5       35      3.50%
+      6       35      3.50%
+      7       25      2.50%
+      8       72      7.20%
+      9       29      2.90%
+     10      243     24.30%
+     11       32      3.20%
+     12       35      3.50%
+     13       36      3.60%
+     14       22      2.20%
+     15       22      2.20%
+     16       10      1.00%
+     17       43      4.30%
+     18       59      5.90%
+     19       42      4.20%
+     20       31      3.10%
+----> finish generating nonstationary dist for window 14
+==================
+window: 15
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      281    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      222    100.00%
+-> finish diversity installing, second half size: 497
+  Value    Count   Percent
+      1       28      5.63%
+      2       29      5.84%
+      3       28      5.63%
+      4        7      1.41%
+      5       31      6.24%
+      6       18      3.62%
+      7       17      3.42%
+      8       38      7.65%
+      9       29      5.84%
+     10       23      4.63%
+     11       39      7.85%
+     12       17      3.42%
+     13       23      4.63%
+     14       17      3.42%
+     15       22      4.43%
+     16       13      2.62%
+     17       25      5.03%
+     18       42      8.45%
+     19       27      5.43%
+     20       24      4.83%
+-> in summary for window :15
+  Value    Count   Percent
+      1       28      2.80%
+      2       29      2.90%
+      3       28      2.80%
+      4        7      0.70%
+      5       31      3.10%
+      6       18      1.80%
+      7       17      1.70%
+      8       38      3.80%
+      9      310     31.00%
+     10      245     24.50%
+     11       39      3.90%
+     12       17      1.70%
+     13       23      2.30%
+     14       17      1.70%
+     15       22      2.20%
+     16       13      1.30%
+     17       25      2.50%
+     18       42      4.20%
+     19       27      2.70%
+     20       24      2.40%
+----> finish generating nonstationary dist for window 15
+==================
+window: 16
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18      382    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16        0      0.00%
+     17        0      0.00%
+     18        0      0.00%
+     19        0      0.00%
+     20      238    100.00%
+-> finish diversity installing, second half size: 380
+  Value    Count   Percent
+      1       25      6.58%
+      2       29      7.63%
+      3       16      4.21%
+      4        9      2.37%
+      5       24      6.32%
+      6       22      5.79%
+      7       14      3.68%
+      8       42     11.05%
+      9       18      4.74%
+     10       17      4.47%
+     11       24      6.32%
+     12       10      2.63%
+     13       16      4.21%
+     14       23      6.05%
+     15        7      1.84%
+     16       10      2.63%
+     17       13      3.42%
+     18       28      7.37%
+     19       20      5.26%
+     20       13      3.42%
+-> in summary for window :16
+  Value    Count   Percent
+      1       25      2.50%
+      2       29      2.90%
+      3       16      1.60%
+      4        9      0.90%
+      5       24      2.40%
+      6       22      2.20%
+      7       14      1.40%
+      8       42      4.20%
+      9       18      1.80%
+     10       17      1.70%
+     11       24      2.40%
+     12       10      1.00%
+     13       16      1.60%
+     14       23      2.30%
+     15        7      0.70%
+     16       10      1.00%
+     17       13      1.30%
+     18      410     41.00%
+     19       20      2.00%
+     20      251     25.10%
+----> finish generating nonstationary dist for window 16
+==================
+window: 17
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11      288    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13        0      0.00%
+     14        0      0.00%
+     15        0      0.00%
+     16      160    100.00%
+-> finish diversity installing, second half size: 552
+  Value    Count   Percent
+      1       31      5.62%
+      2       42      7.61%
+      3       30      5.43%
+      4        8      1.45%
+      5       19      3.44%
+      6       28      5.07%
+      7       23      4.17%
+      8       47      8.51%
+      9       29      5.25%
+     10       16      2.90%
+     11       38      6.88%
+     12       18      3.26%
+     13       16      2.90%
+     14       28      5.07%
+     15       14      2.54%
+     16       24      4.35%
+     17       42      7.61%
+     18       34      6.16%
+     19       37      6.70%
+     20       28      5.07%
+-> in summary for window :17
+  Value    Count   Percent
+      1       31      3.10%
+      2       42      4.20%
+      3       30      3.00%
+      4        8      0.80%
+      5       19      1.90%
+      6       28      2.80%
+      7       23      2.30%
+      8       47      4.70%
+      9       29      2.90%
+     10       16      1.60%
+     11      326     32.60%
+     12       18      1.80%
+     13       16      1.60%
+     14       28      2.80%
+     15       14      1.40%
+     16      184     18.40%
+     17       42      4.20%
+     18       34      3.40%
+     19       37      3.70%
+     20       28      2.80%
+----> finish generating nonstationary dist for window 17
+==================
+window: 18
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      163    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      249    100.00%
+-> finish diversity installing, second half size: 588
+  Value    Count   Percent
+      1       34      5.78%
+      2       45      7.65%
+      3       24      4.08%
+      4       19      3.23%
+      5       27      4.59%
+      6       31      5.27%
+      7       18      3.06%
+      8       58      9.86%
+      9       27      4.59%
+     10       17      2.89%
+     11       28      4.76%
+     12       12      2.04%
+     13       34      5.78%
+     14       29      4.93%
+     15       24      4.08%
+     16       30      5.10%
+     17       39      6.63%
+     18       47      7.99%
+     19       32      5.44%
+     20       13      2.21%
+-> in summary for window :18
+  Value    Count   Percent
+      1       34      3.40%
+      2       45      4.50%
+      3       24      2.40%
+      4       19      1.90%
+      5       27      2.70%
+      6      280     28.00%
+      7      181     18.10%
+      8       58      5.80%
+      9       27      2.70%
+     10       17      1.70%
+     11       28      2.80%
+     12       12      1.20%
+     13       34      3.40%
+     14       29      2.90%
+     15       24      2.40%
+     16       30      3.00%
+     17       39      3.90%
+     18       47      4.70%
+     19       32      3.20%
+     20       13      1.30%
+----> finish generating nonstationary dist for window 18
+==================
+window: 19
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      265    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12      165    100.00%
+-> finish diversity installing, second half size: 570
+  Value    Count   Percent
+      1       33      5.79%
+      2       35      6.14%
+      3       27      4.74%
+      4        6      1.05%
+      5       29      5.09%
+      6       25      4.39%
+      7       20      3.51%
+      8       41      7.19%
+      9       35      6.14%
+     10       27      4.74%
+     11       40      7.02%
+     12       21      3.68%
+     13       35      6.14%
+     14       22      3.86%
+     15       25      4.39%
+     16       20      3.51%
+     17       32      5.61%
+     18       39      6.84%
+     19       33      5.79%
+     20       25      4.39%
+-> in summary for window :19
+  Value    Count   Percent
+      1       33      3.30%
+      2       35      3.50%
+      3      292     29.20%
+      4        6      0.60%
+      5       29      2.90%
+      6       25      2.50%
+      7       20      2.00%
+      8       41      4.10%
+      9       35      3.50%
+     10       27      2.70%
+     11       40      4.00%
+     12      186     18.60%
+     13       35      3.50%
+     14       22      2.20%
+     15       25      2.50%
+     16       20      2.00%
+     17       32      3.20%
+     18       39      3.90%
+     19       33      3.30%
+     20       25      2.50%
+----> finish generating nonstationary dist for window 19
+==================
+window: 20
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12      147    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10        0      0.00%
+     11        0      0.00%
+     12        0      0.00%
+     13      257    100.00%
+-> finish diversity installing, second half size: 596
+  Value    Count   Percent
+      1       23      3.86%
+      2       41      6.88%
+      3       30      5.03%
+      4       11      1.85%
+      5       29      4.87%
+      6       29      4.87%
+      7       22      3.69%
+      8       42      7.05%
+      9       35      5.87%
+     10       24      4.03%
+     11       41      6.88%
+     12       21      3.52%
+     13       31      5.20%
+     14       25      4.19%
+     15       19      3.19%
+     16       21      3.52%
+     17       37      6.21%
+     18       40      6.71%
+     19       38      6.38%
+     20       37      6.21%
+-> in summary for window :20
+  Value    Count   Percent
+      1       23      2.30%
+      2       41      4.10%
+      3       30      3.00%
+      4       11      1.10%
+      5       29      2.90%
+      6       29      2.90%
+      7       22      2.20%
+      8       42      4.20%
+      9       35      3.50%
+     10       24      2.40%
+     11       41      4.10%
+     12      168     16.80%
+     13      288     28.80%
+     14       25      2.50%
+     15       19      1.90%
+     16       21      2.10%
+     17       37      3.70%
+     1

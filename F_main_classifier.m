@@ -175,7 +175,7 @@ switch dataset
     case 'Caltech101S'
         load caltech101_silhouettes_28
         all_x = double(X);
-            all_y = vec2mat(isGPU,Y,length(unique(Y)));
+        all_y = vec2mat(isGPU,Y,length(unique(Y)));
         
         prior_x  = all_x(1:671,:);
         learn_x = all_x(672:end,:);
@@ -278,13 +278,21 @@ end
 %% statistics
 
 if isGPU == 1
-    learn_W = zeros(E,N*maZ_iter,'gpuArray');          % record all selected embeds
+    if strncmp(type, 'multimodel_',4)
+        learn_W = zeros(E+2,N*maZ_iter,'gpuArray');
+    else
+        learn_W = zeros(E,N*maZ_iter,'gpuArray');          % record all selected embeds
+    end
     learn_P = zeros(1,N*maZ_iter,'gpuArray');          % record all made decision
     learn_result = zeros(1,N*maZ_iter,'gpuArray');     % record all comparison results
     learn_time = zeros(1,N*maZ_iter,'gpuArray');       % record all time elapsed
     learn_accuracy = zeros(P+1,N*maZ_iter,'gpuArray'); % record all accuracy, end = all
 else
-    learn_W = zeros(E,N*maZ_iter);          % record all selected embeds
+    if strncmp(type, 'multimodel_',4)
+        learn_W = zeros(E+2,N*maZ_iter);
+    else
+        learn_W = zeros(E,N*maZ_iter);          % record all selected embeds
+    end
     learn_P = zeros(1,N*maZ_iter);          % record all made decision
     learn_result = zeros(1,N*maZ_iter);     % record all comparison results
     learn_time = zeros(1,N*maZ_iter);       % record all time elapsed
@@ -358,7 +366,7 @@ for iter=1:maZ_iter
                 end
                 
             case 'minibatch_history_CB'
-                [W,Z] = F_embSelect(isGPU,(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
                 learn_W(:,(iter-1)*N+t) = W.';
                 
                 if mod((iter-1)*N+t,window) == 0
@@ -369,7 +377,7 @@ for iter=1:maZ_iter
             case 'full_history_CB'
                 [case_z, clusters] = F_online_kmeans(isGPU, C, clusters, cluster_count);
                 learn_z((iter-1)*N+t) = case_z;
-                [W,Z] = F_embSelect(isGPU,(path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
+                [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E,B_k,hat_mu_k,vsqr_k);
                 learn_W(:,(iter-1)*N+t) = W.';
                 
                 if mod((iter-1)*N+t,window) == 0
@@ -379,8 +387,28 @@ for iter=1:maZ_iter
                 end
                 
             case 'multimode_minibatch_history_CB'
+                [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
+                learn_W(:,(iter-1)*N+t) = W.';
+                
+                if mod((iter-1)*N+t,window) == 0
+                    new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                    [learn_z,clusters] = F_update_cluster_emb(isGPU,k,new_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    [~,~] = F_update_cluster_emb(isGPU,1,new_x,0, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    [B_k_full,g_k_full,hat_mu_k_full,vsqr_k_full] = F_init_MAB(isGPU,E+2,D);
+                end
                 
             case 'multimode_full_history_CB'
+                [case_z, clusters] = F_online_kmeans(isGPU, C, clusters, cluster_count);
+                learn_z((iter-1)*N+t) = case_z;
+                [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
+                learn_W(:,(iter-1)*N+t) = W.';
+                
+                if mod((iter-1)*N+t,window) == 0
+                    new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
+                    new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
+                    [~,~] = F_update_cluster_emb(isGPU,k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    [~,~] = F_update_cluster_emb(isGPU,1,new_x,0, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                end
                 
             otherwise
                 disp('wrong type.');
@@ -397,7 +425,8 @@ for iter=1:maZ_iter
         end
         
         learn_result((iter-1)*N+t) = reward;
-        [B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,n,r] = K_update_bandits(type,(iter-1)*N+t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,n,r);
+        [B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r] = F_update_bandits(type,(iter-1)*N+t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r);
+        
         learn_time((iter-1)*N+t) = toc;
         
         acc = accuracy(isGPU,learn_P(1:(iter-1)*N+t),learn_y(1:(iter-1)*N+t,:));
