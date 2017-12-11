@@ -170993,3 +170993,11 @@ real-time dump
 - time elapsed 11742.4965
 
 - learning 19000
+- embedding 0 1 0 0
+- decision 9
+- expect 1
+- reward 0
+- result sub_accuracy 0.51733 0.692 NaN 0.582 0.54533 0.59567 NaN 0.491 0.482 0.4955
+- result accuracy 0.54426
+- time elapsed 12006.3418
+
