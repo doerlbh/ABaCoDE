@@ -269,10 +269,18 @@ end
 
 n = 0;
 if isGPU == 1
-    r = zeros(E,P,'gpuArray');
+    if strncmp(type, 'multimodel_',4)
+        r = zeros(E+2,P,'gpuArray');
+    else
+        r = zeros(E,P,'gpuArray');
+    end
     cluster_count = zeros(1,E,'gpuArray');
 else
-    r = zeros(E,P);
+    if strncmp(type, 'multimodel_',4)
+        r = zeros(E+2,P);
+    else
+        r = zeros(E,P);
+    end
     cluster_count = zeros(1,E);
 end
 

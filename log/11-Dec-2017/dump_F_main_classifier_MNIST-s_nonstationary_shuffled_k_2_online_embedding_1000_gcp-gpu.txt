@@ -1,1 +1,7203 @@
 real-time dump
+--- iteration 1 ---
+
+- learning 1
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 2.5741
+
+- learning 2
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 3.2963
+
+- learning 3
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 3.7573
+
+- learning 4
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 4.1393
+
+- learning 5
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 4.5461
+
+- learning 6
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 5.3977
+
+- learning 7
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 5.6521
+
+- learning 8
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 5.914
+
+- learning 9
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0 NaN NaN NaN NaN NaN
+- result accuracy 0
+- time elapsed 6.1675
+
+- learning 10
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.1 NaN NaN NaN NaN NaN
+- result accuracy 0.1
+- time elapsed 6.4327
+
+- learning 11
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.090909 NaN NaN NaN NaN NaN
+- result accuracy 0.090909
+- time elapsed 6.6843
+
+- learning 12
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.16667 NaN NaN NaN NaN NaN
+- result accuracy 0.16667
+- time elapsed 6.9331
+
+- learning 13
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.15385 NaN NaN NaN NaN NaN
+- result accuracy 0.15385
+- time elapsed 7.1849
+
+- learning 14
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.14286 NaN NaN NaN NaN NaN
+- result accuracy 0.14286
+- time elapsed 7.4471
+
+- learning 15
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.13333 NaN NaN NaN NaN NaN
+- result accuracy 0.13333
+- time elapsed 7.6987
+
+- learning 16
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.1875 NaN NaN NaN NaN NaN
+- result accuracy 0.1875
+- time elapsed 7.95
+
+- learning 17
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17647 NaN NaN NaN NaN NaN
+- result accuracy 0.17647
+- time elapsed 8.2048
+
+- learning 18
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.16667 NaN NaN NaN NaN NaN
+- result accuracy 0.16667
+- time elapsed 8.4611
+
+- learning 19
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.15789 NaN NaN NaN NaN NaN
+- result accuracy 0.15789
+- time elapsed 8.724
+
+- learning 20
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 8.983
+
+- learning 21
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2381 NaN NaN NaN NaN NaN
+- result accuracy 0.2381
+- time elapsed 9.2399
+
+- learning 22
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22727 NaN NaN NaN NaN NaN
+- result accuracy 0.22727
+- time elapsed 9.4977
+
+- learning 23
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21739 NaN NaN NaN NaN NaN
+- result accuracy 0.21739
+- time elapsed 9.7501
+
+- learning 24
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20833 NaN NaN NaN NaN NaN
+- result accuracy 0.20833
+- time elapsed 10.015
+
+- learning 25
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 10.2716
+
+- learning 26
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23077 NaN NaN NaN NaN NaN
+- result accuracy 0.23077
+- time elapsed 10.5335
+
+- learning 27
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22222 NaN NaN NaN NaN NaN
+- result accuracy 0.22222
+- time elapsed 10.7974
+
+- learning 28
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 11.0645
+
+- learning 29
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24138 NaN NaN NaN NaN NaN
+- result accuracy 0.24138
+- time elapsed 11.3219
+
+- learning 30
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23333 NaN NaN NaN NaN NaN
+- result accuracy 0.23333
+- time elapsed 11.5863
+
+- learning 31
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22581 NaN NaN NaN NaN NaN
+- result accuracy 0.22581
+- time elapsed 11.8576
+
+- learning 32
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21875 NaN NaN NaN NaN NaN
+- result accuracy 0.21875
+- time elapsed 12.1532
+
+- learning 33
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21212 NaN NaN NaN NaN NaN
+- result accuracy 0.21212
+- time elapsed 12.4441
+
+- learning 34
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23529 NaN NaN NaN NaN NaN
+- result accuracy 0.23529
+- time elapsed 12.7021
+
+- learning 35
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22857 NaN NaN NaN NaN NaN
+- result accuracy 0.22857
+- time elapsed 12.9602
+
+- learning 36
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22222 NaN NaN NaN NaN NaN
+- result accuracy 0.22222
+- time elapsed 13.2195
+
+- learning 37
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21622 NaN NaN NaN NaN NaN
+- result accuracy 0.21622
+- time elapsed 13.4827
+
+- learning 38
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23684 NaN NaN NaN NaN NaN
+- result accuracy 0.23684
+- time elapsed 13.7377
+
+- learning 39
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23077 NaN NaN NaN NaN NaN
+- result accuracy 0.23077
+- time elapsed 13.9957
+
+- learning 40
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.225 NaN NaN NaN NaN NaN
+- result accuracy 0.225
+- time elapsed 14.2485
+
+- learning 41
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21951 NaN NaN NaN NaN NaN
+- result accuracy 0.21951
+- time elapsed 14.5075
+
+- learning 42
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21429 NaN NaN NaN NaN NaN
+- result accuracy 0.21429
+- time elapsed 14.7655
+
+- learning 43
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2093 NaN NaN NaN NaN NaN
+- result accuracy 0.2093
+- time elapsed 15.0298
+
+- learning 44
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20455 NaN NaN NaN NaN NaN
+- result accuracy 0.20455
+- time elapsed 15.2922
+
+- learning 45
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 15.5484
+
+- learning 46
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21739 NaN NaN NaN NaN NaN
+- result accuracy 0.21739
+- time elapsed 15.8071
+
+- learning 47
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21277 NaN NaN NaN NaN NaN
+- result accuracy 0.21277
+- time elapsed 16.0643
+
+- learning 48
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.22917 NaN NaN NaN NaN NaN
+- result accuracy 0.22917
+- time elapsed 16.323
+
+- learning 49
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22449 NaN NaN NaN NaN NaN
+- result accuracy 0.22449
+- time elapsed 16.5967
+
+- learning 50
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22 NaN NaN NaN NaN NaN
+- result accuracy 0.22
+- time elapsed 16.8795
+
+- learning 51
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21569 NaN NaN NaN NaN NaN
+- result accuracy 0.21569
+- time elapsed 17.1641
+
+- learning 52
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21154 NaN NaN NaN NaN NaN
+- result accuracy 0.21154
+- time elapsed 17.4199
+
+- learning 53
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20755 NaN NaN NaN NaN NaN
+- result accuracy 0.20755
+- time elapsed 17.6791
+
+- learning 54
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2037 NaN NaN NaN NaN NaN
+- result accuracy 0.2037
+- time elapsed 17.9389
+
+- learning 55
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21818 NaN NaN NaN NaN NaN
+- result accuracy 0.21818
+- time elapsed 18.1948
+
+- learning 56
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21429 NaN NaN NaN NaN NaN
+- result accuracy 0.21429
+- time elapsed 18.4607
+
+- learning 57
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21053 NaN NaN NaN NaN NaN
+- result accuracy 0.21053
+- time elapsed 18.7265
+
+- learning 58
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2069 NaN NaN NaN NaN NaN
+- result accuracy 0.2069
+- time elapsed 18.991
+
+- learning 59
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20339 NaN NaN NaN NaN NaN
+- result accuracy 0.20339
+- time elapsed 19.2547
+
+- learning 60
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 19.5194
+
+- learning 61
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19672 NaN NaN NaN NaN NaN
+- result accuracy 0.19672
+- time elapsed 19.7832
+
+- learning 62
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20968 NaN NaN NaN NaN NaN
+- result accuracy 0.20968
+- time elapsed 20.0549
+
+- learning 63
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20635 NaN NaN NaN NaN NaN
+- result accuracy 0.20635
+- time elapsed 20.3241
+
+- learning 64
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20312 NaN NaN NaN NaN NaN
+- result accuracy 0.20312
+- time elapsed 20.5949
+
+- learning 65
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 20.8615
+
+- learning 66
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19697 NaN NaN NaN NaN NaN
+- result accuracy 0.19697
+- time elapsed 21.1277
+
+- learning 67
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19403 NaN NaN NaN NaN NaN
+- result accuracy 0.19403
+- time elapsed 21.3879
+
+- learning 68
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19118 NaN NaN NaN NaN NaN
+- result accuracy 0.19118
+- time elapsed 21.6548
+
+- learning 69
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18841 NaN NaN NaN NaN NaN
+- result accuracy 0.18841
+- time elapsed 21.914
+
+- learning 70
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18571 NaN NaN NaN NaN NaN
+- result accuracy 0.18571
+- time elapsed 22.1755
+
+- learning 71
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.1831 NaN NaN NaN NaN NaN
+- result accuracy 0.1831
+- time elapsed 22.439
+
+- learning 72
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18056 NaN NaN NaN NaN NaN
+- result accuracy 0.18056
+- time elapsed 22.7041
+
+- learning 73
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17808 NaN NaN NaN NaN NaN
+- result accuracy 0.17808
+- time elapsed 22.9655
+
+- learning 74
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17568 NaN NaN NaN NaN NaN
+- result accuracy 0.17568
+- time elapsed 23.2314
+
+- learning 75
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17333 NaN NaN NaN NaN NaN
+- result accuracy 0.17333
+- time elapsed 23.4932
+
+- learning 76
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17105 NaN NaN NaN NaN NaN
+- result accuracy 0.17105
+- time elapsed 23.7554
+
+- learning 77
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.16883 NaN NaN NaN NaN NaN
+- result accuracy 0.16883
+- time elapsed 24.0142
+
+- learning 78
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.16667 NaN NaN NaN NaN NaN
+- result accuracy 0.16667
+- time elapsed 24.2731
+
+- learning 79
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.16456 NaN NaN NaN NaN NaN
+- result accuracy 0.16456
+- time elapsed 24.5348
+
+- learning 80
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.175 NaN NaN NaN NaN NaN
+- result accuracy 0.175
+- time elapsed 24.797
+
+- learning 81
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17284 NaN NaN NaN NaN NaN
+- result accuracy 0.17284
+- time elapsed 25.0572
+
+- learning 82
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.17073 NaN NaN NaN NaN NaN
+- result accuracy 0.17073
+- time elapsed 25.3166
+
+- learning 83
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.16867 NaN NaN NaN NaN NaN
+- result accuracy 0.16867
+- time elapsed 25.5857
+
+- learning 84
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.17857 NaN NaN NaN NaN NaN
+- result accuracy 0.17857
+- time elapsed 25.8563
+
+- learning 85
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.18824 NaN NaN NaN NaN NaN
+- result accuracy 0.18824
+- time elapsed 26.1246
+
+- learning 86
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.19767 NaN NaN NaN NaN NaN
+- result accuracy 0.19767
+- time elapsed 26.3944
+
+- learning 87
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.1954 NaN NaN NaN NaN NaN
+- result accuracy 0.1954
+- time elapsed 26.663
+
+- learning 88
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19318 NaN NaN NaN NaN NaN
+- result accuracy 0.19318
+- time elapsed 26.945
+
+- learning 89
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19101 NaN NaN NaN NaN NaN
+- result accuracy 0.19101
+- time elapsed 27.2258
+
+- learning 90
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18889 NaN NaN NaN NaN NaN
+- result accuracy 0.18889
+- time elapsed 27.4901
+
+- learning 91
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18681 NaN NaN NaN NaN NaN
+- result accuracy 0.18681
+- time elapsed 27.7505
+
+- learning 92
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18478 NaN NaN NaN NaN NaN
+- result accuracy 0.18478
+- time elapsed 28.0103
+
+- learning 93
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.1828 NaN NaN NaN NaN NaN
+- result accuracy 0.1828
+- time elapsed 28.2692
+
+- learning 94
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.18085 NaN NaN NaN NaN NaN
+- result accuracy 0.18085
+- time elapsed 28.5214
+
+- learning 95
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.18947 NaN NaN NaN NaN NaN
+- result accuracy 0.18947
+- time elapsed 28.7724
+
+- learning 96
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.19792 NaN NaN NaN NaN NaN
+- result accuracy 0.19792
+- time elapsed 29.0264
+
+- learning 97
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19588 NaN NaN NaN NaN NaN
+- result accuracy 0.19588
+- time elapsed 29.2886
+
+- learning 98
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20408 NaN NaN NaN NaN NaN
+- result accuracy 0.20408
+- time elapsed 29.5426
+
+- learning 99
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20202 NaN NaN NaN NaN NaN
+- result accuracy 0.20202
+- time elapsed 29.7967
+
+- learning 100
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 30.0563
+
+- learning 101
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19802 NaN NaN NaN NaN NaN
+- result accuracy 0.19802
+- time elapsed 30.3247
+
+- learning 102
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19608 NaN NaN NaN NaN NaN
+- result accuracy 0.19608
+- time elapsed 30.5784
+
+- learning 103
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19417 NaN NaN NaN NaN NaN
+- result accuracy 0.19417
+- time elapsed 30.834
+
+- learning 104
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20192 NaN NaN NaN NaN NaN
+- result accuracy 0.20192
+- time elapsed 31.0882
+
+- learning 105
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 31.3441
+
+- learning 106
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19811 NaN NaN NaN NaN NaN
+- result accuracy 0.19811
+- time elapsed 31.6099
+
+- learning 107
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20561 NaN NaN NaN NaN NaN
+- result accuracy 0.20561
+- time elapsed 31.8788
+
+- learning 108
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2037 NaN NaN NaN NaN NaN
+- result accuracy 0.2037
+- time elapsed 32.153
+
+- learning 109
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20183 NaN NaN NaN NaN NaN
+- result accuracy 0.20183
+- time elapsed 32.4258
+
+- learning 110
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 32.7112
+
+- learning 111
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20721 NaN NaN NaN NaN NaN
+- result accuracy 0.20721
+- time elapsed 32.965
+
+- learning 112
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20536 NaN NaN NaN NaN NaN
+- result accuracy 0.20536
+- time elapsed 33.2207
+
+- learning 113
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20354 NaN NaN NaN NaN NaN
+- result accuracy 0.20354
+- time elapsed 33.4779
+
+- learning 114
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20175 NaN NaN NaN NaN NaN
+- result accuracy 0.20175
+- time elapsed 33.7272
+
+- learning 115
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2 NaN NaN NaN NaN NaN
+- result accuracy 0.2
+- time elapsed 33.9786
+
+- learning 116
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.19828 NaN NaN NaN NaN NaN
+- result accuracy 0.19828
+- time elapsed 34.2292
+
+- learning 117
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.20513 NaN NaN NaN NaN NaN
+- result accuracy 0.20513
+- time elapsed 34.4798
+
+- learning 118
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21186 NaN NaN NaN NaN NaN
+- result accuracy 0.21186
+- time elapsed 34.7302
+
+- learning 119
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21008 NaN NaN NaN NaN NaN
+- result accuracy 0.21008
+- time elapsed 35.0354
+
+- learning 120
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20833 NaN NaN NaN NaN NaN
+- result accuracy 0.20833
+- time elapsed 35.3527
+
+- learning 121
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.20661 NaN NaN NaN NaN NaN
+- result accuracy 0.20661
+- time elapsed 35.6673
+
+- learning 122
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21311 NaN NaN NaN NaN NaN
+- result accuracy 0.21311
+- time elapsed 35.9911
+
+- learning 123
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21138 NaN NaN NaN NaN NaN
+- result accuracy 0.21138
+- time elapsed 36.3054
+
+- learning 124
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21774 NaN NaN NaN NaN NaN
+- result accuracy 0.21774
+- time elapsed 36.5776
+
+- learning 125
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.216 NaN NaN NaN NaN NaN
+- result accuracy 0.216
+- time elapsed 36.8489
+
+- learning 126
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.22222 NaN NaN NaN NaN NaN
+- result accuracy 0.22222
+- time elapsed 37.1588
+
+- learning 127
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22047 NaN NaN NaN NaN NaN
+- result accuracy 0.22047
+- time elapsed 37.4127
+
+- learning 128
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21875 NaN NaN NaN NaN NaN
+- result accuracy 0.21875
+- time elapsed 37.6739
+
+- learning 129
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21705 NaN NaN NaN NaN NaN
+- result accuracy 0.21705
+- time elapsed 37.9373
+
+- learning 130
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21538 NaN NaN NaN NaN NaN
+- result accuracy 0.21538
+- time elapsed 38.1962
+
+- learning 131
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21374 NaN NaN NaN NaN NaN
+- result accuracy 0.21374
+- time elapsed 38.4526
+
+- learning 132
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2197 NaN NaN NaN NaN NaN
+- result accuracy 0.2197
+- time elapsed 38.7067
+
+- learning 133
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21805 NaN NaN NaN NaN NaN
+- result accuracy 0.21805
+- time elapsed 38.9579
+
+- learning 134
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21642 NaN NaN NaN NaN NaN
+- result accuracy 0.21642
+- time elapsed 39.211
+
+- learning 135
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21481 NaN NaN NaN NaN NaN
+- result accuracy 0.21481
+- time elapsed 39.4652
+
+- learning 136
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21324 NaN NaN NaN NaN NaN
+- result accuracy 0.21324
+- time elapsed 39.7219
+
+- learning 137
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21168 NaN NaN NaN NaN NaN
+- result accuracy 0.21168
+- time elapsed 39.9786
+
+- learning 138
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.21739 NaN NaN NaN NaN NaN
+- result accuracy 0.21739
+- time elapsed 40.2345
+
+- learning 139
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.21583 NaN NaN NaN NaN NaN
+- result accuracy 0.21583
+- time elapsed 40.5808
+
+- learning 140
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.22143 NaN NaN NaN NaN NaN
+- result accuracy 0.22143
+- time elapsed 40.8334
+
+- learning 141
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.22695 NaN NaN NaN NaN NaN
+- result accuracy 0.22695
+- time elapsed 41.0877
+
+- learning 142
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23239 NaN NaN NaN NaN NaN
+- result accuracy 0.23239
+- time elapsed 41.3408
+
+- learning 143
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23776 NaN NaN NaN NaN NaN
+- result accuracy 0.23776
+- time elapsed 41.5954
+
+- learning 144
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23611 NaN NaN NaN NaN NaN
+- result accuracy 0.23611
+- time elapsed 41.849
+
+- learning 145
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23448 NaN NaN NaN NaN NaN
+- result accuracy 0.23448
+- time elapsed 42.1055
+
+- learning 146
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23288 NaN NaN NaN NaN NaN
+- result accuracy 0.23288
+- time elapsed 42.3544
+
+- learning 147
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23129 NaN NaN NaN NaN NaN
+- result accuracy 0.23129
+- time elapsed 42.6049
+
+- learning 148
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23649 NaN NaN NaN NaN NaN
+- result accuracy 0.23649
+- time elapsed 42.858
+
+- learning 149
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2349 NaN NaN NaN NaN NaN
+- result accuracy 0.2349
+- time elapsed 43.1107
+
+- learning 150
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23333 NaN NaN NaN NaN NaN
+- result accuracy 0.23333
+- time elapsed 43.3621
+
+- learning 151
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23179 NaN NaN NaN NaN NaN
+- result accuracy 0.23179
+- time elapsed 43.6234
+
+- learning 152
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23026 NaN NaN NaN NaN NaN
+- result accuracy 0.23026
+- time elapsed 43.8849
+
+- learning 153
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22876 NaN NaN NaN NaN NaN
+- result accuracy 0.22876
+- time elapsed 44.1423
+
+- learning 154
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.22727 NaN NaN NaN NaN NaN
+- result accuracy 0.22727
+- time elapsed 44.4071
+
+- learning 155
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23226 NaN NaN NaN NaN NaN
+- result accuracy 0.23226
+- time elapsed 44.6645
+
+- learning 156
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.23718 NaN NaN NaN NaN NaN
+- result accuracy 0.23718
+- time elapsed 44.9236
+
+- learning 157
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24204 NaN NaN NaN NaN NaN
+- result accuracy 0.24204
+- time elapsed 45.1838
+
+- learning 158
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24684 NaN NaN NaN NaN NaN
+- result accuracy 0.24684
+- time elapsed 45.4418
+
+- learning 159
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24528 NaN NaN NaN NaN NaN
+- result accuracy 0.24528
+- time elapsed 45.7173
+
+- learning 160
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 46.0065
+
+- learning 161
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24845 NaN NaN NaN NaN NaN
+- result accuracy 0.24845
+- time elapsed 46.2637
+
+- learning 162
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24691 NaN NaN NaN NaN NaN
+- result accuracy 0.24691
+- time elapsed 46.5234
+
+- learning 163
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2454 NaN NaN NaN NaN NaN
+- result accuracy 0.2454
+- time elapsed 46.781
+
+- learning 164
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2439 NaN NaN NaN NaN NaN
+- result accuracy 0.2439
+- time elapsed 47.0396
+
+- learning 165
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24242 NaN NaN NaN NaN NaN
+- result accuracy 0.24242
+- time elapsed 47.2967
+
+- learning 166
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24096 NaN NaN NaN NaN NaN
+- result accuracy 0.24096
+- time elapsed 47.5585
+
+- learning 167
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23952 NaN NaN NaN NaN NaN
+- result accuracy 0.23952
+- time elapsed 47.8188
+
+- learning 168
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2381 NaN NaN NaN NaN NaN
+- result accuracy 0.2381
+- time elapsed 48.0989
+
+- learning 169
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2426 NaN NaN NaN NaN NaN
+- result accuracy 0.2426
+- time elapsed 48.3774
+
+- learning 170
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24118 NaN NaN NaN NaN NaN
+- result accuracy 0.24118
+- time elapsed 48.6537
+
+- learning 171
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23977 NaN NaN NaN NaN NaN
+- result accuracy 0.23977
+- time elapsed 48.9277
+
+- learning 172
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24419 NaN NaN NaN NaN NaN
+- result accuracy 0.24419
+- time elapsed 49.1972
+
+- learning 173
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24855 NaN NaN NaN NaN NaN
+- result accuracy 0.24855
+- time elapsed 49.4542
+
+- learning 174
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24713 NaN NaN NaN NaN NaN
+- result accuracy 0.24713
+- time elapsed 49.7131
+
+- learning 175
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25143 NaN NaN NaN NaN NaN
+- result accuracy 0.25143
+- time elapsed 49.9714
+
+- learning 176
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 50.2368
+
+- learning 177
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25424 NaN NaN NaN NaN NaN
+- result accuracy 0.25424
+- time elapsed 50.4949
+
+- learning 178
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25281 NaN NaN NaN NaN NaN
+- result accuracy 0.25281
+- time elapsed 50.7553
+
+- learning 179
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2514 NaN NaN NaN NaN NaN
+- result accuracy 0.2514
+- time elapsed 51.0126
+
+- learning 180
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25556 NaN NaN NaN NaN NaN
+- result accuracy 0.25556
+- time elapsed 51.2665
+
+- learning 181
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25414 NaN NaN NaN NaN NaN
+- result accuracy 0.25414
+- time elapsed 51.5269
+
+- learning 182
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25275 NaN NaN NaN NaN NaN
+- result accuracy 0.25275
+- time elapsed 51.7864
+
+- learning 183
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25137 NaN NaN NaN NaN NaN
+- result accuracy 0.25137
+- time elapsed 52.0497
+
+- learning 184
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 52.3109
+
+- learning 185
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25405 NaN NaN NaN NaN NaN
+- result accuracy 0.25405
+- time elapsed 52.5691
+
+- learning 186
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25269 NaN NaN NaN NaN NaN
+- result accuracy 0.25269
+- time elapsed 52.8323
+
+- learning 187
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25134 NaN NaN NaN NaN NaN
+- result accuracy 0.25134
+- time elapsed 53.0928
+
+- learning 188
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 53.3531
+
+- learning 189
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24868 NaN NaN NaN NaN NaN
+- result accuracy 0.24868
+- time elapsed 53.6135
+
+- learning 190
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24737 NaN NaN NaN NaN NaN
+- result accuracy 0.24737
+- time elapsed 53.8788
+
+- learning 191
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24607 NaN NaN NaN NaN NaN
+- result accuracy 0.24607
+- time elapsed 54.1493
+
+- learning 192
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24479 NaN NaN NaN NaN NaN
+- result accuracy 0.24479
+- time elapsed 54.4101
+
+- learning 193
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24352 NaN NaN NaN NaN NaN
+- result accuracy 0.24352
+- time elapsed 54.678
+
+- learning 194
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24227 NaN NaN NaN NaN NaN
+- result accuracy 0.24227
+- time elapsed 54.9373
+
+- learning 195
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24103 NaN NaN NaN NaN NaN
+- result accuracy 0.24103
+- time elapsed 55.2038
+
+- learning 196
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2398 NaN NaN NaN NaN NaN
+- result accuracy 0.2398
+- time elapsed 55.4644
+
+- learning 197
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23858 NaN NaN NaN NaN NaN
+- result accuracy 0.23858
+- time elapsed 55.7236
+
+- learning 198
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.23737 NaN NaN NaN NaN NaN
+- result accuracy 0.23737
+- time elapsed 55.9927
+
+- learning 199
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24121 NaN NaN NaN NaN NaN
+- result accuracy 0.24121
+- time elapsed 56.2503
+
+- learning 200
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24 NaN NaN NaN NaN NaN
+- result accuracy 0.24
+- time elapsed 56.505
+
+- learning 201
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24378 NaN NaN NaN NaN NaN
+- result accuracy 0.24378
+- time elapsed 60.8646
+
+- learning 202
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.24752 NaN NaN NaN NaN NaN
+- result accuracy 0.24752
+- time elapsed 61.1232
+
+- learning 203
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25123 NaN NaN NaN NaN NaN
+- result accuracy 0.25123
+- time elapsed 61.3787
+
+- learning 204
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2549 NaN NaN NaN NaN NaN
+- result accuracy 0.2549
+- time elapsed 61.6318
+
+- learning 205
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25366 NaN NaN NaN NaN NaN
+- result accuracy 0.25366
+- time elapsed 61.8859
+
+- learning 206
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25728 NaN NaN NaN NaN NaN
+- result accuracy 0.25728
+- time elapsed 62.1361
+
+- learning 207
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25604 NaN NaN NaN NaN NaN
+- result accuracy 0.25604
+- time elapsed 62.3861
+
+- learning 208
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25481 NaN NaN NaN NaN NaN
+- result accuracy 0.25481
+- time elapsed 62.6421
+
+- learning 209
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25359 NaN NaN NaN NaN NaN
+- result accuracy 0.25359
+- time elapsed 62.8899
+
+- learning 210
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25714 NaN NaN NaN NaN NaN
+- result accuracy 0.25714
+- time elapsed 63.1458
+
+- learning 211
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25592 NaN NaN NaN NaN NaN
+- result accuracy 0.25592
+- time elapsed 63.4003
+
+- learning 212
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25472 NaN NaN NaN NaN NaN
+- result accuracy 0.25472
+- time elapsed 63.6528
+
+- learning 213
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25352 NaN NaN NaN NaN NaN
+- result accuracy 0.25352
+- time elapsed 63.924
+
+- learning 214
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25234 NaN NaN NaN NaN NaN
+- result accuracy 0.25234
+- time elapsed 64.1993
+
+- learning 215
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25116 NaN NaN NaN NaN NaN
+- result accuracy 0.25116
+- time elapsed 64.4752
+
+- learning 216
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 64.7472
+
+- learning 217
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24885 NaN NaN NaN NaN NaN
+- result accuracy 0.24885
+- time elapsed 65.0183
+
+- learning 218
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25229 NaN NaN NaN NaN NaN
+- result accuracy 0.25229
+- time elapsed 65.2937
+
+- learning 219
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25114 NaN NaN NaN NaN NaN
+- result accuracy 0.25114
+- time elapsed 65.5605
+
+- learning 220
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 65.8305
+
+- learning 221
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24887 NaN NaN NaN NaN NaN
+- result accuracy 0.24887
+- time elapsed 66.0963
+
+- learning 222
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25225 NaN NaN NaN NaN NaN
+- result accuracy 0.25225
+- time elapsed 66.3612
+
+- learning 223
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25112 NaN NaN NaN NaN NaN
+- result accuracy 0.25112
+- time elapsed 66.6244
+
+- learning 224
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 66.8884
+
+- learning 225
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24889 NaN NaN NaN NaN NaN
+- result accuracy 0.24889
+- time elapsed 67.1499
+
+- learning 226
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24779 NaN NaN NaN NaN NaN
+- result accuracy 0.24779
+- time elapsed 67.4103
+
+- learning 227
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2511 NaN NaN NaN NaN NaN
+- result accuracy 0.2511
+- time elapsed 67.6701
+
+- learning 228
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 67.9333
+
+- learning 229
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24891 NaN NaN NaN NaN NaN
+- result accuracy 0.24891
+- time elapsed 68.1935
+
+- learning 230
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24783 NaN NaN NaN NaN NaN
+- result accuracy 0.24783
+- time elapsed 68.4531
+
+- learning 231
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24675 NaN NaN NaN NaN NaN
+- result accuracy 0.24675
+- time elapsed 68.7058
+
+- learning 232
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 68.9632
+
+- learning 233
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.24893 NaN NaN NaN NaN NaN
+- result accuracy 0.24893
+- time elapsed 69.2227
+
+- learning 234
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25214 NaN NaN NaN NaN NaN
+- result accuracy 0.25214
+- time elapsed 69.4846
+
+- learning 235
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25532 NaN NaN NaN NaN NaN
+- result accuracy 0.25532
+- time elapsed 69.7511
+
+- learning 236
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25424 NaN NaN NaN NaN NaN
+- result accuracy 0.25424
+- time elapsed 70.0162
+
+- learning 237
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25316 NaN NaN NaN NaN NaN
+- result accuracy 0.25316
+- time elapsed 70.278
+
+- learning 238
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2521 NaN NaN NaN NaN NaN
+- result accuracy 0.2521
+- time elapsed 70.5353
+
+- learning 239
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25105 NaN NaN NaN NaN NaN
+- result accuracy 0.25105
+- time elapsed 70.7923
+
+- learning 240
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 71.0466
+
+- learning 241
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25311 NaN NaN NaN NaN NaN
+- result accuracy 0.25311
+- time elapsed 71.3053
+
+- learning 242
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25207 NaN NaN NaN NaN NaN
+- result accuracy 0.25207
+- time elapsed 71.5621
+
+- learning 243
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25103 NaN NaN NaN NaN NaN
+- result accuracy 0.25103
+- time elapsed 71.823
+
+- learning 244
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25 NaN NaN NaN NaN NaN
+- result accuracy 0.25
+- time elapsed 72.0849
+
+- learning 245
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25306 NaN NaN NaN NaN NaN
+- result accuracy 0.25306
+- time elapsed 72.345
+
+- learning 246
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25203 NaN NaN NaN NaN NaN
+- result accuracy 0.25203
+- time elapsed 72.609
+
+- learning 247
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25101 NaN NaN NaN NaN NaN
+- result accuracy 0.25101
+- time elapsed 72.8819
+
+- learning 248
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25403 NaN NaN NaN NaN NaN
+- result accuracy 0.25403
+- time elapsed 73.1588
+
+- learning 249
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.25703 NaN NaN NaN NaN NaN
+- result accuracy 0.25703
+- time elapsed 73.4347
+
+- learning 250
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26 NaN NaN NaN NaN NaN
+- result accuracy 0.26
+- time elapsed 73.7088
+
+- learning 251
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25896 NaN NaN NaN NaN NaN
+- result accuracy 0.25896
+- time elapsed 73.9808
+
+- learning 252
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2619 NaN NaN NaN NaN NaN
+- result accuracy 0.2619
+- time elapsed 74.2569
+
+- learning 253
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26482 NaN NaN NaN NaN NaN
+- result accuracy 0.26482
+- time elapsed 74.5294
+
+- learning 254
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26772 NaN NaN NaN NaN NaN
+- result accuracy 0.26772
+- time elapsed 74.7957
+
+- learning 255
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26667 NaN NaN NaN NaN NaN
+- result accuracy 0.26667
+- time elapsed 75.0612
+
+- learning 256
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26562 NaN NaN NaN NaN NaN
+- result accuracy 0.26562
+- time elapsed 75.327
+
+- learning 257
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26459 NaN NaN NaN NaN NaN
+- result accuracy 0.26459
+- time elapsed 75.5899
+
+- learning 258
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26744 NaN NaN NaN NaN NaN
+- result accuracy 0.26744
+- time elapsed 75.8548
+
+- learning 259
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27027 NaN NaN NaN NaN NaN
+- result accuracy 0.27027
+- time elapsed 76.1128
+
+- learning 260
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26923 NaN NaN NaN NaN NaN
+- result accuracy 0.26923
+- time elapsed 76.3777
+
+- learning 261
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27203 NaN NaN NaN NaN NaN
+- result accuracy 0.27203
+- time elapsed 76.6413
+
+- learning 262
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27481 NaN NaN NaN NaN NaN
+- result accuracy 0.27481
+- time elapsed 76.9079
+
+- learning 263
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27376 NaN NaN NaN NaN NaN
+- result accuracy 0.27376
+- time elapsed 77.1722
+
+- learning 264
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27652 NaN NaN NaN NaN NaN
+- result accuracy 0.27652
+- time elapsed 77.4345
+
+- learning 265
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27547 NaN NaN NaN NaN NaN
+- result accuracy 0.27547
+- time elapsed 77.6985
+
+- learning 266
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27444 NaN NaN NaN NaN NaN
+- result accuracy 0.27444
+- time elapsed 77.9634
+
+- learning 267
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27341 NaN NaN NaN NaN NaN
+- result accuracy 0.27341
+- time elapsed 78.2285
+
+- learning 268
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27612 NaN NaN NaN NaN NaN
+- result accuracy 0.27612
+- time elapsed 78.4908
+
+- learning 269
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27509 NaN NaN NaN NaN NaN
+- result accuracy 0.27509
+- time elapsed 78.7568
+
+- learning 270
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27407 NaN NaN NaN NaN NaN
+- result accuracy 0.27407
+- time elapsed 79.0204
+
+- learning 271
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27306 NaN NaN NaN NaN NaN
+- result accuracy 0.27306
+- time elapsed 79.2856
+
+- learning 272
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27206 NaN NaN NaN NaN NaN
+- result accuracy 0.27206
+- time elapsed 79.5546
+
+- learning 273
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27106 NaN NaN NaN NaN NaN
+- result accuracy 0.27106
+- time elapsed 79.821
+
+- learning 274
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27007 NaN NaN NaN NaN NaN
+- result accuracy 0.27007
+- time elapsed 80.08
+
+- learning 275
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26909 NaN NaN NaN NaN NaN
+- result accuracy 0.26909
+- time elapsed 80.3378
+
+- learning 276
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26812 NaN NaN NaN NaN NaN
+- result accuracy 0.26812
+- time elapsed 80.6065
+
+- learning 277
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26715 NaN NaN NaN NaN NaN
+- result accuracy 0.26715
+- time elapsed 80.8756
+
+- learning 278
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26619 NaN NaN NaN NaN NaN
+- result accuracy 0.26619
+- time elapsed 81.1379
+
+- learning 279
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26523 NaN NaN NaN NaN NaN
+- result accuracy 0.26523
+- time elapsed 81.4006
+
+- learning 280
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26786 NaN NaN NaN NaN NaN
+- result accuracy 0.26786
+- time elapsed 81.654
+
+- learning 281
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2669 NaN NaN NaN NaN NaN
+- result accuracy 0.2669
+- time elapsed 81.931
+
+- learning 282
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2695 NaN NaN NaN NaN NaN
+- result accuracy 0.2695
+- time elapsed 82.1854
+
+- learning 283
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26855 NaN NaN NaN NaN NaN
+- result accuracy 0.26855
+- time elapsed 82.4355
+
+- learning 284
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27113 NaN NaN NaN NaN NaN
+- result accuracy 0.27113
+- time elapsed 82.6982
+
+- learning 285
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27368 NaN NaN NaN NaN NaN
+- result accuracy 0.27368
+- time elapsed 82.9595
+
+- learning 286
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27273 NaN NaN NaN NaN NaN
+- result accuracy 0.27273
+- time elapsed 83.2241
+
+- learning 287
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27178 NaN NaN NaN NaN NaN
+- result accuracy 0.27178
+- time elapsed 83.4972
+
+- learning 288
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27431 NaN NaN NaN NaN NaN
+- result accuracy 0.27431
+- time elapsed 83.7679
+
+- learning 289
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27336 NaN NaN NaN NaN NaN
+- result accuracy 0.27336
+- time elapsed 84.0264
+
+- learning 290
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27241 NaN NaN NaN NaN NaN
+- result accuracy 0.27241
+- time elapsed 84.2897
+
+- learning 291
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27491 NaN NaN NaN NaN NaN
+- result accuracy 0.27491
+- time elapsed 84.5546
+
+- learning 292
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27397 NaN NaN NaN NaN NaN
+- result accuracy 0.27397
+- time elapsed 84.8201
+
+- learning 293
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27304 NaN NaN NaN NaN NaN
+- result accuracy 0.27304
+- time elapsed 85.0847
+
+- learning 294
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27211 NaN NaN NaN NaN NaN
+- result accuracy 0.27211
+- time elapsed 85.3478
+
+- learning 295
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27458 NaN NaN NaN NaN NaN
+- result accuracy 0.27458
+- time elapsed 85.6116
+
+- learning 296
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27365 NaN NaN NaN NaN NaN
+- result accuracy 0.27365
+- time elapsed 85.8832
+
+- learning 297
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27273 NaN NaN NaN NaN NaN
+- result accuracy 0.27273
+- time elapsed 86.1594
+
+- learning 298
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27181 NaN NaN NaN NaN NaN
+- result accuracy 0.27181
+- time elapsed 86.4366
+
+- learning 299
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2709 NaN NaN NaN NaN NaN
+- result accuracy 0.2709
+- time elapsed 86.7203
+
+- learning 300
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27 NaN NaN NaN NaN NaN
+- result accuracy 0.27
+- time elapsed 86.9984
+
+- learning 301
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27243 NaN NaN NaN NaN NaN
+- result accuracy 0.27243
+- time elapsed 87.269
+
+- learning 302
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27152 NaN NaN NaN NaN NaN
+- result accuracy 0.27152
+- time elapsed 87.5322
+
+- learning 303
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27063 NaN NaN NaN NaN NaN
+- result accuracy 0.27063
+- time elapsed 87.7897
+
+- learning 304
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26974 NaN NaN NaN NaN NaN
+- result accuracy 0.26974
+- time elapsed 88.0646
+
+- learning 305
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26885 NaN NaN NaN NaN NaN
+- result accuracy 0.26885
+- time elapsed 88.3231
+
+- learning 306
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26797 NaN NaN NaN NaN NaN
+- result accuracy 0.26797
+- time elapsed 88.5847
+
+- learning 307
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27036 NaN NaN NaN NaN NaN
+- result accuracy 0.27036
+- time elapsed 88.8457
+
+- learning 308
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26948 NaN NaN NaN NaN NaN
+- result accuracy 0.26948
+- time elapsed 89.1096
+
+- learning 309
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27184 NaN NaN NaN NaN NaN
+- result accuracy 0.27184
+- time elapsed 89.3722
+
+- learning 310
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27097 NaN NaN NaN NaN NaN
+- result accuracy 0.27097
+- time elapsed 89.6375
+
+- learning 311
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2701 NaN NaN NaN NaN NaN
+- result accuracy 0.2701
+- time elapsed 89.9003
+
+- learning 312
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26923 NaN NaN NaN NaN NaN
+- result accuracy 0.26923
+- time elapsed 90.1634
+
+- learning 313
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26837 NaN NaN NaN NaN NaN
+- result accuracy 0.26837
+- time elapsed 90.4264
+
+- learning 314
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26752 NaN NaN NaN NaN NaN
+- result accuracy 0.26752
+- time elapsed 90.6901
+
+- learning 315
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26667 NaN NaN NaN NaN NaN
+- result accuracy 0.26667
+- time elapsed 90.9502
+
+- learning 316
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26582 NaN NaN NaN NaN NaN
+- result accuracy 0.26582
+- time elapsed 91.2136
+
+- learning 317
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26498 NaN NaN NaN NaN NaN
+- result accuracy 0.26498
+- time elapsed 91.4758
+
+- learning 318
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26415 NaN NaN NaN NaN NaN
+- result accuracy 0.26415
+- time elapsed 91.7394
+
+- learning 319
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26332 NaN NaN NaN NaN NaN
+- result accuracy 0.26332
+- time elapsed 91.9972
+
+- learning 320
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2625 NaN NaN NaN NaN NaN
+- result accuracy 0.2625
+- time elapsed 92.2584
+
+- learning 321
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26168 NaN NaN NaN NaN NaN
+- result accuracy 0.26168
+- time elapsed 92.5362
+
+- learning 322
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26087 NaN NaN NaN NaN NaN
+- result accuracy 0.26087
+- time elapsed 92.8031
+
+- learning 323
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26316 NaN NaN NaN NaN NaN
+- result accuracy 0.26316
+- time elapsed 93.0681
+
+- learning 324
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26235 NaN NaN NaN NaN NaN
+- result accuracy 0.26235
+- time elapsed 93.3274
+
+- learning 325
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26154 NaN NaN NaN NaN NaN
+- result accuracy 0.26154
+- time elapsed 93.5871
+
+- learning 326
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26074 NaN NaN NaN NaN NaN
+- result accuracy 0.26074
+- time elapsed 93.845
+
+- learning 327
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.263 NaN NaN NaN NaN NaN
+- result accuracy 0.263
+- time elapsed 94.0991
+
+- learning 328
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2622 NaN NaN NaN NaN NaN
+- result accuracy 0.2622
+- time elapsed 94.3562
+
+- learning 329
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2614 NaN NaN NaN NaN NaN
+- result accuracy 0.2614
+- time elapsed 94.6128
+
+- learning 330
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26364 NaN NaN NaN NaN NaN
+- result accuracy 0.26364
+- time elapsed 94.8732
+
+- learning 331
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26284 NaN NaN NaN NaN NaN
+- result accuracy 0.26284
+- time elapsed 95.1313
+
+- learning 332
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26205 NaN NaN NaN NaN NaN
+- result accuracy 0.26205
+- time elapsed 95.3901
+
+- learning 333
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26126 NaN NaN NaN NaN NaN
+- result accuracy 0.26126
+- time elapsed 95.6493
+
+- learning 334
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26048 NaN NaN NaN NaN NaN
+- result accuracy 0.26048
+- time elapsed 95.9103
+
+- learning 335
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2597 NaN NaN NaN NaN NaN
+- result accuracy 0.2597
+- time elapsed 96.1806
+
+- learning 336
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25893 NaN NaN NaN NaN NaN
+- result accuracy 0.25893
+- time elapsed 96.4393
+
+- learning 337
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.25816 NaN NaN NaN NaN NaN
+- result accuracy 0.25816
+- time elapsed 96.7002
+
+- learning 338
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26036 NaN NaN NaN NaN NaN
+- result accuracy 0.26036
+- time elapsed 96.9696
+
+- learning 339
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26254 NaN NaN NaN NaN NaN
+- result accuracy 0.26254
+- time elapsed 97.2362
+
+- learning 340
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26471 NaN NaN NaN NaN NaN
+- result accuracy 0.26471
+- time elapsed 97.502
+
+- learning 341
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26686 NaN NaN NaN NaN NaN
+- result accuracy 0.26686
+- time elapsed 97.7723
+
+- learning 342
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26608 NaN NaN NaN NaN NaN
+- result accuracy 0.26608
+- time elapsed 98.0568
+
+- learning 343
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26822 NaN NaN NaN NaN NaN
+- result accuracy 0.26822
+- time elapsed 98.329
+
+- learning 344
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26744 NaN NaN NaN NaN NaN
+- result accuracy 0.26744
+- time elapsed 98.5832
+
+- learning 345
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26667 NaN NaN NaN NaN NaN
+- result accuracy 0.26667
+- time elapsed 98.8387
+
+- learning 346
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2659 NaN NaN NaN NaN NaN
+- result accuracy 0.2659
+- time elapsed 99.0944
+
+- learning 347
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26801 NaN NaN NaN NaN NaN
+- result accuracy 0.26801
+- time elapsed 99.3499
+
+- learning 348
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26724 NaN NaN NaN NaN NaN
+- result accuracy 0.26724
+- time elapsed 99.6028
+
+- learning 349
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26648 NaN NaN NaN NaN NaN
+- result accuracy 0.26648
+- time elapsed 99.857
+
+- learning 350
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26571 NaN NaN NaN NaN NaN
+- result accuracy 0.26571
+- time elapsed 100.11
+
+- learning 351
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26496 NaN NaN NaN NaN NaN
+- result accuracy 0.26496
+- time elapsed 100.3676
+
+- learning 352
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2642 NaN NaN NaN NaN NaN
+- result accuracy 0.2642
+- time elapsed 100.6232
+
+- learning 353
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26629 NaN NaN NaN NaN NaN
+- result accuracy 0.26629
+- time elapsed 100.889
+
+- learning 354
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26554 NaN NaN NaN NaN NaN
+- result accuracy 0.26554
+- time elapsed 101.1534
+
+- learning 355
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26479 NaN NaN NaN NaN NaN
+- result accuracy 0.26479
+- time elapsed 101.4123
+
+- learning 356
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26685 NaN NaN NaN NaN NaN
+- result accuracy 0.26685
+- time elapsed 101.6687
+
+- learning 357
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26891 NaN NaN NaN NaN NaN
+- result accuracy 0.26891
+- time elapsed 101.9252
+
+- learning 358
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26816 NaN NaN NaN NaN NaN
+- result accuracy 0.26816
+- time elapsed 102.1788
+
+- learning 359
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27019 NaN NaN NaN NaN NaN
+- result accuracy 0.27019
+- time elapsed 102.4356
+
+- learning 360
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26944 NaN NaN NaN NaN NaN
+- result accuracy 0.26944
+- time elapsed 102.69
+
+- learning 361
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2687 NaN NaN NaN NaN NaN
+- result accuracy 0.2687
+- time elapsed 102.9529
+
+- learning 362
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26796 NaN NaN NaN NaN NaN
+- result accuracy 0.26796
+- time elapsed 103.2294
+
+- learning 363
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26722 NaN NaN NaN NaN NaN
+- result accuracy 0.26722
+- time elapsed 103.4877
+
+- learning 364
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.26923 NaN NaN NaN NaN NaN
+- result accuracy 0.26923
+- time elapsed 103.7436
+
+- learning 365
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27123 NaN NaN NaN NaN NaN
+- result accuracy 0.27123
+- time elapsed 104
+
+- learning 366
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27049 NaN NaN NaN NaN NaN
+- result accuracy 0.27049
+- time elapsed 104.2694
+
+- learning 367
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26975 NaN NaN NaN NaN NaN
+- result accuracy 0.26975
+- time elapsed 104.5381
+
+- learning 368
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26902 NaN NaN NaN NaN NaN
+- result accuracy 0.26902
+- time elapsed 104.8029
+
+- learning 369
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26829 NaN NaN NaN NaN NaN
+- result accuracy 0.26829
+- time elapsed 105.0669
+
+- learning 370
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27027 NaN NaN NaN NaN NaN
+- result accuracy 0.27027
+- time elapsed 105.3233
+
+- learning 371
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.26954 NaN NaN NaN NaN NaN
+- result accuracy 0.26954
+- time elapsed 105.5897
+
+- learning 372
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27151 NaN NaN NaN NaN NaN
+- result accuracy 0.27151
+- time elapsed 105.8568
+
+- learning 373
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27078 NaN NaN NaN NaN NaN
+- result accuracy 0.27078
+- time elapsed 106.1266
+
+- learning 374
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27273 NaN NaN NaN NaN NaN
+- result accuracy 0.27273
+- time elapsed 106.3968
+
+- learning 375
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27467 NaN NaN NaN NaN NaN
+- result accuracy 0.27467
+- time elapsed 106.6622
+
+- learning 376
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2766 NaN NaN NaN NaN NaN
+- result accuracy 0.2766
+- time elapsed 106.9862
+
+- learning 377
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27586 NaN NaN NaN NaN NaN
+- result accuracy 0.27586
+- time elapsed 107.2493
+
+- learning 378
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27513 NaN NaN NaN NaN NaN
+- result accuracy 0.27513
+- time elapsed 107.5185
+
+- learning 379
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27704 NaN NaN NaN NaN NaN
+- result accuracy 0.27704
+- time elapsed 107.7772
+
+- learning 380
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27895 NaN NaN NaN NaN NaN
+- result accuracy 0.27895
+- time elapsed 108.044
+
+- learning 381
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27822 NaN NaN NaN NaN NaN
+- result accuracy 0.27822
+- time elapsed 108.3062
+
+- learning 382
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27749 NaN NaN NaN NaN NaN
+- result accuracy 0.27749
+- time elapsed 108.5685
+
+- learning 383
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27676 NaN NaN NaN NaN NaN
+- result accuracy 0.27676
+- time elapsed 108.8279
+
+- learning 384
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27604 NaN NaN NaN NaN NaN
+- result accuracy 0.27604
+- time elapsed 109.0952
+
+- learning 385
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27532 NaN NaN NaN NaN NaN
+- result accuracy 0.27532
+- time elapsed 109.358
+
+- learning 386
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2772 NaN NaN NaN NaN NaN
+- result accuracy 0.2772
+- time elapsed 109.6334
+
+- learning 387
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27649 NaN NaN NaN NaN NaN
+- result accuracy 0.27649
+- time elapsed 109.8949
+
+- learning 388
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27577 NaN NaN NaN NaN NaN
+- result accuracy 0.27577
+- time elapsed 110.1573
+
+- learning 389
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27763 NaN NaN NaN NaN NaN
+- result accuracy 0.27763
+- time elapsed 110.42
+
+- learning 390
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.27692 NaN NaN NaN NaN NaN
+- result accuracy 0.27692
+- time elapsed 110.6805
+
+- learning 391
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.27877 NaN NaN NaN NaN NaN
+- result accuracy 0.27877
+- time elapsed 110.9362
+
+- learning 392
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28061 NaN NaN NaN NaN NaN
+- result accuracy 0.28061
+- time elapsed 111.19
+
+- learning 393
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2799 NaN NaN NaN NaN NaN
+- result accuracy 0.2799
+- time elapsed 111.4479
+
+- learning 394
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28173 NaN NaN NaN NaN NaN
+- result accuracy 0.28173
+- time elapsed 111.7018
+
+- learning 395
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28354 NaN NaN NaN NaN NaN
+- result accuracy 0.28354
+- time elapsed 111.9559
+
+- learning 396
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28535 NaN NaN NaN NaN NaN
+- result accuracy 0.28535
+- time elapsed 112.2107
+
+- learning 397
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28463 NaN NaN NaN NaN NaN
+- result accuracy 0.28463
+- time elapsed 112.4655
+
+- learning 398
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28392 NaN NaN NaN NaN NaN
+- result accuracy 0.28392
+- time elapsed 112.7219
+
+- learning 399
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28321 NaN NaN NaN NaN NaN
+- result accuracy 0.28321
+- time elapsed 112.9751
+
+- learning 400
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2825 NaN NaN NaN NaN NaN
+- result accuracy 0.2825
+- time elapsed 113.2295
+
+- learning 401
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2818 NaN NaN NaN NaN NaN
+- result accuracy 0.2818
+- time elapsed 117.477
+
+- learning 402
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28109 NaN NaN NaN NaN NaN
+- result accuracy 0.28109
+- time elapsed 117.7403
+
+- learning 403
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2804 NaN NaN NaN NaN NaN
+- result accuracy 0.2804
+- time elapsed 117.9983
+
+- learning 404
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2797 NaN NaN NaN NaN NaN
+- result accuracy 0.2797
+- time elapsed 118.2564
+
+- learning 405
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28148 NaN NaN NaN NaN NaN
+- result accuracy 0.28148
+- time elapsed 118.5145
+
+- learning 406
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28079 NaN NaN NaN NaN NaN
+- result accuracy 0.28079
+- time elapsed 118.7711
+
+- learning 407
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28256 NaN NaN NaN NaN NaN
+- result accuracy 0.28256
+- time elapsed 119.029
+
+- learning 408
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28186 NaN NaN NaN NaN NaN
+- result accuracy 0.28186
+- time elapsed 119.2885
+
+- learning 409
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28362 NaN NaN NaN NaN NaN
+- result accuracy 0.28362
+- time elapsed 119.544
+
+- learning 410
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28293 NaN NaN NaN NaN NaN
+- result accuracy 0.28293
+- time elapsed 119.8012
+
+- learning 411
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28224 NaN NaN NaN NaN NaN
+- result accuracy 0.28224
+- time elapsed 120.0575
+
+- learning 412
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28398 NaN NaN NaN NaN NaN
+- result accuracy 0.28398
+- time elapsed 120.3132
+
+- learning 413
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28571 NaN NaN NaN NaN NaN
+- result accuracy 0.28571
+- time elapsed 120.5739
+
+- learning 414
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28502 NaN NaN NaN NaN NaN
+- result accuracy 0.28502
+- time elapsed 120.8326
+
+- learning 415
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28675 NaN NaN NaN NaN NaN
+- result accuracy 0.28675
+- time elapsed 121.0938
+
+- learning 416
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28606 NaN NaN NaN NaN NaN
+- result accuracy 0.28606
+- time elapsed 121.3515
+
+- learning 417
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28537 NaN NaN NaN NaN NaN
+- result accuracy 0.28537
+- time elapsed 121.6093
+
+- learning 418
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28708 NaN NaN NaN NaN NaN
+- result accuracy 0.28708
+- time elapsed 121.8681
+
+- learning 419
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28878 NaN NaN NaN NaN NaN
+- result accuracy 0.28878
+- time elapsed 122.1519
+
+- learning 420
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29048 NaN NaN NaN NaN NaN
+- result accuracy 0.29048
+- time elapsed 122.4102
+
+- learning 421
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28979 NaN NaN NaN NaN NaN
+- result accuracy 0.28979
+- time elapsed 122.6742
+
+- learning 422
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2891 NaN NaN NaN NaN NaN
+- result accuracy 0.2891
+- time elapsed 122.9441
+
+- learning 423
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28842 NaN NaN NaN NaN NaN
+- result accuracy 0.28842
+- time elapsed 123.2028
+
+- learning 424
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28774 NaN NaN NaN NaN NaN
+- result accuracy 0.28774
+- time elapsed 123.4622
+
+- learning 425
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28706 NaN NaN NaN NaN NaN
+- result accuracy 0.28706
+- time elapsed 123.7246
+
+- learning 426
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28873 NaN NaN NaN NaN NaN
+- result accuracy 0.28873
+- time elapsed 123.9846
+
+- learning 427
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2904 NaN NaN NaN NaN NaN
+- result accuracy 0.2904
+- time elapsed 124.2488
+
+- learning 428
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28972 NaN NaN NaN NaN NaN
+- result accuracy 0.28972
+- time elapsed 124.5104
+
+- learning 429
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28904 NaN NaN NaN NaN NaN
+- result accuracy 0.28904
+- time elapsed 124.7714
+
+- learning 430
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2907 NaN NaN NaN NaN NaN
+- result accuracy 0.2907
+- time elapsed 125.0337
+
+- learning 431
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29002 NaN NaN NaN NaN NaN
+- result accuracy 0.29002
+- time elapsed 125.2949
+
+- learning 432
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29167 NaN NaN NaN NaN NaN
+- result accuracy 0.29167
+- time elapsed 125.5546
+
+- learning 433
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29099 NaN NaN NaN NaN NaN
+- result accuracy 0.29099
+- time elapsed 125.8107
+
+- learning 434
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29032 NaN NaN NaN NaN NaN
+- result accuracy 0.29032
+- time elapsed 126.0677
+
+- learning 435
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28966 NaN NaN NaN NaN NaN
+- result accuracy 0.28966
+- time elapsed 126.3293
+
+- learning 436
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28899 NaN NaN NaN NaN NaN
+- result accuracy 0.28899
+- time elapsed 126.5852
+
+- learning 437
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28833 NaN NaN NaN NaN NaN
+- result accuracy 0.28833
+- time elapsed 126.8403
+
+- learning 438
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28995 NaN NaN NaN NaN NaN
+- result accuracy 0.28995
+- time elapsed 127.0935
+
+- learning 439
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29157 NaN NaN NaN NaN NaN
+- result accuracy 0.29157
+- time elapsed 127.3523
+
+- learning 440
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29091 NaN NaN NaN NaN NaN
+- result accuracy 0.29091
+- time elapsed 127.6169
+
+- learning 441
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29252 NaN NaN NaN NaN NaN
+- result accuracy 0.29252
+- time elapsed 127.8852
+
+- learning 442
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29412 NaN NaN NaN NaN NaN
+- result accuracy 0.29412
+- time elapsed 128.1627
+
+- learning 443
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29345 NaN NaN NaN NaN NaN
+- result accuracy 0.29345
+- time elapsed 128.4321
+
+- learning 444
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29505 NaN NaN NaN NaN NaN
+- result accuracy 0.29505
+- time elapsed 128.6973
+
+- learning 445
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29438 NaN NaN NaN NaN NaN
+- result accuracy 0.29438
+- time elapsed 128.9607
+
+- learning 446
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29372 NaN NaN NaN NaN NaN
+- result accuracy 0.29372
+- time elapsed 129.2252
+
+- learning 447
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29306 NaN NaN NaN NaN NaN
+- result accuracy 0.29306
+- time elapsed 129.4932
+
+- learning 448
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29241 NaN NaN NaN NaN NaN
+- result accuracy 0.29241
+- time elapsed 129.7577
+
+- learning 449
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29176 NaN NaN NaN NaN NaN
+- result accuracy 0.29176
+- time elapsed 130.0161
+
+- learning 450
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29111 NaN NaN NaN NaN NaN
+- result accuracy 0.29111
+- time elapsed 130.2752
+
+- learning 451
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29047 NaN NaN NaN NaN NaN
+- result accuracy 0.29047
+- time elapsed 130.535
+
+- learning 452
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28982 NaN NaN NaN NaN NaN
+- result accuracy 0.28982
+- time elapsed 130.7913
+
+- learning 453
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28918 NaN NaN NaN NaN NaN
+- result accuracy 0.28918
+- time elapsed 131.0471
+
+- learning 454
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28855 NaN NaN NaN NaN NaN
+- result accuracy 0.28855
+- time elapsed 131.3163
+
+- learning 455
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29011 NaN NaN NaN NaN NaN
+- result accuracy 0.29011
+- time elapsed 131.5848
+
+- learning 456
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28947 NaN NaN NaN NaN NaN
+- result accuracy 0.28947
+- time elapsed 131.8489
+
+- learning 457
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28884 NaN NaN NaN NaN NaN
+- result accuracy 0.28884
+- time elapsed 132.1162
+
+- learning 458
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29039 NaN NaN NaN NaN NaN
+- result accuracy 0.29039
+- time elapsed 132.372
+
+- learning 459
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28976 NaN NaN NaN NaN NaN
+- result accuracy 0.28976
+- time elapsed 132.6284
+
+- learning 460
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2913 NaN NaN NaN NaN NaN
+- result accuracy 0.2913
+- time elapsed 132.8859
+
+- learning 461
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29284 NaN NaN NaN NaN NaN
+- result accuracy 0.29284
+- time elapsed 133.153
+
+- learning 462
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29437 NaN NaN NaN NaN NaN
+- result accuracy 0.29437
+- time elapsed 133.4197
+
+- learning 463
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2959 NaN NaN NaN NaN NaN
+- result accuracy 0.2959
+- time elapsed 133.6847
+
+- learning 464
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29526 NaN NaN NaN NaN NaN
+- result accuracy 0.29526
+- time elapsed 133.9494
+
+- learning 465
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29462 NaN NaN NaN NaN NaN
+- result accuracy 0.29462
+- time elapsed 134.2143
+
+- learning 466
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29399 NaN NaN NaN NaN NaN
+- result accuracy 0.29399
+- time elapsed 134.4778
+
+- learning 467
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29336 NaN NaN NaN NaN NaN
+- result accuracy 0.29336
+- time elapsed 134.743
+
+- learning 468
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29274 NaN NaN NaN NaN NaN
+- result accuracy 0.29274
+- time elapsed 135.0048
+
+- learning 469
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29424 NaN NaN NaN NaN NaN
+- result accuracy 0.29424
+- time elapsed 135.2678
+
+- learning 470
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29362 NaN NaN NaN NaN NaN
+- result accuracy 0.29362
+- time elapsed 135.5255
+
+- learning 471
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29299 NaN NaN NaN NaN NaN
+- result accuracy 0.29299
+- time elapsed 135.782
+
+- learning 472
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29237 NaN NaN NaN NaN NaN
+- result accuracy 0.29237
+- time elapsed 136.037
+
+- learning 473
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29175 NaN NaN NaN NaN NaN
+- result accuracy 0.29175
+- time elapsed 136.2976
+
+- learning 474
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29325 NaN NaN NaN NaN NaN
+- result accuracy 0.29325
+- time elapsed 136.5623
+
+- learning 475
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29263 NaN NaN NaN NaN NaN
+- result accuracy 0.29263
+- time elapsed 136.8299
+
+- learning 476
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29202 NaN NaN NaN NaN NaN
+- result accuracy 0.29202
+- time elapsed 137.0959
+
+- learning 477
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2914 NaN NaN NaN NaN NaN
+- result accuracy 0.2914
+- time elapsed 137.3603
+
+- learning 478
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29079 NaN NaN NaN NaN NaN
+- result accuracy 0.29079
+- time elapsed 137.6172
+
+- learning 479
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29019 NaN NaN NaN NaN NaN
+- result accuracy 0.29019
+- time elapsed 137.8789
+
+- learning 480
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28958 NaN NaN NaN NaN NaN
+- result accuracy 0.28958
+- time elapsed 138.1342
+
+- learning 481
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28898 NaN NaN NaN NaN NaN
+- result accuracy 0.28898
+- time elapsed 138.3924
+
+- learning 482
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28838 NaN NaN NaN NaN NaN
+- result accuracy 0.28838
+- time elapsed 138.6542
+
+- learning 483
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28778 NaN NaN NaN NaN NaN
+- result accuracy 0.28778
+- time elapsed 138.9119
+
+- learning 484
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28719 NaN NaN NaN NaN NaN
+- result accuracy 0.28719
+- time elapsed 139.1693
+
+- learning 485
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2866 NaN NaN NaN NaN NaN
+- result accuracy 0.2866
+- time elapsed 139.4249
+
+- learning 486
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28601 NaN NaN NaN NaN NaN
+- result accuracy 0.28601
+- time elapsed 139.6803
+
+- learning 487
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28747 NaN NaN NaN NaN NaN
+- result accuracy 0.28747
+- time elapsed 139.9435
+
+- learning 488
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28893 NaN NaN NaN NaN NaN
+- result accuracy 0.28893
+- time elapsed 140.2049
+
+- learning 489
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28834 NaN NaN NaN NaN NaN
+- result accuracy 0.28834
+- time elapsed 140.4607
+
+- learning 490
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28776 NaN NaN NaN NaN NaN
+- result accuracy 0.28776
+- time elapsed 140.7194
+
+- learning 491
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28921 NaN NaN NaN NaN NaN
+- result accuracy 0.28921
+- time elapsed 140.9687
+
+- learning 492
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29065 NaN NaN NaN NaN NaN
+- result accuracy 0.29065
+- time elapsed 141.2259
+
+- learning 493
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29006 NaN NaN NaN NaN NaN
+- result accuracy 0.29006
+- time elapsed 141.4897
+
+- learning 494
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28947 NaN NaN NaN NaN NaN
+- result accuracy 0.28947
+- time elapsed 141.7527
+
+- learning 495
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29091 NaN NaN NaN NaN NaN
+- result accuracy 0.29091
+- time elapsed 142.0213
+
+- learning 496
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29234 NaN NaN NaN NaN NaN
+- result accuracy 0.29234
+- time elapsed 142.3007
+
+- learning 497
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29376 NaN NaN NaN NaN NaN
+- result accuracy 0.29376
+- time elapsed 142.5954
+
+- learning 498
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29317 NaN NaN NaN NaN NaN
+- result accuracy 0.29317
+- time elapsed 142.8571
+
+- learning 499
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29259 NaN NaN NaN NaN NaN
+- result accuracy 0.29259
+- time elapsed 143.1161
+
+- learning 500
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.292 NaN NaN NaN NaN NaN
+- result accuracy 0.292
+- time elapsed 143.3736
+
+- learning 501
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29142 NaN NaN NaN NaN NaN
+- result accuracy 0.29142
+- time elapsed 143.6379
+
+- learning 502
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29084 NaN NaN NaN NaN NaN
+- result accuracy 0.29084
+- time elapsed 143.9043
+
+- learning 503
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29026 NaN NaN NaN NaN NaN
+- result accuracy 0.29026
+- time elapsed 144.1707
+
+- learning 504
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28968 NaN NaN NaN NaN NaN
+- result accuracy 0.28968
+- time elapsed 144.4296
+
+- learning 505
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29109 NaN NaN NaN NaN NaN
+- result accuracy 0.29109
+- time elapsed 144.6883
+
+- learning 506
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29249 NaN NaN NaN NaN NaN
+- result accuracy 0.29249
+- time elapsed 144.9464
+
+- learning 507
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29191 NaN NaN NaN NaN NaN
+- result accuracy 0.29191
+- time elapsed 145.2045
+
+- learning 508
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29134 NaN NaN NaN NaN NaN
+- result accuracy 0.29134
+- time elapsed 145.4638
+
+- learning 509
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29077 NaN NaN NaN NaN NaN
+- result accuracy 0.29077
+- time elapsed 145.7337
+
+- learning 510
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2902 NaN NaN NaN NaN NaN
+- result accuracy 0.2902
+- time elapsed 146.0012
+
+- learning 511
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28963 NaN NaN NaN NaN NaN
+- result accuracy 0.28963
+- time elapsed 146.2699
+
+- learning 512
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28906 NaN NaN NaN NaN NaN
+- result accuracy 0.28906
+- time elapsed 146.5465
+
+- learning 513
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2885 NaN NaN NaN NaN NaN
+- result accuracy 0.2885
+- time elapsed 146.8063
+
+- learning 514
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28988 NaN NaN NaN NaN NaN
+- result accuracy 0.28988
+- time elapsed 147.0713
+
+- learning 515
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28932 NaN NaN NaN NaN NaN
+- result accuracy 0.28932
+- time elapsed 147.3347
+
+- learning 516
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28876 NaN NaN NaN NaN NaN
+- result accuracy 0.28876
+- time elapsed 147.5957
+
+- learning 517
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2882 NaN NaN NaN NaN NaN
+- result accuracy 0.2882
+- time elapsed 147.8578
+
+- learning 518
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28764 NaN NaN NaN NaN NaN
+- result accuracy 0.28764
+- time elapsed 148.118
+
+- learning 519
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28902 NaN NaN NaN NaN NaN
+- result accuracy 0.28902
+- time elapsed 148.3842
+
+- learning 520
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29038 NaN NaN NaN NaN NaN
+- result accuracy 0.29038
+- time elapsed 148.6422
+
+- learning 521
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28983 NaN NaN NaN NaN NaN
+- result accuracy 0.28983
+- time elapsed 148.9051
+
+- learning 522
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28927 NaN NaN NaN NaN NaN
+- result accuracy 0.28927
+- time elapsed 149.1662
+
+- learning 523
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28872 NaN NaN NaN NaN NaN
+- result accuracy 0.28872
+- time elapsed 149.4258
+
+- learning 524
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29008 NaN NaN NaN NaN NaN
+- result accuracy 0.29008
+- time elapsed 149.6843
+
+- learning 525
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28952 NaN NaN NaN NaN NaN
+- result accuracy 0.28952
+- time elapsed 149.9469
+
+- learning 526
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28897 NaN NaN NaN NaN NaN
+- result accuracy 0.28897
+- time elapsed 150.2072
+
+- learning 527
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28843 NaN NaN NaN NaN NaN
+- result accuracy 0.28843
+- time elapsed 150.4675
+
+- learning 528
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28977 NaN NaN NaN NaN NaN
+- result accuracy 0.28977
+- time elapsed 150.7274
+
+- learning 529
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28922 NaN NaN NaN NaN NaN
+- result accuracy 0.28922
+- time elapsed 150.9847
+
+- learning 530
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28868 NaN NaN NaN NaN NaN
+- result accuracy 0.28868
+- time elapsed 151.2816
+
+- learning 531
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28814 NaN NaN NaN NaN NaN
+- result accuracy 0.28814
+- time elapsed 151.5763
+
+- learning 532
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28759 NaN NaN NaN NaN NaN
+- result accuracy 0.28759
+- time elapsed 151.8692
+
+- learning 533
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28705 NaN NaN NaN NaN NaN
+- result accuracy 0.28705
+- time elapsed 152.1618
+
+- learning 534
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28652 NaN NaN NaN NaN NaN
+- result accuracy 0.28652
+- time elapsed 152.4581
+
+- learning 535
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28785 NaN NaN NaN NaN NaN
+- result accuracy 0.28785
+- time elapsed 152.7489
+
+- learning 536
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28731 NaN NaN NaN NaN NaN
+- result accuracy 0.28731
+- time elapsed 153.0448
+
+- learning 537
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28864 NaN NaN NaN NaN NaN
+- result accuracy 0.28864
+- time elapsed 153.3226
+
+- learning 538
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2881 NaN NaN NaN NaN NaN
+- result accuracy 0.2881
+- time elapsed 153.5875
+
+- learning 539
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28942 NaN NaN NaN NaN NaN
+- result accuracy 0.28942
+- time elapsed 153.855
+
+- learning 540
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28889 NaN NaN NaN NaN NaN
+- result accuracy 0.28889
+- time elapsed 154.117
+
+- learning 541
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28835 NaN NaN NaN NaN NaN
+- result accuracy 0.28835
+- time elapsed 154.3776
+
+- learning 542
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28782 NaN NaN NaN NaN NaN
+- result accuracy 0.28782
+- time elapsed 154.6474
+
+- learning 543
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28729 NaN NaN NaN NaN NaN
+- result accuracy 0.28729
+- time elapsed 154.919
+
+- learning 544
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28676 NaN NaN NaN NaN NaN
+- result accuracy 0.28676
+- time elapsed 155.2113
+
+- learning 545
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28807 NaN NaN NaN NaN NaN
+- result accuracy 0.28807
+- time elapsed 155.4753
+
+- learning 546
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.28938 NaN NaN NaN NaN NaN
+- result accuracy 0.28938
+- time elapsed 155.7327
+
+- learning 547
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29068 NaN NaN NaN NaN NaN
+- result accuracy 0.29068
+- time elapsed 155.9886
+
+- learning 548
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29015 NaN NaN NaN NaN NaN
+- result accuracy 0.29015
+- time elapsed 156.2834
+
+- learning 549
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28962 NaN NaN NaN NaN NaN
+- result accuracy 0.28962
+- time elapsed 156.5425
+
+- learning 550
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28909 NaN NaN NaN NaN NaN
+- result accuracy 0.28909
+- time elapsed 156.8007
+
+- learning 551
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29038 NaN NaN NaN NaN NaN
+- result accuracy 0.29038
+- time elapsed 157.0609
+
+- learning 552
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29167 NaN NaN NaN NaN NaN
+- result accuracy 0.29167
+- time elapsed 157.3166
+
+- learning 553
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29114 NaN NaN NaN NaN NaN
+- result accuracy 0.29114
+- time elapsed 157.5809
+
+- learning 554
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29061 NaN NaN NaN NaN NaN
+- result accuracy 0.29061
+- time elapsed 157.8409
+
+- learning 555
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29009 NaN NaN NaN NaN NaN
+- result accuracy 0.29009
+- time elapsed 158.0971
+
+- learning 556
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.28957 NaN NaN NaN NaN NaN
+- result accuracy 0.28957
+- time elapsed 158.3468
+
+- learning 557
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29084 NaN NaN NaN NaN NaN
+- result accuracy 0.29084
+- time elapsed 158.6036
+
+- learning 558
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29211 NaN NaN NaN NaN NaN
+- result accuracy 0.29211
+- time elapsed 158.8636
+
+- learning 559
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29159 NaN NaN NaN NaN NaN
+- result accuracy 0.29159
+- time elapsed 159.1254
+
+- learning 560
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29286 NaN NaN NaN NaN NaN
+- result accuracy 0.29286
+- time elapsed 159.3826
+
+- learning 561
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29412 NaN NaN NaN NaN NaN
+- result accuracy 0.29412
+- time elapsed 159.6416
+
+- learning 562
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29537 NaN NaN NaN NaN NaN
+- result accuracy 0.29537
+- time elapsed 159.9004
+
+- learning 563
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29485 NaN NaN NaN NaN NaN
+- result accuracy 0.29485
+- time elapsed 160.161
+
+- learning 564
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29433 NaN NaN NaN NaN NaN
+- result accuracy 0.29433
+- time elapsed 160.4199
+
+- learning 565
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29381 NaN NaN NaN NaN NaN
+- result accuracy 0.29381
+- time elapsed 160.6781
+
+- learning 566
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29329 NaN NaN NaN NaN NaN
+- result accuracy 0.29329
+- time elapsed 160.9358
+
+- learning 567
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29277 NaN NaN NaN NaN NaN
+- result accuracy 0.29277
+- time elapsed 161.1936
+
+- learning 568
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29225 NaN NaN NaN NaN NaN
+- result accuracy 0.29225
+- time elapsed 161.457
+
+- learning 569
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29174 NaN NaN NaN NaN NaN
+- result accuracy 0.29174
+- time elapsed 161.7231
+
+- learning 570
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29298 NaN NaN NaN NaN NaN
+- result accuracy 0.29298
+- time elapsed 161.9891
+
+- learning 571
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29422 NaN NaN NaN NaN NaN
+- result accuracy 0.29422
+- time elapsed 162.2507
+
+- learning 572
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29545 NaN NaN NaN NaN NaN
+- result accuracy 0.29545
+- time elapsed 162.5111
+
+- learning 573
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29494 NaN NaN NaN NaN NaN
+- result accuracy 0.29494
+- time elapsed 162.7756
+
+- learning 574
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29617 NaN NaN NaN NaN NaN
+- result accuracy 0.29617
+- time elapsed 163.0384
+
+- learning 575
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29565 NaN NaN NaN NaN NaN
+- result accuracy 0.29565
+- time elapsed 163.3093
+
+- learning 576
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29514 NaN NaN NaN NaN NaN
+- result accuracy 0.29514
+- time elapsed 163.5798
+
+- learning 577
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29463 NaN NaN NaN NaN NaN
+- result accuracy 0.29463
+- time elapsed 163.8427
+
+- learning 578
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29412 NaN NaN NaN NaN NaN
+- result accuracy 0.29412
+- time elapsed 164.0985
+
+- learning 579
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29534 NaN NaN NaN NaN NaN
+- result accuracy 0.29534
+- time elapsed 164.353
+
+- learning 580
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29655 NaN NaN NaN NaN NaN
+- result accuracy 0.29655
+- time elapsed 164.6098
+
+- learning 581
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29604 NaN NaN NaN NaN NaN
+- result accuracy 0.29604
+- time elapsed 164.8708
+
+- learning 582
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29725 NaN NaN NaN NaN NaN
+- result accuracy 0.29725
+- time elapsed 165.1293
+
+- learning 583
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29674 NaN NaN NaN NaN NaN
+- result accuracy 0.29674
+- time elapsed 165.3924
+
+- learning 584
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29623 NaN NaN NaN NaN NaN
+- result accuracy 0.29623
+- time elapsed 165.661
+
+- learning 585
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29744 NaN NaN NaN NaN NaN
+- result accuracy 0.29744
+- time elapsed 165.9273
+
+- learning 586
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29863 NaN NaN NaN NaN NaN
+- result accuracy 0.29863
+- time elapsed 166.1883
+
+- learning 587
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29813 NaN NaN NaN NaN NaN
+- result accuracy 0.29813
+- time elapsed 166.4528
+
+- learning 588
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29762 NaN NaN NaN NaN NaN
+- result accuracy 0.29762
+- time elapsed 166.7179
+
+- learning 589
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29711 NaN NaN NaN NaN NaN
+- result accuracy 0.29711
+- time elapsed 166.9796
+
+- learning 590
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29661 NaN NaN NaN NaN NaN
+- result accuracy 0.29661
+- time elapsed 167.2293
+
+- learning 591
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29611 NaN NaN NaN NaN NaN
+- result accuracy 0.29611
+- time elapsed 167.4811
+
+- learning 592
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29561 NaN NaN NaN NaN NaN
+- result accuracy 0.29561
+- time elapsed 167.7373
+
+- learning 593
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2968 NaN NaN NaN NaN NaN
+- result accuracy 0.2968
+- time elapsed 167.9921
+
+- learning 594
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2963 NaN NaN NaN NaN NaN
+- result accuracy 0.2963
+- time elapsed 168.243
+
+- learning 595
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2958 NaN NaN NaN NaN NaN
+- result accuracy 0.2958
+- time elapsed 168.498
+
+- learning 596
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2953 NaN NaN NaN NaN NaN
+- result accuracy 0.2953
+- time elapsed 168.7538
+
+- learning 597
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29481 NaN NaN NaN NaN NaN
+- result accuracy 0.29481
+- time elapsed 169.0125
+
+- learning 598
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29431 NaN NaN NaN NaN NaN
+- result accuracy 0.29431
+- time elapsed 169.2716
+
+- learning 599
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29382 NaN NaN NaN NaN NaN
+- result accuracy 0.29382
+- time elapsed 169.5297
+
+- learning 600
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29333 NaN NaN NaN NaN NaN
+- result accuracy 0.29333
+- time elapsed 169.7914
+
+- learning 601
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29285 NaN NaN NaN NaN NaN
+- result accuracy 0.29285
+- time elapsed 174.0047
+
+- learning 602
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29402 NaN NaN NaN NaN NaN
+- result accuracy 0.29402
+- time elapsed 174.2571
+
+- learning 603
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29353 NaN NaN NaN NaN NaN
+- result accuracy 0.29353
+- time elapsed 174.5109
+
+- learning 604
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29305 NaN NaN NaN NaN NaN
+- result accuracy 0.29305
+- time elapsed 174.8104
+
+- learning 605
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29256 NaN NaN NaN NaN NaN
+- result accuracy 0.29256
+- time elapsed 175.0717
+
+- learning 606
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29208 NaN NaN NaN NaN NaN
+- result accuracy 0.29208
+- time elapsed 175.3453
+
+- learning 607
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2916 NaN NaN NaN NaN NaN
+- result accuracy 0.2916
+- time elapsed 175.6725
+
+- learning 608
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29276 NaN NaN NaN NaN NaN
+- result accuracy 0.29276
+- time elapsed 175.9724
+
+- learning 609
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29392 NaN NaN NaN NaN NaN
+- result accuracy 0.29392
+- time elapsed 176.225
+
+- learning 610
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29344 NaN NaN NaN NaN NaN
+- result accuracy 0.29344
+- time elapsed 176.4779
+
+- learning 611
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29296 NaN NaN NaN NaN NaN
+- result accuracy 0.29296
+- time elapsed 176.7624
+
+- learning 612
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29248 NaN NaN NaN NaN NaN
+- result accuracy 0.29248
+- time elapsed 177.0555
+
+- learning 613
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29364 NaN NaN NaN NaN NaN
+- result accuracy 0.29364
+- time elapsed 177.3123
+
+- learning 614
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29479 NaN NaN NaN NaN NaN
+- result accuracy 0.29479
+- time elapsed 177.5679
+
+- learning 615
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29593 NaN NaN NaN NaN NaN
+- result accuracy 0.29593
+- time elapsed 177.8252
+
+- learning 616
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29545 NaN NaN NaN NaN NaN
+- result accuracy 0.29545
+- time elapsed 178.0821
+
+- learning 617
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29498 NaN NaN NaN NaN NaN
+- result accuracy 0.29498
+- time elapsed 178.3385
+
+- learning 618
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2945 NaN NaN NaN NaN NaN
+- result accuracy 0.2945
+- time elapsed 178.623
+
+- learning 619
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29402 NaN NaN NaN NaN NaN
+- result accuracy 0.29402
+- time elapsed 178.9162
+
+- learning 620
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29516 NaN NaN NaN NaN NaN
+- result accuracy 0.29516
+- time elapsed 179.1826
+
+- learning 621
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29469 NaN NaN NaN NaN NaN
+- result accuracy 0.29469
+- time elapsed 179.4451
+
+- learning 622
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29421 NaN NaN NaN NaN NaN
+- result accuracy 0.29421
+- time elapsed 179.7022
+
+- learning 623
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29374 NaN NaN NaN NaN NaN
+- result accuracy 0.29374
+- time elapsed 179.9624
+
+- learning 624
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29487 NaN NaN NaN NaN NaN
+- result accuracy 0.29487
+- time elapsed 180.2205
+
+- learning 625
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2944 NaN NaN NaN NaN NaN
+- result accuracy 0.2944
+- time elapsed 180.474
+
+- learning 626
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29393 NaN NaN NaN NaN NaN
+- result accuracy 0.29393
+- time elapsed 180.7341
+
+- learning 627
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29346 NaN NaN NaN NaN NaN
+- result accuracy 0.29346
+- time elapsed 180.9923
+
+- learning 628
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29299 NaN NaN NaN NaN NaN
+- result accuracy 0.29299
+- time elapsed 181.2476
+
+- learning 629
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29412 NaN NaN NaN NaN NaN
+- result accuracy 0.29412
+- time elapsed 181.5014
+
+- learning 630
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29365 NaN NaN NaN NaN NaN
+- result accuracy 0.29365
+- time elapsed 181.7641
+
+- learning 631
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29319 NaN NaN NaN NaN NaN
+- result accuracy 0.29319
+- time elapsed 182.0362
+
+- learning 632
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29272 NaN NaN NaN NaN NaN
+- result accuracy 0.29272
+- time elapsed 182.2924
+
+- learning 633
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29384 NaN NaN NaN NaN NaN
+- result accuracy 0.29384
+- time elapsed 182.552
+
+- learning 634
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29495 NaN NaN NaN NaN NaN
+- result accuracy 0.29495
+- time elapsed 182.8107
+
+- learning 635
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29449 NaN NaN NaN NaN NaN
+- result accuracy 0.29449
+- time elapsed 183.0708
+
+- learning 636
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29403 NaN NaN NaN NaN NaN
+- result accuracy 0.29403
+- time elapsed 183.3292
+
+- learning 637
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29356 NaN NaN NaN NaN NaN
+- result accuracy 0.29356
+- time elapsed 183.5832
+
+- learning 638
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29467 NaN NaN NaN NaN NaN
+- result accuracy 0.29467
+- time elapsed 183.8443
+
+- learning 639
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29421 NaN NaN NaN NaN NaN
+- result accuracy 0.29421
+- time elapsed 184.1005
+
+- learning 640
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29375 NaN NaN NaN NaN NaN
+- result accuracy 0.29375
+- time elapsed 184.3637
+
+- learning 641
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29329 NaN NaN NaN NaN NaN
+- result accuracy 0.29329
+- time elapsed 184.6419
+
+- learning 642
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29283 NaN NaN NaN NaN NaN
+- result accuracy 0.29283
+- time elapsed 184.9046
+
+- learning 643
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29393 NaN NaN NaN NaN NaN
+- result accuracy 0.29393
+- time elapsed 185.165
+
+- learning 644
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29348 NaN NaN NaN NaN NaN
+- result accuracy 0.29348
+- time elapsed 185.4264
+
+- learning 645
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29302 NaN NaN NaN NaN NaN
+- result accuracy 0.29302
+- time elapsed 185.6891
+
+- learning 646
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29412 NaN NaN NaN NaN NaN
+- result accuracy 0.29412
+- time elapsed 185.9882
+
+- learning 647
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29521 NaN NaN NaN NaN NaN
+- result accuracy 0.29521
+- time elapsed 186.2922
+
+- learning 648
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2963 NaN NaN NaN NaN NaN
+- result accuracy 0.2963
+- time elapsed 186.5476
+
+- learning 649
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29584 NaN NaN NaN NaN NaN
+- result accuracy 0.29584
+- time elapsed 186.8111
+
+- learning 650
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29538 NaN NaN NaN NaN NaN
+- result accuracy 0.29538
+- time elapsed 187.0769
+
+- learning 651
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29493 NaN NaN NaN NaN NaN
+- result accuracy 0.29493
+- time elapsed 187.337
+
+- learning 652
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29601 NaN NaN NaN NaN NaN
+- result accuracy 0.29601
+- time elapsed 187.5927
+
+- learning 653
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29556 NaN NaN NaN NaN NaN
+- result accuracy 0.29556
+- time elapsed 187.846
+
+- learning 654
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29511 NaN NaN NaN NaN NaN
+- result accuracy 0.29511
+- time elapsed 188.0993
+
+- learning 655
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29618 NaN NaN NaN NaN NaN
+- result accuracy 0.29618
+- time elapsed 188.3514
+
+- learning 656
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29573 NaN NaN NaN NaN NaN
+- result accuracy 0.29573
+- time elapsed 188.6048
+
+- learning 657
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29528 NaN NaN NaN NaN NaN
+- result accuracy 0.29528
+- time elapsed 188.8661
+
+- learning 658
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29483 NaN NaN NaN NaN NaN
+- result accuracy 0.29483
+- time elapsed 189.1243
+
+- learning 659
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.2959 NaN NaN NaN NaN NaN
+- result accuracy 0.2959
+- time elapsed 189.383
+
+- learning 660
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29697 NaN NaN NaN NaN NaN
+- result accuracy 0.29697
+- time elapsed 189.647
+
+- learning 661
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29803 NaN NaN NaN NaN NaN
+- result accuracy 0.29803
+- time elapsed 189.9151
+
+- learning 662
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.29909 NaN NaN NaN NaN NaN
+- result accuracy 0.29909
+- time elapsed 190.1846
+
+- learning 663
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30015 NaN NaN NaN NaN NaN
+- result accuracy 0.30015
+- time elapsed 190.45
+
+- learning 664
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.2997 NaN NaN NaN NaN NaN
+- result accuracy 0.2997
+- time elapsed 190.7177
+
+- learning 665
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.29925 NaN NaN NaN NaN NaN
+- result accuracy 0.29925
+- time elapsed 190.9849
+
+- learning 666
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3003 NaN NaN NaN NaN NaN
+- result accuracy 0.3003
+- time elapsed 191.2525
+
+- learning 667
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30135 NaN NaN NaN NaN NaN
+- result accuracy 0.30135
+- time elapsed 191.5238
+
+- learning 668
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3024 NaN NaN NaN NaN NaN
+- result accuracy 0.3024
+- time elapsed 191.7949
+
+- learning 669
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30344 NaN NaN NaN NaN NaN
+- result accuracy 0.30344
+- time elapsed 192.063
+
+- learning 670
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30448 NaN NaN NaN NaN NaN
+- result accuracy 0.30448
+- time elapsed 192.3274
+
+- learning 671
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30551 NaN NaN NaN NaN NaN
+- result accuracy 0.30551
+- time elapsed 192.5989
+
+- learning 672
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30506 NaN NaN NaN NaN NaN
+- result accuracy 0.30506
+- time elapsed 192.8909
+
+- learning 673
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30609 NaN NaN NaN NaN NaN
+- result accuracy 0.30609
+- time elapsed 193.1869
+
+- learning 674
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30712 NaN NaN NaN NaN NaN
+- result accuracy 0.30712
+- time elapsed 193.4563
+
+- learning 675
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30667 NaN NaN NaN NaN NaN
+- result accuracy 0.30667
+- time elapsed 193.7397
+
+- learning 676
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30621 NaN NaN NaN NaN NaN
+- result accuracy 0.30621
+- time elapsed 194.0038
+
+- learning 677
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30724 NaN NaN NaN NaN NaN
+- result accuracy 0.30724
+- time elapsed 194.2659
+
+- learning 678
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30678 NaN NaN NaN NaN NaN
+- result accuracy 0.30678
+- time elapsed 194.5377
+
+- learning 679
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30633 NaN NaN NaN NaN NaN
+- result accuracy 0.30633
+- time elapsed 194.8006
+
+- learning 680
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30588 NaN NaN NaN NaN NaN
+- result accuracy 0.30588
+- time elapsed 195.059
+
+- learning 681
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30543 NaN NaN NaN NaN NaN
+- result accuracy 0.30543
+- time elapsed 195.3171
+
+- learning 682
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30499 NaN NaN NaN NaN NaN
+- result accuracy 0.30499
+- time elapsed 195.5842
+
+- learning 683
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30454 NaN NaN NaN NaN NaN
+- result accuracy 0.30454
+- time elapsed 195.8497
+
+- learning 684
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30409 NaN NaN NaN NaN NaN
+- result accuracy 0.30409
+- time elapsed 196.1184
+
+- learning 685
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30365 NaN NaN NaN NaN NaN
+- result accuracy 0.30365
+- time elapsed 196.3853
+
+- learning 686
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30321 NaN NaN NaN NaN NaN
+- result accuracy 0.30321
+- time elapsed 196.6523
+
+- learning 687
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30422 NaN NaN NaN NaN NaN
+- result accuracy 0.30422
+- time elapsed 196.9217
+
+- learning 688
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30378 NaN NaN NaN NaN NaN
+- result accuracy 0.30378
+- time elapsed 197.1876
+
+- learning 689
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30334 NaN NaN NaN NaN NaN
+- result accuracy 0.30334
+- time elapsed 197.4533
+
+- learning 690
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3029 NaN NaN NaN NaN NaN
+- result accuracy 0.3029
+- time elapsed 197.7213
+
+- learning 691
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30391 NaN NaN NaN NaN NaN
+- result accuracy 0.30391
+- time elapsed 197.9855
+
+- learning 692
+- embedding 1 0
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30347 NaN NaN NaN NaN NaN
+- result accuracy 0.30347
+- time elapsed 198.2535
+
+- learning 693
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30447 NaN NaN NaN NaN NaN
+- result accuracy 0.30447
+- time elapsed 198.5156
+
+- learning 694
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30548 NaN NaN NaN NaN NaN
+- result accuracy 0.30548
+- time elapsed 198.7811
+
+- learning 695
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30504 NaN NaN NaN NaN NaN
+- result accuracy 0.30504
+- time elapsed 199.0616
+
+- learning 696
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3046 NaN NaN NaN NaN NaN
+- result accuracy 0.3046
+- time elapsed 199.3639
+
+- learning 697
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30416 NaN NaN NaN NaN NaN
+- result accuracy 0.30416
+- time elapsed 199.6249
+
+- learning 698
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30372 NaN NaN NaN NaN NaN
+- result accuracy 0.30372
+- time elapsed 199.8908
+
+- learning 699
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30329 NaN NaN NaN NaN NaN
+- result accuracy 0.30329
+- time elapsed 200.1526
+
+- learning 700
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30429 NaN NaN NaN NaN NaN
+- result accuracy 0.30429
+- time elapsed 200.4189
+
+- learning 701
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30528 NaN NaN NaN NaN NaN
+- result accuracy 0.30528
+- time elapsed 200.6877
+
+- learning 702
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30484 NaN NaN NaN NaN NaN
+- result accuracy 0.30484
+- time elapsed 200.9556
+
+- learning 703
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30441 NaN NaN NaN NaN NaN
+- result accuracy 0.30441
+- time elapsed 201.2219
+
+- learning 704
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30398 NaN NaN NaN NaN NaN
+- result accuracy 0.30398
+- time elapsed 201.4843
+
+- learning 705
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30355 NaN NaN NaN NaN NaN
+- result accuracy 0.30355
+- time elapsed 201.7506
+
+- learning 706
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30312 NaN NaN NaN NaN NaN
+- result accuracy 0.30312
+- time elapsed 202.0106
+
+- learning 707
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30269 NaN NaN NaN NaN NaN
+- result accuracy 0.30269
+- time elapsed 202.266
+
+- learning 708
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30226 NaN NaN NaN NaN NaN
+- result accuracy 0.30226
+- time elapsed 202.5268
+
+- learning 709
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30324 NaN NaN NaN NaN NaN
+- result accuracy 0.30324
+- time elapsed 202.7852
+
+- learning 710
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30282 NaN NaN NaN NaN NaN
+- result accuracy 0.30282
+- time elapsed 203.0439
+
+- learning 711
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3038 NaN NaN NaN NaN NaN
+- result accuracy 0.3038
+- time elapsed 203.3052
+
+- learning 712
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30337 NaN NaN NaN NaN NaN
+- result accuracy 0.30337
+- time elapsed 203.5701
+
+- learning 713
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30435 NaN NaN NaN NaN NaN
+- result accuracy 0.30435
+- time elapsed 203.8295
+
+- learning 714
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30392 NaN NaN NaN NaN NaN
+- result accuracy 0.30392
+- time elapsed 204.0837
+
+- learning 715
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3035 NaN NaN NaN NaN NaN
+- result accuracy 0.3035
+- time elapsed 204.3408
+
+- learning 716
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30307 NaN NaN NaN NaN NaN
+- result accuracy 0.30307
+- time elapsed 204.5997
+
+- learning 717
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30265 NaN NaN NaN NaN NaN
+- result accuracy 0.30265
+- time elapsed 204.8542
+
+- learning 718
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30362 NaN NaN NaN NaN NaN
+- result accuracy 0.30362
+- time elapsed 205.1129
+
+- learning 719
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3032 NaN NaN NaN NaN NaN
+- result accuracy 0.3032
+- time elapsed 205.3745
+
+- learning 720
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30278 NaN NaN NaN NaN NaN
+- result accuracy 0.30278
+- time elapsed 205.6312
+
+- learning 721
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30236 NaN NaN NaN NaN NaN
+- result accuracy 0.30236
+- time elapsed 205.8966
+
+- learning 722
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30332 NaN NaN NaN NaN NaN
+- result accuracy 0.30332
+- time elapsed 206.1814
+
+- learning 723
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30429 NaN NaN NaN NaN NaN
+- result accuracy 0.30429
+- time elapsed 206.4453
+
+- learning 724
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30387 NaN NaN NaN NaN NaN
+- result accuracy 0.30387
+- time elapsed 206.7084
+
+- learning 725
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30345 NaN NaN NaN NaN NaN
+- result accuracy 0.30345
+- time elapsed 206.9752
+
+- learning 726
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30303 NaN NaN NaN NaN NaN
+- result accuracy 0.30303
+- time elapsed 207.2381
+
+- learning 727
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30261 NaN NaN NaN NaN NaN
+- result accuracy 0.30261
+- time elapsed 207.5011
+
+- learning 728
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3022 NaN NaN NaN NaN NaN
+- result accuracy 0.3022
+- time elapsed 207.7677
+
+- learning 729
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30178 NaN NaN NaN NaN NaN
+- result accuracy 0.30178
+- time elapsed 208.0344
+
+- learning 730
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30274 NaN NaN NaN NaN NaN
+- result accuracy 0.30274
+- time elapsed 208.2901
+
+- learning 731
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30369 NaN NaN NaN NaN NaN
+- result accuracy 0.30369
+- time elapsed 208.5492
+
+- learning 732
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30328 NaN NaN NaN NaN NaN
+- result accuracy 0.30328
+- time elapsed 208.8036
+
+- learning 733
+- embedding 0 1
+- decision 10
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30286 NaN NaN NaN NaN NaN
+- result accuracy 0.30286
+- time elapsed 209.0604
+
+- learning 734
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30381 NaN NaN NaN NaN NaN
+- result accuracy 0.30381
+- time elapsed 209.3187
+
+- learning 735
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3034 NaN NaN NaN NaN NaN
+- result accuracy 0.3034
+- time elapsed 209.5773
+
+- learning 736
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30435 NaN NaN NaN NaN NaN
+- result accuracy 0.30435
+- time elapsed 209.8325
+
+- learning 737
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30529 NaN NaN NaN NaN NaN
+- result accuracy 0.30529
+- time elapsed 210.0918
+
+- learning 738
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30488 NaN NaN NaN NaN NaN
+- result accuracy 0.30488
+- time elapsed 210.355
+
+- learning 739
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30447 NaN NaN NaN NaN NaN
+- result accuracy 0.30447
+- time elapsed 210.6232
+
+- learning 740
+- embedding 0 1
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30405 NaN NaN NaN NaN NaN
+- result accuracy 0.30405
+- time elapsed 210.8903
+
+- learning 741
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30364 NaN NaN NaN NaN NaN
+- result accuracy 0.30364
+- time elapsed 211.1567
+
+- learning 742
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30458 NaN NaN NaN NaN NaN
+- result accuracy 0.30458
+- time elapsed 211.4197
+
+- learning 743
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30417 NaN NaN NaN NaN NaN
+- result accuracy 0.30417
+- time elapsed 211.6754
+
+- learning 744
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30376 NaN NaN NaN NaN NaN
+- result accuracy 0.30376
+- time elapsed 211.9361
+
+- learning 745
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3047 NaN NaN NaN NaN NaN
+- result accuracy 0.3047
+- time elapsed 212.1933
+
+- learning 746
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30563 NaN NaN NaN NaN NaN
+- result accuracy 0.30563
+- time elapsed 212.46
+
+- learning 747
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30522 NaN NaN NaN NaN NaN
+- result accuracy 0.30522
+- time elapsed 212.7258
+
+- learning 748
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30481 NaN NaN NaN NaN NaN
+- result accuracy 0.30481
+- time elapsed 212.993
+
+- learning 749
+- embedding 0 1
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30441 NaN NaN NaN NaN NaN
+- result accuracy 0.30441
+- time elapsed 213.2556
+
+- learning 750
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.304 NaN NaN NaN NaN NaN
+- result accuracy 0.304
+- time elapsed 213.5192
+
+- learning 751
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3036 NaN NaN NaN NaN NaN
+- result accuracy 0.3036
+- time elapsed 213.7768
+
+- learning 752
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30319 NaN NaN NaN NaN NaN
+- result accuracy 0.30319
+- time elapsed 214.0368
+
+- learning 753
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30279 NaN NaN NaN NaN NaN
+- result accuracy 0.30279
+- time elapsed 214.3044
+
+- learning 754
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30371 NaN NaN NaN NaN NaN
+- result accuracy 0.30371
+- time elapsed 214.5739
+
+- learning 755
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30331 NaN NaN NaN NaN NaN
+- result accuracy 0.30331
+- time elapsed 214.8356
+
+- learning 756
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30423 NaN NaN NaN NaN NaN
+- result accuracy 0.30423
+- time elapsed 215.0952
+
+- learning 757
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30515 NaN NaN NaN NaN NaN
+- result accuracy 0.30515
+- time elapsed 215.3499
+
+- learning 758
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30607 NaN NaN NaN NaN NaN
+- result accuracy 0.30607
+- time elapsed 215.6074
+
+- learning 759
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30567 NaN NaN NaN NaN NaN
+- result accuracy 0.30567
+- time elapsed 215.8636
+
+- learning 760
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30526 NaN NaN NaN NaN NaN
+- result accuracy 0.30526
+- time elapsed 216.1185
+
+- learning 761
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30618 NaN NaN NaN NaN NaN
+- result accuracy 0.30618
+- time elapsed 216.3824
+
+- learning 762
+- embedding 1 0
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30577 NaN NaN NaN NaN NaN
+- result accuracy 0.30577
+- time elapsed 216.6395
+
+- learning 763
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30537 NaN NaN NaN NaN NaN
+- result accuracy 0.30537
+- time elapsed 216.8947
+
+- learning 764
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30497 NaN NaN NaN NaN NaN
+- result accuracy 0.30497
+- time elapsed 217.1505
+
+- learning 765
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30458 NaN NaN NaN NaN NaN
+- result accuracy 0.30458
+- time elapsed 217.4186
+
+- learning 766
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30548 NaN NaN NaN NaN NaN
+- result accuracy 0.30548
+- time elapsed 217.6848
+
+- learning 767
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30508 NaN NaN NaN NaN NaN
+- result accuracy 0.30508
+- time elapsed 217.9422
+
+- learning 768
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30599 NaN NaN NaN NaN NaN
+- result accuracy 0.30599
+- time elapsed 218.2015
+
+- learning 769
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30689 NaN NaN NaN NaN NaN
+- result accuracy 0.30689
+- time elapsed 218.461
+
+- learning 770
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30649 NaN NaN NaN NaN NaN
+- result accuracy 0.30649
+- time elapsed 218.7151
+
+- learning 771
+- embedding 1 0
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3061 NaN NaN NaN NaN NaN
+- result accuracy 0.3061
+- time elapsed 218.983
+
+- learning 772
+- embedding 0 1
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3057 NaN NaN NaN NaN NaN
+- result accuracy 0.3057
+- time elapsed 219.2479
+
+- learning 773
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3066 NaN NaN NaN NaN NaN
+- result accuracy 0.3066
+- time elapsed 219.5203
+
+- learning 774
+- embedding 1 0
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30749 NaN NaN NaN NaN NaN
+- result accuracy 0.30749
+- time elapsed 219.8008
+
+- learning 775
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3071 NaN NaN NaN NaN NaN
+- result accuracy 0.3071
+- time elapsed 220.0798
+
+- learning 776
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3067 NaN NaN NaN NaN NaN
+- result accuracy 0.3067
+- time elapsed 220.3559
+
+- learning 777
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30759 NaN NaN NaN NaN NaN
+- result accuracy 0.30759
+- time elapsed 220.6301
+
+- learning 778
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3072 NaN NaN NaN NaN NaN
+- result accuracy 0.3072
+- time elapsed 220.9152
+
+- learning 779
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3068 NaN NaN NaN NaN NaN
+- result accuracy 0.3068
+- time elapsed 221.1844
+
+- learning 780
+- embedding 1 0
+- decision 2
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30641 NaN NaN NaN NaN NaN
+- result accuracy 0.30641
+- time elapsed 221.4503
+
+- learning 781
+- embedding 1 0
+- decision 8
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30602 NaN NaN NaN NaN NaN
+- result accuracy 0.30602
+- time elapsed 221.7194
+
+- learning 782
+- embedding 1 0
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30563 NaN NaN NaN NaN NaN
+- result accuracy 0.30563
+- time elapsed 221.985
+
+- learning 783
+- embedding 1 0
+- decision 1
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30524 NaN NaN NaN NaN NaN
+- result accuracy 0.30524
+- time elapsed 222.2515
+
+- learning 784
+- embedding 0 1
+- decision 4
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30485 NaN NaN NaN NaN NaN
+- result accuracy 0.30485
+- time elapsed 222.5127
+
+- learning 785
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30446 NaN NaN NaN NaN NaN
+- result accuracy 0.30446
+- time elapsed 222.7748
+
+- learning 786
+- embedding 1 0
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30407 NaN NaN NaN NaN NaN
+- result accuracy 0.30407
+- time elapsed 223.0431
+
+- learning 787
+- embedding 1 0
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30368 NaN NaN NaN NaN NaN
+- result accuracy 0.30368
+- time elapsed 223.3087
+
+- learning 788
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.3033 NaN NaN NaN NaN NaN
+- result accuracy 0.3033
+- time elapsed 223.5767
+
+- learning 789
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30292 NaN NaN NaN NaN NaN
+- result accuracy 0.30292
+- time elapsed 223.8372
+
+- learning 790
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.3038 NaN NaN NaN NaN NaN
+- result accuracy 0.3038
+- time elapsed 224.1031
+
+- learning 791
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30468 NaN NaN NaN NaN NaN
+- result accuracy 0.30468
+- time elapsed 224.3633
+
+- learning 792
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30556 NaN NaN NaN NaN NaN
+- result accuracy 0.30556
+- time elapsed 224.637
+
+- learning 793
+- embedding 0 1
+- decision 6
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30517 NaN NaN NaN NaN NaN
+- result accuracy 0.30517
+- time elapsed 224.8947
+
+- learning 794
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30605 NaN NaN NaN NaN NaN
+- result accuracy 0.30605
+- time elapsed 225.178
+
+- learning 795
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30692 NaN NaN NaN NaN NaN
+- result accuracy 0.30692
+- time elapsed 225.4434
+
+- learning 796
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30653 NaN NaN NaN NaN NaN
+- result accuracy 0.30653
+- time elapsed 225.7029
+
+- learning 797
+- embedding 0 1
+- decision 7
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30615 NaN NaN NaN NaN NaN
+- result accuracy 0.30615
+- time elapsed 225.9625
+
+- learning 798
+- embedding 0 1
+- decision 5
+- expect 5
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN 0.30702 NaN NaN NaN NaN NaN
+- result accuracy 0.30702
+- time elapsed 226.2285
+
+- learning 799
+- embedding 0 1
+- decision 3
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30663 NaN NaN NaN NaN NaN
+- result accuracy 0.30663
+- time elapsed 226.5011
+
+- learning 800
+- embedding 0 1
+- decision 9
+- expect 5
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN 0.30625 NaN NaN NaN NaN NaN
+- result accuracy 0.30625
+- time elapsed 226.7773
+
