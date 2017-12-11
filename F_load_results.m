@@ -7,21 +7,47 @@
 
 %% setup
 
-% path = '/Users/DoerLBH/Dropbox/git/IBM_Internal_Attentive_Bandit/';
-% system(['cd ' path]);
-% !cd ../../Dropbox/Git/IBM_Internal_Attentive_Bandit/
+loc = 'gcp-gpu';
+switch loc
+    case {'Hyak', 'Hyakqsub'}
+        path = '/gscratch/stf/sunnylin/IBM/IBM_ABaCoDE/';
+    case 'c2b2'
+        path = '/ifs/scratch/c2b2/ip_lab/bl2681/Other/IBM_ABaCoDE/';
+    case 'compbio03'
+        path = '/data2/baihan/';
+    case 'IBM'
+        path = '/data/baihan/Code/IBM_ABaCoDE/';
+    case 'doerlbh'
+        path = '/Users/DoerLBH/Dropbox/git/IBM_ABaCoDE/';
+    case {'mocha','latte','espresso','americano','galao'}
+        path = '/home/sunnylin/Dropbox/Git/IBM_ABaCoDE/';
+    case 'gcp-gpu'
+        path = '/home/doerlbh/Dropbox/Git/IBM_ABaCoDE/';
+    otherwise
+        disp('Wrong location!');
+end
 
-% dataset = 'MNIST-s'
-% dataset = 'Caltech101S'
-dataset = 'CIFAR-10'
-% dataset = 'CIFAR-100C'
-% dataset = 'STL10'
+addpath(path);
+addpath([path 'log'])
+addpath([path 'log/11-Dec-2017'])
+addpath([path 'log/10-Dec-2017'])
+
+% dataset = 'MNIST-unshuffled'
+% dataset = 'Caltech101S-unshuffled'
+% dataset = 'CIFAR-10-unshuffled'
+% dataset = 'CIFAR-100C-unshuffled'
+% dataset = 'STL10-unshuffled'
+% dataset = 'MNIST-shuffled'
+% dataset = 'Caltech101S-shuffled'
+% dataset = 'CIFAR-10-shuffled'
+% dataset = 'CIFAR-100C-shuffled'
+% dataset = 'STL10-shuffled'
 
 %% for data files
 
 switch dataset
     
-    case 'MNIST-s'
+    case 'MNIST-unshuffled'
         output_file_00 ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_baseline_1000_americano.mat';
         
         output_file_06 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
@@ -46,7 +72,7 @@ switch dataset
         output_file_20 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
         output_file_21 ='./log/02-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
         
-    case 'Caltech101S'
+    case 'Caltech101S-unshuffled'
         
         output_file_00 = './log/04-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_0_baseline_1000_americano.mat';
         output_file_06 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
@@ -75,7 +101,7 @@ switch dataset
         output_file_20 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
         output_file_21 = './log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
         
-    case 'CIFAR-10'
+    case 'CIFAR-10-unshuffled'
         
         output_file_00 = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_0_baseline_1000_americano.mat';
         
@@ -100,9 +126,9 @@ switch dataset
         output_file_20 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_4_cluster_online_MAB_1000_gcp-gpu.mat';
         output_file_21 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_8_cluster_online_MAB_1000_gcp-gpu.mat';
         
-    case 'CIFAR-100C'
+    case 'CIFAR-100C-unshuffled'
         
-    case 'STL10'
+    case 'STL10-unshuffled'
         
         output_file_00 ='./log/01-Nov-2017/K_main_classifier_STL10_nonstationary_k_0_baseline_1000_americano.mat';
         
