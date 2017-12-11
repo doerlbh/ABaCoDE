@@ -26,14 +26,14 @@ if strncmp(type, 'multimodel_',4)
     if emb == E
         Z = C;
     else if emb == E - 1
-            Z = K_embedding_static_k(isGPU,path,dataset,type,dist,C.',1,1);
+            Z = F_embedding_static_k(isGPU,path,dataset,type,dist,C.',1,1);
         else
-            Z = K_embedding_static_k(isGPU,path,dataset,type,dist,C.',emb,k);
+            Z = F_embedding_static_k(isGPU,path,dataset,type,dist,C.',emb,k);
         end
     end
     
 else    
-    Z = K_embedding_static_k(isGPU,path,dataset,type,dist,C.',emb,k);
+    Z = F_embedding_static_k(isGPU,path,dataset,type,dist,C.',emb,k);
     
 end
 

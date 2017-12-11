@@ -1,7 +1,7 @@
 
 11-Dec-2017
 running experiment on gcp-gpu
-info: MNIST-s nonstationary shuffled k = 2 multimode_full_history_CB 1000
+info: MNIST-s nonstationary shuffled k = 2 online_embedding 1000
 ===================
 ==== Loading data =======
 ==== nonstationizing dataset =======
@@ -1588,4 +1588,5 @@ window: 20
      20      687      3.44%
 ==== Pretraining Phase =======
 ===== Training starting for 1 =====
-training size is 3
+training size is 3767
+=====

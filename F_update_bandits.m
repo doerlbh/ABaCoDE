@@ -5,7 +5,7 @@
 % 
 % [B_k,g_k,hat_mu_k,B_p,g_p,hmp,n,r] = F_update_bandits(type,t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p,g_p,hmp,n,r)
 
-function [Bk,gk,hmk,Bp,gp,hmp,Bf,gf,hmf,n,r] = F_update_bandits(type,t,by,reward,decision,C,W,Z,Bk,gk,hmk,Bp,gp,hmp,Bf,gf,hmf,n,r)
+function [Bk,gk,hmk,Bp,gp,hmp,Bf,gf,hmf,n,r] = F_update_bandits(isGPU,type,t,by,reward,decision,C,W,Z,Bk,gk,hmk,Bp,gp,hmp,Bf,gf,hmf,n,r)
 
 Bp(:,:,decision) = Bp(:,:,decision) + Z.'*Z;
 gp(decision,:) = gp(decision,:) + reward*Z;

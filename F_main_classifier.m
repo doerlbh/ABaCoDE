@@ -265,6 +265,7 @@ end
 [B_k,g_k,hat_mu_k,vsqr_k] = F_init_MAB(isGPU,E,D);
 [B_k_full,g_k_full,hat_mu_k_full,vsqr_k_full] = F_init_MAB(isGPU,E+2,D);
 [B_p,g_p,hat_mu_p,vsqr_p] = F_init_MAB(isGPU,P,Z_size);
+[B_p_base,g_p_base,hat_mu_p_base,vsqr_p_base] = F_init_MAB(isGPU,P,D);
 
 n = 0;
 if isGPU == 1
@@ -395,6 +396,7 @@ for iter=1:maZ_iter
                     [learn_z,clusters] = F_update_cluster_emb(isGPU,k,new_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
                     [~,~] = F_update_cluster_emb(isGPU,1,new_x,0, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
                     [B_k_full,g_k_full,hat_mu_k_full,vsqr_k_full] = F_init_MAB(isGPU,E+2,D);
+                    [B_p_base,g_p_base,hat_mu_p_base,vsqr_p_base] = F_init_MAB(isGPU,P,D);
                 end
                 
             case 'multimode_full_history_CB'
@@ -414,7 +416,11 @@ for iter=1:maZ_iter
                 disp('wrong type.');
         end
         
-        decision = F_decSelect(isGPU,Z,B_p,hat_mu_p,vsqr_p);
+        if strncmp(type, 'multimodel_',4) && W(end) == 1
+            decision = F_decSelect(isGPU,Z,B_p_base,hat_mu_p_base,vsqr_p_base);
+        else
+            decision = F_decSelect(isGPU,Z,B_p,hat_mu_p,vsqr_p);
+        end
         learn_P((iter-1)*N+t) = decision;
         expect = mat2vec(isGPU,learn_y((iter-1)*N+t,:),P);
         
@@ -425,7 +431,11 @@ for iter=1:maZ_iter
         end
         
         learn_result((iter-1)*N+t) = reward;
-        [B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r] = F_update_bandits(type,(iter-1)*N+t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r);
+        if strncmp(type, 'multimodel_',4) && W(end) == 1
+            [B_k,g_k,hat_mu_k,B_p_base,g_p_base,hat_mu_p_base,B_k_full,g_k_full,hat_mu_k_full,n,r] = F_update_bandits(isGPU,type,(iter-1)*N+t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p_base,g_p_base,hat_mu_p_base,B_k_full,g_k_full,hat_mu_k_full,n,r);
+        else
+            [B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r] = F_update_bandits(isGPU,type,(iter-1)*N+t,by,reward,decision,C,W,Z,B_k,g_k,hat_mu_k,B_p,g_p,hat_mu_p,B_k_full,g_k_full,hat_mu_k_full,n,r);
+        end
         
         learn_time((iter-1)*N+t) = toc;
         

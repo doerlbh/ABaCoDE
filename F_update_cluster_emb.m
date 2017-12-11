@@ -20,7 +20,7 @@ if isGPU == 1
     for t = 1:k
         o = num2str(t);
         disp(['===== Training starting for ' o ' =====']);
-        x_t = K_halfshuffle_gpu(x,z,[t],1);
+        x_t = F_halfshuffle(x,z,[t],1);
         disp(['training size is ', num2str(size(x_t,1))]);
         x_t = gather(x_t.');
         

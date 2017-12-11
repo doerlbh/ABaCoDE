@@ -1678,4 +1678,258 @@ window: 20
      15       19      1.90%
      16       21      2.10%
      17       37      3.70%
-     1
+     18       40      4.00%
+     19       38      3.80%
+     20       37      3.70%
+----> finish generating nonstationary dist for window 20
+-> in summary for all data
+  Value    Count   Percent
+      1     1180      5.90%
+      2     1308      6.54%
+      3     1034      5.17%
+      4      387      1.94%
+      5      984      4.92%
+      6      955      4.78%
+      7      720      3.60%
+      8     1702      8.51%
+      9     1055      5.28%
+     10      864      4.32%
+     11     1191      5.96%
+     12      673      3.37%
+     13      954      4.77%
+     14      786      3.93%
+     15      685      3.42%
+     16      632      3.16%
+     17     1214      6.07%
+     18     1547      7.74%
+     19     1212      6.06%
+     20      917      4.58%
+==== Pretraining Phase =======
+==== Online Learning Phase =======
+--> initializing
+# case: 20000
+# input: 3072
+# label: 10
+# embedding: 0
+==== shuffling labels each stage =======
+----------
+For window 1: 
+     4     1     7     2     8     9     3    10     5     6
+
+----------
+For window 2: 
+     8     5    10     7     2     3     4     6     1     9
+
+----------
+For window 3: 
+     6    10     4     2     8     1     9     5     7     3
+
+----------
+For window 4: 
+     5     1     8     3    10     9     2     7     6     4
+
+----------
+For window 5: 
+     3     6    10     2     1     5     4     8     7     9
+
+----------
+For window 6: 
+     9    10     3     8     6     4     5     1     2     7
+
+----------
+For window 7: 
+     2     6    10     5     8     1     9     7     3     4
+
+----------
+For window 8: 
+     5     1     7     6     3     4     8    10     2     9
+
+----------
+For window 9: 
+     7     6    10     5     9     8     4     1     2     3
+
+----------
+For window 10: 
+     3     5    10     1     6     2     8     9     4     7
+
+----------
+For window 11: 
+    10     7     3     8     6     5     4     2     9     1
+
+----------
+For window 12: 
+     3     9    10     5     1     2     6     4     7     8
+
+----------
+For window 13: 
+     3     6     2     4     7     9     1     5     8    10
+
+----------
+For window 14: 
+     5     7     8     9     6     1     3     2    10     4
+
+----------
+For window 15: 
+     3     4     2    10     7     9     8     1     5     6
+
+----------
+For window 16: 
+     7     4     5     2     6     1     9     8    10     3
+
+----------
+For window 17: 
+     4     8     3     9     5     7     2     6     1    10
+
+----------
+For window 18: 
+     8     1     7     6    10     3     4     5     9     2
+
+----------
+For window 19: 
+     4     6    10     5     8     9     3     1     7     2
+
+----------
+For window 20: 
+     7     9    10     8     3     4     2     6     1     5
+
+<-- initializing done
+--> online learning
+- iteration 1
+case 1
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+case 2
+case 3
+case 4
+case 5
+case 6
+case 7
+case 8
+case 9
+case 10
+case 11
+case 12
+case 13
+case 14
+case 15
+case 16
+case 17
+case 18
+case 19
+case 20
+case 21
+case 22
+case 23
+case 24
+case 25
+case 26
+case 27
+case 28
+case 29
+case 30
+case 31
+case 32
+case 33
+case 34
+case 35
+case 36
+case 37
+case 38
+case 39
+case 40
+case 41
+case 42
+case 43
+case 44
+case 45
+case 46
+case 47
+case 48
+case 49
+case 50
+case 51
+case 52
+case 53
+case 54
+case 55
+case 56
+case 57
+case 58
+case 59
+case 60
+case 61
+case 62
+case 63
+case 64
+case 65
+case 66
+case 67
+case 68
+case 69
+case 70
+case 71
+case 72
+case 73
+case 74
+case 75
+case 76
+case 77
+case 78
+case 79
+case 80
+case 81
+case 82
+case 83
+case 84
+case 85
+case 86
+case 87
+case 88
+case 89
+case 90
+case 91
+case 92
+case 93
+case 94
+case 95
+case 96
+case 97
+case 98
+case 99
+case 100
+case 101
+case 102
+case 103
+case 104
+case 105
+case 106
+case 107
+case 108
+case 109
+case 110
+case 111
+case 112
+case 113
+case 114
+case 115
+case 116
+case 117
+case 118
+case 119
+case 120
+case 121
+case 122
+case 123
+case 124
+case 125
+case 126
+case 127
+case 128
+case 129
+{Error using gpuArray/subsref
+Index exceeds matrix dimension.
+
+Error in F_update_bandits (line 10)
+Bp(:,:,decision) = Bp(:,:,decision) + Z.'*Z;
+
+Error in F_main_classifier (line 428)
+            rewa
