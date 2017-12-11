@@ -2,3 +2,21 @@ real-time dump
 --- iteration 1 ---
 
 - learning 1
+- embedding 1 0 0 0
+- decision 8
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 0.42886
+
+- learning 2
+- embedding 0 1 0 0
+- decision 2
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 0.83581
+
+- learning 3

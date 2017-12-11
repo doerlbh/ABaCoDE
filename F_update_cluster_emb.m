@@ -9,13 +9,17 @@ function [z,c] = F_update_cluster_emb(isGPU, k,x,z,dataset,type,dist,hiddenSize1
 
 if isGPU == 1
     if gather(z) == 0
-        [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
+        if k == 1
+            z = ones(size(x,1),1);
+        else
+            [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
+        end
         z = gpuArray(z);
         c = gpuArray(c);
     else
         c = 0;
         disp('no reclustering involved')
-    end;
+    end
     
     for t = 1:k
         o = num2str(t);
@@ -25,7 +29,7 @@ if isGPU == 1
         x_t = gather(x_t.');
         
         autoenc1 = trainAutoencoder(x_t,hiddenSize1,'MaxEpochs',MaxEpochs1,'UseGPU',true);
-
+        
         clearvars x_t;
         disp(['===== Training finished for ' o ' =====']);
         save([path 'parameters/embedding_' dataset '_' dist '_' type '_k_' num2str(k) '_' o],'autoenc1');
@@ -34,7 +38,11 @@ if isGPU == 1
     
 else
     if z == 0
-        [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
+        if k == 1
+            z = ones(size(x,1),1);
+        else
+            [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
+        end
     else
         c = 0;
         disp('no reclustering involved')

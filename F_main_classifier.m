@@ -220,6 +220,9 @@ switch type
     case 'oracle_staged'
         [oracle_z,clusters] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
         learn_z = oracle_z(size(prior_x,1)+1:end);
+    case {'multimode_minibatch_history_CB','multimode_full_history_CB'}
+        [~,~] = F_update_cluster_emb(isGPU,1,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
     otherwise
         [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
 end
@@ -398,7 +401,7 @@ for iter=1:maZ_iter
             case 'multimode_minibatch_history_CB'
                 [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
                 learn_W(:,(iter-1)*N+t) = W.';
-                
+                W
                 if mod((iter-1)*N+t,window) == 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     [learn_z,clusters] = F_update_cluster_emb(isGPU,k,new_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
@@ -412,7 +415,7 @@ for iter=1:maZ_iter
                 learn_z((iter-1)*N+t) = case_z;
                 [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
                 learn_W(:,(iter-1)*N+t) = W.';
-                
+                W
                 if mod((iter-1)*N+t,window) == 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];

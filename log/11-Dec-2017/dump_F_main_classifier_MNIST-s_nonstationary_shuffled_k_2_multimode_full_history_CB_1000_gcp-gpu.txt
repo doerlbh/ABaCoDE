@@ -2,3 +2,93 @@ real-time dump
 --- iteration 1 ---
 
 - learning 1
+- embedding 0 1 0 0
+- decision 1
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 2.223
+
+- learning 2
+- embedding 0 0 0 1
+- decision 8
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 3.0229
+
+- learning 3
+- embedding 0 1 0 0
+- decision 6
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 3.7058
+
+- learning 4
+- embedding 0 0 0 1
+- decision 6
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0
+- result accuracy 0
+- time elapsed 4.4424
+
+- learning 5
+- embedding 1 0 0 0
+- decision 10
+- expect 10
+- reward 1
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.2
+- result accuracy 0.2
+- time elapsed 5.1628
+
+- learning 6
+- embedding 1 0 0 0
+- decision 4
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.16667
+- result accuracy 0.16667
+- time elapsed 6.3675
+
+- learning 7
+- embedding 1 0 0 0
+- decision 2
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.14286
+- result accuracy 0.14286
+- time elapsed 6.9266
+
+- learning 8
+- embedding 0 1 0 0
+- decision 8
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.125
+- result accuracy 0.125
+- time elapsed 7.4882
+
+- learning 9
+- embedding 1 0 0 0
+- decision 5
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.11111
+- result accuracy 0.11111
+- time elapsed 8.0471
+
+- learning 10
+- embedding 0 0 0 1
+- decision 6
+- expect 10
+- reward 0
+- result sub_accuracy NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.1
+- result accuracy 0.1
+- time elapsed 8.7581
+
+- learning 11
