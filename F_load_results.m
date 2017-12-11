@@ -46,7 +46,9 @@ addpath([path 'log/10-Dec-2017'])
 %% for data files
 
 switch dataset
-    
+    case 'MNIST-shuffled'
+        
+
     case 'MNIST-unshuffled'
         output_file_00 ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_baseline_1000_americano.mat';
         
