@@ -196,7 +196,7 @@ end
 
 if strcmp(dist, 'nonstationary')
     disp('==== nonstationizing dataset =======')
-    [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(learn_x,learn_y,window);
+    [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(isGPU,learn_x,learn_y,window);
 end
 
 %% pre-clustering and generate embedding
@@ -401,7 +401,7 @@ for iter=1:maZ_iter
             case 'multimode_minibatch_history_CB'
                 [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
                 learn_W(:,(iter-1)*N+t) = W.';
-                W
+                
                 if mod((iter-1)*N+t,window) == 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     [learn_z,clusters] = F_update_cluster_emb(isGPU,k,new_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
@@ -415,7 +415,11 @@ for iter=1:maZ_iter
                 learn_z((iter-1)*N+t) = case_z;
                 [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
                 learn_W(:,(iter-1)*N+t) = W.';
-                W
+                
+                if isGPU == 1
+                    gather(W)
+                end
+                
                 if mod((iter-1)*N+t,window) == 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];

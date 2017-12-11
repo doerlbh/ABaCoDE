@@ -5,7 +5,12 @@
 %
 % [new_x,new_y,new_z] = K_nonstationary_track(x,y,window)
 
-function [new_x, new_y, new_z] = K_nonstationary_track(x,y,window)
+function [new_x, new_y, new_z] = K_nonstationary_track(isGPU,x,y,window)
+
+if isGPU == 1
+    x = gather(x);
+    y = gather(y);
+end
 
 N = size(x,1);
 n = int64(N/window);
@@ -109,6 +114,12 @@ end
 disp(['-> in summary for all data']);
 tabulate(new_z)
 
+if isGPU == 1
+    new_x = gpuArray(new_x);
+    new_y = gpuArray(new_y);
+    new_z = gpuArray(new_z);
+end
+    
 end
 
 
