@@ -5,10 +5,10 @@
 %
 % [new_x,new_y] = F_likeHash(x,y,window)
 
-function [new_x, new_y] = F_likeHash(x,y,window)
+function [new_x, new_y] = F_likeHash(isGPU,x,y,window,P)
 
 N = size(x,1);
-M = length(unique(y));
+M = P;
 n = int64(N/window);
 
 new_x = x;
@@ -19,10 +19,13 @@ for w = 1:n
     disp('----------')
     disp(['For window ' num2str(w) ': ']);
     disp(new_map);
-    for t = 1:N
-        new_y(t) = new_map(uint64(y(t)));
+    for t = 1:window
+        t_set = (w-1) * window + t;
+        new_y(t_set) = new_map(uint64(y(t_set)));
     end
 end
+
+new_y = vec2mat(isGPU,new_y,P);
 
 end
 

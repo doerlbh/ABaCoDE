@@ -18,7 +18,6 @@ end;
 for t = 1:k
     o = num2str(t);
     disp(['===== Training starting for ' o ' =====']);
-    tic;
     x_t = K_halfshuffle_gpu(x,z,[t],1);
     disp(['training size is ', num2str(size(x_t,1))]);
     x_t = gather(x_t.');
@@ -27,8 +26,6 @@ for t = 1:k
     
     autoenc1 = trainAutoencoder(x_t,hiddenSize1,'MaxEpochs',MaxEpochs1,'UseGPU',true);
 %     disp('--- finish autoenc1');
-    tGPUauto = toc;
-    disp(['GPU autoencoder takes ' tGPUauto ' s']);
     clearvars x_t;
     disp(['===== Training finished for ' o ' =====']);
     save([path 'parameters/embedding_' dataset '_' dist '_' type '_k_' num2str(k) '_' o],'autoenc1');

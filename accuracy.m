@@ -3,11 +3,11 @@
 % Columbia University
 % July 2017 at IBM Research
 
-function acc = accuracy(predict,expectmat)
+function acc = accuracy(isGPU,predict,expectmat)
 
 P = size(expectmat,2);
-expect = mat2vec(expectmat,P);
+expect = mat2vec(isGPU,expectmat,P);
 
-acc = [submatch(predict, expect, P) sum(predict == expect)/length(predict)];
+acc = [submatch(isGPU, predict, expect, P) sum(predict == expect)/length(predict)];
 
 end
