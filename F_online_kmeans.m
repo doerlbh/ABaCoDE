@@ -3,7 +3,7 @@
 % Columbia University
 % October 2017 at IBM Research
 
-function [z, c] = online_kmeans(isGPU, x, c, c_count)
+function [z, c] = F_online_kmeans(isGPU, x, c, c_count)
 
 E = size(c,1);
 if isGPU == 1
