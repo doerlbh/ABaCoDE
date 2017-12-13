@@ -7,7 +7,7 @@
 clear all; close all;
 
 %% setup
-loc = 'gcp-gpu';
+loc = 'doerlbh';
 switch loc
     case {'Hyak', 'Hyakqsub'}
         path = '/gscratch/stf/sunnylin/IBM/IBM_ABaCoDE/';
@@ -29,15 +29,17 @@ end
 
 addpath(path);
 addpath([path 'log'])
-addpath([path 'log/11-Dec-2017'])
 addpath([path 'log/10-Dec-2017'])
+addpath([path 'log/11-Dec-2017'])
+addpath([path 'log/12-Dec-2017'])
+addpath([path 'log/13-Dec-2017'])
 
 % dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
 % dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
-% dataset = 'MNIST-shuffled'
+dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
 % dataset = 'CIFAR-100C-shuffled'
@@ -52,15 +54,15 @@ load(['result-' dataset]);
 %% plotting
 
 % range1 = size(accuracy_b,1);
-range1 = 8000;
+range1 = 20000;
 % range1 = 20000;
-upperbound = 0.4
+% upperbound = 0.4
 
 %% Table
 
 b_acc = [accuracy_b(range1,end)];
 uE_acc = [accuracy_uE(range1,end)];
-orS_acc = [accuracy_orS2(range1,end) accuracy_orS4(range1,end) accuracy_orS8(range1,end)];
+% orS_acc = [accuracy_orS2(range1,end) accuracy_orS4(range1,end) accuracy_orS8(range1,end)];
 mE_acc = [accuracy_mE2(range1,end) accuracy_mE4(range1,end) accuracy_mE8(range1,end)];
 oE_acc = [accuracy_oE2(range1,end) accuracy_oE4(range1,end) accuracy_oE8(range1,end)];
 mhCB_acc = [accuracy_mhCB2(range1,end) accuracy_mhCB4(range1,end) accuracy_mhCB8(range1,end)];
@@ -70,7 +72,7 @@ mmfhCB_acc = [accuracy_mmfhCB2(range1,end) accuracy_mmfhCB4(range1,end) accuracy
 
 summary_acc = [mean(b_acc) std(b_acc);
     mean(uE_acc) std(uE_acc);
-    mean(orS_acc) std(orS_acc);
+%     mean(orS_acc) std(orS_acc);
     mean(mE_acc) std(mE_acc);
     mean(oE_acc) std(oE_acc);
     mean(mhCB_acc) std(mhCB_acc);

@@ -8,7 +8,8 @@
 
 %% setup
 
-loc = 'gcp-gpu';
+loc = 'americano';
+
 switch loc
     case {'Hyak', 'Hyakqsub'}
         path = '/gscratch/stf/sunnylin/IBM/IBM_ABaCoDE/';
@@ -30,15 +31,17 @@ end
 
 addpath(path);
 addpath([path 'log'])
-addpath([path 'log/11-Dec-2017'])
 addpath([path 'log/10-Dec-2017'])
+addpath([path 'log/11-Dec-2017'])
+addpath([path 'log/12-Dec-2017'])
+addpath([path 'log/13-Dec-2017'])
 
 % dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
 % dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
-% dataset = 'MNIST-shuffled'
+dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
 % dataset = 'CIFAR-100C-shuffled'
@@ -49,7 +52,7 @@ addpath([path 'log/10-Dec-2017'])
 switch dataset
     case 'MNIST-shuffled'
         
-        output_file_b = ''
+        output_file_b = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
         
         output_file_orS1 = ''
         output_file_orS2 = ''
@@ -58,9 +61,9 @@ switch dataset
         
         output_file_mE2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
         output_file_mE4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_minibatch_embedding_1000_gcp-gpu.mat'
-        output_file_mE8 = ''
+        output_file_mE8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_minibatch_embedding_1000_gcp-gpu.mat'
         
-        output_file_uE = ''
+        output_file_uE = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
         
         output_file_oE2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
         output_file_oE4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_online_embedding_1000_gcp-gpu.mat'
@@ -68,11 +71,11 @@ switch dataset
         
         output_file_mhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
         output_file_mhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_minibatch_history_CB_1000_gcp-gpu.mat'
-        output_file_mhCB8 = ''
+        output_file_mhCB8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_minibatch_history_CB_1000_gcp-gpu.mat'
         
         output_file_fhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
         output_file_fhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_full_history_CB_1000_gcp-gpu.mat'
-        output_file_fhCB8 = ''
+        output_file_fhCB8 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_8_full_history_CB_1000_gcp-gpu.mat'
         
         output_file_mmmhCB2 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
         output_file_mmmhCB4 = 'F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
@@ -243,10 +246,10 @@ end
 %% load data files
 
 [accuracy_b,learn_ns_z_b] = F_read_results(output_file_b,1);
-[accuracy_orS1,learn_ns_z_orS1] = F_read_results(output_file_orS1,1);
-[accuracy_orS2,learn_ns_z_orS2] = F_read_results(output_file_orS2,1);
-[accuracy_orS4,learn_ns_z_orS4] = F_read_results(output_file_orS4,1);
-[accuracy_orS8,learn_ns_z_orS8] = F_read_results(output_file_orS8,1);
+% [accuracy_orS1,learn_ns_z_orS1] = F_read_results(output_file_orS1,1);
+% [accuracy_orS2,learn_ns_z_orS2] = F_read_results(output_file_orS2,1);
+% [accuracy_orS4,learn_ns_z_orS4] = F_read_results(output_file_orS4,1);
+% [accuracy_orS8,learn_ns_z_orS8] = F_read_results(output_file_orS8,1);
 [accuracy_mE2,learn_ns_z_mE2] = F_read_results(output_file_mE2,1);
 [accuracy_mE4,learn_ns_z_mE4] = F_read_results(output_file_mE4,1);
 [accuracy_mE8,learn_ns_z_mE8] = F_read_results(output_file_mE8,1);
