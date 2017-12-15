@@ -2,7 +2,7 @@
 % Baihan Lin
 % Columbia University
 % October 2017 at IBM Research
-
+% updated December 2017
 
 clear all; close all;
 
@@ -56,7 +56,7 @@ load(['result-' dataset]);
 % range1 = size(accuracy_b,1);
 range1 = 20000;
 % range1 = 20000;
-% upperbound = 0.4
+upperbound = 1
 
 %% Table
 

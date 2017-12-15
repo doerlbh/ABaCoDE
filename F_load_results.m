@@ -250,6 +250,7 @@ end
 % [accuracy_orS2,learn_ns_z_orS2] = F_read_results(output_file_orS2,1);
 % [accuracy_orS4,learn_ns_z_orS4] = F_read_results(output_file_orS4,1);
 % [accuracy_orS8,learn_ns_z_orS8] = F_read_results(output_file_orS8,1);
+[accuracy_uE,learn_ns_z_uE] = F_read_results(output_file_uE,1);
 [accuracy_mE2,learn_ns_z_mE2] = F_read_results(output_file_mE2,1);
 [accuracy_mE4,learn_ns_z_mE4] = F_read_results(output_file_mE4,1);
 [accuracy_mE8,learn_ns_z_mE8] = F_read_results(output_file_mE8,1);
@@ -262,5 +263,11 @@ end
 [accuracy_fhCB2,learn_ns_z_fhCB2] = F_read_results(output_file_fhCB2,1);
 [accuracy_fhCB4,learn_ns_z_fhCB4] = F_read_results(output_file_fhCB4,1);
 [accuracy_fhCB8,learn_ns_z_fhCB8] = F_read_results(output_file_fhCB8,1);
+[accuracy_mmmhCB2,learn_ns_z_mmmhCB2] = F_read_results(output_file_mmmhCB2,1);
+[accuracy_mmmhCB4,learn_ns_z_mmmhCB4] = F_read_results(output_file_mmmhCB4,1);
+[accuracy_mmmhCB8,learn_ns_z_mmmhCB8] = F_read_results(output_file_mmmhCB8,1);
+[accuracy_mmfhCB2,learn_ns_z_mmfhCB2] = F_read_results(output_file_mmfhCB2,1);
+[accuracy_mmfhCB4,learn_ns_z_mmfhCB4] = F_read_results(output_file_mmfhCB4,1);
+[accuracy_mmfhCB8,learn_ns_z_mmfhCB8] = F_read_results(output_file_mmfhCB8,1);
 
 save(['result-' dataset]);
