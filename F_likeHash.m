@@ -10,7 +10,7 @@ function [new_x, new_y] = F_likeHash(isGPU,x,y,window,P)
 N = size(x,1);
 M = P;
 n = int64(N/window);
-y = mat2vec(isGPU,y,P)
+y = mat2vec(isGPU,y,P);
 
 new_x = x;
 new_y = zeros(size(y));

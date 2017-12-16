@@ -80,3 +80,5 @@ F_main_classifier(1, 'CIFAR-10', 'nonstationary','shuffled', 8, 'multimode_full_
 disp('F_main_classifier(1, CIFAR-10, nonstationary,shuffled, 8, multimode_full_history_CB, 1000,gcp-gpu, 10000)')
 system(['echo CIFAR-10 shuffled, 8, multimode_full_history_CB >> done'  ]);
 
+gcpmnistrandstat
+

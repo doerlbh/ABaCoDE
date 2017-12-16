@@ -80,3 +80,7 @@ F_main_classifier(1, 'Caltech101S', 'nonstationary','shuffled', 8, 'multimode_fu
 disp('F_main_classifier(1, Caltech101S, nonstationary,shuffled, 8, multimode_full_history_CB, 1000,gcp-gpu, 8000)')
 system(['echo Caltech101S shuffled, 8, multimode_full_history_CB >> done'  ]);
 
+gcpmnistrand
+
+
+

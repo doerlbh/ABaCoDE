@@ -76,3 +76,7 @@ F_main_classifier(1, 'STL10', 'nonstationary','shuffled', 8, 'multimode_full_his
 disp('F_main_classifier(1, STL10, nonstationary,shuffled, 8, multimode_full_history_CB, 1000,gcp-gpu, 10000)')
 system(['echo STL10 shuffled, 8, multimode_full_history_CB >> done'  ]);
 
+gcpmnisthalf
+
+
+
