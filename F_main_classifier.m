@@ -7,7 +7,7 @@
 % F_main_classifier(dataset, dist, k, type, window, loc)
 %
 % dataset: {'MNIST','MNIST-s','CIFAR-10','CIFAR-100','CIFAR-100C','STL10',Caltech101S'}
-% dist: {'stationary', 'nonstationary'}
+% dist: {'stationary', 'nonstationary','halfnegativenonstationary','randnegativenonstationary','halfnegativestationary','randnegativestationary'}
 % rewd: {'unshuffled','shuffled'}
 % k: {0,1,2,4,8}
 % type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB','universal_embedding','multimode_minibatch_history_CB','multimode_full_history_CB'}
@@ -192,41 +192,6 @@ if isGPU == 1
     learn_y = gpuArray(learn_y);
 end
 
-%% nonstationarity installation
-
-if strcmp(dist, 'nonstationary')
-    disp('==== nonstationizing dataset =======')
-    [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(isGPU,learn_x,learn_y,window);
-end
-
-%% pre-clustering and generate embedding
-
-disp('==== Pretraining Phase =======')
-
-hiddenSize1 = 100;
-MaxEpochs1 = 500;
-
-if strcmp(type, 'universal_embedding')
-    k = 1;
-end
-
-switch type
-    case 'baseline'
-        clusters = 0;
-        k = 0;
-    case 'oracle'
-        [oracle_z,clusters] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-        learn_z = oracle_z(size(prior_x,1)+1:end);
-    case 'oracle_staged'
-        [oracle_z,clusters] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-        learn_z = oracle_z(size(prior_x,1)+1:end);
-    case {'multimode_minibatch_history_CB','multimode_full_history_CB'}
-        [~,~] = F_update_cluster_emb(isGPU,1,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-        [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-    otherwise
-        [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
-end
-
 %% parameter setting
 
 disp('==== Online Learning Phase =======')
@@ -247,6 +212,21 @@ disp(['# input: ' num2str(D)]);
 disp(['# label: ' num2str(P)]);
 disp(['# embedding: ' num2str(E)]);
 
+%% nonstationarity installation
+
+switch dist
+    case {'nonstationary','halfnegativenonstationary','randnegativenonstationary'}
+        disp('==== nonstationizing dataset =======')
+        [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(isGPU,learn_x,learn_y,window);
+end
+
+
+switch dist
+    case {'halfnegativenonstationary','halfnegativestationary'}
+        disp('==== half negativizing dataset =======')
+        
+end
+
 %% label shuffling installation
 
 if strcmp(rewd, 'shuffled')
@@ -254,13 +234,37 @@ if strcmp(rewd, 'shuffled')
     [learn_x, learn_y] = F_likeHash(isGPU,learn_x,learn_y,window,P);
 end
 
-%% extra definition
+%% pre-clustering and generate embedding
+
+disp('==== Pretraining Phase =======')
+
+hiddenSize1 = 100;
+MaxEpochs1 = 500;
+
+if strcmp(type, 'universal_embedding')
+    k = 1;
+end
 
 switch type
     case 'baseline'
+        clusters = 0;
+        k = 0;
         Z_size = D;
+    case 'oracle'
+        Z_size = hiddenSize1;
+        [oracle_z,clusters] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        learn_z = oracle_z(size(prior_x,1)+1:end);
+    case 'oracle_staged'
+        Z_size = hiddenSize1;
+        [oracle_z,clusters] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x(1:window,:)],0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        learn_z = oracle_z(size(prior_x,1)+1:end);
+    case {'multimode_minibatch_history_CB','multimode_full_history_CB'}
+        Z_size = hiddenSize1;
+        [~,~] = F_update_cluster_emb(isGPU,1,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+        [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
     otherwise
         Z_size = hiddenSize1;
+        [prior_z,clusters] = F_update_cluster_emb(isGPU,k,prior_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
 end
 
 %% bandit initialization

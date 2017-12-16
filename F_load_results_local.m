@@ -31,12 +31,11 @@ end
 
 addpath(path);
 addpath([path 'log'])
-addpath([path 'log/10-Dec-2017'])
-addpath([path 'log/11-Dec-2017'])
-addpath([path 'log/12-Dec-2017'])
-addpath([path 'log/13-Dec-2017'])
-addpath([path 'log/14-Dec-2017'])
-addpath([path 'log/15-Dec-2017'])
+addpath([path 'log/outputs'])
+addpath([path 'log/16-Dec-2017'])
+addpath([path 'log/17-Dec-2017'])
+addpath([path 'log/18-Dec-2017'])
+addpath([path 'log/19-Dec-2017'])
 addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
 dataset = 'MNIST-unshuffled'
