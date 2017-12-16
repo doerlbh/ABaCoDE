@@ -224,7 +224,11 @@ end
 switch dist
     case {'halfnegativenonstationary','halfnegativestationary'}
         disp('==== half negativizing dataset =======')
-        
+        [learn_x, learn_ng_z] = K_negative_track(isGPU,0.5,learn_x,window);
+    case {'randnegativenonstationary','randnegativestationary'}
+        disp('==== randomly negativizing dataset =======')
+        [learn_x, learn_ng_z] = K_negative_track(isGPU,2,learn_x,window);
+    otherwise
 end
 
 %% label shuffling installation
