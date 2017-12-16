@@ -39,12 +39,12 @@ addpath([path 'log/14-Dec-2017'])
 addpath([path 'log/15-Dec-2017'])
 addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
-% dataset = 'MNIST-unshuffled'
+dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
 % dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
-dataset = 'MNIST-shuffled'
+% dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
 % dataset = 'CIFAR-100C-shuffled'
@@ -159,7 +159,7 @@ switch dataset
         %         output_file_mmfhCB8 =
         
     case 'MNIST-unshuffled'
-        output_file_b ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_b_1000_americano.mat';
+        output_file_b ='./log/31-Oct-2017/K_main_classifier_MNIST-s_nonstationary_k_0_baseline_1000_americano.mat';
         
         output_file_orS1 ='./log/01-Nov-2017/K_main_classifier_MNIST-s_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
         
@@ -195,7 +195,7 @@ switch dataset
         
     case 'Caltech101S-unshuffled'
         
-        output_file_b = './log/04-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_0_b_1000_americano.mat';
+        output_file_b = './log/04-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_0_baseline_1000_americano.mat';
         output_file_orS1 = './log/31-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
         
         output_file_03 = './log/28-Oct-2017/K_main_classifier_Caltech101S_nonstationary_k_2_cluster_oracle_1000_doerlbh.mat';
@@ -234,7 +234,7 @@ switch dataset
 
     case 'CIFAR-10-unshuffled'
         
-        output_file_b = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_0_b_1000_americano.mat';
+        output_file_b = './log/05-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_0_baseline_1000_americano.mat';
         
         output_file_orS1 = './log/13-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_1_cluster_oracle_staged_1000_gcp-gpu.mat';
         output_file_orS2 = './log/12-Nov-2017/K_main_classifier_CIFAR-10_nonstationary_k_2_cluster_oracle_staged_1000_gcp-gpu.mat';
@@ -271,7 +271,7 @@ switch dataset
         
     case 'STL10-unshuffled'
         
-        output_file_b ='./log/01-Nov-2017/K_main_classifier_STL10_nonstationary_k_0_b_1000_americano.mat';
+        output_file_b ='./log/01-Nov-2017/K_main_classifier_STL10_nonstationary_k_0_baseline_1000_americano.mat';
         
         output_file_orS1 ='./log/02-Nov-2017/K_main_classifier_STL10_nonstationary_k_1_cluster_oracle_staged_1000_americano.mat';
         

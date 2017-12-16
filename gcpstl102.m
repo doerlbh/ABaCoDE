@@ -4,10 +4,6 @@ F_main_classifier(1, 'STL10', 'nonstationary','shuffled', 1, 'baseline', 1000, '
 disp('F_main_classifier(1, STL10, nonstationary,shuffled, 1, baseline, 1000,gcp-gpu, 10000)')
 system(['echo STL10 shuffled, 1, baseline >> done'  ]);
 
-F_main_classifier(1, 'STL10', 'nonstationary','shuffled', 1, 'universal_embedding', 1000, 'gcp-gpu', 10000)
-disp('F_main_classifier(1, STL10, nonstationary,shuffled, 1, universal_embedding, 1000,gcp-gpu, 10000)')
-system(['echo STL10 shuffled, 1, universal_embedding >> done'  ]);
-
 F_main_classifier(1, 'STL10', 'nonstationary','shuffled', 2, 'minibatch_embedding', 1000, 'gcp-gpu', 10000)
 disp('F_main_classifier(1,STL10, nonstationary, shuffled, 2, minibatch_embedding,1000,gcp-gpu, 10000)')
 system(['echo STL10 shuffled, 2, minibatch_embedding >> done'  ]);
