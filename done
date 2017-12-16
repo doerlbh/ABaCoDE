@@ -4,3 +4,14 @@ Caltech101S unshuffled, 1, universal_embedding
 Caltech101S unshuffled, 2, multimode_minibatch_history_CB
 Caltech101S unshuffled, 1, universal_embedding
 Caltech101S unshuffled, 2, multimode_minibatch_history_CB
+CIFAR-10 unshuffled, 1, universal_embedding
+STL10 shuffled, 1, baseline
+MNIST-s shuffled, 8, minibatch_embedding
+MNIST-s shuffled, 1, baseline
+STL10 shuffled, 2, minibatch_embedding
+Caltech101S unshuffled, 2, multimode_full_history_CB
+STL10 shuffled, 2, online_embedding
+MNIST-s shuffled, 1, universal_embedding
+MNIST-s shuffled, 8, online_embedding
+STL10 shuffled, 2, minibatch_history_CB
+MNIST-s shuffled, 2, minibatch_embedding

@@ -34,12 +34,12 @@ addpath([path 'log/11-Dec-2017'])
 addpath([path 'log/12-Dec-2017'])
 addpath([path 'log/13-Dec-2017'])
 
-% dataset = 'MNIST-unshuffled'
+dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
 % dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
-dataset = 'MNIST-shuffled'
+% dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
 % dataset = 'CIFAR-100C-shuffled'
