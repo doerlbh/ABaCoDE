@@ -1,0 +1,7527 @@
+
+18-Dec-2017
+running experiment on gcp-gpu
+info: CIFAR-10 nonstationary unshuffled k = 4 multimode_full_history_CB 1000
+===================
+==== Loading data =======
+==== Online Learning Phase =======
+--> initializing
+# case: 10000
+# input: 3072
+# label: 10
+# embedding: 4
+==== nonstationizing dataset =======
+--> finish shuffling stationary input
+n = 10
+clustering diversity 1st half:
+  Value    Count   Percent
+      1      589     11.78%
+      2      658     13.16%
+      3      464      9.28%
+      4      334      6.68%
+      5      262      5.24%
+      6      731     14.62%
+      7      494      9.88%
+      8      360      7.20%
+      9      513     10.26%
+     10      595     11.90%
+clustering diversity 2nd half:
+  Value    Count   Percent
+      1      545     10.90%
+      2      657     13.14%
+      3      462      9.24%
+      4      370      7.40%
+      5      261      5.22%
+      6      768     15.36%
+      7      512     10.24%
+      8      363      7.26%
+      9      485      9.70%
+     10      577     11.54%
+clustering diversity 1st 1st half:
+  Value    Count   Percent
+      1      309     12.36%
+      2      343     13.72%
+      3      225      9.00%
+      4      176      7.04%
+      5      124      4.96%
+      6      345     13.80%
+      7      267     10.68%
+      8      172      6.88%
+      9      252     10.08%
+     10      287     11.48%
+clustering diversity 1st 2nd half:
+  Value    Count   Percent
+      1      280     11.20%
+      2      315     12.60%
+      3      239      9.56%
+      4      158      6.32%
+      5      138      5.52%
+      6      386     15.44%
+      7      227      9.08%
+      8      188      7.52%
+      9      261     10.44%
+     10      308     12.32%
+--> finish reclustering stationary input
+seq_first: 
+
+ans =
+
+  1×10 int64 row vector
+
+    4    6    1    2    3    5    9   10    7    8
+
+seq_second: 
+
+ans =
+
+  1×10 int64 row vector
+
+    9    2    7    1    4    6    8    5    3   10
+
+==================
+window: 1
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      176    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      261    100.00%
+-> finish diversity installing, second half size: 563
+  Value    Count   Percent
+      1       62     11.01%
+      2       64     11.37%
+      3       65     11.55%
+      4       43      7.64%
+      5       23      4.09%
+      6       79     14.03%
+      7       60     10.66%
+      8       46      8.17%
+      9       50      8.88%
+     10       71     12.61%
+-> in summary for window :1
+  Value    Count   Percent
+      1       62      6.20%
+      2       64      6.40%
+      3       65      6.50%
+      4      219     21.90%
+      5       23      2.30%
+      6       79      7.90%
+      7       60      6.00%
+      8       46      4.60%
+      9      311     31.10%
+     10       71      7.10%
+----> finish generating nonstationary dist for window 1
+==================
+window: 2
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      345    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      315    100.00%
+-> finish diversity installing, second half size: 340
+  Value    Count   Percent
+      1       38     11.18%
+      2       39     11.47%
+      3       32      9.41%
+      4       22      6.47%
+      5       23      6.76%
+      6       52     15.29%
+      7       50     14.71%
+      8       18      5.29%
+      9       24      7.06%
+     10       42     12.35%
+-> in summary for window :2
+  Value    Count   Percent
+      1       38      3.80%
+      2      354     35.40%
+      3       32      3.20%
+      4       22      2.20%
+      5       23      2.30%
+      6      397     39.70%
+      7       50      5.00%
+      8       18      1.80%
+      9       24      2.40%
+     10       42      4.20%
+----> finish generating nonstationary dist for window 2
+==================
+window: 3
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1      309    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      227    100.00%
+-> finish diversity installing, second half size: 464
+  Value    Count   Percent
+      1       56     12.07%
+      2       71     15.30%
+      3       41      8.84%
+      4       28      6.03%
+      5       23      4.96%
+      6       73     15.73%
+      7       52     11.21%
+      8       34      7.33%
+      9       36      7.76%
+     10       50     10.78%
+-> in summary for window :3
+  Value    Count   Percent
+      1      365     36.50%
+      2       71      7.10%
+      3       41      4.10%
+      4       28      2.80%
+      5       23      2.30%
+      6       73      7.30%
+      7      279     27.90%
+      8       34      3.40%
+      9       36      3.60%
+     10       50      5.00%
+----> finish generating nonstationary dist for window 3
+==================
+window: 4
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      343    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1      280    100.00%
+-> finish diversity installing, second half size: 377
+  Value    Count   Percent
+      1       35      9.28%
+      2       56     14.85%
+      3       35      9.28%
+      4       25      6.63%
+      5       20      5.31%
+      6       61     16.18%
+      7       33      8.75%
+      8       28      7.43%
+      9       44     11.67%
+     10       40     10.61%
+-> in summary for window :4
+  Value    Count   Percent
+      1      315     31.50%
+      2      399     39.90%
+      3       35      3.50%
+      4       25      2.50%
+      5       20      2.00%
+      6       61      6.10%
+      7       33      3.30%
+      8       28      2.80%
+      9       44      4.40%
+     10       40      4.00%
+----> finish generating nonstationary dist for window 4
+==================
+window: 5
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      225    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      158    100.00%
+-> finish diversity installing, second half size: 617
+  Value    Count   Percent
+      1       56      9.08%
+      2       75     12.16%
+      3       55      8.91%
+      4       52      8.43%
+      5       34      5.51%
+      6       98     15.88%
+      7       56      9.08%
+      8       41      6.65%
+      9       67     10.86%
+     10       83     13.45%
+-> in summary for window :5
+  Value    Count   Percent
+      1       56      5.60%
+      2       75      7.50%
+      3      280     28.00%
+      4      210     21.00%
+      5       34      3.40%
+      6       98      9.80%
+      7       56      5.60%
+      8       41      4.10%
+      9       67      6.70%
+     10       83      8.30%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      124    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      386    100.00%
+-> finish diversity installing, second half size: 490
+  Value    Count   Percent
+      1       46      9.39%
+      2       65     13.27%
+      3       50     10.20%
+      4       38      7.76%
+      5       27      5.51%
+      6       71     14.49%
+      7       47      9.59%
+      8       36      7.35%
+      9       60     12.24%
+     10       50     10.20%
+-> in summary for window :6
+  Value    Count   Percent
+      1       46      4.60%
+      2       65      6.50%
+      3       50      5.00%
+      4       38      3.80%
+      5      151     15.10%
+      6      457     45.70%
+      7       47      4.70%
+      8       36      3.60%
+      9       60      6.00%
+     10       50      5.00%
+----> finish generating nonstationary dist for window 6
+==================
+window: 7
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      252    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      188    100.00%
+-> finish diversity installing, second half size: 560
+  Value    Count   Percent
+      1       60     10.71%
+      2       75     13.39%
+      3       55      9.82%
+      4       44      7.86%
+      5       29      5.18%
+      6       80     14.29%
+      7       59     10.54%
+      8       43      7.68%
+      9       58     10.36%
+     10       57     10.18%
+-> in summary for window :7
+  Value    Count   Percent
+      1       60      6.00%
+      2       75      7.50%
+      3       55      5.50%
+      4       44      4.40%
+      5       29      2.90%
+      6       80      8.00%
+      7       59      5.90%
+      8      231     23.10%
+      9      310     31.00%
+     10       57      5.70%
+----> finish generating nonstationary dist for window 7
+==================
+window: 8
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      287    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      138    100.00%
+-> finish diversity installing, second half size: 575
+  Value    Count   Percent
+      1       74     12.87%
+      2       77     13.39%
+      3       43      7.48%
+      4       35      6.09%
+      5       36      6.26%
+      6       98     17.04%
+      7       54      9.39%
+      8       44      7.65%
+      9       49      8.52%
+     10       65     11.30%
+-> in summary for window :8
+  Value    Count   Percent
+      1       74      7.40%
+      2       77      7.70%
+      3       43      4.30%
+      4       35      3.50%
+      5      174     17.40%
+      6       98      9.80%
+      7       54      5.40%
+      8       44      4.40%
+      9       49      4.90%
+     10      352     35.20%
+----> finish generating nonstationary dist for window 8
+==================
+window: 9
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      267    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      239    100.00%
+-> finish diversity installing, second half size: 494
+  Value    Count   Percent
+      1       55     11.13%
+      2       60     12.15%
+      3       53     10.73%
+      4       46      9.31%
+      5       24      4.86%
+      6       73     14.78%
+      7       56     11.34%
+      8       31      6.28%
+      9       39      7.89%
+     10       57     11.54%
+-> in summary for window :9
+  Value    Count   Percent
+      1       55      5.50%
+      2       60      6.00%
+      3      292     29.20%
+      4       46      4.60%
+      5       24      2.40%
+      6       73      7.30%
+      7      323     32.30%
+      8       31      3.10%
+      9       39      3.90%
+     10       57      5.70%
+----> finish generating nonstationary dist for window 9
+==================
+window: 10
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      172    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      308    100.00%
+-> finish diversity installing, second half size: 520
+  Value    Count   Percent
+      1       63     12.12%
+      2       75     14.42%
+      3       33      6.35%
+      4       37      7.12%
+      5       22      4.23%
+      6       83     15.96%
+      7       45      8.65%
+      8       42      8.08%
+      9       58     11.15%
+     10       62     11.92%
+-> in summary for window :10
+  Value    Count   Percent
+      1       63      6.30%
+      2       75      7.50%
+      3       33      3.30%
+      4       37      3.70%
+      5       22      2.20%
+      6       83      8.30%
+      7       45      4.50%
+      8      214     21.40%
+      9       58      5.80%
+     10      370     37.00%
+----> finish generating nonstationary dist for window 10
+-> in summary for all data
+  Value    Count   Percent
+      1     1134     11.34%
+      2     1315     13.15%
+      3      926      9.26%
+      4      704      7.04%
+      5      523      5.23%
+      6     1499     14.99%
+      7     1006     10.06%
+      8      723      7.23%
+      9      998      9.98%
+     10     1172     11.72%
+==== Pretraining Phase =======
+===== Training starting for 1 =====
+training size is 2000
+===== Training finished for 1 =====
+===== Training starting for 1 =====
+training size is 325
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 662
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 492
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 521
+===== Training finished for 4 =====
+<-- initializing done
+--> online learning
+- iteration 1
+case 1
+
+ans =
+
+     0     0     0     0     0     1
+
+[Warning: Failed to remove the following invalid children under the profiles
+node:
+	MATLABParallelCloud local] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAllNames (line 126)
+  In parallel.Settings>iReplaceBadDefaultProfileWithLocal (line 680)
+  In parallel.Settings/hGetProperty (line 150)
+  In parallel.Settings/buildProperties (line 632)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+[Warning: Failed to remove the following invalid children under the Cloud node:
+	MATLABParallelCloudSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+[Warning: Failed to remove the following invalid children under the Local node:
+	localSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+case 2
+
+ans =
+
+     0     0     0     1     0     0
+
+[Warning: Failed to remove the following invalid children under the Cloud node:
+	MATLABParallelCloudSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+[Warning: Failed to remove the following invalid children under the Local node:
+	localSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+case 3
+
+ans =
+
+     0     1     0     0     0     0
+
+[Warning: Failed to remove the following invalid children under the Cloud node:
+	MATLABParallelCloudSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+[Warning: Failed to remove the following invalid children under the Local node:
+	localSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+case 4
+
+ans =
+
+     0     0     1     0     0     0
+
+[Warning: Failed to remove the following invalid children under the Cloud node:
+	MATLABParallelCloudSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+case 5
+
+ans =
+
+     0     0     0     1     0     0
+
+[Warning: Failed to remove the following invalid children under the Cloud node:
+	MATLABParallelCloudSchedulerComponent] 
+[> In parallel.internal.settings.NamedNodesCollection/refreshCache (line 364)
+  In parallel.internal.settings.NamedNodesCollection/refreshCacheIfRequired (line 329)
+  In parallel.internal.settings.NamedNodesCollection/getAll (line 64)
+  In parallel.internal.settings.TypedNodesCollection>@(x)x.getAll (line 54)
+  In parallel.internal.settings.TypedNodesCollection/getAll (line 54)
+  In parallel.internal.settings.removeStaleProfiles (line 22)
+  In parallel.Settings/buildProperties (line 655)
+  In parallel.Settings (line 327)
+  In parallel.internal.pool.PoolArrayManager>iShouldAutoCreate (line 152)
+  In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 42)
+  In pctTryCreatePoolIfNecessary (line 23)
+  In distcomp.remoteparfor.tryRemoteParfor
+  In parallel_function (line 433)
+  In submatch (line 11)
+  In accuracy (line 11)
+  In F_main_classifier (line 465)
+  In gcpcifar1 (line 19)] 
+case 6
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 7
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 8
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 9
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 10
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 11
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 12
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 13
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 14
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 15
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 16
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 17
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 18
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 19
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 20
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 21
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 22
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 23
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 24
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 25
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 26
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 27
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 28
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 29
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 30
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 31
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 32
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 33
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 34
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 35
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 36
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 37
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 38
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 39
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 40
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 41
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 42
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 43
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 44
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 45
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 46
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 47
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 48
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 49
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 50
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 51
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 52
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 53
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 54
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 55
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 56
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 57
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 58
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 59
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 60
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 61
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 62
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 63
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 64
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 65
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 66
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 67
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 68
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 69
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 70
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 71
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 72
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 73
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 74
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 75
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 76
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 77
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 78
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 79
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 80
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 81
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 82
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 83
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 84
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 85
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 86
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 87
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 88
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 89
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 90
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 91
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 92
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 93
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 94
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 95
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 96
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 97
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 98
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 99
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 100
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 1% finished in 315.6533 s
+---- accuracy: 0.06 sub: 0.055556           0     0.11111     0.22222           0           0           0     0.11111    0.066667           0
+case 101
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 102
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 103
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 104
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 105
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 106
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 107
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 108
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 109
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 110
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 111
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 112
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 113
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 114
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 115
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 116
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 117
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 118
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 119
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 120
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 121
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 122
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 123
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 124
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 125
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 126
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 127
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 128
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 129
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 130
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 131
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 132
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 133
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 134
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 135
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 136
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 137
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 138
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 139
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 140
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 141
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 142
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 143
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 144
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 145
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 146
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 147
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 148
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 149
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 150
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 151
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 152
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 153
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 154
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 155
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 156
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 157
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 158
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 159
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 160
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 161
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 162
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 163
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 164
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 165
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 166
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 167
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 168
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 169
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 170
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 171
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 172
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 173
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 174
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 175
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 176
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 177
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 178
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 179
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 180
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 181
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 182
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 183
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 184
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 185
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 186
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 187
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 188
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 189
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 190
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 191
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 192
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 193
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 194
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 195
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 196
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 197
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 198
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 199
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 200
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 2% finished in 737.6226 s
+---- accuracy: 0.095 sub: 0.13333     0.11765        0.12     0.14286    0.058824           0         0.2    0.066667    0.068966    0.090909
+case 201
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 202
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 203
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 204
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 205
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 206
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 207
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 208
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 209
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 210
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 211
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 212
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 213
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 214
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 215
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 216
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 217
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 218
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 219
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 220
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 221
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 222
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 223
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 224
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 225
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 226
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 227
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 228
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 229
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 230
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 231
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 232
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 233
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 234
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 235
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 236
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 237
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 238
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 239
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 240
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 241
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 242
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 243
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 244
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 245
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 246
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 247
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 248
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 249
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 250
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 251
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 252
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 253
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 254
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 255
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 256
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 257
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 258
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 259
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 260
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 261
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 262
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 263
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 264
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 265
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 266
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 267
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 268
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 269
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 270
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 271
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 272
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 273
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 274
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 275
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 276
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 277
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 278
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 279
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 280
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 281
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 282
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 283
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 284
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 285
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 286
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 287
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 288
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 289
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 290
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 291
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 292
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 293
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 294
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 295
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 296
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 297
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 298
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 299
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 300
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 3% finished in 1136.3457 s
+---- accuracy: 0.086667 sub: 0.15385    0.090909    0.083333    0.090909    0.076923    0.047619     0.14286        0.04    0.076923    0.058824
+case 301
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 302
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 303
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 304
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 305
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 306
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 307
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 308
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 309
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 310
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 311
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 312
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 313
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 314
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 315
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 316
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 317
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 318
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 319
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 320
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 321
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 322
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 323
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 324
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 325
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 326
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 327
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 328
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 329
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 330
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 331
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 332
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 333
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 334
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 335
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 336
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 337
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 338
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 339
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 340
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 341
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 342
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 343
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 344
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 345
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 346
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 347
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 348
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 349
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 350
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 351
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 352
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 353
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 354
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 355
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 356
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 357
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 358
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 359
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 360
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 361
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 362
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 363
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 364
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 365
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 366
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 367
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 368
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 369
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 370
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 371
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 372
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 373
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 374
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 375
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 376
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 377
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 378
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 379
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 380
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 381
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 382
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 383
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 384
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 385
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 386
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 387
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 388
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 389
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 390
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 391
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 392
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 393
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 394
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 395
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 396
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 397
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 398
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 399
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 400
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 4% finished in 1568.6473 s
+---- accuracy: 0.0875 sub: 0.14     0.10345    0.086957    0.093023    0.057143    0.075472     0.16129     0.02439    0.083333    0.041667
+case 401
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 402
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 403
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 404
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 405
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 406
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 407
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 408
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 409
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 410
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 411
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 412
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 413
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 414
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 415
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 416
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 417
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 418
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 419
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 420
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 421
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 422
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 423
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 424
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 425
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 426
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 427
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 428
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 429
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 430
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 431
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 432
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 433
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 434
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 435
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 436
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 437
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 438
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 439
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 440
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 441
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 442
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 443
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 444
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 445
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 446
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 447
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 448
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 449
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 450
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 451
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 452
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 453
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 454
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 455
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 456
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 457
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 458
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 459
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 460
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 461
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 462
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 463
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 464
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 465
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 466
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 467
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 468
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 469
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 470
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 471
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 472
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 473
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 474
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 475
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 476
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 477
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 478
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 479
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 480
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 481
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 482
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 483
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 484
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 485
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 486
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 487
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 488
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 489
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 490
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 491
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 492
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 493
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 494
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 495
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 496
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 497
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 498
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 499
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 500
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 5% finished in 1984.6513 s
+---- accuracy: 0.094 sub: 0.12698    0.090909     0.12069     0.12281      0.0625    0.075758     0.14286    0.020408    0.096154      0.0625
+case 501
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 502
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 503
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 504
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 505
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 506
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 507
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 508
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 509
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 510
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 511
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 512
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 513
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 514
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 515
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 516
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 517
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 518
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 519
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 520
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 521
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 522
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 523
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 524
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 525
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 526
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 527
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 528
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 529
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 530
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 531
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 532
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 533
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 534
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 535
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 536
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 537
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 538
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 539
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 540
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 541
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 542
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 543
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 544
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 545
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 546
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 547
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 548
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 549
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 550
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 551
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 552
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 553
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 554
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 555
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 556
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 557
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 558
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 559
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 560
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 561
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 562
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 563
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 564
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 565
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 566
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 567
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 568
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 569
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 570
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 571
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 572
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 573
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 574
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 575
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 576
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 577
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 578
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 579
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 580
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 581
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 582
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 583
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 584
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 585
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 586
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 587
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 588
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 589
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 590
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 591
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 592
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 593
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 594
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 595
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 596
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 597
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 598
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 599
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 600
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 6% finished in 2509.3808 s
+---- accuracy: 0.096667 sub: 0.14474         0.1     0.11429     0.11667    0.065574    0.074074        0.14    0.016949    0.096774    0.097561
+case 601
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 602
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 603
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 604
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 605
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 606
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 607
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 608
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 609
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 610
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 611
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 612
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 613
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 614
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 615
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 616
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 617
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 618
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 619
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 620
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 621
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 622
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 623
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 624
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 625
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 626
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 627
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 628
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 629
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 630
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 631
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 632
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 633
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 634
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 635
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 636
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 637
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 638
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 639
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 640
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 641
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 642
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 643
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 644
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 645
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 646
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 647
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 648
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 649
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 650
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 651
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 652
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 653
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 654
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 655
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 656
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 657
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 658
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 659
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 660
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 661
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 662
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 663
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 664
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 665
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 666
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 667
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 668
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 669
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 670
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 671
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 672
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 673
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 674
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 675
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 676
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 677
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 678
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 679
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 680
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 681
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 682
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 683
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 684
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 685
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 686
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 687
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 688
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 689
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 690
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 691
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 692
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 693
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 694
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 695
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 696
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 697
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 698
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 699
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 700
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 7% finished in 3061.6768 s
+---- accuracy: 0.10286 sub: 0.13793     0.10909      0.1125     0.11268     0.10959    0.074468     0.12281    0.044776     0.10294     0.10417
+case 701
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 702
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 703
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 704
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 705
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 706
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 707
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 708
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 709
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 710
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 711
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 712
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 713
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 714
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 715
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 716
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 717
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 718
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 719
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 720
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 721
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 722
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 723
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 724
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 725
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 726
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 727
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 728
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 729
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 730
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 731
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 732
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 733
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 734
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 735
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 736
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 737
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 738
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 739
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 740
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 741
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 742
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 743
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 744
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 745
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 746
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 747
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 748
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 749
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 750
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 751
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 752
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 753
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 754
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 755
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 756
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 757
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 758
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 759
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 760
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 761
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 762
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 763
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 764
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 765
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 766
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 767
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 768
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 769
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 770
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 771
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 772
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 773
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 774
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 775
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 776
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 777
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 778
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 779
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 780
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 781
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 782
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 783
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 784
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 785
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 786
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 787
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 788
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 789
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 790
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 791
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 792
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 793
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 794
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 795
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 796
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 797
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 798
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 799
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 800
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 8% finished in 3623.3693 s
+---- accuracy: 0.1075 sub: 0.14894     0.11429     0.11828         0.1    0.097561    0.074766      0.1194    0.069444       0.125     0.10909
+case 801
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 802
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 803
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 804
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 805
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 806
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 807
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 808
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 809
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 810
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 811
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 812
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 813
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 814
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 815
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 816
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 817
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 818
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 819
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 820
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 821
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 822
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 823
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 824
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 825
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 826
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 827
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 828
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 829
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 830
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 831
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 832
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 833
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 834
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 835
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 836
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 837
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 838
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 839
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 840
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 841
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 842
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 843
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 844
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 845
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 846
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 847
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 848
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 849
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 850
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 851
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 852
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 853
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 854
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 855
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 856
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 857
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 858
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 859
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 860
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 861
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 862
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 863
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 864
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 865
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 866
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 867
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 868
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 869
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 870
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 871
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 872
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 873
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 874
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 875
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 876
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 877
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 878
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 879
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 880
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 881
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 882
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 883
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 884
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 885
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 886
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 887
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 888
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 889
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 890
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 891
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 892
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 893
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 894
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 895
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 896
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 897
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 898
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 899
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 900
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 9% finished in 4120.5064 s
+---- accuracy: 0.10889 sub: 0.17925      0.1125      0.1165      0.1087    0.085106       0.075     0.10811     0.08046     0.11905         0.1
+case 901
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 902
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 903
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 904
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 905
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 906
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 907
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 908
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 909
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 910
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 911
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 912
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 913
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 914
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 915
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 916
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 917
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 918
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 919
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 920
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 921
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 922
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 923
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 924
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 925
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 926
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 927
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 928
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 929
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 930
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 931
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 932
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 933
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 934
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 935
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 936
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 937
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 938
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 939
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 940
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 941
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 942
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 943
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 944
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 945
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 946
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 947
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 948
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 949
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 950
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 951
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 952
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 953
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 954
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 955
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 956
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 957
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 958
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 959
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 960
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 961
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 962
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 963
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 964
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 965
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 966
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 967
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 968
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 969
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 970
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 971
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 972
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 973
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 974
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 975
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 976
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 977
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 978
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 979
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 980
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 981
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 982
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 983
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 984
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 985
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 986
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 987
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 988
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 989
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 990
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 991
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 992
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 993
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 994
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 995
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 996
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 997
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 998
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 999
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1000
+
+ans =
+
+     0     0     1     0     0     0
+
+no reclustering involved
+===== Training starting for 1 =====
+training size is 581
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 916
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 735
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 768
+===== Training finished for 4 =====
+===== Training starting for 1 =====
+training size is 3000
+===== Training finished for 1 =====
+Starting parallel pool (parpool) using the 'local' profile ... > 10% finished in 4871.9844 s
+---- accuracy: 0.108 sub: 0.16807     0.13043     0.10714     0.11111    0.087379    0.075188    0.096386    0.077778     0.11458     0.10938
+case 1001
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1002
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1003
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1004
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1005
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1006
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1007
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1008
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1009
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1010
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1011
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1012
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1013
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1014
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1015
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1016
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1017
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1018
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1019
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1020
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1021
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1022
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1023
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1024
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1025
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1026
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1027
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1028
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1029
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1030
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1031
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1032
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1033
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1034
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1035
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1036
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1037
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1038
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1039
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1040
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1041
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1042
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1043
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1044
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1045
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1046
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1047
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1048
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1049
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1050
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1051
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1052
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1053
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1054
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1055
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1056
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1057
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1058
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1059
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1060
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1061
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1062
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1063
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1064
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1065
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1066
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1067
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1068
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1069
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1070
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1071
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1072
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1073
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1074
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1075
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1076
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1077
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1078
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1079
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1080
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1081
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1082
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1083
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1084
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1085
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1086
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1087
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1088
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1089
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1090
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1091
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1092
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1093
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1094
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1095
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1096
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1097
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1098
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1099
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1100
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... > 11% finished in 5390.4936 s
+---- accuracy: 0.10909 sub: 0.16535        0.12    0.093023     0.10924    0.093458    0.078014     0.12871    0.087379      0.1068     0.11429
+case 1101
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1102
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1103
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1104
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1105
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1106
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1107
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1108
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1109
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1110
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1111
+
+ans =
+
+     0     1     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1112
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1113
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1114
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1115
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1116
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1117
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1118
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1119
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1120
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1121
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1122
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1123
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1124
+
+ans =
+
+     0     0     0     1     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1125
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1126
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1127
+
+ans =
+
+     0     0     0     0     0     1
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1128
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1129
+
+ans =
+
+     0     0     0     0     1     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1130
+
+ans =
+
+     0     0     1     0     0     0
+
+Starting parallel pool (parpool) using the 'local' profile ... case 1131
+
+ans =
+
+     1     0     0     0     0     0
+
+Starting parallel pool (parpool) using 
