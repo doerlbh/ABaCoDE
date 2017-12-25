@@ -1,20 +1,20 @@
 % gcp-gpu - MNIST-s
 
-F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 1, 'baseline', 1000, 'gcp-gpu', 20000)
+% F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 1, 'baseline', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1, MNIST-s, randnegativenonstationary,shuffled, 1, baseline, 1000,gcp-gpu, 20000)')
-system(['echo gcpmnistrand MNIST-s shuffled rand, 1, baseline >> done'  ]);
+% system(['echo gcpmnistrand MNIST-s shuffled rand, 1, baseline >> done'  ]);
 
-F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 1, 'universal_embedding', 1000, 'gcp-gpu', 20000)
+% F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 1, 'universal_embedding', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1, MNIST-s, randnegativenonstationary,shuffled, 1, universal_embedding, 1000,gcp-gpu, 20000)')
-system(['echo gcpmnistrand MNIST-s shuffled rand, 1, universal_embedding >> done'  ]);
+% system(['echo gcpmnistrand MNIST-s shuffled rand, 1, universal_embedding >> done'  ]);
 
-F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 2, 'minibatch_embedding', 1000, 'gcp-gpu', 20000)
+% F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 2, 'minibatch_embedding', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1,MNIST-s, randnegativenonstationary, shuffled, 2, minibatch_embedding,1000,gcp-gpu, 20000)')
-system(['echo gcpmnistrand MNIST-s shuffled rand, 2, minibatch_embedding >> done'  ]);
+% system(['echo gcpmnistrand MNIST-s shuffled rand, 2, minibatch_embedding >> done'  ]);
 
-F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 2, 'online_embedding', 1000, 'gcp-gpu', 20000)
+% F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 2, 'online_embedding', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1,MNIST-s, randnegativenonstationary, shuffled, 2, online_embedding,1000,gcp-gpu, 20000)')
-system(['echo gcpmnistrand MNIST-s shuffled rand, 2, online_embedding >> done'  ]);
+% system(['echo gcpmnistrand MNIST-s shuffled rand, 2, online_embedding >> done'  ]);
 
 F_main_classifier(1, 'MNIST-s', 'randnegativenonstationary','shuffled', 2, 'minibatch_history_CB', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1, MNIST-s, randnegativenonstationary,shuffled, 2, minibatch_history_CB, 1000, gcp-gpu, 20000)')

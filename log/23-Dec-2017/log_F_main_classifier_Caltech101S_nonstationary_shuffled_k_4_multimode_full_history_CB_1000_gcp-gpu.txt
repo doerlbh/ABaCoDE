@@ -1,0 +1,13226 @@
+
+23-Dec-2017
+running experiment on gcp-gpu
+info: Caltech101S nonstationary shuffled k = 4 multimode_full_history_CB 1000
+===================
+==== Loading data =======
+==== Online Learning Phase =======
+--> initializing
+# case: 8000
+# input: 784
+# label: 101
+# embedding: 4
+==== nonstationizing dataset =======
+--> finish shuffling stationary input
+n = 8
+clustering diversity 1st half:
+  Value    Count   Percent
+      1      496     12.40%
+      2      353      8.82%
+      3      377      9.43%
+      4      520     13.00%
+      5      634     15.85%
+      6      542     13.55%
+      7      628     15.70%
+      8      450     11.25%
+clustering diversity 2nd half:
+  Value    Count   Percent
+      1      496     12.40%
+      2      399      9.97%
+      3      384      9.60%
+      4      478     11.95%
+      5      599     14.97%
+      6      601     15.03%
+      7      583     14.57%
+      8      460     11.50%
+clustering diversity 1st 1st half:
+  Value    Count   Percent
+      1      246     12.30%
+      2      170      8.50%
+      3      181      9.05%
+      4      252     12.60%
+      5      338     16.90%
+      6      278     13.90%
+      7      317     15.85%
+      8      218     10.90%
+clustering diversity 1st 2nd half:
+  Value    Count   Percent
+      1      250     12.50%
+      2      183      9.15%
+      3      196      9.80%
+      4      268     13.40%
+      5      296     14.80%
+      6      264     13.20%
+      7      311     15.55%
+      8      232     11.60%
+--> finish reclustering stationary input
+seq_first: 
+
+ans =
+
+  1×8 int64 row vector
+
+   3   8   2   1   4   5   7   6
+
+seq_second: 
+
+ans =
+
+  1×8 int64 row vector
+
+   3   8   4   5   6   7   2   1
+
+==================
+window: 1
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      181    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      196    100.00%
+-> finish diversity installing, second half size: 623
+  Value    Count   Percent
+      1       71     11.40%
+      2       62      9.95%
+      3       64     10.27%
+      4       79     12.68%
+      5       93     14.93%
+      6       84     13.48%
+      7       97     15.57%
+      8       73     11.72%
+-> in summary for window :1
+  Value    Count   Percent
+      1       71      7.10%
+      2       62      6.20%
+      3      441     44.10%
+      4       79      7.90%
+      5       93      9.30%
+      6       84      8.40%
+      7       97      9.70%
+      8       73      7.30%
+----> finish generating nonstationary dist for window 1
+==================
+window: 2
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      218    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      232    100.00%
+-> finish diversity installing, second half size: 550
+  Value    Count   Percent
+      1       79     14.36%
+      2       54      9.82%
+      3       45      8.18%
+      4       62     11.27%
+      5       83     15.09%
+      6       85     15.45%
+      7       82     14.91%
+      8       60     10.91%
+-> in summary for window :2
+  Value    Count   Percent
+      1       79      7.90%
+      2       54      5.40%
+      3       45      4.50%
+      4       62      6.20%
+      5       83      8.30%
+      6       85      8.50%
+      7       82      8.20%
+      8      510     51.00%
+----> finish generating nonstationary dist for window 2
+==================
+window: 3
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      170    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      268    100.00%
+-> finish diversity installing, second half size: 562
+  Value    Count   Percent
+      1       71     12.63%
+      2       49      8.72%
+      3       46      8.19%
+      4       65     11.57%
+      5       85     15.12%
+      6       85     15.12%
+      7      102     18.15%
+      8       59     10.50%
+-> in summary for window :3
+  Value    Count   Percent
+      1       71      7.10%
+      2      219     21.90%
+      3       46      4.60%
+      4      333     33.30%
+      5       85      8.50%
+      6       85      8.50%
+      7      102     10.20%
+      8       59      5.90%
+----> finish generating nonstationary dist for window 3
+==================
+window: 4
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1      246    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      296    100.00%
+-> finish diversity installing, second half size: 458
+  Value    Count   Percent
+      1       62     13.54%
+      2       50     10.92%
+      3       40      8.73%
+      4       57     12.45%
+      5       65     14.19%
+      6       66     14.41%
+      7       69     15.07%
+      8       49     10.70%
+-> in summary for window :4
+  Value    Count   Percent
+      1      308     30.80%
+      2       50      5.00%
+      3       40      4.00%
+      4       57      5.70%
+      5      361     36.10%
+      6       66      6.60%
+      7       69      6.90%
+      8       49      4.90%
+----> finish generating nonstationary dist for window 4
+==================
+window: 5
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      252    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      264    100.00%
+-> finish diversity installing, second half size: 484
+  Value    Count   Percent
+      1       47      9.71%
+      2       43      8.88%
+      3       60     12.40%
+      4       56     11.57%
+      5       75     15.50%
+      6       66     13.64%
+      7       70     14.46%
+      8       67     13.84%
+-> in summary for window :5
+  Value    Count   Percent
+      1       47      4.70%
+      2       43      4.30%
+      3       60      6.00%
+      4      308     30.80%
+      5       75      7.50%
+      6      330     33.00%
+      7       70      7.00%
+      8       67      6.70%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      338    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      311    100.00%
+-> finish diversity installing, second half size: 351
+  Value    Count   Percent
+      1       39     11.11%
+      2       40     11.40%
+      3       33      9.40%
+      4       33      9.40%
+      5       61     17.38%
+      6       62     17.66%
+      7       45     12.82%
+      8       38     10.83%
+-> in summary for window :6
+  Value    Count   Percent
+      1       39      3.90%
+      2       40      4.00%
+      3       33      3.30%
+      4       33      3.30%
+      5      399     39.90%
+      6       62      6.20%
+      7      356     35.60%
+      8       38      3.80%
+----> finish generating nonstationary dist for window 6
+==================
+window: 7
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      317    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      183    100.00%
+-> finish diversity installing, second half size: 500
+  Value    Count   Percent
+      1       68     13.60%
+      2       48      9.60%
+      3       52     10.40%
+      4       56     11.20%
+      5       76     15.20%
+      6       86     17.20%
+      7       60     12.00%
+      8       54     10.80%
+-> in summary for window :7
+  Value    Count   Percent
+      1       68      6.80%
+      2      231     23.10%
+      3       52      5.20%
+      4       56      5.60%
+      5       76      7.60%
+      6       86      8.60%
+      7      377     37.70%
+      8       54      5.40%
+----> finish generating nonstationary dist for window 7
+==================
+window: 8
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      278    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1      250    100.00%
+-> finish diversity installing, second half size: 472
+  Value    Count   Percent
+      1       59     12.50%
+      2       53     11.23%
+      3       44      9.32%
+      4       70     14.83%
+      5       61     12.92%
+      6       67     14.19%
+      7       58     12.29%
+      8       60     12.71%
+-> in summary for window :8
+  Value    Count   Percent
+      1      309     30.90%
+      2       53      5.30%
+      3       44      4.40%
+      4       70      7.00%
+      5       61      6.10%
+      6      345     34.50%
+      7       58      5.80%
+      8       60      6.00%
+----> finish generating nonstationary dist for window 8
+-> in summary for all data
+  Value    Count   Percent
+      1      992     12.40%
+      2      752      9.40%
+      3      761      9.51%
+      4      998     12.47%
+      5     1233     15.41%
+      6     1143     14.29%
+      7     1211     15.14%
+      8      910     11.38%
+==== shuffling labels each stage =======
+----------
+For window 1: 
+  Columns 1 through 13
+
+    90    29    73    15    84    93    22     9    44    49     6    35    39
+
+  Columns 14 through 26
+
+    23    62    33    88    37    38    70    18   100     4    11    78    50
+
+  Columns 27 through 39
+
+    16    66    72    17    68     2    63    80    25    31   101    48    74
+
+  Columns 40 through 52
+
+    12    75    94    65    89    40    87    45     7    81    42    95    64
+
+  Columns 53 through 65
+
+    10    21    91    92    43    79    13    60    19    34    57     8    83
+
+  Columns 66 through 78
+
+    24     1     5    46    20    86    82    30    98    97    53    28    54
+
+  Columns 79 through 91
+
+    32    59    36    69    52    26    99    71    76    61    96    41    56
+
+  Columns 92 through 101
+
+    67    85    58    77     3    27    55    47    14    51
+
+----------
+For window 2: 
+  Columns 1 through 13
+
+    64    29    56    79    82    85    99    52    87    90   100    17     3
+
+  Columns 14 through 26
+
+    54     5     8    25     2    93    80    65    67    30    86    39    10
+
+  Columns 27 through 39
+
+    61    42    50    57    11    45    13    69    18    62    58    81    38
+
+  Columns 40 through 52
+
+    53    97    73    48    49    31    76    44    78    89    32    60    12
+
+  Columns 53 through 65
+
+    22    68    74    40    47    88    15    21    35    26    94    16    14
+
+  Columns 66 through 78
+
+     7    36    46    92     6    75    28    66    91    27    95   101    98
+
+  Columns 79 through 91
+
+    24    96    71    23    83    51    70    84    59    33    20    37    63
+
+  Columns 92 through 101
+
+     4    55    41    19    34    77     1    43     9    72
+
+----------
+For window 3: 
+  Columns 1 through 13
+
+    91    80    90    79     7     5    26    46    86    99    28    39    61
+
+  Columns 14 through 26
+
+    94    55     3    49    81    77     9    92    89     8    33   100    42
+
+  Columns 27 through 39
+
+    10    71    70    27    66    82    38    25    34    17    97    83    57
+
+  Columns 40 through 52
+
+    69    96    20    16    87   101    32    41    58    64    73    74    18
+
+  Columns 53 through 65
+
+    36    67    54     1    44    72    59    11     6    43    56    15    14
+
+  Columns 66 through 78
+
+    31    53    52    29    93    12    35    95    47    68    76    22    37
+
+  Columns 79 through 91
+
+    51    23    65    40     4    19    84    63    24    60    21     2    50
+
+  Columns 92 through 101
+
+    48    13    85    30    88    78    45    98    75    62
+
+----------
+For window 4: 
+  Columns 1 through 13
+
+    61    17     3    70    59    33    66    37    39     7    52    22    55
+
+  Columns 14 through 26
+
+    85    14    24    98    68     9    78    97    84    27    20    15    58
+
+  Columns 27 through 39
+
+    56    83    87    88    86    43    47    26    18   100    40    30    10
+
+  Columns 40 through 52
+
+    90     5    35    32    46     8    36    74    49    34     6    41    28
+
+  Columns 53 through 65
+
+    63    80    23    89    99    76    25    60    29    62    92    16    65
+
+  Columns 66 through 78
+
+    77    51    19   101    21    67    54    42    73    95     1    71    48
+
+  Columns 79 through 91
+
+    94    31     2    38    45    72    12    82    53     4    44    91    13
+
+  Columns 92 through 101
+
+    79    64    96    93    75    81    57    69    50    11
+
+----------
+For window 5: 
+  Columns 1 through 13
+
+    86    96    35    69    36    50    66   101    54    57    52    67    24
+
+  Columns 14 through 26
+
+    42    70    63    85    16    10    51    99    45    78    48    64     2
+
+  Columns 27 through 39
+
+    73    89     1    49    40    97    18    28    95    94    79    34    93
+
+  Columns 40 through 52
+
+    76     9    26    74    60    71    23    46    59    20    27    32    88
+
+  Columns 53 through 65
+
+    55    82    72    77   100    21    68    19    61     3    29     4    31
+
+  Columns 66 through 78
+
+    12    91    58    90    53    41    17     7    39    84    25    14    56
+
+  Columns 79 through 91
+
+    11    44    87    37     8    30    80    98    92    83    65    75    43
+
+  Columns 92 through 101
+
+    22    33    47    81    15    38     6    13     5    62
+
+----------
+For window 6: 
+  Columns 1 through 13
+
+    22    55    25    97    77    82    92    73    19    93   100    14    65
+
+  Columns 14 through 26
+
+    18    13    17    85    35    72    34    47    74     4    94    98    23
+
+  Columns 27 through 39
+
+    79     3    69    95    56    24    44    89    53    39    11    28    20
+
+  Columns 40 through 52
+
+    31    33    63    54    59    41    84    21    43    62     8    80    15
+
+  Columns 53 through 65
+
+    78    16    48    71    81     9    70    10    68    45    88    52    58
+
+  Columns 66 through 78
+
+    46    26    42    99    67    36    57     7    64    76    29    66    12
+
+  Columns 79 through 91
+
+     6     1    27    96    38   101    83    50    91    87    90     5    60
+
+  Columns 92 through 101
+
+    37    40    49    32     2    51    61    86    75    30
+
+----------
+For window 7: 
+  Columns 1 through 13
+
+    10    66    24    32    35    79    83    16    50    23    25    89    17
+
+  Columns 14 through 26
+
+    22    77    48     6    34    19    58     1    41    82    43    46    67
+
+  Columns 27 through 39
+
+    29     3    49    39    94    97    57    76    74    54    31    98    45
+
+  Columns 40 through 52
+
+    51    85   101    26    93    68    27    84     2    20    78    72    62
+
+  Columns 53 through 65
+
+    18    11     8    65    90    15    60    42    40    13    80     4    99
+
+  Columns 66 through 78
+
+    47    36     9    53    21    56    71    55    75    87    92    38    44
+
+  Columns 79 through 91
+
+    88    12   100    33    96    64    37    73    30    28     7    52    69
+
+  Columns 92 through 101
+
+    70    91    63    59    61    81    86     5    14    95
+
+----------
+For window 8: 
+  Columns 1 through 13
+
+    70    18    56    95    67    72    29    63    13    17    10    79    97
+
+  Columns 14 through 26
+
+    93    32     9    66    27    40    78    37    25    92    80    71    14
+
+  Columns 27 through 39
+
+     5    87    39    35    47    11    86    19    55    30    41    91    94
+
+  Columns 40 through 52
+
+    60    96    57    73    65    15    74     4    53    49    46    76     8
+
+  Columns 53 through 65
+
+    34     7    88    83   101    98    82    36    81     1    24    62    51
+
+  Columns 66 through 78
+
+    16    84    23    43    64    38    75    26    89    22    50    33    44
+
+  Columns 79 through 91
+
+    85    68    59    58     6    31    48     3    52    77    99    69    28
+
+  Columns 92 through 101
+
+   100    21    90    61    42    20     2    45    12    54
+
+==== Pretraining Phase =======
+===== Training starting for 1 =====
+training size is 671
+===== Training finished for 1 =====
+===== Training starting for 1 =====
+training size is 138
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 142
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 267
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 124
+===== Training finished for 4 =====
+<-- initializing done
+--> online learning
+- iteration 1
+case 1
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2
+
+ans =
+
+     0     0     1     0     0     0
+
+case 3
+
+ans =
+
+     0     0     0     0     0     1
+
+case 4
+
+ans =
+
+     0     0     0     0     1     0
+
+case 5
+
+ans =
+
+     1     0     0     0     0     0
+
+case 6
+
+ans =
+
+     0     1     0     0     0     0
+
+case 7
+
+ans =
+
+     0     1     0     0     0     0
+
+case 8
+
+ans =
+
+     0     0     0     0     1     0
+
+case 9
+
+ans =
+
+     0     0     0     0     0     1
+
+case 10
+
+ans =
+
+     0     0     0     1     0     0
+
+case 11
+
+ans =
+
+     0     1     0     0     0     0
+
+case 12
+
+ans =
+
+     1     0     0     0     0     0
+
+case 13
+
+ans =
+
+     0     0     0     1     0     0
+
+case 14
+
+ans =
+
+     1     0     0     0     0     0
+
+case 15
+
+ans =
+
+     0     0     0     0     1     0
+
+case 16
+
+ans =
+
+     0     0     0     0     1     0
+
+case 17
+
+ans =
+
+     0     0     0     1     0     0
+
+case 18
+
+ans =
+
+     0     1     0     0     0     0
+
+case 19
+
+ans =
+
+     0     0     0     1     0     0
+
+case 20
+
+ans =
+
+     0     0     1     0     0     0
+
+case 21
+
+ans =
+
+     0     0     0     1     0     0
+
+case 22
+
+ans =
+
+     1     0     0     0     0     0
+
+case 23
+
+ans =
+
+     1     0     0     0     0     0
+
+case 24
+
+ans =
+
+     1     0     0     0     0     0
+
+case 25
+
+ans =
+
+     1     0     0     0     0     0
+
+case 26
+
+ans =
+
+     0     1     0     0     0     0
+
+case 27
+
+ans =
+
+     0     0     0     0     1     0
+
+case 28
+
+ans =
+
+     0     0     1     0     0     0
+
+case 29
+
+ans =
+
+     0     0     0     0     0     1
+
+case 30
+
+ans =
+
+     0     0     0     0     0     1
+
+case 31
+
+ans =
+
+     0     1     0     0     0     0
+
+case 32
+
+ans =
+
+     1     0     0     0     0     0
+
+case 33
+
+ans =
+
+     0     0     0     0     0     1
+
+case 34
+
+ans =
+
+     0     0     0     1     0     0
+
+case 35
+
+ans =
+
+     0     1     0     0     0     0
+
+case 36
+
+ans =
+
+     0     1     0     0     0     0
+
+case 37
+
+ans =
+
+     0     0     0     1     0     0
+
+case 38
+
+ans =
+
+     0     0     1     0     0     0
+
+case 39
+
+ans =
+
+     0     0     0     0     0     1
+
+case 40
+
+ans =
+
+     0     0     0     0     0     1
+
+case 41
+
+ans =
+
+     0     0     0     0     0     1
+
+case 42
+
+ans =
+
+     0     0     0     0     1     0
+
+case 43
+
+ans =
+
+     0     0     0     1     0     0
+
+case 44
+
+ans =
+
+     0     1     0     0     0     0
+
+case 45
+
+ans =
+
+     0     1     0     0     0     0
+
+case 46
+
+ans =
+
+     0     0     1     0     0     0
+
+case 47
+
+ans =
+
+     0     0     0     1     0     0
+
+case 48
+
+ans =
+
+     0     0     1     0     0     0
+
+case 49
+
+ans =
+
+     0     0     1     0     0     0
+
+case 50
+
+ans =
+
+     0     0     0     0     1     0
+
+case 51
+
+ans =
+
+     1     0     0     0     0     0
+
+case 52
+
+ans =
+
+     0     0     0     0     1     0
+
+case 53
+
+ans =
+
+     0     0     0     0     1     0
+
+case 54
+
+ans =
+
+     0     0     0     1     0     0
+
+case 55
+
+ans =
+
+     0     0     0     0     0     1
+
+case 56
+
+ans =
+
+     1     0     0     0     0     0
+
+case 57
+
+ans =
+
+     0     1     0     0     0     0
+
+case 58
+
+ans =
+
+     0     0     0     0     0     1
+
+case 59
+
+ans =
+
+     0     1     0     0     0     0
+
+case 60
+
+ans =
+
+     0     0     0     0     0     1
+
+case 61
+
+ans =
+
+     0     0     1     0     0     0
+
+case 62
+
+ans =
+
+     0     0     0     0     0     1
+
+case 63
+
+ans =
+
+     0     0     0     1     0     0
+
+case 64
+
+ans =
+
+     1     0     0     0     0     0
+
+case 65
+
+ans =
+
+     0     1     0     0     0     0
+
+case 66
+
+ans =
+
+     0     0     0     1     0     0
+
+case 67
+
+ans =
+
+     0     0     0     0     1     0
+
+case 68
+
+ans =
+
+     0     0     1     0     0     0
+
+case 69
+
+ans =
+
+     0     0     0     1     0     0
+
+case 70
+
+ans =
+
+     0     0     0     0     1     0
+
+case 71
+
+ans =
+
+     0     1     0     0     0     0
+
+case 72
+
+ans =
+
+     0     0     0     0     1     0
+
+case 73
+
+ans =
+
+     0     0     1     0     0     0
+
+case 74
+
+ans =
+
+     0     0     1     0     0     0
+
+case 75
+
+ans =
+
+     0     0     1     0     0     0
+
+case 76
+
+ans =
+
+     1     0     0     0     0     0
+
+case 77
+
+ans =
+
+     0     0     1     0     0     0
+
+case 78
+
+ans =
+
+     1     0     0     0     0     0
+
+case 79
+
+ans =
+
+     0     0     0     1     0     0
+
+case 80
+
+ans =
+
+     0     0     1     0     0     0
+
+> 1% finished in 163.5681 s
+---- accuracy: 0.0125 sub: 0    0  NaN    0    0    0  NaN    0  NaN    0    0    0  NaN  NaN    0    0    0  NaN  NaN  NaN    0  NaN    0  NaN  NaN  NaN  NaN  NaN    0    0  NaN    0    0  NaN  NaN  NaN  NaN  NaN    0  NaN  NaN  NaN  NaN    0  NaN    0  NaN  NaN  NaN    0  NaN    0    0    0  NaN  NaN    0  NaN    0  NaN  NaN    0  NaN  NaN    0  NaN  NaN  NaN  NaN    0    0    0    1  NaN  NaN    0  NaN  NaN  NaN  NaN  NaN  NaN  NaN    0  NaN    0  NaN  NaN    0    0    0    0  NaN    0    0  NaN    0  NaN  NaN  NaN    0
+case 81
+
+ans =
+
+     0     0     0     1     0     0
+
+case 82
+
+ans =
+
+     0     1     0     0     0     0
+
+case 83
+
+ans =
+
+     0     0     0     0     1     0
+
+case 84
+
+ans =
+
+     0     0     1     0     0     0
+
+case 85
+
+ans =
+
+     0     0     0     0     1     0
+
+case 86
+
+ans =
+
+     0     0     0     1     0     0
+
+case 87
+
+ans =
+
+     0     0     0     0     0     1
+
+case 88
+
+ans =
+
+     0     0     0     1     0     0
+
+case 89
+
+ans =
+
+     0     0     0     1     0     0
+
+case 90
+
+ans =
+
+     0     0     0     0     1     0
+
+case 91
+
+ans =
+
+     0     0     0     0     0     1
+
+case 92
+
+ans =
+
+     0     0     0     1     0     0
+
+case 93
+
+ans =
+
+     0     0     0     1     0     0
+
+case 94
+
+ans =
+
+     1     0     0     0     0     0
+
+case 95
+
+ans =
+
+     0     0     0     0     1     0
+
+case 96
+
+ans =
+
+     0     0     1     0     0     0
+
+case 97
+
+ans =
+
+     0     1     0     0     0     0
+
+case 98
+
+ans =
+
+     1     0     0     0     0     0
+
+case 99
+
+ans =
+
+     0     0     1     0     0     0
+
+case 100
+
+ans =
+
+     1     0     0     0     0     0
+
+case 101
+
+ans =
+
+     1     0     0     0     0     0
+
+case 102
+
+ans =
+
+     0     0     0     0     1     0
+
+case 103
+
+ans =
+
+     0     0     0     0     1     0
+
+case 104
+
+ans =
+
+     1     0     0     0     0     0
+
+case 105
+
+ans =
+
+     0     0     0     0     1     0
+
+case 106
+
+ans =
+
+     0     0     1     0     0     0
+
+case 107
+
+ans =
+
+     0     0     0     1     0     0
+
+case 108
+
+ans =
+
+     1     0     0     0     0     0
+
+case 109
+
+ans =
+
+     0     0     1     0     0     0
+
+case 110
+
+ans =
+
+     0     0     1     0     0     0
+
+case 111
+
+ans =
+
+     0     0     0     1     0     0
+
+case 112
+
+ans =
+
+     0     0     1     0     0     0
+
+case 113
+
+ans =
+
+     0     0     0     0     0     1
+
+case 114
+
+ans =
+
+     0     1     0     0     0     0
+
+case 115
+
+ans =
+
+     0     0     0     0     1     0
+
+case 116
+
+ans =
+
+     0     0     0     1     0     0
+
+case 117
+
+ans =
+
+     0     0     0     0     1     0
+
+case 118
+
+ans =
+
+     0     0     0     0     1     0
+
+case 119
+
+ans =
+
+     0     0     1     0     0     0
+
+case 120
+
+ans =
+
+     1     0     0     0     0     0
+
+case 121
+
+ans =
+
+     0     0     0     0     0     1
+
+case 122
+
+ans =
+
+     0     0     0     1     0     0
+
+case 123
+
+ans =
+
+     1     0     0     0     0     0
+
+case 124
+
+ans =
+
+     0     0     0     1     0     0
+
+case 125
+
+ans =
+
+     0     0     0     0     1     0
+
+case 126
+
+ans =
+
+     0     0     0     0     0     1
+
+case 127
+
+ans =
+
+     0     0     0     0     1     0
+
+case 128
+
+ans =
+
+     0     0     0     1     0     0
+
+case 129
+
+ans =
+
+     0     0     0     0     0     1
+
+case 130
+
+ans =
+
+     1     0     0     0     0     0
+
+case 131
+
+ans =
+
+     0     0     0     0     1     0
+
+case 132
+
+ans =
+
+     0     1     0     0     0     0
+
+case 133
+
+ans =
+
+     0     1     0     0     0     0
+
+case 134
+
+ans =
+
+     1     0     0     0     0     0
+
+case 135
+
+ans =
+
+     0     1     0     0     0     0
+
+case 136
+
+ans =
+
+     0     0     1     0     0     0
+
+case 137
+
+ans =
+
+     0     0     0     0     0     1
+
+case 138
+
+ans =
+
+     0     0     0     1     0     0
+
+case 139
+
+ans =
+
+     0     0     0     0     1     0
+
+case 140
+
+ans =
+
+     0     1     0     0     0     0
+
+case 141
+
+ans =
+
+     0     1     0     0     0     0
+
+case 142
+
+ans =
+
+     0     0     0     1     0     0
+
+case 143
+
+ans =
+
+     1     0     0     0     0     0
+
+case 144
+
+ans =
+
+     0     0     1     0     0     0
+
+case 145
+
+ans =
+
+     0     0     1     0     0     0
+
+case 146
+
+ans =
+
+     0     1     0     0     0     0
+
+case 147
+
+ans =
+
+     0     0     0     0     1     0
+
+case 148
+
+ans =
+
+     0     0     1     0     0     0
+
+case 149
+
+ans =
+
+     0     0     0     0     0     1
+
+case 150
+
+ans =
+
+     0     0     0     0     1     0
+
+case 151
+
+ans =
+
+     0     0     0     0     0     1
+
+case 152
+
+ans =
+
+     0     0     0     0     1     0
+
+case 153
+
+ans =
+
+     0     0     0     0     0     1
+
+case 154
+
+ans =
+
+     0     0     0     1     0     0
+
+case 155
+
+ans =
+
+     0     1     0     0     0     0
+
+case 156
+
+ans =
+
+     0     0     0     1     0     0
+
+case 157
+
+ans =
+
+     0     0     0     0     1     0
+
+case 158
+
+ans =
+
+     0     0     0     0     0     1
+
+case 159
+
+ans =
+
+     0     0     0     1     0     0
+
+case 160
+
+ans =
+
+     0     0     1     0     0     0
+
+> 2% finished in 296.8826 s
+---- accuracy: 0.0125 sub: 0             0           NaN             0             0             0           NaN             0           NaN             0             0             0             0             0             0             0             0           NaN           NaN           NaN             0             0             0           NaN           NaN           NaN             0           NaN             0             0           NaN             0    0.07692308           NaN             0             0           NaN             0             0           NaN             0           NaN           NaN             0           NaN             0           NaN             0           NaN             0           NaN             0             0             0           NaN           NaN             0           NaN             0           NaN           NaN             0           NaN             0             0           NaN           NaN           NaN             0             0             0             0          0.25           NaN             0             0           NaN           NaN           NaN           NaN             0             0           NaN             0           NaN             0             0             0             0             0             0             0           NaN             0             0           NaN             0           NaN             0             0             0
+case 161
+
+ans =
+
+     0     0     0     0     0     1
+
+case 162
+
+ans =
+
+     0     0     0     1     0     0
+
+case 163
+
+ans =
+
+     1     0     0     0     0     0
+
+case 164
+
+ans =
+
+     1     0     0     0     0     0
+
+case 165
+
+ans =
+
+     0     0     0     0     1     0
+
+case 166
+
+ans =
+
+     0     1     0     0     0     0
+
+case 167
+
+ans =
+
+     0     0     0     0     1     0
+
+case 168
+
+ans =
+
+     0     1     0     0     0     0
+
+case 169
+
+ans =
+
+     1     0     0     0     0     0
+
+case 170
+
+ans =
+
+     0     0     0     0     1     0
+
+case 171
+
+ans =
+
+     1     0     0     0     0     0
+
+case 172
+
+ans =
+
+     0     0     0     0     0     1
+
+case 173
+
+ans =
+
+     1     0     0     0     0     0
+
+case 174
+
+ans =
+
+     0     0     0     1     0     0
+
+case 175
+
+ans =
+
+     0     0     0     0     0     1
+
+case 176
+
+ans =
+
+     0     0     0     0     1     0
+
+case 177
+
+ans =
+
+     0     0     0     0     1     0
+
+case 178
+
+ans =
+
+     0     0     0     0     0     1
+
+case 179
+
+ans =
+
+     1     0     0     0     0     0
+
+case 180
+
+ans =
+
+     1     0     0     0     0     0
+
+case 181
+
+ans =
+
+     0     0     0     0     1     0
+
+case 182
+
+ans =
+
+     0     0     0     0     1     0
+
+case 183
+
+ans =
+
+     0     0     1     0     0     0
+
+case 184
+
+ans =
+
+     0     1     0     0     0     0
+
+case 185
+
+ans =
+
+     0     0     0     0     0     1
+
+case 186
+
+ans =
+
+     0     0     0     0     1     0
+
+case 187
+
+ans =
+
+     0     0     0     0     1     0
+
+case 188
+
+ans =
+
+     0     0     1     0     0     0
+
+case 189
+
+ans =
+
+     0     1     0     0     0     0
+
+case 190
+
+ans =
+
+     0     0     1     0     0     0
+
+case 191
+
+ans =
+
+     0     0     1     0     0     0
+
+case 192
+
+ans =
+
+     1     0     0     0     0     0
+
+case 193
+
+ans =
+
+     0     1     0     0     0     0
+
+case 194
+
+ans =
+
+     0     1     0     0     0     0
+
+case 195
+
+ans =
+
+     0     0     0     0     1     0
+
+case 196
+
+ans =
+
+     0     0     1     0     0     0
+
+case 197
+
+ans =
+
+     0     0     1     0     0     0
+
+case 198
+
+ans =
+
+     0     0     1     0     0     0
+
+case 199
+
+ans =
+
+     0     1     0     0     0     0
+
+case 200
+
+ans =
+
+     0     0     0     1     0     0
+
+case 201
+
+ans =
+
+     0     0     1     0     0     0
+
+case 202
+
+ans =
+
+     0     0     0     1     0     0
+
+case 203
+
+ans =
+
+     0     0     0     0     1     0
+
+case 204
+
+ans =
+
+     0     0     0     1     0     0
+
+case 205
+
+ans =
+
+     0     0     1     0     0     0
+
+case 206
+
+ans =
+
+     0     0     1     0     0     0
+
+case 207
+
+ans =
+
+     0     0     0     0     0     1
+
+case 208
+
+ans =
+
+     0     1     0     0     0     0
+
+case 209
+
+ans =
+
+     0     0     0     0     1     0
+
+case 210
+
+ans =
+
+     0     0     0     0     0     1
+
+case 211
+
+ans =
+
+     0     0     0     0     0     1
+
+case 212
+
+ans =
+
+     0     1     0     0     0     0
+
+case 213
+
+ans =
+
+     0     0     0     1     0     0
+
+case 214
+
+ans =
+
+     0     0     0     0     0     1
+
+case 215
+
+ans =
+
+     0     0     0     0     0     1
+
+case 216
+
+ans =
+
+     0     0     0     1     0     0
+
+case 217
+
+ans =
+
+     0     0     1     0     0     0
+
+case 218
+
+ans =
+
+     0     0     0     0     1     0
+
+case 219
+
+ans =
+
+     0     0     1     0     0     0
+
+case 220
+
+ans =
+
+     0     1     0     0     0     0
+
+case 221
+
+ans =
+
+     0     1     0     0     0     0
+
+case 222
+
+ans =
+
+     0     0     0     1     0     0
+
+case 223
+
+ans =
+
+     0     1     0     0     0     0
+
+case 224
+
+ans =
+
+     0     1     0     0     0     0
+
+case 225
+
+ans =
+
+     0     0     0     0     1     0
+
+case 226
+
+ans =
+
+     0     0     0     0     1     0
+
+case 227
+
+ans =
+
+     0     0     0     0     0     1
+
+case 228
+
+ans =
+
+     0     1     0     0     0     0
+
+case 229
+
+ans =
+
+     0     0     1     0     0     0
+
+case 230
+
+ans =
+
+     0     0     0     1     0     0
+
+case 231
+
+ans =
+
+     0     0     0     0     1     0
+
+case 232
+
+ans =
+
+     1     0     0     0     0     0
+
+case 233
+
+ans =
+
+     0     0     0     0     1     0
+
+case 234
+
+ans =
+
+     1     0     0     0     0     0
+
+case 235
+
+ans =
+
+     0     0     0     0     1     0
+
+case 236
+
+ans =
+
+     0     1     0     0     0     0
+
+case 237
+
+ans =
+
+     0     0     0     0     1     0
+
+case 238
+
+ans =
+
+     0     0     1     0     0     0
+
+case 239
+
+ans =
+
+     0     1     0     0     0     0
+
+case 240
+
+ans =
+
+     1     0     0     0     0     0
+
+> 3% finished in 441.6155 s
+---- accuracy: 0.0083333 sub: 0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN           NaN           NaN             0           NaN             0             0           NaN             0    0.05882353           NaN             0             0           NaN             0             0           NaN             0           NaN           NaN             0             0             0             0             0             0             0           NaN             0             0             0             0           NaN             0           NaN             0           NaN             0             0           NaN             0             0             0             0           NaN             0             0             0             0     0.1666667           NaN             0             0           NaN           NaN           NaN           NaN             0             0           NaN             0             0             0             0             0             0             0             0             0           NaN             0             0           NaN             0           NaN             0             0             0
+case 241
+
+ans =
+
+     0     0     0     0     0     1
+
+case 242
+
+ans =
+
+     0     0     0     1     0     0
+
+case 243
+
+ans =
+
+     0     1     0     0     0     0
+
+case 244
+
+ans =
+
+     1     0     0     0     0     0
+
+case 245
+
+ans =
+
+     0     1     0     0     0     0
+
+case 246
+
+ans =
+
+     1     0     0     0     0     0
+
+case 247
+
+ans =
+
+     0     0     0     0     0     1
+
+case 248
+
+ans =
+
+     0     1     0     0     0     0
+
+case 249
+
+ans =
+
+     0     0     0     0     1     0
+
+case 250
+
+ans =
+
+     0     0     1     0     0     0
+
+case 251
+
+ans =
+
+     0     0     0     1     0     0
+
+case 252
+
+ans =
+
+     0     1     0     0     0     0
+
+case 253
+
+ans =
+
+     0     0     0     0     0     1
+
+case 254
+
+ans =
+
+     0     0     0     1     0     0
+
+case 255
+
+ans =
+
+     1     0     0     0     0     0
+
+case 256
+
+ans =
+
+     0     1     0     0     0     0
+
+case 257
+
+ans =
+
+     0     0     0     0     1     0
+
+case 258
+
+ans =
+
+     0     0     0     0     0     1
+
+case 259
+
+ans =
+
+     0     0     0     1     0     0
+
+case 260
+
+ans =
+
+     0     0     0     0     0     1
+
+case 261
+
+ans =
+
+     0     0     0     1     0     0
+
+case 262
+
+ans =
+
+     0     0     0     1     0     0
+
+case 263
+
+ans =
+
+     0     0     0     1     0     0
+
+case 264
+
+ans =
+
+     0     0     1     0     0     0
+
+case 265
+
+ans =
+
+     0     0     0     0     1     0
+
+case 266
+
+ans =
+
+     1     0     0     0     0     0
+
+case 267
+
+ans =
+
+     0     0     0     0     0     1
+
+case 268
+
+ans =
+
+     0     0     1     0     0     0
+
+case 269
+
+ans =
+
+     0     0     0     0     0     1
+
+case 270
+
+ans =
+
+     0     1     0     0     0     0
+
+case 271
+
+ans =
+
+     0     0     1     0     0     0
+
+case 272
+
+ans =
+
+     0     1     0     0     0     0
+
+case 273
+
+ans =
+
+     0     1     0     0     0     0
+
+case 274
+
+ans =
+
+     0     0     1     0     0     0
+
+case 275
+
+ans =
+
+     0     0     0     0     0     1
+
+case 276
+
+ans =
+
+     0     1     0     0     0     0
+
+case 277
+
+ans =
+
+     0     0     1     0     0     0
+
+case 278
+
+ans =
+
+     0     0     0     0     1     0
+
+case 279
+
+ans =
+
+     0     0     0     0     0     1
+
+case 280
+
+ans =
+
+     0     0     0     1     0     0
+
+case 281
+
+ans =
+
+     0     0     0     0     1     0
+
+case 282
+
+ans =
+
+     1     0     0     0     0     0
+
+case 283
+
+ans =
+
+     0     0     1     0     0     0
+
+case 284
+
+ans =
+
+     1     0     0     0     0     0
+
+case 285
+
+ans =
+
+     0     0     0     0     0     1
+
+case 286
+
+ans =
+
+     0     0     0     1     0     0
+
+case 287
+
+ans =
+
+     0     0     0     0     1     0
+
+case 288
+
+ans =
+
+     0     1     0     0     0     0
+
+case 289
+
+ans =
+
+     0     0     0     1     0     0
+
+case 290
+
+ans =
+
+     0     0     0     0     1     0
+
+case 291
+
+ans =
+
+     0     1     0     0     0     0
+
+case 292
+
+ans =
+
+     0     0     0     1     0     0
+
+case 293
+
+ans =
+
+     0     0     0     0     0     1
+
+case 294
+
+ans =
+
+     0     1     0     0     0     0
+
+case 295
+
+ans =
+
+     0     0     1     0     0     0
+
+case 296
+
+ans =
+
+     0     0     0     1     0     0
+
+case 297
+
+ans =
+
+     0     1     0     0     0     0
+
+case 298
+
+ans =
+
+     1     0     0     0     0     0
+
+case 299
+
+ans =
+
+     0     0     0     0     1     0
+
+case 300
+
+ans =
+
+     1     0     0     0     0     0
+
+case 301
+
+ans =
+
+     0     0     1     0     0     0
+
+case 302
+
+ans =
+
+     0     1     0     0     0     0
+
+case 303
+
+ans =
+
+     0     0     0     1     0     0
+
+case 304
+
+ans =
+
+     0     0     0     1     0     0
+
+case 305
+
+ans =
+
+     0     0     1     0     0     0
+
+case 306
+
+ans =
+
+     0     0     1     0     0     0
+
+case 307
+
+ans =
+
+     0     0     0     1     0     0
+
+case 308
+
+ans =
+
+     0     0     0     0     0     1
+
+case 309
+
+ans =
+
+     1     0     0     0     0     0
+
+case 310
+
+ans =
+
+     0     0     0     0     0     1
+
+case 311
+
+ans =
+
+     0     0     0     1     0     0
+
+case 312
+
+ans =
+
+     0     0     0     1     0     0
+
+case 313
+
+ans =
+
+     1     0     0     0     0     0
+
+case 314
+
+ans =
+
+     1     0     0     0     0     0
+
+case 315
+
+ans =
+
+     1     0     0     0     0     0
+
+case 316
+
+ans =
+
+     1     0     0     0     0     0
+
+case 317
+
+ans =
+
+     0     0     0     0     0     1
+
+case 318
+
+ans =
+
+     0     0     0     1     0     0
+
+case 319
+
+ans =
+
+     1     0     0     0     0     0
+
+case 320
+
+ans =
+
+     1     0     0     0     0     0
+
+> 4% finished in 605.7462 s
+---- accuracy: 0.01875 sub: 0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0           NaN             0             0           NaN             0    0.05263158             0             0             0             0             0             0           NaN             0           NaN             0             0             0             0             0             0             0             0           NaN             0             0             0             0           NaN             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0     0.3333333             0             0             0             1           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0    0.04347826           NaN             0             0           NaN             0           NaN             0             0             0
+case 321
+
+ans =
+
+     0     0     0     0     1     0
+
+case 322
+
+ans =
+
+     0     1     0     0     0     0
+
+case 323
+
+ans =
+
+     1     0     0     0     0     0
+
+case 324
+
+ans =
+
+     0     0     1     0     0     0
+
+case 325
+
+ans =
+
+     0     0     1     0     0     0
+
+case 326
+
+ans =
+
+     0     1     0     0     0     0
+
+case 327
+
+ans =
+
+     0     1     0     0     0     0
+
+case 328
+
+ans =
+
+     0     0     0     0     1     0
+
+case 329
+
+ans =
+
+     0     0     0     0     0     1
+
+case 330
+
+ans =
+
+     0     0     1     0     0     0
+
+case 331
+
+ans =
+
+     0     1     0     0     0     0
+
+case 332
+
+ans =
+
+     0     0     0     1     0     0
+
+case 333
+
+ans =
+
+     0     0     0     0     1     0
+
+case 334
+
+ans =
+
+     0     0     0     1     0     0
+
+case 335
+
+ans =
+
+     0     0     1     0     0     0
+
+case 336
+
+ans =
+
+     0     0     0     0     0     1
+
+case 337
+
+ans =
+
+     0     0     1     0     0     0
+
+case 338
+
+ans =
+
+     0     0     1     0     0     0
+
+case 339
+
+ans =
+
+     0     0     1     0     0     0
+
+case 340
+
+ans =
+
+     0     0     0     0     0     1
+
+case 341
+
+ans =
+
+     1     0     0     0     0     0
+
+case 342
+
+ans =
+
+     0     0     0     0     1     0
+
+case 343
+
+ans =
+
+     0     0     0     1     0     0
+
+case 344
+
+ans =
+
+     0     0     0     1     0     0
+
+case 345
+
+ans =
+
+     1     0     0     0     0     0
+
+case 346
+
+ans =
+
+     0     0     0     0     0     1
+
+case 347
+
+ans =
+
+     0     1     0     0     0     0
+
+case 348
+
+ans =
+
+     0     0     1     0     0     0
+
+case 349
+
+ans =
+
+     1     0     0     0     0     0
+
+case 350
+
+ans =
+
+     1     0     0     0     0     0
+
+case 351
+
+ans =
+
+     0     1     0     0     0     0
+
+case 352
+
+ans =
+
+     0     1     0     0     0     0
+
+case 353
+
+ans =
+
+     0     0     0     0     1     0
+
+case 354
+
+ans =
+
+     0     0     0     0     0     1
+
+case 355
+
+ans =
+
+     0     1     0     0     0     0
+
+case 356
+
+ans =
+
+     0     0     0     0     1     0
+
+case 357
+
+ans =
+
+     0     0     0     0     1     0
+
+case 358
+
+ans =
+
+     0     0     0     0     1     0
+
+case 359
+
+ans =
+
+     0     0     0     0     1     0
+
+case 360
+
+ans =
+
+     0     1     0     0     0     0
+
+case 361
+
+ans =
+
+     0     1     0     0     0     0
+
+case 362
+
+ans =
+
+     0     0     0     0     1     0
+
+case 363
+
+ans =
+
+     0     0     0     0     1     0
+
+case 364
+
+ans =
+
+     0     0     0     0     0     1
+
+case 365
+
+ans =
+
+     0     0     0     0     1     0
+
+case 366
+
+ans =
+
+     1     0     0     0     0     0
+
+case 367
+
+ans =
+
+     0     0     1     0     0     0
+
+case 368
+
+ans =
+
+     0     0     0     0     0     1
+
+case 369
+
+ans =
+
+     0     1     0     0     0     0
+
+case 370
+
+ans =
+
+     0     0     0     0     0     1
+
+case 371
+
+ans =
+
+     0     0     0     0     1     0
+
+case 372
+
+ans =
+
+     1     0     0     0     0     0
+
+case 373
+
+ans =
+
+     0     0     0     0     0     1
+
+case 374
+
+ans =
+
+     1     0     0     0     0     0
+
+case 375
+
+ans =
+
+     0     0     1     0     0     0
+
+case 376
+
+ans =
+
+     0     0     0     0     1     0
+
+case 377
+
+ans =
+
+     0     1     0     0     0     0
+
+case 378
+
+ans =
+
+     0     0     1     0     0     0
+
+case 379
+
+ans =
+
+     0     0     1     0     0     0
+
+case 380
+
+ans =
+
+     1     0     0     0     0     0
+
+case 381
+
+ans =
+
+     0     0     1     0     0     0
+
+case 382
+
+ans =
+
+     0     0     1     0     0     0
+
+case 383
+
+ans =
+
+     0     0     0     1     0     0
+
+case 384
+
+ans =
+
+     0     0     0     1     0     0
+
+case 385
+
+ans =
+
+     0     0     1     0     0     0
+
+case 386
+
+ans =
+
+     1     0     0     0     0     0
+
+case 387
+
+ans =
+
+     1     0     0     0     0     0
+
+case 388
+
+ans =
+
+     0     0     1     0     0     0
+
+case 389
+
+ans =
+
+     0     1     0     0     0     0
+
+case 390
+
+ans =
+
+     0     0     0     0     0     1
+
+case 391
+
+ans =
+
+     0     0     0     1     0     0
+
+case 392
+
+ans =
+
+     0     1     0     0     0     0
+
+case 393
+
+ans =
+
+     0     0     1     0     0     0
+
+case 394
+
+ans =
+
+     0     0     0     0     1     0
+
+case 395
+
+ans =
+
+     0     0     0     0     1     0
+
+case 396
+
+ans =
+
+     1     0     0     0     0     0
+
+case 397
+
+ans =
+
+     0     0     0     0     1     0
+
+case 398
+
+ans =
+
+     0     0     0     1     0     0
+
+case 399
+
+ans =
+
+     0     0     1     0     0     0
+
+case 400
+
+ans =
+
+     0     0     0     0     0     1
+
+> 5% finished in 770.4257 s
+---- accuracy: 0.0175 sub: 0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0    0.04761905             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.2727273             0             0             0           0.5           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0    0.04166667           NaN             0             0           NaN             0           NaN             0             0             0
+case 401
+
+ans =
+
+     0     0     0     0     0     1
+
+case 402
+
+ans =
+
+     0     0     1     0     0     0
+
+case 403
+
+ans =
+
+     0     0     0     0     0     1
+
+case 404
+
+ans =
+
+     0     0     1     0     0     0
+
+case 405
+
+ans =
+
+     0     0     1     0     0     0
+
+case 406
+
+ans =
+
+     0     1     0     0     0     0
+
+case 407
+
+ans =
+
+     0     0     1     0     0     0
+
+case 408
+
+ans =
+
+     1     0     0     0     0     0
+
+case 409
+
+ans =
+
+     0     0     1     0     0     0
+
+case 410
+
+ans =
+
+     1     0     0     0     0     0
+
+case 411
+
+ans =
+
+     1     0     0     0     0     0
+
+case 412
+
+ans =
+
+     0     0     1     0     0     0
+
+case 413
+
+ans =
+
+     0     0     0     0     0     1
+
+case 414
+
+ans =
+
+     0     0     0     1     0     0
+
+case 415
+
+ans =
+
+     0     1     0     0     0     0
+
+case 416
+
+ans =
+
+     0     0     0     0     1     0
+
+case 417
+
+ans =
+
+     0     0     0     0     1     0
+
+case 418
+
+ans =
+
+     0     0     0     0     0     1
+
+case 419
+
+ans =
+
+     0     0     0     1     0     0
+
+case 420
+
+ans =
+
+     0     1     0     0     0     0
+
+case 421
+
+ans =
+
+     0     0     0     1     0     0
+
+case 422
+
+ans =
+
+     0     0     1     0     0     0
+
+case 423
+
+ans =
+
+     0     0     1     0     0     0
+
+case 424
+
+ans =
+
+     0     0     0     0     1     0
+
+case 425
+
+ans =
+
+     0     1     0     0     0     0
+
+case 426
+
+ans =
+
+     0     0     0     1     0     0
+
+case 427
+
+ans =
+
+     0     0     0     0     1     0
+
+case 428
+
+ans =
+
+     1     0     0     0     0     0
+
+case 429
+
+ans =
+
+     0     0     0     0     0     1
+
+case 430
+
+ans =
+
+     1     0     0     0     0     0
+
+case 431
+
+ans =
+
+     0     0     0     1     0     0
+
+case 432
+
+ans =
+
+     0     1     0     0     0     0
+
+case 433
+
+ans =
+
+     0     0     0     0     1     0
+
+case 434
+
+ans =
+
+     0     0     1     0     0     0
+
+case 435
+
+ans =
+
+     0     0     0     0     1     0
+
+case 436
+
+ans =
+
+     0     0     0     1     0     0
+
+case 437
+
+ans =
+
+     0     1     0     0     0     0
+
+case 438
+
+ans =
+
+     1     0     0     0     0     0
+
+case 439
+
+ans =
+
+     0     0     0     0     0     1
+
+case 440
+
+ans =
+
+     0     0     0     0     1     0
+
+case 441
+
+ans =
+
+     0     0     0     0     1     0
+
+case 442
+
+ans =
+
+     0     0     0     1     0     0
+
+case 443
+
+ans =
+
+     0     1     0     0     0     0
+
+case 444
+
+ans =
+
+     1     0     0     0     0     0
+
+case 445
+
+ans =
+
+     0     0     0     0     0     1
+
+case 446
+
+ans =
+
+     0     0     0     0     1     0
+
+case 447
+
+ans =
+
+     0     0     0     0     1     0
+
+case 448
+
+ans =
+
+     0     0     1     0     0     0
+
+case 449
+
+ans =
+
+     0     0     0     1     0     0
+
+case 450
+
+ans =
+
+     0     0     1     0     0     0
+
+case 451
+
+ans =
+
+     0     0     0     1     0     0
+
+case 452
+
+ans =
+
+     0     0     1     0     0     0
+
+case 453
+
+ans =
+
+     0     0     0     0     0     1
+
+case 454
+
+ans =
+
+     0     0     0     1     0     0
+
+case 455
+
+ans =
+
+     1     0     0     0     0     0
+
+case 456
+
+ans =
+
+     1     0     0     0     0     0
+
+case 457
+
+ans =
+
+     1     0     0     0     0     0
+
+case 458
+
+ans =
+
+     0     0     0     0     0     1
+
+case 459
+
+ans =
+
+     0     0     1     0     0     0
+
+case 460
+
+ans =
+
+     0     0     1     0     0     0
+
+case 461
+
+ans =
+
+     0     0     0     1     0     0
+
+case 462
+
+ans =
+
+     0     0     0     0     1     0
+
+case 463
+
+ans =
+
+     0     0     0     1     0     0
+
+case 464
+
+ans =
+
+     1     0     0     0     0     0
+
+case 465
+
+ans =
+
+     0     0     0     1     0     0
+
+case 466
+
+ans =
+
+     0     0     1     0     0     0
+
+case 467
+
+ans =
+
+     0     0     0     0     1     0
+
+case 468
+
+ans =
+
+     0     0     1     0     0     0
+
+case 469
+
+ans =
+
+     0     0     0     0     0     1
+
+case 470
+
+ans =
+
+     0     0     0     1     0     0
+
+case 471
+
+ans =
+
+     0     0     0     1     0     0
+
+case 472
+
+ans =
+
+     0     0     0     0     0     1
+
+case 473
+
+ans =
+
+     0     0     0     0     0     1
+
+case 474
+
+ans =
+
+     0     0     0     0     1     0
+
+case 475
+
+ans =
+
+     0     0     1     0     0     0
+
+case 476
+
+ans =
+
+     0     0     0     0     1     0
+
+case 477
+
+ans =
+
+     0     0     1     0     0     0
+
+case 478
+
+ans =
+
+     0     1     0     0     0     0
+
+case 479
+
+ans =
+
+     0     1     0     0     0     0
+
+case 480
+
+ans =
+
+     0     0     1     0     0     0
+
+> 6% finished in 982.7428 s
+---- accuracy: 0.014583 sub: 0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0    0.04347826             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.03846154           NaN             0             0           NaN             0           NaN             0             0             0
+case 481
+
+ans =
+
+     0     0     0     0     0     1
+
+case 482
+
+ans =
+
+     0     1     0     0     0     0
+
+case 483
+
+ans =
+
+     0     0     0     1     0     0
+
+case 484
+
+ans =
+
+     0     1     0     0     0     0
+
+case 485
+
+ans =
+
+     1     0     0     0     0     0
+
+case 486
+
+ans =
+
+     0     0     0     1     0     0
+
+case 487
+
+ans =
+
+     0     0     0     0     1     0
+
+case 488
+
+ans =
+
+     0     0     0     0     0     1
+
+case 489
+
+ans =
+
+     0     0     0     0     0     1
+
+case 490
+
+ans =
+
+     0     0     0     0     1     0
+
+case 491
+
+ans =
+
+     0     0     0     1     0     0
+
+case 492
+
+ans =
+
+     0     1     0     0     0     0
+
+case 493
+
+ans =
+
+     0     0     0     1     0     0
+
+case 494
+
+ans =
+
+     0     0     0     0     0     1
+
+case 495
+
+ans =
+
+     1     0     0     0     0     0
+
+case 496
+
+ans =
+
+     1     0     0     0     0     0
+
+case 497
+
+ans =
+
+     0     0     0     1     0     0
+
+case 498
+
+ans =
+
+     1     0     0     0     0     0
+
+case 499
+
+ans =
+
+     0     0     1     0     0     0
+
+case 500
+
+ans =
+
+     0     0     1     0     0     0
+
+case 501
+
+ans =
+
+     0     0     0     0     0     1
+
+case 502
+
+ans =
+
+     0     0     0     0     0     1
+
+case 503
+
+ans =
+
+     0     0     1     0     0     0
+
+case 504
+
+ans =
+
+     1     0     0     0     0     0
+
+case 505
+
+ans =
+
+     0     0     0     1     0     0
+
+case 506
+
+ans =
+
+     0     0     0     0     0     1
+
+case 507
+
+ans =
+
+     0     0     0     0     0     1
+
+case 508
+
+ans =
+
+     0     1     0     0     0     0
+
+case 509
+
+ans =
+
+     0     0     0     1     0     0
+
+case 510
+
+ans =
+
+     0     0     0     0     0     1
+
+case 511
+
+ans =
+
+     0     1     0     0     0     0
+
+case 512
+
+ans =
+
+     0     1     0     0     0     0
+
+case 513
+
+ans =
+
+     0     0     0     1     0     0
+
+case 514
+
+ans =
+
+     1     0     0     0     0     0
+
+case 515
+
+ans =
+
+     0     1     0     0     0     0
+
+case 516
+
+ans =
+
+     1     0     0     0     0     0
+
+case 517
+
+ans =
+
+     0     0     0     0     0     1
+
+case 518
+
+ans =
+
+     0     0     1     0     0     0
+
+case 519
+
+ans =
+
+     0     0     1     0     0     0
+
+case 520
+
+ans =
+
+     0     0     0     0     1     0
+
+case 521
+
+ans =
+
+     0     1     0     0     0     0
+
+case 522
+
+ans =
+
+     0     0     0     1     0     0
+
+case 523
+
+ans =
+
+     0     0     0     0     0     1
+
+case 524
+
+ans =
+
+     0     1     0     0     0     0
+
+case 525
+
+ans =
+
+     0     0     1     0     0     0
+
+case 526
+
+ans =
+
+     0     1     0     0     0     0
+
+case 527
+
+ans =
+
+     0     0     0     1     0     0
+
+case 528
+
+ans =
+
+     1     0     0     0     0     0
+
+case 529
+
+ans =
+
+     0     0     0     0     0     1
+
+case 530
+
+ans =
+
+     1     0     0     0     0     0
+
+case 531
+
+ans =
+
+     0     0     0     0     0     1
+
+case 532
+
+ans =
+
+     0     0     1     0     0     0
+
+case 533
+
+ans =
+
+     1     0     0     0     0     0
+
+case 534
+
+ans =
+
+     1     0     0     0     0     0
+
+case 535
+
+ans =
+
+     0     0     0     0     0     1
+
+case 536
+
+ans =
+
+     0     0     0     0     0     1
+
+case 537
+
+ans =
+
+     0     0     0     0     1     0
+
+case 538
+
+ans =
+
+     0     0     1     0     0     0
+
+case 539
+
+ans =
+
+     0     0     0     1     0     0
+
+case 540
+
+ans =
+
+     0     0     0     0     1     0
+
+case 541
+
+ans =
+
+     0     0     0     0     1     0
+
+case 542
+
+ans =
+
+     0     0     0     0     1     0
+
+case 543
+
+ans =
+
+     0     0     1     0     0     0
+
+case 544
+
+ans =
+
+     0     0     0     0     1     0
+
+case 545
+
+ans =
+
+     1     0     0     0     0     0
+
+case 546
+
+ans =
+
+     0     1     0     0     0     0
+
+case 547
+
+ans =
+
+     0     0     0     1     0     0
+
+case 548
+
+ans =
+
+     0     0     0     0     1     0
+
+case 549
+
+ans =
+
+     0     1     0     0     0     0
+
+case 550
+
+ans =
+
+     1     0     0     0     0     0
+
+case 551
+
+ans =
+
+     1     0     0     0     0     0
+
+case 552
+
+ans =
+
+     0     0     0     0     1     0
+
+case 553
+
+ans =
+
+     0     0     0     0     0     1
+
+case 554
+
+ans =
+
+     1     0     0     0     0     0
+
+case 555
+
+ans =
+
+     1     0     0     0     0     0
+
+case 556
+
+ans =
+
+     0     0     0     1     0     0
+
+case 557
+
+ans =
+
+     0     1     0     0     0     0
+
+case 558
+
+ans =
+
+     0     0     0     0     1     0
+
+case 559
+
+ans =
+
+     1     0     0     0     0     0
+
+case 560
+
+ans =
+
+     0     0     1     0     0     0
+
+> 7% finished in 1189.9088 s
+---- accuracy: 0.014286 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.03846154             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.15             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.03225806           NaN             0             0           NaN             0           NaN             0             0             0
+case 561
+
+ans =
+
+     0     1     0     0     0     0
+
+case 562
+
+ans =
+
+     0     0     0     0     1     0
+
+case 563
+
+ans =
+
+     0     0     0     0     0     1
+
+case 564
+
+ans =
+
+     0     0     1     0     0     0
+
+case 565
+
+ans =
+
+     0     1     0     0     0     0
+
+case 566
+
+ans =
+
+     0     0     1     0     0     0
+
+case 567
+
+ans =
+
+     0     0     0     0     0     1
+
+case 568
+
+ans =
+
+     0     0     0     1     0     0
+
+case 569
+
+ans =
+
+     0     1     0     0     0     0
+
+case 570
+
+ans =
+
+     0     0     0     0     1     0
+
+case 571
+
+ans =
+
+     0     0     0     1     0     0
+
+case 572
+
+ans =
+
+     0     0     1     0     0     0
+
+case 573
+
+ans =
+
+     0     0     0     0     0     1
+
+case 574
+
+ans =
+
+     0     0     1     0     0     0
+
+case 575
+
+ans =
+
+     0     0     0     1     0     0
+
+case 576
+
+ans =
+
+     0     0     1     0     0     0
+
+case 577
+
+ans =
+
+     0     0     0     0     0     1
+
+case 578
+
+ans =
+
+     0     0     1     0     0     0
+
+case 579
+
+ans =
+
+     0     0     0     0     1     0
+
+case 580
+
+ans =
+
+     0     0     1     0     0     0
+
+case 581
+
+ans =
+
+     0     0     0     1     0     0
+
+case 582
+
+ans =
+
+     0     1     0     0     0     0
+
+case 583
+
+ans =
+
+     0     0     0     0     0     1
+
+case 584
+
+ans =
+
+     0     0     0     0     0     1
+
+case 585
+
+ans =
+
+     0     0     0     1     0     0
+
+case 586
+
+ans =
+
+     0     0     0     0     0     1
+
+case 587
+
+ans =
+
+     0     0     0     1     0     0
+
+case 588
+
+ans =
+
+     0     0     1     0     0     0
+
+case 589
+
+ans =
+
+     0     0     0     0     1     0
+
+case 590
+
+ans =
+
+     0     0     1     0     0     0
+
+case 591
+
+ans =
+
+     0     1     0     0     0     0
+
+case 592
+
+ans =
+
+     0     0     0     0     0     1
+
+case 593
+
+ans =
+
+     0     0     0     0     0     1
+
+case 594
+
+ans =
+
+     1     0     0     0     0     0
+
+case 595
+
+ans =
+
+     0     0     1     0     0     0
+
+case 596
+
+ans =
+
+     0     0     0     0     1     0
+
+case 597
+
+ans =
+
+     0     0     0     1     0     0
+
+case 598
+
+ans =
+
+     0     0     0     0     0     1
+
+case 599
+
+ans =
+
+     0     1     0     0     0     0
+
+case 600
+
+ans =
+
+     0     0     0     1     0     0
+
+case 601
+
+ans =
+
+     0     0     0     0     1     0
+
+case 602
+
+ans =
+
+     1     0     0     0     0     0
+
+case 603
+
+ans =
+
+     1     0     0     0     0     0
+
+case 604
+
+ans =
+
+     0     1     0     0     0     0
+
+case 605
+
+ans =
+
+     0     1     0     0     0     0
+
+case 606
+
+ans =
+
+     1     0     0     0     0     0
+
+case 607
+
+ans =
+
+     0     0     0     0     0     1
+
+case 608
+
+ans =
+
+     0     0     0     0     0     1
+
+case 609
+
+ans =
+
+     1     0     0     0     0     0
+
+case 610
+
+ans =
+
+     0     0     0     0     1     0
+
+case 611
+
+ans =
+
+     0     0     0     1     0     0
+
+case 612
+
+ans =
+
+     1     0     0     0     0     0
+
+case 613
+
+ans =
+
+     0     0     1     0     0     0
+
+case 614
+
+ans =
+
+     0     0     0     0     0     1
+
+case 615
+
+ans =
+
+     0     0     0     1     0     0
+
+case 616
+
+ans =
+
+     0     0     0     0     0     1
+
+case 617
+
+ans =
+
+     1     0     0     0     0     0
+
+case 618
+
+ans =
+
+     0     0     0     0     0     1
+
+case 619
+
+ans =
+
+     0     0     0     1     0     0
+
+case 620
+
+ans =
+
+     0     0     0     0     1     0
+
+case 621
+
+ans =
+
+     0     0     1     0     0     0
+
+case 622
+
+ans =
+
+     0     1     0     0     0     0
+
+case 623
+
+ans =
+
+     0     0     0     0     1     0
+
+case 624
+
+ans =
+
+     0     0     0     1     0     0
+
+case 625
+
+ans =
+
+     0     1     0     0     0     0
+
+case 626
+
+ans =
+
+     1     0     0     0     0     0
+
+case 627
+
+ans =
+
+     0     0     1     0     0     0
+
+case 628
+
+ans =
+
+     0     0     0     1     0     0
+
+case 629
+
+ans =
+
+     1     0     0     0     0     0
+
+case 630
+
+ans =
+
+     0     0     0     0     0     1
+
+case 631
+
+ans =
+
+     1     0     0     0     0     0
+
+case 632
+
+ans =
+
+     1     0     0     0     0     0
+
+case 633
+
+ans =
+
+     0     1     0     0     0     0
+
+case 634
+
+ans =
+
+     0     0     0     0     0     1
+
+case 635
+
+ans =
+
+     1     0     0     0     0     0
+
+case 636
+
+ans =
+
+     0     1     0     0     0     0
+
+case 637
+
+ans =
+
+     0     0     0     0     1     0
+
+case 638
+
+ans =
+
+     0     1     0     0     0     0
+
+case 639
+
+ans =
+
+     1     0     0     0     0     0
+
+case 640
+
+ans =
+
+     0     0     0     0     1     0
+
+> 8% finished in 1396.4212 s
+---- accuracy: 0.0125 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.03703704             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1363636             0             0             0     0.1666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.02631579           NaN             0             0           NaN             0           NaN             0             0             0
+case 641
+
+ans =
+
+     0     0     0     0     1     0
+
+case 642
+
+ans =
+
+     0     0     0     0     1     0
+
+case 643
+
+ans =
+
+     0     0     0     0     0     1
+
+case 644
+
+ans =
+
+     1     0     0     0     0     0
+
+case 645
+
+ans =
+
+     0     0     0     1     0     0
+
+case 646
+
+ans =
+
+     0     0     0     0     1     0
+
+case 647
+
+ans =
+
+     0     0     0     0     0     1
+
+case 648
+
+ans =
+
+     0     0     0     1     0     0
+
+case 649
+
+ans =
+
+     0     0     0     1     0     0
+
+case 650
+
+ans =
+
+     0     0     0     0     1     0
+
+case 651
+
+ans =
+
+     0     0     0     1     0     0
+
+case 652
+
+ans =
+
+     0     0     1     0     0     0
+
+case 653
+
+ans =
+
+     0     1     0     0     0     0
+
+case 654
+
+ans =
+
+     0     0     0     0     1     0
+
+case 655
+
+ans =
+
+     1     0     0     0     0     0
+
+case 656
+
+ans =
+
+     0     0     0     0     0     1
+
+case 657
+
+ans =
+
+     0     1     0     0     0     0
+
+case 658
+
+ans =
+
+     0     0     0     1     0     0
+
+case 659
+
+ans =
+
+     1     0     0     0     0     0
+
+case 660
+
+ans =
+
+     0     0     0     0     1     0
+
+case 661
+
+ans =
+
+     0     0     0     0     0     1
+
+case 662
+
+ans =
+
+     0     0     1     0     0     0
+
+case 663
+
+ans =
+
+     1     0     0     0     0     0
+
+case 664
+
+ans =
+
+     0     0     1     0     0     0
+
+case 665
+
+ans =
+
+     0     1     0     0     0     0
+
+case 666
+
+ans =
+
+     0     0     1     0     0     0
+
+case 667
+
+ans =
+
+     1     0     0     0     0     0
+
+case 668
+
+ans =
+
+     1     0     0     0     0     0
+
+case 669
+
+ans =
+
+     0     0     0     0     0     1
+
+case 670
+
+ans =
+
+     0     0     0     0     0     1
+
+case 671
+
+ans =
+
+     0     0     0     0     0     1
+
+case 672
+
+ans =
+
+     0     1     0     0     0     0
+
+case 673
+
+ans =
+
+     1     0     0     0     0     0
+
+case 674
+
+ans =
+
+     0     0     0     1     0     0
+
+case 675
+
+ans =
+
+     0     0     1     0     0     0
+
+case 676
+
+ans =
+
+     0     0     1     0     0     0
+
+case 677
+
+ans =
+
+     0     0     0     0     0     1
+
+case 678
+
+ans =
+
+     0     0     1     0     0     0
+
+case 679
+
+ans =
+
+     1     0     0     0     0     0
+
+case 680
+
+ans =
+
+     0     1     0     0     0     0
+
+case 681
+
+ans =
+
+     0     1     0     0     0     0
+
+case 682
+
+ans =
+
+     0     1     0     0     0     0
+
+case 683
+
+ans =
+
+     0     1     0     0     0     0
+
+case 684
+
+ans =
+
+     0     0     1     0     0     0
+
+case 685
+
+ans =
+
+     0     1     0     0     0     0
+
+case 686
+
+ans =
+
+     0     1     0     0     0     0
+
+case 687
+
+ans =
+
+     1     0     0     0     0     0
+
+case 688
+
+ans =
+
+     0     0     0     0     0     1
+
+case 689
+
+ans =
+
+     0     0     0     0     0     1
+
+case 690
+
+ans =
+
+     0     0     0     0     1     0
+
+case 691
+
+ans =
+
+     1     0     0     0     0     0
+
+case 692
+
+ans =
+
+     0     0     0     1     0     0
+
+case 693
+
+ans =
+
+     0     1     0     0     0     0
+
+case 694
+
+ans =
+
+     0     1     0     0     0     0
+
+case 695
+
+ans =
+
+     1     0     0     0     0     0
+
+case 696
+
+ans =
+
+     0     0     1     0     0     0
+
+case 697
+
+ans =
+
+     0     0     0     0     1     0
+
+case 698
+
+ans =
+
+     0     0     0     1     0     0
+
+case 699
+
+ans =
+
+     0     0     1     0     0     0
+
+case 700
+
+ans =
+
+     0     0     0     1     0     0
+
+case 701
+
+ans =
+
+     0     0     1     0     0     0
+
+case 702
+
+ans =
+
+     0     0     0     0     1     0
+
+case 703
+
+ans =
+
+     0     0     0     0     1     0
+
+case 704
+
+ans =
+
+     0     0     1     0     0     0
+
+case 705
+
+ans =
+
+     0     0     0     0     0     1
+
+case 706
+
+ans =
+
+     0     1     0     0     0     0
+
+case 707
+
+ans =
+
+     0     1     0     0     0     0
+
+case 708
+
+ans =
+
+     0     0     1     0     0     0
+
+case 709
+
+ans =
+
+     0     0     0     0     0     1
+
+case 710
+
+ans =
+
+     0     0     0     0     1     0
+
+case 711
+
+ans =
+
+     0     0     0     1     0     0
+
+case 712
+
+ans =
+
+     0     0     1     0     0     0
+
+case 713
+
+ans =
+
+     1     0     0     0     0     0
+
+case 714
+
+ans =
+
+     0     0     0     0     1     0
+
+case 715
+
+ans =
+
+     0     0     0     0     0     1
+
+case 716
+
+ans =
+
+     0     0     0     0     1     0
+
+case 717
+
+ans =
+
+     0     0     1     0     0     0
+
+case 718
+
+ans =
+
+     1     0     0     0     0     0
+
+case 719
+
+ans =
+
+     0     0     0     0     0     1
+
+case 720
+
+ans =
+
+     1     0     0     0     0     0
+
+> 9% finished in 1613.0613 s
+---- accuracy: 0.013889 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0          0.25             0             0             0             0             0             0             0             0             0    0.03448276             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2     0.1428571             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0         0.125             0             0             0         0.125             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.02173913           NaN             0             0           NaN             0             0             0             0             0
+case 721
+
+ans =
+
+     0     0     0     0     0     1
+
+case 722
+
+ans =
+
+     0     0     0     0     1     0
+
+case 723
+
+ans =
+
+     0     1     0     0     0     0
+
+case 724
+
+ans =
+
+     0     0     1     0     0     0
+
+case 725
+
+ans =
+
+     0     0     0     0     1     0
+
+case 726
+
+ans =
+
+     0     1     0     0     0     0
+
+case 727
+
+ans =
+
+     0     0     0     1     0     0
+
+case 728
+
+ans =
+
+     0     0     0     0     1     0
+
+case 729
+
+ans =
+
+     0     1     0     0     0     0
+
+case 730
+
+ans =
+
+     0     0     0     0     1     0
+
+case 731
+
+ans =
+
+     0     0     1     0     0     0
+
+case 732
+
+ans =
+
+     0     1     0     0     0     0
+
+case 733
+
+ans =
+
+     0     0     0     1     0     0
+
+case 734
+
+ans =
+
+     0     0     0     1     0     0
+
+case 735
+
+ans =
+
+     0     0     0     0     0     1
+
+case 736
+
+ans =
+
+     0     0     0     1     0     0
+
+case 737
+
+ans =
+
+     1     0     0     0     0     0
+
+case 738
+
+ans =
+
+     0     0     0     0     1     0
+
+case 739
+
+ans =
+
+     1     0     0     0     0     0
+
+case 740
+
+ans =
+
+     1     0     0     0     0     0
+
+case 741
+
+ans =
+
+     0     0     0     1     0     0
+
+case 742
+
+ans =
+
+     0     1     0     0     0     0
+
+case 743
+
+ans =
+
+     0     0     0     0     1     0
+
+case 744
+
+ans =
+
+     0     1     0     0     0     0
+
+case 745
+
+ans =
+
+     0     0     0     0     0     1
+
+case 746
+
+ans =
+
+     0     0     0     0     0     1
+
+case 747
+
+ans =
+
+     0     1     0     0     0     0
+
+case 748
+
+ans =
+
+     0     0     1     0     0     0
+
+case 749
+
+ans =
+
+     0     1     0     0     0     0
+
+case 750
+
+ans =
+
+     0     0     0     0     1     0
+
+case 751
+
+ans =
+
+     0     0     0     0     1     0
+
+case 752
+
+ans =
+
+     0     0     0     0     0     1
+
+case 753
+
+ans =
+
+     0     0     1     0     0     0
+
+case 754
+
+ans =
+
+     0     0     0     0     0     1
+
+case 755
+
+ans =
+
+     0     0     0     1     0     0
+
+case 756
+
+ans =
+
+     0     1     0     0     0     0
+
+case 757
+
+ans =
+
+     0     1     0     0     0     0
+
+case 758
+
+ans =
+
+     0     1     0     0     0     0
+
+case 759
+
+ans =
+
+     0     0     0     0     0     1
+
+case 760
+
+ans =
+
+     0     0     0     0     0     1
+
+case 761
+
+ans =
+
+     0     0     0     0     0     1
+
+case 762
+
+ans =
+
+     0     0     0     0     0     1
+
+case 763
+
+ans =
+
+     0     0     1     0     0     0
+
+case 764
+
+ans =
+
+     0     0     0     1     0     0
+
+case 765
+
+ans =
+
+     1     0     0     0     0     0
+
+case 766
+
+ans =
+
+     0     0     0     0     0     1
+
+case 767
+
+ans =
+
+     0     1     0     0     0     0
+
+case 768
+
+ans =
+
+     0     0     0     1     0     0
+
+case 769
+
+ans =
+
+     0     0     0     0     1     0
+
+case 770
+
+ans =
+
+     1     0     0     0     0     0
+
+case 771
+
+ans =
+
+     0     0     0     0     1     0
+
+case 772
+
+ans =
+
+     0     0     0     0     1     0
+
+case 773
+
+ans =
+
+     0     0     1     0     0     0
+
+case 774
+
+ans =
+
+     0     0     0     0     0     1
+
+case 775
+
+ans =
+
+     0     1     0     0     0     0
+
+case 776
+
+ans =
+
+     1     0     0     0     0     0
+
+case 777
+
+ans =
+
+     0     0     0     0     0     1
+
+case 778
+
+ans =
+
+     0     0     0     1     0     0
+
+case 779
+
+ans =
+
+     0     0     0     0     0     1
+
+case 780
+
+ans =
+
+     0     0     0     0     1     0
+
+case 781
+
+ans =
+
+     0     0     0     1     0     0
+
+case 782
+
+ans =
+
+     0     0     0     1     0     0
+
+case 783
+
+ans =
+
+     0     1     0     0     0     0
+
+case 784
+
+ans =
+
+     0     1     0     0     0     0
+
+case 785
+
+ans =
+
+     0     0     0     1     0     0
+
+case 786
+
+ans =
+
+     0     0     1     0     0     0
+
+case 787
+
+ans =
+
+     0     0     0     1     0     0
+
+case 788
+
+ans =
+
+     0     0     0     0     1     0
+
+case 789
+
+ans =
+
+     0     0     0     0     0     1
+
+case 790
+
+ans =
+
+     0     0     1     0     0     0
+
+case 791
+
+ans =
+
+     1     0     0     0     0     0
+
+case 792
+
+ans =
+
+     1     0     0     0     0     0
+
+case 793
+
+ans =
+
+     0     0     1     0     0     0
+
+case 794
+
+ans =
+
+     0     0     0     0     0     1
+
+case 795
+
+ans =
+
+     0     0     1     0     0     0
+
+case 796
+
+ans =
+
+     0     0     0     0     0     1
+
+case 797
+
+ans =
+
+     0     0     1     0     0     0
+
+case 798
+
+ans =
+
+     0     0     0     0     1     0
+
+case 799
+
+ans =
+
+     0     0     0     0     0     1
+
+case 800
+
+ans =
+
+     0     0     0     1     0     0
+
+> 10% finished in 1866.7969 s
+---- accuracy: 0.01375 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0     0.1666667             0             0             0             0             0             0             0             0             0    0.02941176             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2     0.1428571             0     0.1666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.12             0             0             0    0.09090909             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.02           NaN             0             0           NaN             0             0             0             0             0
+case 801
+
+ans =
+
+     0     0     0     1     0     0
+
+case 802
+
+ans =
+
+     0     0     0     0     0     1
+
+case 803
+
+ans =
+
+     0     0     0     0     0     1
+
+case 804
+
+ans =
+
+     0     0     0     0     0     1
+
+case 805
+
+ans =
+
+     0     0     1     0     0     0
+
+case 806
+
+ans =
+
+     0     0     0     0     1     0
+
+case 807
+
+ans =
+
+     0     0     0     0     0     1
+
+case 808
+
+ans =
+
+     0     1     0     0     0     0
+
+case 809
+
+ans =
+
+     0     1     0     0     0     0
+
+case 810
+
+ans =
+
+     0     0     1     0     0     0
+
+case 811
+
+ans =
+
+     0     0     0     1     0     0
+
+case 812
+
+ans =
+
+     1     0     0     0     0     0
+
+case 813
+
+ans =
+
+     0     0     0     0     1     0
+
+case 814
+
+ans =
+
+     0     1     0     0     0     0
+
+case 815
+
+ans =
+
+     0     0     0     1     0     0
+
+case 816
+
+ans =
+
+     0     0     0     0     0     1
+
+case 817
+
+ans =
+
+     0     0     1     0     0     0
+
+case 818
+
+ans =
+
+     0     0     0     0     0     1
+
+case 819
+
+ans =
+
+     0     0     1     0     0     0
+
+case 820
+
+ans =
+
+     0     0     0     0     0     1
+
+case 821
+
+ans =
+
+     0     0     0     0     0     1
+
+case 822
+
+ans =
+
+     1     0     0     0     0     0
+
+case 823
+
+ans =
+
+     0     0     0     1     0     0
+
+case 824
+
+ans =
+
+     0     0     0     0     0     1
+
+case 825
+
+ans =
+
+     0     0     1     0     0     0
+
+case 826
+
+ans =
+
+     0     0     1     0     0     0
+
+case 827
+
+ans =
+
+     0     0     0     1     0     0
+
+case 828
+
+ans =
+
+     0     0     1     0     0     0
+
+case 829
+
+ans =
+
+     0     0     0     1     0     0
+
+case 830
+
+ans =
+
+     0     0     0     0     1     0
+
+case 831
+
+ans =
+
+     0     1     0     0     0     0
+
+case 832
+
+ans =
+
+     0     0     0     0     1     0
+
+case 833
+
+ans =
+
+     0     0     1     0     0     0
+
+case 834
+
+ans =
+
+     0     0     0     1     0     0
+
+case 835
+
+ans =
+
+     0     0     0     0     0     1
+
+case 836
+
+ans =
+
+     0     1     0     0     0     0
+
+case 837
+
+ans =
+
+     0     0     0     0     1     0
+
+case 838
+
+ans =
+
+     0     0     1     0     0     0
+
+case 839
+
+ans =
+
+     0     0     0     0     1     0
+
+case 840
+
+ans =
+
+     0     1     0     0     0     0
+
+case 841
+
+ans =
+
+     0     0     0     0     1     0
+
+case 842
+
+ans =
+
+     0     0     1     0     0     0
+
+case 843
+
+ans =
+
+     0     0     0     0     1     0
+
+case 844
+
+ans =
+
+     0     1     0     0     0     0
+
+case 845
+
+ans =
+
+     0     0     0     1     0     0
+
+case 846
+
+ans =
+
+     0     1     0     0     0     0
+
+case 847
+
+ans =
+
+     0     1     0     0     0     0
+
+case 848
+
+ans =
+
+     0     0     0     0     1     0
+
+case 849
+
+ans =
+
+     0     0     0     0     1     0
+
+case 850
+
+ans =
+
+     0     0     0     0     0     1
+
+case 851
+
+ans =
+
+     0     0     0     0     0     1
+
+case 852
+
+ans =
+
+     1     0     0     0     0     0
+
+case 853
+
+ans =
+
+     1     0     0     0     0     0
+
+case 854
+
+ans =
+
+     0     0     0     0     1     0
+
+case 855
+
+ans =
+
+     0     0     0     0     0     1
+
+case 856
+
+ans =
+
+     0     0     1     0     0     0
+
+case 857
+
+ans =
+
+     0     0     0     0     1     0
+
+case 858
+
+ans =
+
+     0     0     1     0     0     0
+
+case 859
+
+ans =
+
+     0     0     0     0     0     1
+
+case 860
+
+ans =
+
+     0     0     0     0     0     1
+
+case 861
+
+ans =
+
+     0     1     0     0     0     0
+
+case 862
+
+ans =
+
+     0     0     0     1     0     0
+
+case 863
+
+ans =
+
+     0     1     0     0     0     0
+
+case 864
+
+ans =
+
+     0     0     0     0     1     0
+
+case 865
+
+ans =
+
+     0     0     0     1     0     0
+
+case 866
+
+ans =
+
+     0     0     0     1     0     0
+
+case 867
+
+ans =
+
+     0     0     0     0     0     1
+
+case 868
+
+ans =
+
+     0     1     0     0     0     0
+
+case 869
+
+ans =
+
+     0     0     0     0     0     1
+
+case 870
+
+ans =
+
+     0     0     0     0     0     1
+
+case 871
+
+ans =
+
+     0     0     0     0     0     1
+
+case 872
+
+ans =
+
+     1     0     0     0     0     0
+
+case 873
+
+ans =
+
+     1     0     0     0     0     0
+
+case 874
+
+ans =
+
+     0     0     1     0     0     0
+
+case 875
+
+ans =
+
+     0     0     0     0     0     1
+
+case 876
+
+ans =
+
+     0     0     0     1     0     0
+
+case 877
+
+ans =
+
+     0     0     0     0     0     1
+
+case 878
+
+ans =
+
+     0     0     0     0     0     1
+
+case 879
+
+ans =
+
+     0     1     0     0     0     0
+
+case 880
+
+ans =
+
+     1     0     0     0     0     0
+
+> 11% finished in 2122.697 s
+---- accuracy: 0.0125 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0             0             0         0.125             0             0             0             0             0             0             0             0             0    0.02631579             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1666667         0.125             0     0.1666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1071429             0             0             0    0.08333333             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.01724138             0             0             0           NaN             0             0             0             0             0
+case 881
+
+ans =
+
+     1     0     0     0     0     0
+
+case 882
+
+ans =
+
+     0     1     0     0     0     0
+
+case 883
+
+ans =
+
+     0     1     0     0     0     0
+
+case 884
+
+ans =
+
+     0     0     0     0     1     0
+
+case 885
+
+ans =
+
+     0     0     0     0     0     1
+
+case 886
+
+ans =
+
+     1     0     0     0     0     0
+
+case 887
+
+ans =
+
+     1     0     0     0     0     0
+
+case 888
+
+ans =
+
+     0     0     0     1     0     0
+
+case 889
+
+ans =
+
+     0     1     0     0     0     0
+
+case 890
+
+ans =
+
+     1     0     0     0     0     0
+
+case 891
+
+ans =
+
+     0     1     0     0     0     0
+
+case 892
+
+ans =
+
+     0     1     0     0     0     0
+
+case 893
+
+ans =
+
+     0     0     0     1     0     0
+
+case 894
+
+ans =
+
+     0     0     1     0     0     0
+
+case 895
+
+ans =
+
+     0     0     0     1     0     0
+
+case 896
+
+ans =
+
+     0     1     0     0     0     0
+
+case 897
+
+ans =
+
+     0     0     0     0     1     0
+
+case 898
+
+ans =
+
+     1     0     0     0     0     0
+
+case 899
+
+ans =
+
+     0     1     0     0     0     0
+
+case 900
+
+ans =
+
+     0     0     1     0     0     0
+
+case 901
+
+ans =
+
+     0     0     0     0     1     0
+
+case 902
+
+ans =
+
+     0     1     0     0     0     0
+
+case 903
+
+ans =
+
+     0     0     1     0     0     0
+
+case 904
+
+ans =
+
+     0     0     0     0     1     0
+
+case 905
+
+ans =
+
+     0     1     0     0     0     0
+
+case 906
+
+ans =
+
+     0     0     0     0     1     0
+
+case 907
+
+ans =
+
+     0     0     1     0     0     0
+
+case 908
+
+ans =
+
+     0     0     0     0     1     0
+
+case 909
+
+ans =
+
+     0     0     0     0     1     0
+
+case 910
+
+ans =
+
+     0     0     0     1     0     0
+
+case 911
+
+ans =
+
+     0     0     0     0     0     1
+
+case 912
+
+ans =
+
+     0     1     0     0     0     0
+
+case 913
+
+ans =
+
+     0     0     0     0     0     1
+
+case 914
+
+ans =
+
+     0     0     1     0     0     0
+
+case 915
+
+ans =
+
+     0     1     0     0     0     0
+
+case 916
+
+ans =
+
+     1     0     0     0     0     0
+
+case 917
+
+ans =
+
+     1     0     0     0     0     0
+
+case 918
+
+ans =
+
+     0     0     0     0     1     0
+
+case 919
+
+ans =
+
+     1     0     0     0     0     0
+
+case 920
+
+ans =
+
+     0     0     1     0     0     0
+
+case 921
+
+ans =
+
+     0     0     1     0     0     0
+
+case 922
+
+ans =
+
+     0     0     1     0     0     0
+
+case 923
+
+ans =
+
+     0     0     0     0     1     0
+
+case 924
+
+ans =
+
+     0     0     0     0     0     1
+
+case 925
+
+ans =
+
+     0     0     1     0     0     0
+
+case 926
+
+ans =
+
+     0     0     0     0     0     1
+
+case 927
+
+ans =
+
+     0     0     0     0     1     0
+
+case 928
+
+ans =
+
+     1     0     0     0     0     0
+
+case 929
+
+ans =
+
+     0     1     0     0     0     0
+
+case 930
+
+ans =
+
+     0     0     0     0     1     0
+
+case 931
+
+ans =
+
+     1     0     0     0     0     0
+
+case 932
+
+ans =
+
+     0     0     1     0     0     0
+
+case 933
+
+ans =
+
+     1     0     0     0     0     0
+
+case 934
+
+ans =
+
+     0     0     0     1     0     0
+
+case 935
+
+ans =
+
+     0     0     0     0     1     0
+
+case 936
+
+ans =
+
+     0     0     0     1     0     0
+
+case 937
+
+ans =
+
+     0     0     1     0     0     0
+
+case 938
+
+ans =
+
+     1     0     0     0     0     0
+
+case 939
+
+ans =
+
+     0     0     0     0     0     1
+
+case 940
+
+ans =
+
+     0     0     1     0     0     0
+
+case 941
+
+ans =
+
+     0     1     0     0     0     0
+
+case 942
+
+ans =
+
+     1     0     0     0     0     0
+
+case 943
+
+ans =
+
+     0     0     1     0     0     0
+
+case 944
+
+ans =
+
+     0     0     0     0     0     1
+
+case 945
+
+ans =
+
+     0     1     0     0     0     0
+
+case 946
+
+ans =
+
+     0     0     0     1     0     0
+
+case 947
+
+ans =
+
+     0     0     1     0     0     0
+
+case 948
+
+ans =
+
+     0     0     0     0     1     0
+
+case 949
+
+ans =
+
+     0     0     1     0     0     0
+
+case 950
+
+ans =
+
+     0     0     0     0     1     0
+
+case 951
+
+ans =
+
+     0     0     0     0     0     1
+
+case 952
+
+ans =
+
+     0     0     0     0     1     0
+
+case 953
+
+ans =
+
+     1     0     0     0     0     0
+
+case 954
+
+ans =
+
+     0     0     0     0     1     0
+
+case 955
+
+ans =
+
+     1     0     0     0     0     0
+
+case 956
+
+ans =
+
+     0     0     1     0     0     0
+
+case 957
+
+ans =
+
+     0     0     1     0     0     0
+
+case 958
+
+ans =
+
+     0     0     0     0     0     1
+
+case 959
+
+ans =
+
+     1     0     0     0     0     0
+
+case 960
+
+ans =
+
+     0     0     1     0     0     0
+
+> 12% finished in 2308.6459 s
+---- accuracy: 0.011458 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2             0             0             0             0         0.125             0             0             0             0             0             0             0             0             0    0.02380952             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1666667     0.1111111             0     0.1666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.09677419             0             0             0    0.07692308             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.01612903             0             0             0           NaN             0             0             0             0             0
+case 961
+
+ans =
+
+     1     0     0     0     0     0
+
+case 962
+
+ans =
+
+     0     0     0     1     0     0
+
+case 963
+
+ans =
+
+     1     0     0     0     0     0
+
+case 964
+
+ans =
+
+     0     0     0     0     0     1
+
+case 965
+
+ans =
+
+     0     1     0     0     0     0
+
+case 966
+
+ans =
+
+     0     0     1     0     0     0
+
+case 967
+
+ans =
+
+     0     0     0     1     0     0
+
+case 968
+
+ans =
+
+     0     0     0     1     0     0
+
+case 969
+
+ans =
+
+     1     0     0     0     0     0
+
+case 970
+
+ans =
+
+     0     0     0     0     0     1
+
+case 971
+
+ans =
+
+     0     0     0     0     0     1
+
+case 972
+
+ans =
+
+     0     0     0     0     0     1
+
+case 973
+
+ans =
+
+     0     0     1     0     0     0
+
+case 974
+
+ans =
+
+     0     0     0     0     1     0
+
+case 975
+
+ans =
+
+     0     1     0     0     0     0
+
+case 976
+
+ans =
+
+     0     0     1     0     0     0
+
+case 977
+
+ans =
+
+     0     0     1     0     0     0
+
+case 978
+
+ans =
+
+     0     0     0     1     0     0
+
+case 979
+
+ans =
+
+     0     0     0     0     1     0
+
+case 980
+
+ans =
+
+     0     1     0     0     0     0
+
+case 981
+
+ans =
+
+     0     0     0     0     1     0
+
+case 982
+
+ans =
+
+     0     1     0     0     0     0
+
+case 983
+
+ans =
+
+     1     0     0     0     0     0
+
+case 984
+
+ans =
+
+     0     0     1     0     0     0
+
+case 985
+
+ans =
+
+     0     1     0     0     0     0
+
+case 986
+
+ans =
+
+     1     0     0     0     0     0
+
+case 987
+
+ans =
+
+     0     0     0     0     0     1
+
+case 988
+
+ans =
+
+     1     0     0     0     0     0
+
+case 989
+
+ans =
+
+     0     1     0     0     0     0
+
+case 990
+
+ans =
+
+     0     1     0     0     0     0
+
+case 991
+
+ans =
+
+     1     0     0     0     0     0
+
+case 992
+
+ans =
+
+     0     1     0     0     0     0
+
+case 993
+
+ans =
+
+     0     1     0     0     0     0
+
+case 994
+
+ans =
+
+     0     0     0     0     1     0
+
+case 995
+
+ans =
+
+     1     0     0     0     0     0
+
+case 996
+
+ans =
+
+     0     0     0     0     1     0
+
+case 997
+
+ans =
+
+     0     0     0     0     1     0
+
+case 998
+
+ans =
+
+     0     0     0     0     1     0
+
+case 999
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1000
+
+ans =
+
+     0     0     0     1     0     0
+
+no reclustering involved
+===== Training starting for 1 =====
+training size is 425
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 347
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 469
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 430
+===== Training finished for 4 =====
+===== Training starting for 1 =====
+training size is 1671
+===== Training finished for 1 =====
+case 1001
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1002
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1003
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1004
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1005
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1006
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1007
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1008
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1009
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1010
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1011
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1012
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1013
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1014
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1015
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1016
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1017
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1018
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1019
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1020
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1021
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1022
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1023
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1024
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1025
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1026
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1027
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1028
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1029
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1030
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1031
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1032
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1033
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1034
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1035
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1036
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1037
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1038
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1039
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1040
+
+ans =
+
+     1     0     0     0     0     0
+
+> 13% finished in 2696.9101 s
+---- accuracy: 0.011538 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.2             0             0             0             0           0.1             0             0             0             0             0             0             0             0             0    0.02222222             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1666667           0.2             0     0.1666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.08823529             0             0             0    0.06666667             0             0             0             0             0             0             0             0             0             0             0             0             0             0      0.015625             0             0             0           NaN             0             0             0             0             0
+case 1041
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1042
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1043
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1044
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1045
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1046
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1047
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1048
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1049
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1050
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1051
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1052
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1053
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1054
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1055
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1056
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1057
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1058
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1059
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1060
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1061
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1062
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1063
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1064
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1065
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1066
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1067
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1068
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1069
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1070
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1071
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1072
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1073
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1074
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1075
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1076
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1077
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1078
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1079
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1080
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1081
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1082
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1083
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1084
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1085
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1086
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1087
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1088
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1089
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1090
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1091
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1092
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1093
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1094
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1095
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1096
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1097
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1098
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1099
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1100
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1101
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1102
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1103
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1104
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1105
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1106
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1107
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1108
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1109
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1110
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1111
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1112
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1113
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1114
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1115
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1116
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1117
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1118
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1119
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1120
+
+ans =
+
+     0     1     0     0     0     0
+
+> 14% finished in 2921.3448 s
+---- accuracy: 0.010714 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667           0           0           0           0    0.090909           0           0           0           0           0           0           0           0           0    0.021277           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.18182           0     0.16667           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.088235           0           0           0    0.066667           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.015625           0           0           0           0           0           0           0           0           0
+case 1121
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1122
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1123
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1124
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1125
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1126
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1127
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1128
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1129
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1130
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1131
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1132
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1133
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1134
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1135
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1136
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1137
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1138
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1139
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1140
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1141
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1142
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1143
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1144
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1145
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1146
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1147
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1148
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1149
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1150
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1151
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1152
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1153
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1154
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1155
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1156
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1157
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1158
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1159
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1160
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1161
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1162
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1163
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1164
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1165
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1166
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1167
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1168
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1169
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1170
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1171
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1172
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1173
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1174
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1175
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1176
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1177
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1178
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1179
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1180
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1181
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1182
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1183
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1184
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1185
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1186
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1187
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1188
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1189
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1190
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1191
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1192
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1193
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1194
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1195
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1196
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1197
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1198
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1199
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1200
+
+ans =
+
+     0     0     1     0     0     0
+
+> 15% finished in 3181.2543 s
+---- accuracy: 0.01 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667           0           0           0           0    0.076923           0           0           0           0           0           0           0           0           0    0.021277           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.16667           0     0.16667           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.085714           0           0           0    0.066667           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.015385           0           0           0           0           0           0           0           0           0
+case 1201
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1202
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1203
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1204
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1205
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1206
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1207
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1208
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1209
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1210
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1211
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1212
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1213
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1214
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1215
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1216
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1217
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1218
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1219
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1220
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1221
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1222
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1223
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1224
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1225
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1226
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1227
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1228
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1229
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1230
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1231
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1232
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1233
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1234
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1235
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1236
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1237
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1238
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1239
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1240
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1241
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1242
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1243
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1244
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1245
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1246
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1247
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1248
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1249
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1250
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1251
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1252
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1253
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1254
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1255
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1256
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1257
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1258
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1259
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1260
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1261
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1262
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1263
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1264
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1265
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1266
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1267
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1268
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1269
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1270
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1271
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1272
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1273
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1274
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1275
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1276
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1277
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1278
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1279
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1280
+
+ans =
+
+     0     0     0     0     0     1
+
+> 16% finished in 3502.0304 s
+---- accuracy: 0.009375 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.14286           0           0           0           0    0.066667           0           0           0           0           0           0           0           0           0    0.020833           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.16667           0     0.14286           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.083333           0           0           0      0.0625           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.015385           0           0           0           0           0           0           0           0           0
+case 1281
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1282
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1283
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1284
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1285
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1286
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1287
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1288
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1289
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1290
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1291
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1292
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1293
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1294
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1295
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1296
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1297
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1298
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1299
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1300
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1301
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1302
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1303
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1304
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1305
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1306
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1307
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1308
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1309
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1310
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1311
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1312
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1313
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1314
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1315
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1316
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1317
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1318
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1319
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1320
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1321
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1322
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1323
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1324
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1325
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1326
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1327
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1328
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1329
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1330
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1331
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1332
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1333
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1334
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1335
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1336
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1337
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1338
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1339
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1340
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1341
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1342
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1343
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1344
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1345
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1346
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1347
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1348
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1349
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1350
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1351
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1352
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1353
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1354
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1355
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1356
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1357
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1358
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1359
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1360
+
+ans =
+
+     0     0     0     0     0     1
+
+> 17% finished in 3747.7361 s
+---- accuracy: 0.0088235 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0       0.125           0           0           0           0    0.058824           0           0           0           0           0           0           0           0           0    0.020408           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.15385           0       0.125           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.083333           0           0           0    0.058824           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.014925           0           0           0           0           0           0           0           0           0
+case 1361
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1362
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1363
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1364
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1365
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1366
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1367
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1368
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1369
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1370
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1371
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1372
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1373
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1374
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1375
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1376
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1377
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1378
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1379
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1380
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1381
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1382
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1383
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1384
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1385
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1386
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1387
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1388
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1389
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1390
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1391
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1392
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1393
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1394
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1395
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1396
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1397
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1398
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1399
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1400
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1401
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1402
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1403
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1404
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1405
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1406
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1407
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1408
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1409
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1410
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1411
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1412
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1413
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1414
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1415
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1416
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1417
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1418
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1419
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1420
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1421
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1422
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1423
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1424
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1425
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1426
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1427
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1428
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1429
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1430
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1431
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1432
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1433
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1434
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1435
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1436
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1437
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1438
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1439
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1440
+
+ans =
+
+     1     0     0     0     0     0
+
+> 18% finished in 3994.0585 s
+---- accuracy: 0.0083333 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0       0.125           0           0           0           0    0.058824           0           0           0           0           0           0           0           0           0        0.02           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.15385           0       0.125           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.083333           0           0           0    0.058824           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.014286           0           0           0           0           0           0           0           0           0
+case 1441
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1442
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1443
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1444
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1445
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1446
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1447
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1448
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1449
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1450
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1451
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1452
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1453
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1454
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1455
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1456
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1457
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1458
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1459
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1460
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1461
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1462
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1463
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1464
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1465
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1466
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1467
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1468
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1469
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1470
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1471
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1472
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1473
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1474
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1475
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1476
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1477
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1478
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1479
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1480
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1481
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1482
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1483
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1484
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1485
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1486
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1487
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1488
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1489
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1490
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1491
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1492
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1493
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1494
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1495
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1496
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1497
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1498
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1499
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1500
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1501
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1502
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1503
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1504
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1505
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1506
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1507
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1508
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1509
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1510
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1511
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1512
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1513
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1514
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1515
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1516
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1517
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1518
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1519
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1520
+
+ans =
+
+     0     1     0     0     0     0
+
+> 19% finished in 4290.991 s
+---- accuracy: 0.0092105 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0       0.125           0           0           0           0    0.058824           0    0.090909           0           0           0           0           0           0           0    0.019231           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.15385           0       0.125           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.083333           0           0           0    0.055556           0           0           0           0           0           0           0           0           0     0.14286           0           0           0           0    0.014085           0           0           0           0           0           0           0           0           0
+case 1521
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1522
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1523
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1524
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1525
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1526
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1527
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1528
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1529
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1530
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1531
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1532
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1533
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1534
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1535
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1536
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1537
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1538
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1539
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1540
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1541
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1542
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1543
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1544
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1545
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1546
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1547
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1548
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1549
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1550
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1551
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1552
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1553
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1554
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1555
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1556
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1557
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1558
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1559
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1560
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1561
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1562
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1563
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1564
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1565
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1566
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1567
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1568
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1569
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1570
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1571
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1572
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1573
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1574
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1575
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1576
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1577
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1578
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1579
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1580
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1581
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1582
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1583
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1584
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1585
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1586
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1587
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1588
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1589
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1590
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1591
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1592
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1593
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1594
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1595
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1596
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1597
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1598
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1599
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1600
+
+ans =
+
+     0     0     0     0     1     0
+
+> 20% finished in 4542.3908 s
+---- accuracy: 0.00875 sub: 0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.11111           0           0           0           0    0.055556           0    0.090909           0           0           0           0           0           0           0    0.018868           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.16667     0.13333           0         0.1           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.083333           0           0           0    0.055556           0           0           0           0           0           0           0           0           0     0.14286           0           0           0           0    0.013889           0           0           0           0           0           0           0           0           0
+case 1601
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1602
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1603
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1604
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1605
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1606
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1607
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1608
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1609
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1610
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1611
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1612
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1613
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1614
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1615
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1616
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1617
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1618
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1619
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1620
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1621
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1622
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1623
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1624
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1625
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1626
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1627
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1628
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1629
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1630
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1631
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1632
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1633
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1634
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1635
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1636
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1637
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1638
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1639
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1640
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1641
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1642
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1643
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1644
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1645
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1646
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1647
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1648
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1649
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1650
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1651
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1652
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1653
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1654
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1655
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1656
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1657
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1658
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1659
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1660
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1661
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1662
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1663
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1664
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1665
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1666
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1667
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1668
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1669
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1670
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1671
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1672
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1673
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1674
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1675
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1676
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1677
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1678
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1679
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1680
+
+ans =
+
+     0     0     0     0     1     0
+
+> 21% finished in 4757.3312 s
+---- accuracy: 0.010119 sub: 0           0           0           0           0           0           0           0           0      0.0625           0           0           0           0           0           0           0     0.11111           0           0           0           0    0.047619           0    0.083333           0           0           0           0           0           0           0    0.018868           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.14286       0.125           0    0.090909           0           0           0           0    0.066667           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.076923           0           0           0    0.055556           0           0           0           0           0           0           0           0           0     0.14286           0           0           0           0    0.027027           0           0           0           0           0           0           0           0           0
+case 1681
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1682
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1683
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1684
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1685
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1686
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1687
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1688
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1689
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1690
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1691
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1692
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1693
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1694
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1695
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1696
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1697
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1698
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1699
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1700
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1701
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1702
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1703
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1704
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1705
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1706
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1707
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1708
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1709
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1710
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1711
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1712
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1713
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1714
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1715
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1716
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1717
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1718
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1719
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1720
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1721
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1722
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1723
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1724
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1725
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1726
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1727
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1728
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1729
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1730
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1731
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1732
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1733
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1734
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1735
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1736
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1737
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1738
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1739
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1740
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1741
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1742
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1743
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1744
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1745
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1746
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1747
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1748
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1749
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1750
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1751
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1752
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1753
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1754
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1755
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1756
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1757
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1758
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1759
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1760
+
+ans =
+
+     0     0     1     0     0     0
+
+> 22% finished in 5025.2888 s
+---- accuracy: 0.010795 sub: 0           0           0           0           0           0    0.017857           0           0      0.0625           0           0           0           0    0.017857           0           0         0.1           0           0           0           0    0.043478           0    0.071429           0           0           0           0           0           0           0    0.018519           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.14286     0.11765           0    0.083333           0           0           0           0    0.058824           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.076923           0           0           0    0.052632           0           0           0           0           0           0           0           0           0     0.14286           0           0           0           0    0.026667           0           0           0           0           0           0           0           0           0
+case 1761
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1762
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1763
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1764
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1765
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1766
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1767
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1768
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1769
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1770
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1771
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1772
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1773
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1774
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1775
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1776
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1777
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1778
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1779
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1780
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1781
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1782
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1783
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1784
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1785
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1786
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1787
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1788
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1789
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1790
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1791
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1792
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1793
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1794
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1795
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1796
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1797
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1798
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1799
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1800
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1801
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1802
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1803
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1804
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1805
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1806
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1807
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1808
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1809
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1810
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1811
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1812
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1813
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1814
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1815
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1816
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1817
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1818
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1819
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1820
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1821
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1822
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1823
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1824
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1825
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1826
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1827
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1828
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1829
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1830
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1831
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1832
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1833
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1834
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1835
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1836
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1837
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1838
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1839
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1840
+
+ans =
+
+     0     0     0     0     0     1
+
+> 23% finished in 5273.0779 s
+---- accuracy: 0.011413 sub: 0           0           0           0           0           0    0.016949           0    0.076923      0.0625           0           0           0           0    0.017241           0           0    0.090909           0           0           0           0    0.043478           0    0.071429           0           0           0           0           0           0           0    0.018519           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.14286     0.10526           0    0.083333           0           0           0           0    0.058824           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0    0.076923           0           0           0        0.05      0.0625           0           0           0           0           0           0           0           0     0.11111           0           0           0           0    0.025974           0           0           0           0           0           0           0           0           0
+case 1841
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1842
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1843
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1844
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1845
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1846
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1847
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1848
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1849
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1850
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1851
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1852
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1853
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1854
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1855
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1856
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1857
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1858
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1859
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1860
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1861
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1862
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1863
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1864
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1865
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1866
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1867
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1868
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1869
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1870
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1871
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1872
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1873
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1874
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1875
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1876
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1877
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1878
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1879
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1880
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1881
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1882
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1883
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1884
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1885
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1886
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1887
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1888
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1889
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1890
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1891
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1892
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1893
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1894
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1895
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1896
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1897
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1898
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1899
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1900
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1901
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1902
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1903
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1904
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1905
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1906
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1907
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1908
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1909
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1910
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1911
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1912
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1913
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1914
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1915
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1916
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1917
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1918
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1919
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1920
+
+ans =
+
+     0     0     0     0     1     0
+
+> 24% finished in 5492.9075 s
+---- accuracy: 0.011458 sub: 0           0           0           0           0           0    0.016393           0    0.071429      0.0625           0           0           0           0    0.016667           0           0    0.090909           0           0           0           0    0.041667           0    0.066667           0           0           0           0           0           0           0    0.018519           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0       0.125     0.10526           0    0.083333           0           0           0           0    0.058824           0           0           0           0    0.071429           0           0           0           0           0           0           0           0           0           0    0.076923           0           0           0        0.05    0.052632           0           0           0           0           0           0           0           0         0.1           0           0           0           0    0.025974           0           0           0           0           0           0           0           0           0
+case 1921
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1922
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1923
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1924
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1925
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1926
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1927
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1928
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1929
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1930
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1931
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1932
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1933
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1934
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1935
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1936
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1937
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1938
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1939
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1940
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1941
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1942
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1943
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1944
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1945
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1946
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1947
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1948
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1949
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1950
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1951
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1952
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1953
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1954
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1955
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1956
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1957
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1958
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1959
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1960
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1961
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1962
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1963
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1964
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1965
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1966
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1967
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1968
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1969
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1970
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1971
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1972
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1973
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1974
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1975
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1976
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1977
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1978
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1979
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1980
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1981
+
+ans =
+
+     0     0     0     0     1     0
+
+case 1982
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1983
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1984
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1985
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1986
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1987
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1988
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1989
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1990
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1991
+
+ans =
+
+     0     0     0     1     0     0
+
+case 1992
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1993
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1994
+
+ans =
+
+     0     1     0     0     0     0
+
+case 1995
+
+ans =
+
+     1     0     0     0     0     0
+
+case 1996
+
+ans =
+
+     0     0     0     0     0     1
+
+case 1997
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1998
+
+ans =
+
+     0     0     1     0     0     0
+
+case 1999
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2000
+
+ans =
+
+     1     0     0     0     0     0
+
+no reclustering involved
+===== Training starting for 1 =====
+training size is 627
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 614
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 716
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 714
+===== Training finished for 4 =====
+===== Training starting for 1 =====
+training size is 2671
+===== Training finished for 1 =====
+> 25% finished in 5911.7941 s
+---- accuracy: 0.011 sub: 0           0           0           0           0           0    0.016393           0    0.066667      0.0625           0           0           0           0    0.016129           0           0    0.090909           0           0           0           0    0.041667           0    0.066667           0           0           0           0           0           0           0    0.018182           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.11111     0.10526           0    0.083333           0           0           0           0    0.055556           0           0           0           0    0.071429           0           0           0           0           0           0           0           0           0           0    0.076923           0           0           0    0.047619        0.04           0           0           0           0           0           0           0           0         0.1           0           0           0           0    0.025974           0           0           0           0           0           0           0           0           0
+case 2001
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2002
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2003
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2004
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2005
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2006
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2007
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2008
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2009
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2010
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2011
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2012
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2013
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2014
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2015
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2016
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2017
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2018
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2019
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2020
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2021
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2022
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2023
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2024
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2025
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2026
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2027
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2028
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2029
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2030
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2031
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2032
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2033
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2034
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2035
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2036
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2037
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2038
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2039
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2040
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2041
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2042
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2043
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2044
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2045
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2046
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2047
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2048
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2049
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2050
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2051
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2052
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2053
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2054
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2055
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2056
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2057
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2058
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2059
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2060
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2061
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2062
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2063
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2064
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2065
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2066
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2067
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2068
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2069
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2070
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2071
+
+ans =
+
+     0     1     0     0     0     0
+
+case 2072
+
+ans =
+
+     0     0     0     0     1     0
+
+case 2073
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2074
+
+ans =
+
+     1     0     0     0     0     0
+
+case 2075
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2076
+
+ans =
+
+     0     0     1     0     0     0
+
+case 2077
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2078
+
+ans =
+
+     0     0     0     0     0     1
+
+case 2079
+
+ans =
+
+     0     0     0     1     0     0
+
+case 2080
+
+ans =
+
+     0     1     0     0     0     0
+
+> 26% finished in 6147.9205 s
+---- accuracy: 0.010577 sub: 0           0           0           0           0           0    0.013699           0      0.0625      0.0625           0           0           0           0    0.016129           0           0    0.076923           0           0           0           0        0.04           0    0.066667           0           0           0           0           0           0           0    0.017241           0           0           0           0           0           0           0           0           0           0           0           0           0           0           0     0.11111    0.090

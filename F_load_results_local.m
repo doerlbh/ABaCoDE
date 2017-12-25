@@ -36,14 +36,22 @@ addpath([path 'log/16-Dec-2017'])
 addpath([path 'log/17-Dec-2017'])
 addpath([path 'log/18-Dec-2017'])
 addpath([path 'log/19-Dec-2017'])
+addpath([path 'log/20-Dec-2017'])
+addpath([path 'log/21-Dec-2017'])
+addpath([path 'log/22-Dec-2017'])
+addpath([path 'log/23-Dec-2017'])
+addpath([path 'log/24-Dec-2017'])
+% addpath([path 'log/25-Dec-2017'])
+% addpath([path 'log/26-Dec-2017'])
+% addpath([path 'log/27-Dec-2017'])
 addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
-dataset = 'MNIST-unshuffled'
+% dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
 % dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
-% dataset = 'MNIST-shuffled'
+dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
 % dataset = 'CIFAR-100C-shuffled'
@@ -221,15 +229,15 @@ switch dataset
         output_file_fhCB4 = '/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_4_cluster_online_MAB_1000_americano.mat';
         output_file_fhCB8 = '/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/log/01-Nov-2017/K_main_classifier_Caltech101S_nonstationary_k_8_cluster_online_MAB_1000_americano.mat';
         
-        output_file_uE = ''
+        output_file_uE = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
         
-        output_file_mmmhCB2 = ''
-        output_file_mmmhCB4 = ''
-        output_file_mmmhCB8 = ''
+        output_file_mmmhCB2 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mmmhCB4 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_4_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+        output_file_mmmhCB8 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_8_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
         
-        output_file_mmfhCB2 = ''
-        output_file_mmfhCB4 = ''
-        output_file_mmfhCB8 = ''
+        output_file_mmfhCB2 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+        output_file_mmfhCB4 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_4_multimode_full_history_CB_1000_gcp-gpu.mat'
+        output_file_mmfhCB8 = 'F_main_classifier_Caltech101S_nonstationary_unshuffled_k_8_multimode_full_history_CB_1000_gcp-gpu.mat'
 
     case 'CIFAR-10-unshuffled'
         
