@@ -382,7 +382,9 @@ for iter=1:maZ_iter
                 Z = F_embedding_static_k(isGPU, path,dataset,type,dist,C.',learn_z((iter-1)*N+t),k);
                 
                 if mod((iter-1)*N+t,window) == 0
-                    [~,~] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    if mod((iter-1)*N+t,N) ~= 0
+                        [~,~] = F_update_cluster_emb(isGPU,k,[prior_x;learn_x(1:(iter-1)*N+t,:)],[prior_z;learn_z(1:(iter-1)*N+t).'],dataset,type,dist,hiddenSize1,MaxEpochs1,path);
+                    end
                 end
                 
             case 'minibatch_history_CB'
@@ -410,7 +412,7 @@ for iter=1:maZ_iter
                 [W,Z] = F_embSelect(isGPU,path,dataset,type,dist,k,C,E+2,B_k_full,hat_mu_k_full,vsqr_k_full);
                 learn_W(:,(iter-1)*N+t) = W.';
                 
-                if mod((iter-1)*N+t,window) == 0
+                if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     [learn_z,clusters] = F_update_cluster_emb(isGPU,k,new_x,0,dataset,type,dist,hiddenSize1,MaxEpochs1,path);
                     [~,~] = F_update_cluster_emb(isGPU,1,new_x,0, dataset,type,dist,hiddenSize1,MaxEpochs1,path);
@@ -428,7 +430,7 @@ for iter=1:maZ_iter
                     gather(W)
                 end
                 
-                if mod((iter-1)*N+t,window) == 0
+                if mod((iter-1)*N+t,window) == 0 && mod((iter-1)*N+t,N) ~= 0
                     new_x = [prior_x;learn_x(1:(iter-1)*N+t,:)];
                     new_y = [prior_z;learn_z(1:(iter-1)*N+t).'];
                     [~,~] = F_update_cluster_emb(isGPU,k,new_x,new_y, dataset,type,dist,hiddenSize1,MaxEpochs1,path);

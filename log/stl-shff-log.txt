@@ -1,0 +1,70 @@
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_0_baseline_1000_gcp-gpu.mat
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat
+16-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_full_history_CB_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_minibatch_embedding_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_minibatch_history_CB_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_multimode_full_history_CB_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_multimode_minibatch_history_CB_1000_gcp-gpu.mat
+17-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_4_online_embedding_1000_gcp-gpu.mat
+18-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_full_history_CB_1000_gcp-gpu.mat
+18-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_minibatch_embedding_1000_gcp-gpu.mat
+18-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_minibatch_history_CB_1000_gcp-gpu.mat
+18-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_multimode_minibatch_history_CB_1000_gcp-gpu.mat
+18-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_online_embedding_1000_gcp-gpu.mat
+19-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_8_multimode_full_history_CB_1000_gcp-gpu.mat
+24-Dec-2017/F_main_classifier_STL10_nonstationary_shuffled_k_1_universal_embedding_1000_americano.mat
+
+    case 'STL10-half-shuffled'
+ 
+        output_file_b = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
+        output_file_uE = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
+        output_file_mE2 = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_oE2 = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
+       output_file_mhCB2 = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_fhCB2 = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
+output_file_mmmhCB2 = '18-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_mmfhCB2 = '19-Dec-2017/F_main_classifier_STL10_halfnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+
+    case 'STL10-halfstat-shuffled'
+ 
+        output_file_b = '20-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
+        output_file_uE = '20-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
+        output_file_mE2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_oE2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
+       output_file_mhCB2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_fhCB2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
+output_file_mmmhCB2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_mmfhCB2 = '21-Dec-2017/F_main_classifier_STL10_halfnegativestationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+
+    case 'STL10-rand-shuffled'
+ 
+        output_file_b = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
+        output_file_uE = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
+        output_file_mE2 = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_oE2 = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
+       output_file_mhCB2 = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_fhCB2 = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
+output_file_mmmhCB2 = '19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_mmfhCB2 = '20-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+
+    case 'STL10-randstat-shuffled'
+ 
+        output_file_b = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
+        output_file_uE = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_1_universal_embedding_1000_gcp-gpu.mat'
+        output_file_mE2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_minibatch_embedding_1000_gcp-gpu.mat'
+        output_file_oE2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_online_embedding_1000_gcp-gpu.mat'
+       output_file_mhCB2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_fhCB2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_full_history_CB_1000_gcp-gpu.mat'
+output_file_mmmhCB2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
+output_file_mmfhCB2 = '20-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+
+
+19-Dec-2017/F_main_classifier_STL10_randnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
+19-Dec-2017/F_main_classifier_STL10_randnegativestationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
+
+

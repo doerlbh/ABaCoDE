@@ -1,0 +1,641 @@
+
+25-Dec-2017
+running experiment on gcp-gpu
+info: CIFAR-10 nonstationary shuffled k = 8 minibatch_embedding 1000
+===================
+==== Loading data =======
+==== Online Learning Phase =======
+--> initializing
+# case: 10000
+# input: 3072
+# label: 10
+# embedding: 8
+==== nonstationizing dataset =======
+--> finish shuffling stationary input
+n = 10
+clustering diversity 1st half:
+  Value    Count   Percent
+      1      529     10.58%
+      2      578     11.56%
+      3      299      5.98%
+      4      688     13.76%
+      5      481      9.62%
+      6      417      8.34%
+      7      432      8.64%
+      8      620     12.40%
+      9      433      8.66%
+     10      523     10.46%
+clustering diversity 2nd half:
+  Value    Count   Percent
+      1      497      9.94%
+      2      522     10.44%
+      3      297      5.94%
+      4      688     13.76%
+      5      442      8.84%
+      6      480      9.60%
+      7      497      9.94%
+      8      684     13.68%
+      9      422      8.44%
+     10      471      9.42%
+clustering diversity 1st 1st half:
+  Value    Count   Percent
+      1      262     10.48%
+      2      280     11.20%
+      3      161      6.44%
+      4      331     13.24%
+      5      248      9.92%
+      6      205      8.20%
+      7      208      8.32%
+      8      302     12.08%
+      9      231      9.24%
+     10      272     10.88%
+clustering diversity 1st 2nd half:
+  Value    Count   Percent
+      1      267     10.68%
+      2      298     11.92%
+      3      138      5.52%
+      4      357     14.28%
+      5      233      9.32%
+      6      212      8.48%
+      7      224      8.96%
+      8      318     12.72%
+      9      202      8.08%
+     10      251     10.04%
+--> finish reclustering stationary input
+seq_first: 
+
+ans =
+
+  1×10 int64 row vector
+
+    7   10    2    8    3    9    4    5    1    6
+
+seq_second: 
+
+ans =
+
+  1×10 int64 row vector
+
+    3    1    9    2    5   10    4    6    7    8
+
+==================
+window: 1
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      208    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      138    100.00%
+-> finish diversity installing, second half size: 654
+  Value    Count   Percent
+      1       61      9.33%
+      2       72     11.01%
+      3       47      7.19%
+      4       95     14.53%
+      5       49      7.49%
+      6       63      9.63%
+      7       65      9.94%
+      8       87     13.30%
+      9       50      7.65%
+     10       65      9.94%
+-> in summary for window :1
+  Value    Count   Percent
+      1       61      6.10%
+      2       72      7.20%
+      3      185     18.50%
+      4       95      9.50%
+      5       49      4.90%
+      6       63      6.30%
+      7      273     27.30%
+      8       87      8.70%
+      9       50      5.00%
+     10       65      6.50%
+----> finish generating nonstationary dist for window 1
+==================
+window: 2
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      272    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1      267    100.00%
+-> finish diversity installing, second half size: 461
+  Value    Count   Percent
+      1       44      9.54%
+      2       35      7.59%
+      3       29      6.29%
+      4       66     14.32%
+      5       36      7.81%
+      6       29      6.29%
+      7       41      8.89%
+      8       81     17.57%
+      9       55     11.93%
+     10       45      9.76%
+-> in summary for window :2
+  Value    Count   Percent
+      1      311     31.10%
+      2       35      3.50%
+      3       29      2.90%
+      4       66      6.60%
+      5       36      3.60%
+      6       29      2.90%
+      7       41      4.10%
+      8       81      8.10%
+      9       55      5.50%
+     10      317     31.70%
+----> finish generating nonstationary dist for window 2
+==================
+window: 3
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      280    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      202    100.00%
+-> finish diversity installing, second half size: 518
+  Value    Count   Percent
+      1       59     11.39%
+      2       45      8.69%
+      3       26      5.02%
+      4       78     15.06%
+      5       46      8.88%
+      6       56     10.81%
+      7       50      9.65%
+      8       61     11.78%
+      9       48      9.27%
+     10       49      9.46%
+-> in summary for window :3
+  Value    Count   Percent
+      1       59      5.90%
+      2      325     32.50%
+      3       26      2.60%
+      4       78      7.80%
+      5       46      4.60%
+      6       56      5.60%
+      7       50      5.00%
+      8       61      6.10%
+      9      250     25.00%
+     10       49      4.90%
+----> finish generating nonstationary dist for window 3
+==================
+window: 4
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      302    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      298    100.00%
+-> finish diversity installing, second half size: 400
+  Value    Count   Percent
+      1       37      9.25%
+      2       50     12.50%
+      3       24      6.00%
+      4       53     13.25%
+      5       30      7.50%
+      6       40     10.00%
+      7       38      9.50%
+      8       58     14.50%
+      9       33      8.25%
+     10       37      9.25%
+-> in summary for window :4
+  Value    Count   Percent
+      1       37      3.70%
+      2      348     34.80%
+      3       24      2.40%
+      4       53      5.30%
+      5       30      3.00%
+      6       40      4.00%
+      7       38      3.80%
+      8      360     36.00%
+      9       33      3.30%
+     10       37      3.70%
+----> finish generating nonstationary dist for window 4
+==================
+window: 5
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      161    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      233    100.00%
+-> finish diversity installing, second half size: 606
+  Value    Count   Percent
+      1       59      9.74%
+      2       69     11.39%
+      3       43      7.10%
+      4       77     12.71%
+      5       55      9.08%
+      6       61     10.07%
+      7       58      9.57%
+      8       86     14.19%
+      9       42      6.93%
+     10       56      9.24%
+-> in summary for window :5
+  Value    Count   Percent
+      1       59      5.90%
+      2       69      6.90%
+      3      204     20.40%
+      4       77      7.70%
+      5      288     28.80%
+      6       61      6.10%
+      7       58      5.80%
+      8       86      8.60%
+      9       42      4.20%
+     10       56      5.60%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9      231    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8        0      0.00%
+      9        0      0.00%
+     10      251    100.00%
+-> finish diversity installing, second half size: 518
+  Value    Count   Percent
+      1       46      8.88%
+      2       53     10.23%
+      3       24      4.63%
+      4       76     14.67%
+      5       44      8.49%
+      6       49      9.46%
+      7       66     12.74%
+      8       76     14.67%
+      9       42      8.11%
+     10       42      8.11%
+-> in summary for window :6
+  Value    Count   Percent
+      1       46      4.60%
+      2       53      5.30%
+      3       24      2.40%
+      4       76      7.60%
+      5       44      4.40%
+      6       49      4.90%
+      7       66      6.60%
+      8       76      7.60%
+      9      273     27.30%
+     10      293     29.30%
+----> finish generating nonstationary dist for window 6
+==================
+window: 7
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      331    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      357    100.00%
+-> finish diversity installing, second half size: 312
+  Value    Count   Percent
+      1       26      8.33%
+      2       35     11.22%
+      3       17      5.45%
+      4       41     13.14%
+      5       33     10.58%
+      6       32     10.26%
+      7       35     11.22%
+      8       43     13.78%
+      9       26      8.33%
+     10       24      7.69%
+-> in summary for window :7
+  Value    Count   Percent
+      1       26      2.60%
+      2       35      3.50%
+      3       17      1.70%
+      4      729     72.90%
+      5       33      3.30%
+      6       32      3.20%
+      7       35      3.50%
+      8       43      4.30%
+      9       26      2.60%
+     10       24      2.40%
+----> finish generating nonstationary dist for window 7
+==================
+window: 8
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      248    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      212    100.00%
+-> finish diversity installing, second half size: 540
+  Value    Count   Percent
+      1       55     10.19%
+      2       61     11.30%
+      3       31      5.74%
+      4       73     13.52%
+      5       52      9.63%
+      6       46      8.52%
+      7       53      9.81%
+      8       71     13.15%
+      9       46      8.52%
+     10       52      9.63%
+-> in summary for window :8
+  Value    Count   Percent
+      1       55      5.50%
+      2       61      6.10%
+      3       31      3.10%
+      4       73      7.30%
+      5      300     30.00%
+      6      258     25.80%
+      7       53      5.30%
+      8       71      7.10%
+      9       46      4.60%
+     10       52      5.20%
+----> finish generating nonstationary dist for window 8
+==================
+window: 9
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1      262    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      224    100.00%
+-> finish diversity installing, second half size: 514
+  Value    Count   Percent
+      1       56     10.89%
+      2       52     10.12%
+      3       27      5.25%
+      4       64     12.45%
+      5       47      9.14%
+      6       52     10.12%
+      7       52     10.12%
+      8       67     13.04%
+      9       42      8.17%
+     10       55     10.70%
+-> in summary for window :9
+  Value    Count   Percent
+      1      318     31.80%
+      2       52      5.20%
+      3       27      2.70%
+      4       64      6.40%
+      5       47      4.70%
+      6       52      5.20%
+      7      276     27.60%
+      8       67      6.70%
+      9       42      4.20%
+     10       55      5.50%
+----> finish generating nonstationary dist for window 9
+==================
+window: 10
+-> finish first main cluster chosing
+  Value    Count   Percent
+      0        2      0.98%
+      6      203     99.02%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      318    100.00%
+-> finish diversity installing, second half size: 477
+  Value    Count   Percent
+      1       54     11.32%
+      2       50     10.48%
+      3       29      6.08%
+      4       65     13.63%
+      5       50     10.48%
+      6       52     10.90%
+      7       39      8.18%
+      8       54     11.32%
+      9       38      7.97%
+     10       46      9.64%
+-> in summary for window :10
+  Value    Count   Percent
+      0        2      0.20%
+      1       54      5.40%
+      2       50      5.00%
+      3       29      2.90%
+      4       65      6.50%
+      5       50      5.00%
+      6      255     25.50%
+      7       39      3.90%
+      8      372     37.20%
+      9       38      3.80%
+     10       46      4.60%
+----> finish generating nonstationary dist for window 10
+-> in summary for all data
+  Value    Count   Percent
+      0        2      0.02%
+      1     1026     10.26%
+      2     1100     11.00%
+      3      596      5.96%
+      4     1376     13.76%
+      5      923      9.23%
+      6      895      8.95%
+      7      929      9.29%
+      8     1304     13.04%
+      9      855      8.55%
+     10      994      9.94%
+==== shuffling labels each stage =======
+----------
+For window 1: 
+     6     5     1     4     7     2    10     8     9     3
+
+----------
+For window 2: 
+     2     3     9    10     5     7     1     4     6     8
+
+----------
+For window 3: 
+    10     9     2     3     7     8     4     5     6     1
+
+----------
+For window 4: 
+     5     3     7     8    10     2     1     9     4     6
+
+----------
+For window 5: 
+     3    10     4     8     9     2     6     1     7     5
+
+----------
+For window 6: 
+     5     1     3     4     8     7     6     2    10     9
+
+----------
+For window 7: 
+     1     2     8     7     9     6     5     4     3    10
+
+----------
+For window 8: 
+    10     1     5     9     4     8     2     7     3     6
+
+----------
+For window 9: 
+    10     4     2     6     7     3     8     5     9     1
+
+----------
+For window 10: 
+     2     6     1     3     5     8    10     9     4     7
+
+==== Pretraining Phase =======
+===== Training starting for 1 =====
+training size is 192
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 190
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 289
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 189
+===== Training finished for 4 =====
+===== Training starting for 5 =====
+training size is 298
+===== Training finished for 5 =====
+===== Training starting for 6 =====
+training size is 273
+===== Training finished for 6 =====
+===== Training starting for 7 =====
+training size is 331
+===== Training finished for 7 =====
+===== Training starting for 8 =====
+training size is 238
+===== Training finished for 8 =====
+<-- initializing done
+--> online learning
+- iteration 1
+case 1
+Starting parallel pool (parpool) using the 'local' profile ... case 2
+Starting parallel pool (parpool) using the 'local' profile ... case 3
+Starting parallel pool (parpool) using the 'local' profile ... case 4
+Starting parallel pool (parpool) using the 'local' profile ... case 5
+Starting parallel pool (parpool) using the 'local' profile ... case 6
+Starting parallel pool (parpool) using the 'local' profile ... case 7
+Starting parallel pool (parpool) using the 'local' profile ... case 8
+Starting parallel pool (parpool) using the 'local' profile ... case 9
+Starting parallel pool (parpool) using the 'local' profile ... case 10
+Starting parallel pool (parpool) using the 'local' profile ... case 11
+Starting parallel pool (parpool) using the 'local' profile ... case 12
+Starting parallel pool (parpool) using the 'local' profile ... case 13
+Starting parallel pool (parpool) using the 'local' profile ... case 14
+Starting parallel pool (parpool) using the 'local' profile ... case 15
+Starting parallel pool (parpool) using the 'local' profile ... case 16
+Starting parallel pool (parpool) using the 'local' profile ... case 17
+Starting parallel pool (parpool) using the 'local' profile ... case 18
+Starting parallel pool (parpool) using the 'local' profile ... case 19
+Starting parallel pool (parpool) using the 'local' profile ... case 20
+Starting parallel pool (parpool) using the 'local' profile ... case 21
+Starting parallel pool (parpool) using the 'local' profile ... case 22
+Starting parallel pool (parpool) using the 'local' profile ... case 23
+Starting parallel pool (parpool) using the 'local' profile ... case 24
+Starting parallel pool (parpool) using the 'local' profile ... case 25
+Starting parallel pool (parpool) using the 'local' profile ... case 26
+Starting parallel pool (parpool) using the 'local' profile ... case 27
+Starting parallel pool (parpool) using the 'local' profile ... case 28
+Starting parallel pool (parpool) using the 'local' profile ... case 29
+Starting parallel pool (parpool) using the 'local' profile ... case 30
+Starting parallel pool (parpool) using the 'local' profile ... case 31
+Starting parallel pool (parpool) using the 'local' profile ... case 32
+Starting parallel pool (parpool) using the 'local' profile ... case 33
+Starting parallel pool (parpool) using the 'local' profile ... case 34
+Starting parallel pool (parpool) using the 'local' profile ... case 35
+Starting parallel pool (parpool) using the 'local' profile ... case 36
+Starting parallel pool (parpool) using the 'local' profile ... case 37
+Starting parallel pool (parpool) using the 'local' profile ... case 38
+Starting parallel pool (parpool) using the 'local' profile ... case 39
+Starting parallel pool (parpool) using the 'local' profile ... case 40
+Starting parallel pool (parpool) using the 'local' profile ... case 41
+Starting parallel pool (parpool) using the 'local' profile ... case 42
+Starting parallel pool (parpool) using the 'local' profile ... case 43
+Starting parallel pool (parpool) using the 'local' profile ... case 44
+Starting parallel pool (parpool) using the 'local' profile ... case 45
+Starting parallel pool (parpool) using the 'local' profile ... case 46
+Starting parallel pool (parpool) using the 'local' profile ... case 47
+Starting parallel pool (parpool) using the 'local' profile ... case 48
+Starting parallel pool (parpool) using the 'local' profile ... case 49
+Starting parallel pool (parpool) using the 'local' profile ... case 50
+Starting parallel pool (parpool) using the 'local' profile ... case 51
+Starting parallel pool (parpool) using the 'local' profile ... case 52
+Starting parallel pool (parpool) using the 'local' profile ... case 53
+Starting parallel pool (parpool) using the 'local' profile ... case 54
+Starting parallel pool (parpool) using the 'local' profile ... case 55
+Starting parallel pool (parpool) using the 'local' profile ... case 56
+Starting parallel pool (parpool) using the 'local' profile ... case 57
+Starting parallel pool (parpool) using the 'local' profile ... case 58
+Starting parallel pool (parpool) using the 'local' profile ... case 59
+Starting parallel pool (parpool) using the 'local' profile ... case 60
+Starting parallel pool (parpool) using the 'local' profile ... case 61
+Starting parallel pool (parpool) using the 'local' profile ... 

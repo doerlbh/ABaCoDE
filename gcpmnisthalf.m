@@ -24,9 +24,9 @@ disp('F_main_classifier(1, MNIST-s, halfnegativenonstationary,shuffled, 2, minib
 disp('F_main_classifier(1, MNIST-s, halfnegativenonstationary,shuffled, 2, full_history_CB, 1000, gcp-gpu, 20000)')
 % system(['echo gcpmnisthalf MNIST-s shuffled, 2, full_history_CB >> done'  ]);
 
-F_main_classifier(1, 'MNIST-s', 'halfnegativenonstationary','shuffled', 2, 'multimode_minibatch_history_CB', 1000, 'gcp-gpu', 20000)
+% F_main_classifier(1, 'MNIST-s', 'halfnegativenonstationary','shuffled', 2, 'multimode_minibatch_history_CB', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1, MNIST-s, halfnegativenonstationary,shuffled, 2, multimode_minibatch_history_CB, 1000,gcp-gpu, 20000)')
-system(['echo gcpmnisthalf MNIST-s shuffled, 2, multimode_minibatch_history_CB >> done'  ]);
+% system(['echo gcpmnisthalf MNIST-s shuffled, 2, multimode_minibatch_history_CB >> done'  ]);
 
 F_main_classifier(1, 'MNIST-s', 'halfnegativenonstationary','shuffled', 2, 'multimode_full_history_CB', 1000, 'gcp-gpu', 20000)
 disp('F_main_classifier(1, MNIST-s, halfnegativenonstationary,shuffled, 2, multimode_full_history_CB, 1000,gcp-gpu, 20000)')

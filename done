@@ -186,3 +186,27 @@ gcpstl10negunshuffled STL10 unshuffled halfstat, 2, minibatch_history_CB
 gcpcaltech2 Caltech101S shuffled, 4, multimode_full_history_CB
 gcpstl10negunshuffled STL10 unshuffled halfstat, 2, full_history_CB
 MNIST-s shuffled, 4, multimode_full_history_CB
+gcpstl10negunshuffled STL10 unshuffled halfstat, 2, multimode_minibatch_history_CB
+gcpstl10negunshuffled STL10 unshuffled halfstat, 2, multimode_full_history_CB
+gcpmnisthalfunshuffled MNIST-s unshuffled halfstat, 2, multimode_minibatch_history_CB
+gcpcifar2 CIFAR-10 shuffled, 4, multimode_minibatch_history_CB
+gcpmnisthalf MNIST-s shuffled, 2, multimode_full_history_CB
+gcpmnisthalfunshuffled MNIST-s unshuffled halfstat, 2, multimode_full_history_CB
+gcpcaltech2 Caltech101S shuffled, 8, minibatch_embedding
+gcpmnisthalfstat MNIST-s shuffled halfstat, 1, baseline
+gcpmnistrand MNIST-s shuffled rand, 2, minibatch_history_CB
+gcpmnisthalfstat MNIST-s shuffled halfstat, 1, universal_embedding
+gcpcifar2 CIFAR-10 shuffled, 4, multimode_full_history_CB
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, minibatch_embedding
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, online_embedding
+gcpmnistrand MNIST-s shuffled rand, 2, full_history_CB
+gcpcaltech2 Caltech101S shuffled, 8, online_embedding
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, minibatch_history_CB
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, full_history_CB
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, multimode_minibatch_history_CB
+gcpmnistrand MNIST-s shuffled rand, 2, multimode_minibatch_history_CB
+gcpmnisthalfstat MNIST-s shuffled halfstat, 2, multimode_full_history_CB
+gcpcaltech2 Caltech101S shuffled, 8, minibatch_history_CB
+gcpmnistrand MNIST-s shuffled rand, 2, multimode_full_history_CB
+runmnistrandstat MNIST-s shuffled randstat, 1, baseline
+runmnistrandstat MNIST-s shuffled randstat, 1, universal_embedding

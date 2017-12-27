@@ -29,21 +29,15 @@ end
 
 addpath(path);
 addpath([path 'log'])
-addpath([path 'log/10-Dec-2017'])
-addpath([path 'log/11-Dec-2017'])
-addpath([path 'log/12-Dec-2017'])
-addpath([path 'log/13-Dec-2017'])
 
-dataset = 'MNIST-unshuffled'
+% dataset = 'MNIST-unshuffled'
 % dataset = 'Caltech101S-unshuffled'
 % dataset = 'CIFAR-10-unshuffled'
-% dataset = 'CIFAR-100C-unshuffled'
 % dataset = 'STL10-unshuffled'
 % dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
 % dataset = 'CIFAR-10-shuffled'
-% dataset = 'CIFAR-100C-shuffled'
-% dataset = 'STL10-shuffled'
+dataset = 'STL10-shuffled'
 
 %%
 
@@ -54,9 +48,9 @@ load(['result-' dataset]);
 %% plotting
 
 % range1 = size(accuracy_b,1);
-range1 = 20000;
-% range1 = 20000;
-upperbound = 1
+range1 = 10000;
+% range1 = 8000;
+upperbound = 0.5
 
 %% Table
 
@@ -70,15 +64,17 @@ fhCB_acc = [accuracy_fhCB2(range1,end) accuracy_fhCB4(range1,end) accuracy_fhCB8
 mmmhCB_acc = [accuracy_mmmhCB2(range1,end) accuracy_mmmhCB4(range1,end) accuracy_mmmhCB8(range1,end)];
 mmfhCB_acc = [accuracy_mmfhCB2(range1,end) accuracy_mmfhCB4(range1,end) accuracy_mmfhCB8(range1,end)];
 
-summary_acc = [mean(b_acc) std(b_acc);
-    mean(uE_acc) std(uE_acc);
-%     mean(orS_acc) std(orS_acc);
-    mean(mE_acc) std(mE_acc);
-    mean(oE_acc) std(oE_acc);
-    mean(mhCB_acc) std(mhCB_acc);
-    mean(fhCB_acc) std(fhCB_acc);
-    mean(mmmhCB_acc) std(mmmhCB_acc);
-    mean(mmfhCB_acc) std(mmfhCB_acc)]
+% summary_acc = [mean(b_acc) std(b_acc);
+%     mean(uE_acc) std(uE_acc);
+% %     mean(orS_acc) std(orS_acc);
+%     mean(mE_acc) std(mE_acc);
+%     mean(oE_acc) std(oE_acc);
+%     mean(mhCB_acc) std(mhCB_acc);
+%     mean(fhCB_acc) std(fhCB_acc);
+%     mean(mmmhCB_acc) std(mmmhCB_acc);
+%     mean(mmfhCB_acc) std(mmfhCB_acc)]
+
+summary_acc = 100*[mean(b_acc) std(b_acc) mean(uE_acc) std(uE_acc) mean(mE_acc) std(mE_acc) mean(oE_acc) std(oE_acc) mean(mhCB_acc) std(mhCB_acc) mean(fhCB_acc) std(fhCB_acc) mean(mmmhCB_acc) std(mmmhCB_acc) mean(mmfhCB_acc) std(mmfhCB_acc)]
 
 %% k = 2 - comprehensive
 

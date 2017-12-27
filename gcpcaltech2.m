@@ -52,9 +52,9 @@ disp('F_main_classifier(1, Caltech101S, nonstationary,shuffled, 4, full_history_
 disp('F_main_classifier(1, Caltech101S, nonstationary,shuffled, 4, multimode_minibatch_history_CB, 1000,gcp-gpu, 8000)')
 % system(['echo gcpcaltech2 Caltech101S shuffled, 4, multimode_minibatch_history_CB >> done'  ]);
 
-F_main_classifier(1, 'Caltech101S', 'nonstationary','shuffled', 4, 'multimode_full_history_CB', 1000, 'gcp-gpu', 8000)
+% F_main_classifier(1, 'Caltech101S', 'nonstationary','shuffled', 4, 'multimode_full_history_CB', 1000, 'gcp-gpu', 8000)
 disp('F_main_classifier(1, Caltech101S, nonstationary,shuffled, 4, multimode_full_history_CB, 1000,gcp-gpu, 8000)')
-system(['echo gcpcaltech2 Caltech101S shuffled, 4, multimode_full_history_CB >> done'  ]);
+% system(['echo gcpcaltech2 Caltech101S shuffled, 4, multimode_full_history_CB >> done'  ]);
 
 F_main_classifier(1, 'Caltech101S', 'nonstationary','shuffled', 8, 'minibatch_embedding', 1000, 'gcp-gpu', 8000)
 disp('F_main_classifier(1,Caltech101S, nonstationary, shuffled, 8, minibatch_embedding,1000,gcp-gpu, 8000)')

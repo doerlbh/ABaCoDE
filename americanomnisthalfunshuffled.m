@@ -56,9 +56,9 @@ disp('F_main_classifier(1,MNIST-s, halfnegativestationary, unshuffled, 2, online
 disp('F_main_classifier(1, MNIST-s, halfnegativestationary,unshuffled, 2, minibatch_history_CB, 1000, americano, 20000)')
 % system(['echo gcpmnisthalfunshuffled MNIST-s unshuffled halfstat, 2, minibatch_history_CB >> done'  ]);
 
-F_main_classifier(1, 'MNIST-s', 'halfnegativestationary','unshuffled', 2, 'full_history_CB', 1000, 'americano', 20000)
+% F_main_classifier(1, 'MNIST-s', 'halfnegativestationary','unshuffled', 2, 'full_history_CB', 1000, 'americano', 20000)
 disp('F_main_classifier(1, MNIST-s, halfnegativestationary,unshuffled, 2, full_history_CB, 1000, americano, 20000)')
-system(['echo gcpmnisthalfunshuffled MNIST-s unshuffled halfstat, 2, full_history_CB >> done'  ]);
+% system(['echo gcpmnisthalfunshuffled MNIST-s unshuffled halfstat, 2, full_history_CB >> done'  ]);
 
 F_main_classifier(1, 'MNIST-s', 'halfnegativestationary','unshuffled', 2, 'multimode_minibatch_history_CB', 1000, 'americano', 20000)
 disp('F_main_classifier(1, MNIST-s, halfnegativestationary,unshuffled, 2, multimode_minibatch_history_CB, 1000,americano, 20000)')
