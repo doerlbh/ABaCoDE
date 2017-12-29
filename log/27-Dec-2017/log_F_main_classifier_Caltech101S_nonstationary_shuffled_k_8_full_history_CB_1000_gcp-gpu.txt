@@ -8817,4 +8817,293 @@ Starting parallel pool (parpool) using the 'local' profile ... case 7746
 Starting parallel pool (parpool) using the 'local' profile ... case 7747
 Starting parallel pool (parpool) using the 'local' profile ... case 7748
 Starting parallel pool (parpool) using the 'local' profile ... case 7749
-Starting par
+Starting parallel pool (parpool) using the 'local' profile ... case 7750
+Starting parallel pool (parpool) using the 'local' profile ... case 7751
+Starting parallel pool (parpool) using the 'local' profile ... case 7752
+Starting parallel pool (parpool) using the 'local' profile ... case 7753
+Starting parallel pool (parpool) using the 'local' profile ... case 7754
+Starting parallel pool (parpool) using the 'local' profile ... case 7755
+Starting parallel pool (parpool) using the 'local' profile ... case 7756
+Starting parallel pool (parpool) using the 'local' profile ... case 7757
+Starting parallel pool (parpool) using the 'local' profile ... case 7758
+Starting parallel pool (parpool) using the 'local' profile ... case 7759
+Starting parallel pool (parpool) using the 'local' profile ... case 7760
+Starting parallel pool (parpool) using the 'local' profile ... > 97% finished in 58269.124 s
+---- accuracy: 0.0094072 sub: 0     0.02439           0    0.013889    0.053571           0           0    0.010309    0.029851    0.028986   0.0089286           0           0    0.041667           0    0.015152           0           0    0.020833           0           0    0.016667   0.0051813           0           0           0    0.018868    0.010309     0.02439           0           0           0    0.033613    0.028571    0.011111           0           0           0           0    0.017544           0           0           0    0.015625           0           0    0.014286    0.015873           0           0    0.015873           0   0.0068027           0    0.035714    0.014925    0.018868    0.013333           0    0.015152    0.021739    0.033333           0           0    0.038462    0.015152    0.019608           0           0           0    0.013158           0           0           0    0.016393           0           0      0.0125   0.0096154    0.038462   0.0033223           0    0.015152    0.031746    0.011236           0    0.018182    0.032258           0           0    0.013889           0           0    0.019231           0           0           0    0.015385           0    0.010101           0
+case 7761
+Starting parallel pool (parpool) using the 'local' profile ... case 7762
+Starting parallel pool (parpool) using the 'local' profile ... case 7763
+Starting parallel pool (parpool) using the 'local' profile ... case 7764
+Starting parallel pool (parpool) using the 'local' profile ... case 7765
+Starting parallel pool (parpool) using the 'local' profile ... case 7766
+Starting parallel pool (parpool) using the 'local' profile ... case 7767
+Starting parallel pool (parpool) using the 'local' profile ... case 7768
+Starting parallel pool (parpool) using the 'local' profile ... case 7769
+Starting parallel pool (parpool) using the 'local' profile ... case 7770
+Starting parallel pool (parpool) using the 'local' profile ... case 7771
+Starting parallel pool (parpool) using the 'local' profile ... case 7772
+Starting parallel pool (parpool) using the 'local' profile ... case 7773
+Starting parallel pool (parpool) using the 'local' profile ... case 7774
+Starting parallel pool (parpool) using the 'local' profile ... case 7775
+Starting parallel pool (parpool) using the 'local' profile ... case 7776
+Starting parallel pool (parpool) using the 'local' profile ... case 7777
+Starting parallel pool (parpool) using the 'local' profile ... case 7778
+Starting parallel pool (parpool) using the 'local' profile ... case 7779
+Starting parallel pool (parpool) using the 'local' profile ... case 7780
+Starting parallel pool (parpool) using the 'local' profile ... case 7781
+Starting parallel pool (parpool) using the 'local' profile ... case 7782
+Starting parallel pool (parpool) using the 'local' profile ... case 7783
+Starting parallel pool (parpool) using the 'local' profile ... case 7784
+Starting parallel pool (parpool) using the 'local' profile ... case 7785
+Starting parallel pool (parpool) using the 'local' profile ... case 7786
+Starting parallel pool (parpool) using the 'local' profile ... case 7787
+Starting parallel pool (parpool) using the 'local' profile ... case 7788
+Starting parallel pool (parpool) using the 'local' profile ... case 7789
+Starting parallel pool (parpool) using the 'local' profile ... case 7790
+Starting parallel pool (parpool) using the 'local' profile ... case 7791
+Starting parallel pool (parpool) using the 'local' profile ... case 7792
+Starting parallel pool (parpool) using the 'local' profile ... case 7793
+Starting parallel pool (parpool) using the 'local' profile ... case 7794
+Starting parallel pool (parpool) using the 'local' profile ... case 7795
+Starting parallel pool (parpool) using the 'local' profile ... case 7796
+Starting parallel pool (parpool) using the 'local' profile ... case 7797
+Starting parallel pool (parpool) using the 'local' profile ... case 7798
+Starting parallel pool (parpool) using the 'local' profile ... case 7799
+Starting parallel pool (parpool) using the 'local' profile ... case 7800
+Starting parallel pool (parpool) using the 'local' profile ... case 7801
+Starting parallel pool (parpool) using the 'local' profile ... case 7802
+Starting parallel pool (parpool) using the 'local' profile ... case 7803
+Starting parallel pool (parpool) using the 'local' profile ... case 7804
+Starting parallel pool (parpool) using the 'local' profile ... case 7805
+Starting parallel pool (parpool) using the 'local' profile ... case 7806
+Starting parallel pool (parpool) using the 'local' profile ... case 7807
+Starting parallel pool (parpool) using the 'local' profile ... case 7808
+Starting parallel pool (parpool) using the 'local' profile ... case 7809
+Starting parallel pool (parpool) using the 'local' profile ... case 7810
+Starting parallel pool (parpool) using the 'local' profile ... case 7811
+Starting parallel pool (parpool) using the 'local' profile ... case 7812
+Starting parallel pool (parpool) using the 'local' profile ... case 7813
+Starting parallel pool (parpool) using the 'local' profile ... case 7814
+Starting parallel pool (parpool) using the 'local' profile ... case 7815
+Starting parallel pool (parpool) using the 'local' profile ... case 7816
+Starting parallel pool (parpool) using the 'local' profile ... case 7817
+Starting parallel pool (parpool) using the 'local' profile ... case 7818
+Starting parallel pool (parpool) using the 'local' profile ... case 7819
+Starting parallel pool (parpool) using the 'local' profile ... case 7820
+Starting parallel pool (parpool) using the 'local' profile ... case 7821
+Starting parallel pool (parpool) using the 'local' profile ... case 7822
+Starting parallel pool (parpool) using the 'local' profile ... case 7823
+Starting parallel pool (parpool) using the 'local' profile ... case 7824
+Starting parallel pool (parpool) using the 'local' profile ... case 7825
+Starting parallel pool (parpool) using the 'local' profile ... case 7826
+Starting parallel pool (parpool) using the 'local' profile ... case 7827
+Starting parallel pool (parpool) using the 'local' profile ... case 7828
+Starting parallel pool (parpool) using the 'local' profile ... case 7829
+Starting parallel pool (parpool) using the 'local' profile ... case 7830
+Starting parallel pool (parpool) using the 'local' profile ... case 7831
+Starting parallel pool (parpool) using the 'local' profile ... case 7832
+Starting parallel pool (parpool) using the 'local' profile ... case 7833
+Starting parallel pool (parpool) using the 'local' profile ... case 7834
+Starting parallel pool (parpool) using the 'local' profile ... case 7835
+Starting parallel pool (parpool) using the 'local' profile ... case 7836
+Starting parallel pool (parpool) using the 'local' profile ... case 7837
+Starting parallel pool (parpool) using the 'local' profile ... case 7838
+Starting parallel pool (parpool) using the 'local' profile ... case 7839
+Starting parallel pool (parpool) using the 'local' profile ... case 7840
+Starting parallel pool (parpool) using the 'local' profile ... > 98% finished in 58819.4312 s
+---- accuracy: 0.0093112 sub: 0    0.024096           0    0.013889    0.052632           0           0    0.010309    0.029412    0.028571   0.0088496           0           0    0.041667           0    0.014706           0           0    0.020725           0           0    0.016393    0.005168           0           0           0    0.018868    0.010309     0.02381           0           0           0    0.033613    0.028571    0.010989           0           0           0           0    0.016667           0           0           0    0.015625           0           0    0.014085    0.015873           0           0    0.015873           0   0.0065359           0    0.035088    0.014493    0.018868    0.012987           0    0.015152    0.020833    0.032258           0           0    0.037736    0.014706    0.019608           0           0           0    0.012987           0           0           0    0.016393           0           0    0.012422   0.0096154    0.038462   0.0033113           0    0.014706    0.030769    0.011236           0    0.017857    0.031746           0           0    0.013889           0           0    0.018182           0           0           0    0.015385           0    0.010101           0
+case 7841
+Starting parallel pool (parpool) using the 'local' profile ... case 7842
+Starting parallel pool (parpool) using the 'local' profile ... case 7843
+Starting parallel pool (parpool) using the 'local' profile ... case 7844
+Starting parallel pool (parpool) using the 'local' profile ... case 7845
+Starting parallel pool (parpool) using the 'local' profile ... case 7846
+Starting parallel pool (parpool) using the 'local' profile ... case 7847
+Starting parallel pool (parpool) using the 'local' profile ... case 7848
+Starting parallel pool (parpool) using the 'local' profile ... case 7849
+Starting parallel pool (parpool) using the 'local' profile ... case 7850
+Starting parallel pool (parpool) using the 'local' profile ... case 7851
+Starting parallel pool (parpool) using the 'local' profile ... case 7852
+Starting parallel pool (parpool) using the 'local' profile ... case 7853
+Starting parallel pool (parpool) using the 'local' profile ... case 7854
+Starting parallel pool (parpool) using the 'local' profile ... case 7855
+Starting parallel pool (parpool) using the 'local' profile ... case 7856
+Starting parallel pool (parpool) using the 'local' profile ... case 7857
+Starting parallel pool (parpool) using the 'local' profile ... case 7858
+Starting parallel pool (parpool) using the 'local' profile ... case 7859
+Starting parallel pool (parpool) using the 'local' profile ... case 7860
+Starting parallel pool (parpool) using the 'local' profile ... case 7861
+Starting parallel pool (parpool) using the 'local' profile ... case 7862
+Starting parallel pool (parpool) using the 'local' profile ... case 7863
+Starting parallel pool (parpool) using the 'local' profile ... case 7864
+Starting parallel pool (parpool) using the 'local' profile ... case 7865
+Starting parallel pool (parpool) using the 'local' profile ... case 7866
+Starting parallel pool (parpool) using the 'local' profile ... case 7867
+Starting parallel pool (parpool) using the 'local' profile ... case 7868
+Starting parallel pool (parpool) using the 'local' profile ... case 7869
+Starting parallel pool (parpool) using the 'local' profile ... case 7870
+Starting parallel pool (parpool) using the 'local' profile ... case 7871
+Starting parallel pool (parpool) using the 'local' profile ... case 7872
+Starting parallel pool (parpool) using the 'local' profile ... case 7873
+Starting parallel pool (parpool) using the 'local' profile ... case 7874
+Starting parallel pool (parpool) using the 'local' profile ... case 7875
+Starting parallel pool (parpool) using the 'local' profile ... case 7876
+Starting parallel pool (parpool) using the 'local' profile ... case 7877
+Starting parallel pool (parpool) using the 'local' profile ... case 7878
+Starting parallel pool (parpool) using the 'local' profile ... case 7879
+Starting parallel pool (parpool) using the 'local' profile ... case 7880
+Starting parallel pool (parpool) using the 'local' profile ... case 7881
+Starting parallel pool (parpool) using the 'local' profile ... case 7882
+Starting parallel pool (parpool) using the 'local' profile ... case 7883
+Starting parallel pool (parpool) using the 'local' profile ... case 7884
+Starting parallel pool (parpool) using the 'local' profile ... case 7885
+Starting parallel pool (parpool) using the 'local' profile ... case 7886
+Starting parallel pool (parpool) using the 'local' profile ... case 7887
+Starting parallel pool (parpool) using the 'local' profile ... case 7888
+Starting parallel pool (parpool) using the 'local' profile ... case 7889
+Starting parallel pool (parpool) using the 'local' profile ... case 7890
+Starting parallel pool (parpool) using the 'local' profile ... case 7891
+Starting parallel pool (parpool) using the 'local' profile ... case 7892
+Starting parallel pool (parpool) using the 'local' profile ... case 7893
+Starting parallel pool (parpool) using the 'local' profile ... case 7894
+Starting parallel pool (parpool) using the 'local' profile ... case 7895
+Starting parallel pool (parpool) using the 'local' profile ... case 7896
+Starting parallel pool (parpool) using the 'local' profile ... case 7897
+Starting parallel pool (parpool) using the 'local' profile ... case 7898
+Starting parallel pool (parpool) using the 'local' profile ... case 7899
+Starting parallel pool (parpool) using the 'local' profile ... case 7900
+Starting parallel pool (parpool) using the 'local' profile ... case 7901
+Starting parallel pool (parpool) using the 'local' profile ... case 7902
+Starting parallel pool (parpool) using the 'local' profile ... case 7903
+Starting parallel pool (parpool) using the 'local' profile ... case 7904
+Starting parallel pool (parpool) using the 'local' profile ... case 7905
+Starting parallel pool (parpool) using the 'local' profile ... case 7906
+Starting parallel pool (parpool) using the 'local' profile ... case 7907
+Starting parallel pool (parpool) using the 'local' profile ... case 7908
+Starting parallel pool (parpool) using the 'local' profile ... case 7909
+Starting parallel pool (parpool) using the 'local' profile ... case 7910
+Starting parallel pool (parpool) using the 'local' profile ... case 7911
+Starting parallel pool (parpool) using the 'local' profile ... case 7912
+Starting parallel pool (parpool) using the 'local' profile ... case 7913
+Starting parallel pool (parpool) using the 'local' profile ... case 7914
+Starting parallel pool (parpool) using the 'local' profile ... case 7915
+Starting parallel pool (parpool) using the 'local' profile ... case 7916
+Starting parallel pool (parpool) using the 'local' profile ... case 7917
+Starting parallel pool (parpool) using the 'local' profile ... case 7918
+Starting parallel pool (parpool) using the 'local' profile ... case 7919
+Starting parallel pool (parpool) using the 'local' profile ... case 7920
+Starting parallel pool (parpool) using the 'local' profile ... > 99% finished in 59393.6828 s
+---- accuracy: 0.0093434 sub: 0    0.022727           0    0.013699    0.052632           0           0    0.010309    0.028986    0.028169   0.0088496           0           0    0.041667           0    0.014286           0           0    0.020725           0           0    0.016129    0.005168           0           0           0    0.018868    0.010204     0.02381           0           0           0    0.033333    0.028571    0.010989           0           0           0           0    0.016667           0           0           0    0.015625           0           0    0.014085    0.015625           0           0    0.015625           0   0.0063694           0    0.034483    0.014286    0.018868    0.012821           0    0.029412    0.020408     0.03125           0           0    0.037037    0.014493    0.019608           0           0           0    0.012658           0           0           0    0.016393           0           0    0.012346   0.0096154    0.038462   0.0033113           0    0.014706    0.030303    0.011111           0    0.017857    0.029412           0           0    0.013889           0           0    0.017241           0           0           0    0.015152           0    0.010101           0
+case 7921
+Starting parallel pool (parpool) using the 'local' profile ... case 7922
+Starting parallel pool (parpool) using the 'local' profile ... case 7923
+Starting parallel pool (parpool) using the 'local' profile ... case 7924
+Starting parallel pool (parpool) using the 'local' profile ... case 7925
+Starting parallel pool (parpool) using the 'local' profile ... case 7926
+Starting parallel pool (parpool) using the 'local' profile ... case 7927
+Starting parallel pool (parpool) using the 'local' profile ... case 7928
+Starting parallel pool (parpool) using the 'local' profile ... case 7929
+Starting parallel pool (parpool) using the 'local' profile ... case 7930
+Starting parallel pool (parpool) using the 'local' profile ... case 7931
+Starting parallel pool (parpool) using the 'local' profile ... case 7932
+Starting parallel pool (parpool) using the 'local' profile ... case 7933
+Starting parallel pool (parpool) using the 'local' profile ... case 7934
+Starting parallel pool (parpool) using the 'local' profile ... case 7935
+Starting parallel pool (parpool) using the 'local' profile ... case 7936
+Starting parallel pool (parpool) using the 'local' profile ... case 7937
+Starting parallel pool (parpool) using the 'local' profile ... case 7938
+Starting parallel pool (parpool) using the 'local' profile ... case 7939
+Starting parallel pool (parpool) using the 'local' profile ... case 7940
+Starting parallel pool (parpool) using the 'local' profile ... case 7941
+Starting parallel pool (parpool) using the 'local' profile ... case 7942
+Starting parallel pool (parpool) using the 'local' profile ... case 7943
+Starting parallel pool (parpool) using the 'local' profile ... case 7944
+Starting parallel pool (parpool) using the 'local' profile ... case 7945
+Starting parallel pool (parpool) using the 'local' profile ... case 7946
+Starting parallel pool (parpool) using the 'local' profile ... case 7947
+Starting parallel pool (parpool) using the 'local' profile ... case 7948
+Starting parallel pool (parpool) using the 'local' profile ... case 7949
+Starting parallel pool (parpool) using the 'local' profile ... case 7950
+Starting parallel pool (parpool) using the 'local' profile ... case 7951
+Starting parallel pool (parpool) using the 'local' profile ... case 7952
+Starting parallel pool (parpool) using the 'local' profile ... case 7953
+Starting parallel pool (parpool) using the 'local' profile ... case 7954
+Starting parallel pool (parpool) using the 'local' profile ... case 7955
+Starting parallel pool (parpool) using the 'local' profile ... case 7956
+Starting parallel pool (parpool) using the 'local' profile ... case 7957
+Starting parallel pool (parpool) using the 'local' profile ... case 7958
+Starting parallel pool (parpool) using the 'local' profile ... case 7959
+Starting parallel pool (parpool) using the 'local' profile ... case 7960
+Starting parallel pool (parpool) using the 'local' profile ... case 7961
+Starting parallel pool (parpool) using the 'local' profile ... case 7962
+Starting parallel pool (parpool) using the 'local' profile ... case 7963
+Starting parallel pool (parpool) using the 'local' profile ... case 7964
+Starting parallel pool (parpool) using the 'local' profile ... case 7965
+Starting parallel pool (parpool) using the 'local' profile ... case 7966
+Starting parallel pool (parpool) using the 'local' profile ... case 7967
+Starting parallel pool (parpool) using the 'local' profile ... case 7968
+Starting parallel pool (parpool) using the 'local' profile ... case 7969
+Starting parallel pool (parpool) using the 'local' profile ... case 7970
+Starting parallel pool (parpool) using the 'local' profile ... case 7971
+Starting parallel pool (parpool) using the 'local' profile ... case 7972
+Starting parallel pool (parpool) using the 'local' profile ... case 7973
+Starting parallel pool (parpool) using the 'local' profile ... case 7974
+Starting parallel pool (parpool) using the 'local' profile ... case 7975
+Starting parallel pool (parpool) using the 'local' profile ... case 7976
+Starting parallel pool (parpool) using the 'local' profile ... case 7977
+Starting parallel pool (parpool) using the 'local' profile ... case 7978
+Starting parallel pool (parpool) using the 'local' profile ... case 7979
+Starting parallel pool (parpool) using the 'local' profile ... case 7980
+Starting parallel pool (parpool) using the 'local' profile ... case 7981
+Starting parallel pool (parpool) using the 'local' profile ... case 7982
+Starting parallel pool (parpool) using the 'local' profile ... case 7983
+Starting parallel pool (parpool) using the 'local' profile ... case 7984
+Starting parallel pool (parpool) using the 'local' profile ... case 7985
+Starting parallel pool (parpool) using the 'local' profile ... case 7986
+Starting parallel pool (parpool) using the 'local' profile ... case 7987
+Starting parallel pool (parpool) using the 'local' profile ... case 7988
+Starting parallel pool (parpool) using the 'local' profile ... case 7989
+Starting parallel pool (parpool) using the 'local' profile ... case 7990
+Starting parallel pool (parpool) using the 'local' profile ... case 7991
+Starting parallel pool (parpool) using the 'local' profile ... case 7992
+Starting parallel pool (parpool) using the 'local' profile ... case 7993
+Starting parallel pool (parpool) using the 'local' profile ... case 7994
+Starting parallel pool (parpool) using the 'local' profile ... case 7995
+Starting parallel pool (parpool) using the 'local' profile ... case 7996
+Starting parallel pool (parpool) using the 'local' profile ... case 7997
+Starting parallel pool (parpool) using the 'local' profile ... case 7998
+Starting parallel pool (parpool) using the 'local' profile ... case 7999
+Starting parallel pool (parpool) using the 'local' profile ... case 8000
+no reclustering involved
+===== Training starting for 1 =====
+training size is 1447
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 1016
+===== Training finished for 2 =====
+===== Training starting for 3 =====
+training size is 1205
+===== Training finished for 3 =====
+===== Training starting for 4 =====
+training size is 834
+===== Training finished for 4 =====
+===== Training starting for 5 =====
+training size is 1316
+===== Training finished for 5 =====
+===== Training starting for 6 =====
+training size is 1133
+===== Training finished for 6 =====
+===== Training starting for 7 =====
+training size is 1131
+===== Training finished for 7 =====
+===== Training starting for 8 =====
+training size is 589
+===== Training finished for 8 =====
+Starting parallel pool (parpool) using the 'local' profile ... > 100% finished in 60355.2228 s
+---- accuracy: 0.009375 sub: 0    0.021739           0    0.013333    0.050847           0           0    0.010309    0.028986    0.027397   0.0086957           0           0    0.041096           0    0.014286           0           0    0.020619           0           0    0.015873    0.005168           0           0           0    0.018868    0.010101    0.023256           0           0           0    0.033333    0.028571    0.010753           0           0           0           0    0.015873           0           0           0    0.015625           0           0    0.014085    0.015625           0           0    0.015625           0    0.012195           0    0.034483    0.014286    0.018519    0.012821           0    0.029412    0.020408     0.03125           0           0    0.037037    0.014286    0.019608           0           0           0    0.012658           0           0           0    0.016393           0           0     0.01227   0.0096154    0.038462   0.0033113           0    0.014493    0.029851    0.011111           0    0.017544    0.029412           0           0    0.013889           0           0    0.016949           0           0           0    0.015152           0    0.010101           0
+> 100% finished
+Elapsed time is 60364.850553 seconds.
+<-- online learning done
+finished experiment on gcp-gpu
+info: Caltech101S nonstationary_shuffled k = 8 full_history_CB 1000
+===================
