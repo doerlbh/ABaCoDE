@@ -505,7 +505,7 @@ disp(['finished experiment on ' loc]);
 disp(['info: ' dataset ' ' dist  '_' rewd ' k = ' num2str(k) ' ' type ' ' num2str(window)]);
 disp('===================')
 
-save([path 'log/' dateToday '/F_main_classifier_' dataset '_' dist '_' rewd '_k_' num2str(k) '_' type '_' num2str(window) '_' loc]);
+save([path 'log/' dateToday '/F_main_classifier_' dataset '_' dist '_' rewd '_k_' num2str(k) '_' type '_' num2str(window) '_' loc],'learn_accuracy');
 diary off;
 
 % exit;
