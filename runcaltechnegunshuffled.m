@@ -1,3 +1,5 @@
+gpuDevice(5)
+
 % americano - Caltech101S - half
 
 F_main_classifier_local(1, 'Caltech101S', 'halfnegativenonstationary','unshuffled', 1, 'baseline', 1000, 'americano', 8000)
@@ -135,5 +137,5 @@ F_main_classifier_local(1, 'Caltech101S', 'halfnegativestationary','unshuffled',
 disp('F_main_classifier_local(1, Caltech101S, halfnegativestationary,unshuffled, 2, multimode_full_history_CB, 1000,americano, 8000)')
 system(['echo runcaltechnegunshuffled Caltech101S unshuffled halfstat, 2, multimode_full_history_CB >> done'  ]);
 
-
+exit
 

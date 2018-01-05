@@ -39,12 +39,12 @@
 % dataset = 'CIFAR-10-halfstat-shuffled'
 % dataset = 'STL10-halfstat-shuffled'
 
-dataset = 'MNIST-rand-shuffled'
+% dataset = 'MNIST-rand-shuffled'
 % dataset = 'Caltech101S-rand-shuffled'
 % dataset = 'CIFAR-10-rand-shuffled'
 % dataset = 'STL10-rand-shuffled'
 
-% dataset = 'MNIST-randstat-shuffled'
+dataset = 'MNIST-randstat-shuffled'
 % dataset = 'Caltech101S-randstat-shuffled'
 % dataset = 'CIFAR-10-randstat-shuffled'
 % dataset = 'STL10-randstat-shuffled'
@@ -75,18 +75,6 @@ end
 addpath(path);
 addpath([path 'log'])
 addpath([path 'log/outputs'])
-addpath([path 'log/16-Dec-2017'])
-addpath([path 'log/17-Dec-2017'])
-addpath([path 'log/18-Dec-2017'])
-addpath([path 'log/19-Dec-2017'])
-addpath([path 'log/20-Dec-2017'])
-addpath([path 'log/21-Dec-2017'])
-addpath([path 'log/22-Dec-2017'])
-addpath([path 'log/23-Dec-2017'])
-addpath([path 'log/24-Dec-2017'])
-% addpath([path 'log/25-Dec-2017'])
-% addpath([path 'log/26-Dec-2017'])
-% addpath([path 'log/27-Dec-2017'])
 addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
 %% for data files
@@ -127,6 +115,16 @@ switch dataset
         output_file_mmmhCB2 = 'log/26-Dec-2017/F_main_classifier_MNIST-s_randnegativenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat'
         output_file_mmfhCB2 = 'log/26-Dec-2017/F_main_classifier_MNIST-s_randnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat'
         
+    case 'MNIST-randstat-shuffled'
+        
+        output_file_b = 'log/26-Dec-2017/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/27-Dec-2017/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/03-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/03-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/04-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/03-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/04-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/04-Jan-2018/F_main_classifier_MNIST-s_randnegativestationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
         
     case 'MNIST-half-unshuffled'
         
