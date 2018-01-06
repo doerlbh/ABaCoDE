@@ -211,3 +211,30 @@ gcpmnistrand MNIST-s shuffled rand, 2, multimode_full_history_CB
 runmnistrandstat MNIST-s shuffled randstat, 1, baseline
 runmnistrandstat MNIST-s shuffled randstat, 1, universal_embedding
 gcpcaltech2 Caltech101S shuffled, 8, full_history_CB
+runmnistrandstat MNIST-s shuffled randstat, 2, minibatch_embedding
+runmnistrandstat MNIST-s shuffled randstat, 2, full_history_CB
+runmnistrandstat MNIST-s shuffled randstat, 2, online_embedding
+runmnistrandstat MNIST-s shuffled randstat, 2, multimode_minibatch_history_CB
+runmnistrandstat MNIST-s shuffled randstat, 2, minibatch_history_CB
+runmnistrandstat MNIST-s shuffled randstat, 2, multimode_full_history_CB
+gcpcifar2 CIFAR-10 shuffled, 8, minibatch_embedding
+gcpcifar2 CIFAR-10 shuffled, 8, online_embedding
+gcpcifar2 CIFAR-10 shuffled, 8, full_history_CB
+gcpcifar2 CIFAR-10 shuffled, 8, minibatch_history_CB
+runcaltechnegunshuffled Caltech101S unshuffled half, 1, baseline
+runcaltechneg Caltech101S shuffled half, 1, baseline
+runcaltechnegunshuffled Caltech101S unshuffled half, 1, universal_embedding
+runcaltechneg Caltech101S shuffled half, 1, universal_embedding
+runcaltechnegunshuffled Caltech101S unshuffled half, 2, minibatch_embedding
+runcaltechneg Caltech101S shuffled half, 2, minibatch_embedding
+runcaltechneg Caltech101S shuffled half, 2, online_embedding
+gcpcifar2 CIFAR-10 shuffled, 8, multimode_minibatch_history_CB
+runcaltechnegunshuffled Caltech101S unshuffled half, 2, online_embedding
+runcaltechneg Caltech101S shuffled half, 2, minibatch_history_CB
+runcaltechnegunshuffled Caltech101S unshuffled half, 2, minibatch_history_CB
+runcaltechneg Caltech101S shuffled half, 2, full_history_CB
+runcaltechnegunshuffled Caltech101S unshuffled half, 2, full_history_CB
+runcaltechneg Caltech101S shuffled half, 2, multimode_minibatch_history_CB
+runcaltechnegunshuffled Caltech101S unshuffled half, 2, multimode_minibatch_history_CB
+runcaltechneg Caltech101S shuffled half, 2, multimode_full_history_CB
+gcpcifar2 CIFAR-10 shuffled, 8, multimode_full_history_CB

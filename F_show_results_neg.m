@@ -65,10 +65,10 @@ addpath([path 'log'])
 % dataset = 'CIFAR-10-rand-shuffled'
 % dataset = 'STL10-rand-shuffled'
 
-% dataset = 'MNIST-randstat-shuffled'
+dataset = 'MNIST-randstat-shuffled'
 % dataset = 'Caltech101S-randstat-shuffled'
 % dataset = 'CIFAR-10-randstat-shuffled'
-dataset = 'STL10-randstat-shuffled'
+% dataset = 'STL10-randstat-shuffled'
 
 %%
 
@@ -79,9 +79,9 @@ load(['result-' dataset]);
 %% plotting
 
 % range1 = size(accuracy_b,1);
-% range1 = 20000;
-range1 = 10000;
-upperbound = 0.2
+range1 = 20000;
+% range1 = 10000;
+upperbound = 0.5
 
 %% Table
 
