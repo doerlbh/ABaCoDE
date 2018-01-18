@@ -1,0 +1,1748 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> 
+ans = 
+
+  CUDADevice with properties:
+
+                      Name: 'Tesla C2075'
+                     Index: 3
+         ComputeCapability: '2.0'
+            SupportsDouble: 1
+             DriverVersion: 8
+            ToolkitVersion: 7.5000
+        MaxThreadsPerBlock: 1024
+          MaxShmemPerBlock: 49152
+        MaxThreadBlockSize: [1024 1024 64]
+               MaxGridSize: [65535 65535 65535]
+                 SIMDWidth: 32
+               TotalMemory: 5.5585e+09
+           AvailableMemory: 5.4744e+09
+       MultiprocessorCount: 14
+              ClockRateKHz: 1147000
+               ComputeMode: 'Default'
+      GPUOverlapsTransfers: 1
+    KernelExecutionTimeout: 0
+          CanMapHostMemory: 1
+           DeviceSupported: 1
+            DeviceSelected: 1
+
+>> >> 18-Jan-2018
+running experiment on americano
+info: Caltech101S halfnegativenonstationary shuffled k = 2 online_embedding 1000
+===================
+==== Loading data =======
+==== Online Learning Phase =======
+--> initializing
+# case: 8000
+# input: 784
+# label: 101
+# embedding: 2
+==== nonstationizing dataset =======
+--> finish shuffling stationary input
+n = 8
+clustering diversity 1st half:
+  Value    Count   Percent
+      1      496     12.40%
+      2      353      8.82%
+      3      377      9.43%
+      4      520     13.00%
+      5      634     15.85%
+      6      542     13.55%
+      7      628     15.70%
+      8      450     11.25%
+clustering diversity 2nd half:
+  Value    Count   Percent
+      1      496     12.40%
+      2      399      9.97%
+      3      384      9.60%
+      4      478     11.95%
+      5      599     14.97%
+      6      601     15.03%
+      7      583     14.57%
+      8      460     11.50%
+clustering diversity 1st 1st half:
+  Value    Count   Percent
+      1      246     12.30%
+      2      170      8.50%
+      3      181      9.05%
+      4      252     12.60%
+      5      338     16.90%
+      6      278     13.90%
+      7      317     15.85%
+      8      218     10.90%
+clustering diversity 1st 2nd half:
+  Value    Count   Percent
+      1      250     12.50%
+      2      183      9.15%
+      3      196      9.80%
+      4      268     13.40%
+      5      296     14.80%
+      6      264     13.20%
+      7      311     15.55%
+      8      232     11.60%
+--> finish reclustering stationary input
+seq_first: 
+
+ans =
+
+  Columns 1 through 3
+
+                    3                    8                    2
+
+  Columns 4 through 6
+
+                    1                    4                    5
+
+  Columns 7 through 8
+
+                    7                    6
+
+seq_second: 
+
+ans =
+
+  Columns 1 through 3
+
+                    3                    8                    4
+
+  Columns 4 through 6
+
+                    5                    6                    7
+
+  Columns 7 through 8
+
+                    2                    1
+
+==================
+window: 1
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      181    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3      196    100.00%
+-> finish diversity installing, second half size: 623
+  Value    Count   Percent
+      1       71     11.40%
+      2       62      9.95%
+      3       64     10.27%
+      4       79     12.68%
+      5       93     14.93%
+      6       84     13.48%
+      7       97     15.57%
+      8       73     11.72%
+-> in summary for window :1
+  Value    Count   Percent
+      1       71      7.10%
+      2       62      6.20%
+      3      441     44.10%
+      4       79      7.90%
+      5       93      9.30%
+      6       84      8.40%
+      7       97      9.70%
+      8       73      7.30%
+----> finish generating nonstationary dist for window 1
+==================
+window: 2
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      218    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7        0      0.00%
+      8      232    100.00%
+-> finish diversity installing, second half size: 550
+  Value    Count   Percent
+      1       79     14.36%
+      2       54      9.82%
+      3       45      8.18%
+      4       62     11.27%
+      5       83     15.09%
+      6       85     15.45%
+      7       82     14.91%
+      8       60     10.91%
+-> in summary for window :2
+  Value    Count   Percent
+      1       79      7.90%
+      2       54      5.40%
+      3       45      4.50%
+      4       62      6.20%
+      5       83      8.30%
+      6       85      8.50%
+      7       82      8.20%
+      8      510     51.00%
+----> finish generating nonstationary dist for window 2
+==================
+window: 3
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      170    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      268    100.00%
+-> finish diversity installing, second half size: 562
+  Value    Count   Percent
+      1       71     12.63%
+      2       49      8.72%
+      3       46      8.19%
+      4       65     11.57%
+      5       85     15.12%
+      6       85     15.12%
+      7      102     18.15%
+      8       59     10.50%
+-> in summary for window :3
+  Value    Count   Percent
+      1       71      7.10%
+      2      219     21.90%
+      3       46      4.60%
+      4      333     33.30%
+      5       85      8.50%
+      6       85      8.50%
+      7      102     10.20%
+      8       59      5.90%
+----> finish generating nonstationary dist for window 3
+==================
+window: 4
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1      246    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      296    100.00%
+-> finish diversity installing, second half size: 458
+  Value    Count   Percent
+      1       62     13.54%
+      2       50     10.92%
+      3       40      8.73%
+      4       57     12.45%
+      5       65     14.19%
+      6       66     14.41%
+      7       69     15.07%
+      8       49     10.70%
+-> in summary for window :4
+  Value    Count   Percent
+      1      308     30.80%
+      2       50      5.00%
+      3       40      4.00%
+      4       57      5.70%
+      5      361     36.10%
+      6       66      6.60%
+      7       69      6.90%
+      8       49      4.90%
+----> finish generating nonstationary dist for window 4
+==================
+window: 5
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4      252    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      264    100.00%
+-> finish diversity installing, second half size: 484
+  Value    Count   Percent
+      1       47      9.71%
+      2       43      8.88%
+      3       60     12.40%
+      4       56     11.57%
+      5       75     15.50%
+      6       66     13.64%
+      7       70     14.46%
+      8       67     13.84%
+-> in summary for window :5
+  Value    Count   Percent
+      1       47      4.70%
+      2       43      4.30%
+      3       60      6.00%
+      4      308     30.80%
+      5       75      7.50%
+      6      330     33.00%
+      7       70      7.00%
+      8       67      6.70%
+----> finish generating nonstationary dist for window 5
+==================
+window: 6
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5      338    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      311    100.00%
+-> finish diversity installing, second half size: 351
+  Value    Count   Percent
+      1       39     11.11%
+      2       40     11.40%
+      3       33      9.40%
+      4       33      9.40%
+      5       61     17.38%
+      6       62     17.66%
+      7       45     12.82%
+      8       38     10.83%
+-> in summary for window :6
+  Value    Count   Percent
+      1       39      3.90%
+      2       40      4.00%
+      3       33      3.30%
+      4       33      3.30%
+      5      399     39.90%
+      6       62      6.20%
+      7      356     35.60%
+      8       38      3.80%
+----> finish generating nonstationary dist for window 6
+==================
+window: 7
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6        0      0.00%
+      7      317    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2      183    100.00%
+-> finish diversity installing, second half size: 500
+  Value    Count   Percent
+      1       68     13.60%
+      2       48      9.60%
+      3       52     10.40%
+      4       56     11.20%
+      5       76     15.20%
+      6       86     17.20%
+      7       60     12.00%
+      8       54     10.80%
+-> in summary for window :7
+  Value    Count   Percent
+      1       68      6.80%
+      2      231     23.10%
+      3       52      5.20%
+      4       56      5.60%
+      5       76      7.60%
+      6       86      8.60%
+      7      377     37.70%
+      8       54      5.40%
+----> finish generating nonstationary dist for window 7
+==================
+window: 8
+-> finish first main cluster chosing
+  Value    Count   Percent
+      1        0      0.00%
+      2        0      0.00%
+      3        0      0.00%
+      4        0      0.00%
+      5        0      0.00%
+      6      278    100.00%
+-> finish second main cluster chosing
+  Value    Count   Percent
+      1      250    100.00%
+-> finish diversity installing, second half size: 472
+  Value    Count   Percent
+      1       59     12.50%
+      2       53     11.23%
+      3       44      9.32%
+      4       70     14.83%
+      5       61     12.92%
+      6       67     14.19%
+      7       58     12.29%
+      8       60     12.71%
+-> in summary for window :8
+  Value    Count   Percent
+      1      309     30.90%
+      2       53      5.30%
+      3       44      4.40%
+      4       70      7.00%
+      5       61      6.10%
+      6      345     34.50%
+      7       58      5.80%
+      8       60      6.00%
+----> finish generating nonstationary dist for window 8
+-> in summary for all data
+  Value    Count   Percent
+      1      992     12.40%
+      2      752      9.40%
+      3      761      9.51%
+      4      998     12.47%
+      5     1233     15.41%
+      6     1143     14.29%
+      7     1211     15.14%
+      8      910     11.38%
+==== half negativizing dataset =======
+----> finish negativizing for window 1 with n = 0.5
+----> finish negativizing for window 2 with n = 0.5
+----> finish negativizing for window 3 with n = 0.5
+----> finish negativizing for window 4 with n = 0.5
+----> finish negativizing for window 5 with n = 0.5
+----> finish negativizing for window 6 with n = 0.5
+----> finish negativizing for window 7 with n = 0.5
+----> finish negativizing for window 8 with n = 0.5
+==== shuffling labels each stage =======
+----------
+For window 1: 
+  Columns 1 through 13
+
+    96    67    58    69    62    88    10    20    14    23    34    22    79
+
+  Columns 14 through 26
+
+    13    51     1    49    78    60    54    46    52     3    76    66     7
+
+  Columns 27 through 39
+
+    56    38    43    75    45    37    32    84    87    82    55     2    47
+
+  Columns 40 through 52
+
+    64    18    44    26    92    97    12    16    30    31    74    27    73
+
+  Columns 53 through 65
+
+    19    35     8    94    80    24    68    39    29    89    70    98    50
+
+  Columns 66 through 78
+
+    71    41    33    59     6    86    83    81    40    61    11     9    21
+
+  Columns 79 through 91
+
+    72    28    99    53    85    65   101    77    57    17    15    90     5
+
+  Columns 92 through 101
+
+    36    93    42    95    91    48    25    63   100     4
+
+----------
+For window 2: 
+  Columns 1 through 13
+
+    20    30     4    95    61    38    48    39    97    64    81    89     6
+
+  Columns 14 through 26
+
+    69    26    46    57    76   100    85     3    23    71    33    28    82
+
+  Columns 27 through 39
+
+    84    67    12    56    87    37    21    96    83    91    54    68    99
+
+  Columns 40 through 52
+
+    73    79    32    13    10    42    77    78    47    72    94     9    29
+
+  Columns 53 through 65
+
+    41    75     7    43    19    88    31    15    80    74    92    52     2
+
+  Columns 66 through 78
+
+    60    25    36    40    53    11   101    86     8    55    98    45    35
+
+  Columns 79 through 91
+
+    44    62    58    24    14    49    22    50    66    51    63    65    34
+
+  Columns 92 through 101
+
+    17    90    18     5    70    93    27    16    59     1
+
+----------
+For window 3: 
+  Columns 1 through 13
+
+    90    10    51    55     9    26    68    71    36    18    21    37    23
+
+  Columns 14 through 26
+
+    53    70    88    33    49    54    75    57    38    50    58    61    87
+
+  Columns 27 through 39
+
+    30    20    84     2    72    29    39    98    97    95    69    16    41
+
+  Columns 40 through 52
+
+    44    15    85    82    48     7    93    62    94    35    74    92     5
+
+  Columns 53 through 65
+
+    96     3    64   100    78    31    81    42    32    13    11    63    34
+
+  Columns 66 through 78
+
+    47   101    43    83     1    28    60    46    67    59    17    76     4
+
+  Columns 79 through 91
+
+    22     8    25    40    52    56    24    86    91    99    12    89     6
+
+  Columns 92 through 101
+
+    66    80    14    65    79    77    27    73    19    45
+
+----------
+For window 4: 
+  Columns 1 through 13
+
+    14    54     7    23    40    55    90    82    97    91    89    17    67
+
+  Columns 14 through 26
+
+   101    69   100    84    65    32    44    18    78     2    34    33    24
+
+  Columns 27 through 39
+
+    73    35    42    68    80    27    77    13    74    46    94    87    22
+
+  Columns 40 through 52
+
+    15    28    43    62    57     5    70    60     3    12    41    81    39
+
+  Columns 53 through 65
+
+    16    38     8    85    49    79    61     9    26    50    59    64    58
+
+  Columns 66 through 78
+
+     4    29     6    75    88    19    25    71    47    48    98     1    76
+
+  Columns 79 through 91
+
+    31    66    95    45    37    51    86    93    99    30    21    63    96
+
+  Columns 92 through 101
+
+    92    36    20    52    10    83    11    72    56    53
+
+----------
+For window 5: 
+  Columns 1 through 13
+
+    47     6    93    17    38    23     3    70    92    25    29    28    53
+
+  Columns 14 through 26
+
+    84    22     5    13    73    69    94    72    54    66    95    81    45
+
+  Columns 27 through 39
+
+    27    12    83    52    34    43   100    59    86    33    80    30    51
+
+  Columns 40 through 52
+
+    79    32    46    39    61    85    21    35    76    37    74    49    97
+
+  Columns 53 through 65
+
+    68    90    48     9    14    78    41    96    88    26    42    82    71
+
+  Columns 66 through 78
+
+    19    99    31     1    87    65    91     7     2    16    60    62    98
+
+  Columns 79 through 91
+
+    64    56    20    11    63    40     8    58    57    10    24   101    77
+
+  Columns 92 through 101
+
+    67    44    89    55    15    36     4    50    18    75
+
+----------
+For window 6: 
+  Columns 1 through 13
+
+    23    34    70    86    68    13   100    35    87    90    10    77    79
+
+  Columns 14 through 26
+
+    37    28    62    52    20    50     9    73     7    27    14    40    22
+
+  Columns 27 through 39
+
+    58    46    29    94    64    57    11    33    88    71    59    98    15
+
+  Columns 40 through 52
+
+   101    78    12    18    49    93    60    96    41    19     3    32    81
+
+  Columns 53 through 65
+
+    66    72    80    75    45    51    56    83    89    48    47    69    91
+
+  Columns 66 through 78
+
+    74     5    30     2    39    92    97    54    38    85    16    43    44
+
+  Columns 79 through 91
+
+    76    26    42    99    84    63    82     6    21    36    95    53    17
+
+  Columns 92 through 101
+
+     8    65     1    55     4    31    24    25    67    61
+
+----------
+For window 7: 
+  Columns 1 through 13
+
+    96    46    42    64    72    33    17    89    37     2    69    39    30
+
+  Columns 14 through 26
+
+    80    93    11    95     9    84    60    65    71    31     8    25    16
+
+  Columns 27 through 39
+
+    40    67    32    45    48    12    88    82     4    77    41    59    51
+
+  Columns 40 through 52
+
+    92    15    24     7    27     1    44    22    18    55    23   101    19
+
+  Columns 53 through 65
+
+    78    52    10    73    29    21    90    43     6    13    28    79    47
+
+  Columns 66 through 78
+
+    38    14    34   100    99    57    35    83    20    50    87    75    26
+
+  Columns 79 through 91
+
+    66    63    86    81    97    94    61    68    74    56    76    54    70
+
+  Columns 92 through 101
+
+     3     5    53    62    98    36    58    49    85    91
+
+----------
+For window 8: 
+  Columns 1 through 13
+
+    91    94    20    33    99    30    71    76    52    14    11    89     6
+
+  Columns 14 through 26
+
+    79     2    44    74    38    45    55    62    63   101    22    59    46
+
+  Columns 27 through 39
+
+    56    39    36    68    83    53    60    69    90     9    50    72    61
+
+  Columns 40 through 52
+
+     8    85    28    13    24    80    96    21    92    95    34    47    66
+
+  Columns 53 through 65
+
+    81    49    54     1    23    67    19    82    25    78    65    16    51
+
+  Columns 66 through 78
+
+    29     3    42    98    32    84    87    27    12    75   100    86    64
+
+  Columns 79 through 91
+
+    41     5    31     4    97    17    40    26    43    70    48    58    57
+
+  Columns 92 through 101
+
+     7    37    35    73    88    77    10    18    93    15
+
+==== Pretraining Phase =======
+===== Training starting for 1 =====
+training size is 460
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 211
+===== Training finished for 2 =====
+<-- initializing done
+--> online learning
+- iteration 1
+case 1
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+case 2
+case 3
+case 4
+case 5
+case 6
+case 7
+case 8
+case 9
+case 10
+case 11
+case 12
+case 13
+case 14
+case 15
+case 16
+case 17
+case 18
+case 19
+case 20
+case 21
+case 22
+case 23
+case 24
+case 25
+case 26
+case 27
+case 28
+case 29
+case 30
+case 31
+case 32
+case 33
+case 34
+case 35
+case 36
+case 37
+case 38
+case 39
+case 40
+case 41
+case 42
+case 43
+case 44
+case 45
+case 46
+case 47
+case 48
+case 49
+case 50
+case 51
+case 52
+case 53
+case 54
+case 55
+case 56
+case 57
+case 58
+case 59
+case 60
+case 61
+case 62
+case 63
+case 64
+case 65
+case 66
+case 67
+case 68
+case 69
+case 70
+case 71
+case 72
+case 73
+case 74
+case 75
+case 76
+case 77
+case 78
+case 79
+case 80
+> 1% finished in 136.2888 s
+---- accuracy: 0.0125 sub: 0           NaN             0           NaN           NaN           NaN             0             0           NaN           NaN             0           NaN             0             0           NaN           NaN           NaN           NaN             0           NaN             0           NaN           NaN           NaN           NaN             0             0             0           NaN           NaN           NaN           NaN             0             0             0           NaN             0           NaN           NaN           NaN             0           NaN             0             0           NaN           NaN           NaN           NaN           NaN           NaN             0           NaN           NaN             0             0           0.5             0             0             0           NaN             0             0           NaN             0           NaN           NaN             0           NaN             0             0           NaN             0           NaN           NaN             0             0             0           NaN             0           NaN             0           NaN           NaN           NaN             0             0           NaN           NaN           NaN           NaN           NaN             0           NaN             0           NaN             0           NaN             0           NaN           NaN           NaN
+case 81
+case 82
+case 83
+case 84
+case 85
+case 86
+case 87
+case 88
+case 89
+case 90
+case 91
+case 92
+case 93
+case 94
+case 95
+case 96
+case 97
+case 98
+case 99
+case 100
+case 101
+case 102
+case 103
+case 104
+case 105
+case 106
+case 107
+case 108
+case 109
+case 110
+case 111
+case 112
+case 113
+case 114
+case 115
+case 116
+case 117
+case 118
+case 119
+case 120
+case 121
+case 122
+case 123
+case 124
+case 125
+case 126
+case 127
+case 128
+case 129
+case 130
+case 131
+case 132
+case 133
+case 134
+case 135
+case 136
+case 137
+case 138
+case 139
+case 140
+case 141
+case 142
+case 143
+case 144
+case 145
+case 146
+case 147
+case 148
+case 149
+case 150
+case 151
+case 152
+case 153
+case 154
+case 155
+case 156
+case 157
+case 158
+case 159
+case 160
+> 2% finished in 219.1309 s
+---- accuracy: 0.00625 sub: 0             0             0           NaN           NaN           NaN             0             0           NaN             0             0             0             0             0           NaN           NaN           NaN             0             0           NaN             0             0           NaN           NaN           NaN             0             0             0           NaN           NaN             0           NaN             0             0             0           NaN             0           NaN           NaN           NaN             0           NaN             0             0           NaN           NaN           NaN             0             0           NaN             0             0             0             0             0           0.5             0             0             0             0             0             0           NaN             0           NaN           NaN             0             0             0             0           NaN             0             0           NaN             0             0             0           NaN             0           NaN             0           NaN             0           NaN             0             0           NaN           NaN           NaN             0           NaN             0           NaN             0           NaN             0           NaN             0             0             0             0
+case 161
+case 162
+case 163
+case 164
+case 165
+case 166
+case 167
+case 168
+case 169
+case 170
+case 171
+case 172
+case 173
+case 174
+case 175
+case 176
+case 177
+case 178
+case 179
+case 180
+case 181
+case 182
+case 183
+case 184
+case 185
+case 186
+case 187
+case 188
+case 189
+case 190
+case 191
+case 192
+case 193
+case 194
+case 195
+case 196
+case 197
+case 198
+case 199
+case 200
+case 201
+case 202
+case 203
+case 204
+case 205
+case 206
+case 207
+case 208
+case 209
+case 210
+case 211
+case 212
+case 213
+case 214
+case 215
+case 216
+case 217
+case 218
+case 219
+case 220
+case 221
+case 222
+case 223
+case 224
+case 225
+case 226
+case 227
+case 228
+case 229
+case 230
+case 231
+case 232
+case 233
+case 234
+case 235
+case 236
+case 237
+case 238
+case 239
+case 240
+> 3% finished in 303.3429 s
+---- accuracy: 0.0125 sub: 0             0             0           NaN           NaN             0             0             0           NaN             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0           NaN           NaN             0           NaN             0             0           NaN             0           NaN             0             0           NaN             0             0             0             0             0           0.5             0             0             0             0             0             0             0             0           NaN           NaN             0             0             0             0           NaN             0             0           NaN             0     0.1666667             0           NaN             0           NaN           0.2           NaN             0           NaN             0             0           NaN           NaN           NaN             0           NaN             0             0             0           NaN             0           NaN             0             0             0             0
+case 241
+case 242
+case 243
+case 244
+case 245
+case 246
+case 247
+case 248
+case 249
+case 250
+case 251
+case 252
+case 253
+case 254
+case 255
+case 256
+case 257
+case 258
+case 259
+case 260
+case 261
+case 262
+case 263
+case 264
+case 265
+case 266
+case 267
+case 268
+case 269
+case 270
+case 271
+case 272
+case 273
+case 274
+case 275
+case 276
+case 277
+case 278
+case 279
+case 280
+case 281
+case 282
+case 283
+case 284
+case 285
+case 286
+case 287
+case 288
+case 289
+case 290
+case 291
+case 292
+case 293
+case 294
+case 295
+case 296
+case 297
+case 298
+case 299
+case 300
+case 301
+case 302
+case 303
+case 304
+case 305
+case 306
+case 307
+case 308
+case 309
+case 310
+case 311
+case 312
+case 313
+case 314
+case 315
+case 316
+case 317
+case 318
+case 319
+case 320
+> 4% finished in 388.9458 s
+---- accuracy: 0.0125 sub: 0             0             0           NaN           NaN             0             0             0           NaN             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0          0.25             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0           NaN             0             0           NaN             0         0.125             0             0             0             0           0.2           NaN             0             0             0             0             0           NaN             0             0           NaN             0             0             0             0             0           NaN             0             0             0             0
+case 321
+case 322
+case 323
+case 324
+case 325
+case 326
+case 327
+case 328
+case 329
+case 330
+case 331
+case 332
+case 333
+case 334
+case 335
+case 336
+case 337
+case 338
+case 339
+case 340
+case 341
+case 342
+case 343
+case 344
+case 345
+case 346
+case 347
+case 348
+case 349
+case 350
+case 351
+case 352
+case 353
+case 354
+case 355
+case 356
+case 357
+case 358
+case 359
+case 360
+case 361
+case 362
+case 363
+case 364
+case 365
+case 366
+case 367
+case 368
+case 369
+case 370
+case 371
+case 372
+case 373
+case 374
+case 375
+case 376
+case 377
+case 378
+case 379
+case 380
+case 381
+case 382
+case 383
+case 384
+case 385
+case 386
+case 387
+case 388
+case 389
+case 390
+case 391
+case 392
+case 393
+case 394
+case 395
+case 396
+case 397
+case 398
+case 399
+case 400
+> 5% finished in 475.2098 s
+---- accuracy: 0.0175 sub: 0             0             0           NaN             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5           NaN             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0          0.25             0             0             0             0             0    0.04347826             0             0             0           NaN    0.07692308             0             0             0             0             0             0           NaN             0    0.08333333             0             0             0             0           0.2           NaN             0             0             0             0             0           NaN             0             0           NaN             0             0             0             0             0             0             0             0             0             0
+case 401
+case 402
+case 403
+case 404
+case 405
+case 406
+case 407
+case 408
+case 409
+case 410
+case 411
+case 412
+case 413
+case 414
+case 415
+case 416
+case 417
+case 418
+case 419
+case 420
+case 421
+case 422
+case 423
+case 424
+case 425
+case 426
+case 427
+case 428
+case 429
+case 430
+case 431
+case 432
+case 433
+case 434
+case 435
+case 436
+case 437
+case 438
+case 439
+case 440
+case 441
+case 442
+case 443
+case 444
+case 445
+case 446
+case 447
+case 448
+case 449
+case 450
+case 451
+case 452
+case 453
+case 454
+case 455
+case 456
+case 457
+case 458
+case 459
+case 460
+case 461
+case 462
+case 463
+case 464
+case 465
+case 466
+case 467
+case 468
+case 469
+case 470
+case 471
+case 472
+case 473
+case 474
+case 475
+case 476
+case 477
+case 478
+case 479
+case 480
+> 6% finished in 561.8145 s
+---- accuracy: 0.01875 sub: 0             0             0           NaN             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5           NaN             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0          0.25             0             0             0             0             0    0.03448276             0             0             0             0     0.1333333           0.2             0             0             0             0             0           NaN             0    0.06666667             0             0             0             0           0.2           NaN             0             0             0             0             0           NaN             0             0           NaN             0             0             0             0             0             0             0             0             0             0
+case 481
+case 482
+case 483
+case 484
+case 485
+case 486
+case 487
+case 488
+case 489
+case 490
+case 491
+case 492
+case 493
+case 494
+case 495
+case 496
+case 497
+case 498
+case 499
+case 500
+case 501
+case 502
+case 503
+case 504
+case 505
+case 506
+case 507
+case 508
+case 509
+case 510
+case 511
+case 512
+case 513
+case 514
+case 515
+case 516
+case 517
+case 518
+case 519
+case 520
+case 521
+case 522
+case 523
+case 524
+case 525
+case 526
+case 527
+case 528
+case 529
+case 530
+case 531
+case 532
+case 533
+case 534
+case 535
+case 536
+case 537
+case 538
+case 539
+case 540
+case 541
+case 542
+case 543
+case 544
+case 545
+case 546
+case 547
+case 548
+case 549
+case 550
+case 551
+case 552
+case 553
+case 554
+case 555
+case 556
+case 557
+case 558
+case 559
+case 560
+> 7% finished in 648.1423 s
+---- accuracy: 0.017857 sub: 0             0             0           NaN             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5           NaN             0             0             0             0             0             0             0             0             0             0             0             0     0.3333333             0             0          0.25             0             0             0             0             0    0.02777778             0             0             0             0     0.1052632           0.2             0             0             0             0             0             0             0          0.05             0             0             0             0     0.1666667             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0    0.08333333             0             0
+case 561
+case 562
+case 563
+case 564
+case 565
+case 566
+case 567
+case 568
+case 569
+case 570
+case 571
+case 572
+case 573
+case 574
+case 575
+case 576
+case 577
+case 578
+case 579
+case 580
+case 581
+case 582
+case 583
+case 584
+case 585
+case 586
+case 587
+case 588
+case 589
+case 590
+case 591
+case 592
+case 593
+case 594
+case 595
+case 596
+case 597
+case 598
+case 599
+case 600
+case 601
+case 602
+case 603
+case 604
+case 605
+case 606
+case 607
+case 608
+case 609
+case 610
+case 611
+case 612
+case 613
+case 614
+case 615
+case 616
+case 617
+case 618
+case 619
+case 620
+case 621
+case 622
+case 623
+case 624
+case 625
+case 626
+case 627
+case 628
+case 629
+case 630
+case 631
+case 632
+case 633
+case 634
+case 635
+case 636
+case 637
+case 638
+case 639
+case 640
+> 8% finished in 734.5412 s
+---- accuracy: 0.01875 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5           NaN             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0          0.25             0             0             0             0             0    0.04651163             0             0             0             0     0.0952381     0.1428571             0             0             0             0             0             0             0          0.04             0             0             0             0     0.2857143             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0    0.07692308             0             0
+case 641
+case 642
+case 643
+case 644
+case 645
+case 646
+case 647
+case 648
+case 649
+case 650
+case 651
+case 652
+case 653
+case 654
+case 655
+case 656
+case 657
+case 658
+case 659
+case 660
+case 661
+case 662
+case 663
+case 664
+case 665
+case 666
+case 667
+case 668
+case 669
+case 670
+case 671
+case 672
+case 673
+case 674
+case 675
+case 676
+case 677
+case 678
+case 679
+case 680
+case 681
+case 682
+case 683
+case 684
+case 685
+case 686
+case 687
+case 688
+case 689
+case 690
+case 691
+case 692
+case 693
+case 694
+case 695
+case 696
+case 697
+case 698
+case 699
+case 700
+case 701
+case 702
+case 703
+case 704
+case 705
+case 706
+case 707
+case 708
+case 709
+case 710
+case 711
+case 712
+case 713
+case 714
+case 715
+case 716
+case 717
+case 718
+case 719
+case 720
+> 9% finished in 821.8749 s
+---- accuracy: 0.016667 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0           0.2             0             0             0             0             0    0.04166667             0             0             0             0          0.08     0.1428571             0             0             0             0             0             0             0    0.03703704             0             0             0             0     0.2857143             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0    0.07142857             0             0
+case 721
+case 722
+case 723
+case 724
+case 725
+case 726
+case 727
+case 728
+case 729
+case 730
+case 731
+case 732
+case 733
+case 734
+case 735
+case 736
+case 737
+case 738
+case 739
+case 740
+case 741
+case 742
+case 743
+case 744
+case 745
+case 746
+case 747
+case 748
+case 749
+case 750
+case 751
+case 752
+case 753
+case 754
+case 755
+case 756
+case 757
+case 758
+case 759
+case 760
+case 761
+case 762
+case 763
+case 764
+case 765
+case 766
+case 767
+case 768
+case 769
+case 770
+case 771
+case 772
+case 773
+case 774
+case 775
+case 776
+case 777
+case 778
+case 779
+case 780
+case 781
+case 782
+case 783
+case 784
+case 785
+case 786
+case 787
+case 788
+case 789
+case 790
+case 791
+case 792
+case 793
+case 794
+case 795
+case 796
+case 797
+case 798
+case 799
+case 800
+> 10% finished in 908.4947 s
+---- accuracy: 0.015 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0             0             0             0             0             0             0             0             0             0             0             0          0.25             0             0     0.1666667             0             0             0             0             0    0.03703704             0             0             0             0    0.07692308     0.1428571             0             0             0             0             0             0             0    0.03225806             0             0             0             0     0.2857143             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0        0.0625             0             0
+case 801
+case 802
+case 803
+case 804
+case 805
+case 806
+case 807
+case 808
+case 809
+case 810
+case 811
+case 812
+case 813
+case 814
+case 815
+case 816
+case 817
+case 818
+case 819
+case 820
+case 821
+case 822
+case 823
+case 824
+case 825
+case 826
+case 827
+case 828
+case 829
+case 830
+case 831
+case 832
+case 833
+case 834
+case 835
+case 836
+case 837
+case 838
+case 839
+case 840
+case 841
+case 842
+case 843
+case 844
+case 845
+case 846
+case 847
+case 848
+case 849
+case 850
+case 851
+case 852
+case 853
+case 854
+case 855
+case 856
+case 857
+case 858
+case 859
+case 860
+case 861
+case 862
+case 863
+case 864
+case 865
+case 866
+case 867
+case 868
+case 869
+case 870
+case 871
+case 872
+case 873
+case 874
+case 875
+case 876
+case 877
+case 878
+case 879
+case 880
+> 11% finished in 996.9314 s
+---- accuracy: 0.013636 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0           0.5             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1428571             0             0     0.1666667             0             0             0             0             0    0.03389831             0             0             0             0    0.07142857         0.125             0             0             0             0             0             0             0    0.02857143             0             0             0             0     0.2857143             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.05263158             0             0
+case 881
+case 882
+case 883
+case 884
+case 885
+case 886
+case 887
+case 888
+case 889
+case 890
+case 891
+case 892
+case 893
+case 894
+case 895
+case 896
+case 897
+case 898
+case 899
+case 900
+case 901
+case 902
+case 903
+case 904
+case 905
+case 906
+case 907
+case 908
+case 909
+case 910
+case 911
+case 912
+case 913
+case 914
+case 915
+case 916
+case 917
+case 918
+case 919
+case 920
+case 921
+case 922
+case 923
+case 924
+case 925
+case 926
+case 927
+case 928
+case 929
+case 930
+case 931
+case 932
+case 933
+case 934
+case 935
+case 936
+case 937
+case 938
+case 939
+case 940
+case 941
+case 942
+case 943
+case 944
+case 945
+case 946
+case 947
+case 948
+case 949
+case 950
+case 951
+case 952
+case 953
+case 954
+case 955
+case 956
+case 957
+case 958
+case 959
+case 960
+> 12% finished in 1084.3936 s
+---- accuracy: 0.013542 sub: 0             0             0             0             0             0             0             0             0             0             0             0             0             0           NaN             0             0             0             0             0             0             0             0             0             0             0             0             0             0    0.08333333             0             0             0             0             0             0             0             0           0.5             0             0             0             0             0             0             0             0             0             0             0             0             0     0.1428571             0             0     0.1428571             0             0             0             0             0    0.03076923             0             0             0             0    0.06451613         0.125             0             0             0             0             0             0             0    0.02564103             0             0             0             0     0.2857143             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0             0          0.05             0             0
+case 961
+case 962
+case 963
+case 964
+case 965
+case 966
+case 967
+case 968
+case 969
+case 970
+case 971
+case 972
+case 973
+case 974
+case 975
+case 976
+case 977
+case 978
+case 979
+case 980
+case 981
+case 982
+case 983
+case 984
+case 985
+case 986
+case 987
+case 988
+case 989
+case 990
+case 991
+case 992
+case 993
+case 994
+case 995
+case 996
+case 997
+case 998
+case 999
+case 1000
+no reclustering involved
+===== Training starting for 1 =====
+training size is 984
+===== Training finished for 1 =====
+===== Training starting for 2 =====
+training size is 687
