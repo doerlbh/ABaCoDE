@@ -188,9 +188,9 @@ switch dataset
         all_y = vec2mat(isGPU,x_y(:,94)'+1,length(unique(x_y(:,94))));
         
         prior_x  = all_x(1:528,:);
-        learn_x = all_x(529:end,:);
-        learn_y = all_y(529:end,:);
-        clearvars x_y all_x all_y
+        learn_x = all_x(528:end,:);
+        learn_y = all_y(528:end,:);
+        clearvars X Y all_x all_y classnames
 
     otherwise
         disp('wrong dataset.');

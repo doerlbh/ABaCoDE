@@ -1,0 +1,274 @@
+real-time dump
+--- iteration 1 ---
+
+learning 1
+embedding 0
+decision 1
+expect 3
+reward 0
+result sub_accuracy NaN NaN 0
+result accuracy 0
+time elapsed 64.6872
+
+learning 2
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy NaN NaN 0.5
+result accuracy 0.5
+time elapsed 65.1207
+
+learning 3
+embedding 0
+decision 2
+expect 1
+reward 0
+result sub_accuracy 0 NaN 0.5
+result accuracy 0.33333
+time elapsed 65.4889
+
+learning 4
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 NaN 0.66667
+result accuracy 0.5
+time elapsed 65.8345
+
+learning 5
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 NaN 0.75
+result accuracy 0.6
+time elapsed 66.172
+
+learning 6
+embedding 0
+decision 1
+expect 3
+reward 0
+result sub_accuracy 0 NaN 0.6
+result accuracy 0.5
+time elapsed 66.5187
+
+learning 7
+embedding 0
+decision 1
+expect 3
+reward 0
+result sub_accuracy 0 NaN 0.5
+result accuracy 0.42857
+time elapsed 66.848
+
+learning 8
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 NaN 0.57143
+result accuracy 0.5
+time elapsed 67.2131
+
+learning 9
+embedding 0
+decision 1
+expect 2
+reward 0
+result sub_accuracy 0 0 0.57143
+result accuracy 0.44444
+time elapsed 67.5831
+
+learning 10
+embedding 0
+decision 2
+expect 2
+reward 1
+result sub_accuracy 0 0.5 0.57143
+result accuracy 0.5
+time elapsed 67.9168
+
+learning 11
+embedding 0
+decision 2
+expect 3
+reward 0
+result sub_accuracy 0 0.5 0.5
+result accuracy 0.45455
+time elapsed 68.2353
+
+learning 12
+embedding 0
+decision 3
+expect 2
+reward 0
+result sub_accuracy 0 0.33333 0.5
+result accuracy 0.41667
+time elapsed 68.5766
+
+learning 13
+embedding 0
+decision 1
+expect 2
+reward 0
+result sub_accuracy 0 0.25 0.5
+result accuracy 0.38462
+time elapsed 68.9034
+
+learning 14
+embedding 0
+decision 2
+expect 3
+reward 0
+result sub_accuracy 0 0.25 0.44444
+result accuracy 0.35714
+time elapsed 69.2526
+
+learning 15
+embedding 0
+decision 3
+expect 2
+reward 0
+result sub_accuracy 0 0.2 0.44444
+result accuracy 0.33333
+time elapsed 69.5814
+
+learning 16
+embedding 0
+decision 3
+expect 1
+reward 0
+result sub_accuracy 0 0.2 0.44444
+result accuracy 0.3125
+time elapsed 69.9059
+
+learning 17
+embedding 0
+decision 1
+expect 2
+reward 0
+result sub_accuracy 0 0.16667 0.44444
+result accuracy 0.29412
+time elapsed 70.2506
+
+learning 18
+embedding 0
+decision 2
+expect 2
+reward 1
+result sub_accuracy 0 0.28571 0.44444
+result accuracy 0.33333
+time elapsed 70.6251
+
+learning 19
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 0.28571 0.5
+result accuracy 0.36842
+time elapsed 71.0146
+
+learning 20
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 0.28571 0.54545
+result accuracy 0.4
+time elapsed 71.4112
+
+learning 21
+embedding 0
+decision 3
+expect 2
+reward 0
+result sub_accuracy 0 0.25 0.54545
+result accuracy 0.38095
+time elapsed 71.7774
+
+learning 22
+embedding 0
+decision 1
+expect 3
+reward 0
+result sub_accuracy 0 0.25 0.5
+result accuracy 0.36364
+time elapsed 72.1546
+
+learning 23
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 0.25 0.53846
+result accuracy 0.3913
+time elapsed 72.5422
+
+learning 24
+embedding 0
+decision 3
+expect 2
+reward 0
+result sub_accuracy 0 0.22222 0.53846
+result accuracy 0.375
+time elapsed 72.9234
+
+learning 25
+embedding 0
+decision 2
+expect 3
+reward 0
+result sub_accuracy 0 0.22222 0.5
+result accuracy 0.36
+time elapsed 73.2623
+
+learning 26
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 0.22222 0.53333
+result accuracy 0.38462
+time elapsed 73.619
+
+learning 27
+embedding 0
+decision 2
+expect 2
+reward 1
+result sub_accuracy 0 0.3 0.53333
+result accuracy 0.40741
+time elapsed 73.9813
+
+learning 28
+embedding 0
+decision 3
+expect 3
+reward 1
+result sub_accuracy 0 0.3 0.5625
+result accuracy 0.42857
+time elapsed 74.3739
+
+learning 29
+embedding 0
+decision 3
+expect 2
+reward 0
+result sub_accuracy 0 0.27273 0.5625
+result accuracy 0.41379
+time elapsed 74.7596
+
+learning 30
+embedding 0
+decision 1
+expect 3
+reward 0
+result sub_accuracy 0 0.27273 0.52941
+result accuracy 0.4
+time elapsed 75.1147
+
+learning 31
