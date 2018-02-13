@@ -41,6 +41,7 @@ else
     if z == 0
         if k == 1
             z = ones(size(x,1),1);
+            c = mean(x);
         else
             [z, c] = kmeans(x,k,'MaxIter',1000,'Replicates',20);
         end

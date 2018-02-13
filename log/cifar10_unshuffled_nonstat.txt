@@ -1,7 +1,3 @@
-16-Dec-2017/F_main_classifier_CIFAR-10_nonstationary_unshuffled_k_1_universal_embedding_1000_gcp-gpu.mat
-
-16-Dec-2017/F_main_classifier_CIFAR-10_nonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_gcp-gpu.mat
-17-Dec-2017/F_main_classifier_CIFAR-10_nonstationary_unshuffled_k_4_multimode_minibatch_history_CB_1000_gcp-gpu.mat
-
-16-Dec-2017/F_main_classifier_CIFAR-10_nonstationary_unshuffled_k_2_multimode_full_history_CB_1000_gcp-gpu.mat
-18-Dec-2017/F_main_classifier_CIFAR-10_nonstationary_unshuffled_k_4_multimode_full_history_CB_1000_gcp-gpu.mat
+version https://git-lfs.github.com/spec/v1
+oid sha256:429526434be2efd3554ec3b4e18feb840c573c2c6da1ece657e36c343cc27f2a
+size 561

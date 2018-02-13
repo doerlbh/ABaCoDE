@@ -8,7 +8,9 @@
 
 %% setup
 
-loc = 'americano';
+function F_load_results_local(dataset,loc)
+
+% loc = 'americano';
 
 switch loc
     case {'Hyak', 'Hyakqsub'}
@@ -53,21 +55,126 @@ addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
 % dataset = 'MNIST-shuffled'
 % dataset = 'Caltech101S-shuffled'
-dataset = 'CIFAR-10-shuffled'
+% dataset = 'CIFAR-10-shuffled'
 % dataset = 'STL10-shuffled'
+
+% dataset = 'mnisfarin-shuffled'
+% dataset = 'mnisfarin-unshuffled'
+
 
 %% for data files
 
 switch dataset
     
+    case 'warfarin-shuffled'
+        
+        output_file_b = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_0_baseline_1000_americano.mat'
+        
+        output_file_uE = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        
+        output_file_mE2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_mE4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_minibatch_embedding_1000_americano.mat'
+        output_file_mE8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_minibatch_embedding_1000_americano.mat'
+        
+        output_file_oE2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_oE4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_online_embedding_1000_americano.mat'
+        output_file_oE8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_online_embedding_1000_americano.mat'
+        
+        output_file_mhCB2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_mhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_minibatch_history_CB_1000_americano.mat'
+        output_file_mhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_minibatch_history_CB_1000_americano.mat'
+        
+        output_file_fhCB2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_fhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_full_history_CB_1000_americano.mat'
+        output_file_fhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_full_history_CB_1000_americano.mat'
+        
+        output_file_mmmhCB2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_multimode_minibatch_history_CB_1000_americano.mat'
+        
+        output_file_mmfhCB2 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_4_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_shuffled_k_8_multimode_full_history_CB_1000_americano.mat'
+        
+    case 'mnisfarin-shuffled'
+        
+        output_file_b = 	'log/18-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_0_baseline_1000_latte.mat'
+        output_file_uE = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 	'log/18-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_minibatch_embedding_1000_latte.mat'
+        output_file_mE4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_minibatch_embedding_1000_latte.mat'
+        output_file_mE8 =	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_minibatch_embedding_1000_latte.mat'
+        output_file_oE2 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_online_embedding_1000_latte.mat'
+        output_file_oE4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_online_embedding_1000_latte.mat'
+        output_file_oE8 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_online_embedding_1000_latte.mat'
+        output_file_mhCB2 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_minibatch_history_CB_1000_latte.mat'
+        output_file_mhCB4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_minibatch_history_CB_1000_latte.mat'
+        output_file_mhCB8 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_minibatch_history_CB_1000_latte.mat'
+        output_file_fhCB2 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_full_history_CB_1000_latte.mat'
+        output_file_fhCB4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_full_history_CB_1000_latte.mat'
+        output_file_fhCB8 = 	'log/20-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_full_history_CB_1000_latte.mat'
+        output_file_mmmhCB2 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB4 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB8 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB4 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_4_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB8 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_shuffled_k_8_multimode_full_history_CB_1000_americano.mat'
+        
+    case 'mnisfarin-unshuffled'
+        
+        output_file_b = 	'log/18-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_0_baseline_1000_latte.mat'
+        output_file_uE = 	'log/28-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 	'log/18-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_minibatch_embedding_1000_latte.mat'
+        output_file_mE4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_minibatch_embedding_1000_latte.mat'
+        output_file_mE8 =	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_minibatch_embedding_1000_latte.mat'
+        output_file_oE2 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_online_embedding_1000_latte.mat'
+        output_file_oE4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_online_embedding_1000_latte.mat'
+        output_file_oE8 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_online_embedding_1000_latte.mat'
+        output_file_mhCB2 = 	'log/24-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_minibatch_history_CB_1000_latte.mat'
+        output_file_mhCB4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_minibatch_history_CB_1000_latte.mat'
+        output_file_mhCB8 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_minibatch_history_CB_1000_latte.mat'
+        output_file_fhCB2 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_full_history_CB_1000_latte.mat'
+        output_file_fhCB4 = 	'log/19-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_full_history_CB_1000_latte.mat'
+        output_file_fhCB8 = 	'log/20-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_full_history_CB_1000_latte.mat'
+        output_file_mmmhCB2 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_latte.mat'
+        output_file_mmmhCB4 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_multimode_minibatch_history_CB_1000_latte.mat'
+        output_file_mmmhCB8 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_multimode_minibatch_history_CB_1000_latte.mat'
+        output_file_mmfhCB2 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_2_multimode_full_history_CB_1000_latte.mat'
+        output_file_mmfhCB4 = 	'log/25-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_4_multimode_full_history_CB_1000_latte.mat'
+        output_file_mmfhCB8 = 	'log/26-Jan-2018/F_main_classifier_mix-mnisfarin_purenonstationary_unshuffled_k_8_multimode_full_history_CB_1000_latte.mat'
+        
+    case 'warfarin-unshuffled'
+        
+        output_file_b = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_0_baseline_1000_americano.mat'
+        
+        output_file_uE = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        
+        output_file_mE2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_mE4 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_minibatch_embedding_1000_americano.mat'
+        output_file_mE8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_minibatch_embedding_1000_americano.mat'
+        
+        output_file_oE2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_oE4 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_online_embedding_1000_americano.mat'
+        output_file_oE8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_online_embedding_1000_americano.mat'
+        
+        output_file_mhCB2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_mhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_minibatch_history_CB_1000_americano.mat'
+        output_file_mhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_minibatch_history_CB_1000_americano.mat'
+        
+        output_file_fhCB2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_fhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_full_history_CB_1000_americano.mat'
+        output_file_fhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_full_history_CB_1000_americano.mat'
+        
+        output_file_mmmhCB2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmmhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_multimode_minibatch_history_CB_1000_americano.mat'
+        
+        output_file_mmfhCB2 = 'log/18-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB4 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_4_multimode_full_history_CB_1000_americano.mat'
+        output_file_mmfhCB8 = 'log/19-Jan-2018/F_main_classifier_warfarin_nonstationary_unshuffled_k_8_multimode_full_history_CB_1000_americano.mat'
+        
     case 'MNIST-shuffled'
         
         output_file_b = 'log/16-Dec-2017/F_main_classifier_MNIST-s_nonstationary_shuffled_k_0_baseline_1000_americano.mat'
-        
-        output_file_orS1 = ''
-        output_file_orS2 = ''
-        output_file_orS4 = ''
-        output_file_orS8 = ''
         
         output_file_mE2 = 'log/16-Dec-2017/F_main_classifier_MNIST-s_nonstationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
         output_file_mE4 = 'log/20-Dec-2017/F_main_classifier_MNIST-s_nonstationary_shuffled_k_4_minibatch_embedding_1000_americano.mat'

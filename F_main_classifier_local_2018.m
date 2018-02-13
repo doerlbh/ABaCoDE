@@ -6,11 +6,12 @@
 %
 % F_main_classifier(dataset, dist, k, type, window, loc)
 %
-% dataset: {'MNIST','MNIST-s','CIFAR-10','CIFAR-100','CIFAR-100C','STL10','Caltech101S','warfarin','MNIST-Caltech'}
-% dist: {'stationary', 'nonstationary','halfnegativenonstationary','randnegativenonstationary','halfnegativestationary','randnegativestationary'}
+% dataset: {'MNIST','MNIST-s','CIFAR-10','CIFAR-100','CIFAR-100C','STL10','Caltech101S','warfarin','warfarin-h10','mix-mnisfarin'}
+% dist: {'stationary', 'purenonstationary', 'nonstationary','halfnegativenonstationary','randnegativenonstationary','halfnegativestationary','randnegativestationary'}
 % rewd: {'unshuffled','shuffled'}
 % k: {0,1,2,4,8}
-% type: {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB','universal_embedding','multimode_minibatch_history_CB','multimode_full_history_CB'}
+% type:
+% {'baseline','oracle','oracle_staged','minibatch_embedding','online_embedding','minibatch_history_CB','full_history_CB','universal_embedding','multimode_minibatch_history_CB','multimode_full_history_CB'}
 % window: {1000,5000}
 % loc: {'Hyak','Hyakqsub','americano','galao','latte','espresso','mocha','doerlbh','compbio3','c2b2','gcp-gpu'}
 %
@@ -80,6 +81,7 @@ disp('===================')
 disp('==== Loading data =======')
 switch dataset
     case 'MNIST'
+        default_hidden = -1;
         load mnist_uint8;
         learn_x = double(train_x);
         learn_y = double(train_y);
@@ -87,6 +89,7 @@ switch dataset
         clearvars train_x train_y test_x test_y
         
     case 'MNIST-s'
+        default_hidden = -1;
         load mnist_uint8;
         pick = randi(60000,range,1);
         learn_x = double(train_x(pick,:));
@@ -95,6 +98,7 @@ switch dataset
         clearvars train_x train_y test_x test_y
         
     case 'CIFAR-100'
+        default_hidden = -1;
         load test
         prior_x  = double(data(randi(10000,2000,1),:));
         %         prior_y  = double(vec2mat(isGPU,fine_labels+1,length(unique(fine_labels))));
@@ -109,6 +113,7 @@ switch dataset
         clearvars data fine_labels coarse_labels filenames batch_label
         
     case 'CIFAR-100C'
+        default_hidden = -1;
         load test
         prior_x  = double(data(randi(10000,2000,1),:));
         clearvars data fine_labels coarse_labels filenames batch_label
@@ -122,6 +127,7 @@ switch dataset
         clearvars data fine_labels coarse_labels filenames batch_label
         
     case 'CIFAR-10'
+        default_hidden = -1;
         load cifar-10-test_batch
         prior_x  = double(data(randi(10000,2000,1),:));
         clearvars data labels batch_label
@@ -165,6 +171,7 @@ switch dataset
         end
         
     case 'STL10'
+        default_hidden = -1;
         disp('picked dataset:');
         pick = randi(5)
         [learn_x,learn_y,prior_x] = K_readmatv73(['stl10_data_' num2str(pick)]);
@@ -173,6 +180,7 @@ switch dataset
         learn_y = learn_y(pick,:);
         
     case 'Caltech101S'
+        default_hidden = -1;
         load caltech101_silhouettes_28
         all_x = double(X);
         all_y = vec2mat(isGPU,Y,length(unique(Y)));
@@ -183,7 +191,8 @@ switch dataset
         clearvars X Y all_x all_y classnames
         
     case 'warfarin'
-        x_y = csvread('warfarin_data.csv',1,0);
+        default_hidden = -1;
+        x_y = csvread('warfarin.csv',1,0);
         all_x = x_y(:,1:93);
         all_y = vec2mat(isGPU,x_y(:,94)'+1,length(unique(x_y(:,94))));
         
@@ -191,7 +200,74 @@ switch dataset
         learn_x = all_x(529:end,:);
         learn_y = all_y(529:end,:);
         clearvars x_y all_x all_y
-
+        
+    case 'warfarin-h10'
+        default_hidden = 10;
+        x_y = csvread('warfarin.csv',1,0);
+        all_x = x_y(:,1:93);
+        all_y = vec2mat(isGPU,x_y(:,94)'+1,length(unique(x_y(:,94))));
+        
+        prior_x  = all_x(1:528,:);
+        learn_x = all_x(529:end,:);
+        learn_y = all_y(529:end,:);
+        clearvars x_y all_x all_y
+        
+    case 'mix-mnisfarin'
+        default_hidden = -1;
+        
+        load mnist_uint8;
+        pick = randi(60000,5000,1);
+        learn_x_1 = double(imresize(train_x(pick,:), [length(pick),93]));
+        learn_y_1 = double(vec2mat(isGPU,mat2vec(isGPU, train_y(pick,:),10),13));
+        prior_x_1 = double(imresize(test_x, [length(test_x),93]));
+        clearvars train_x train_y test_x test_y
+        
+        x_y = csvread('warfarin.csv',1,0);
+        all_x = x_y(:,1:93);
+        all_y = vec2mat(isGPU,x_y(:,94)'+11,13);
+        
+        prior_x_2  = all_x(1:528,:);
+        learn_x_2 = all_x(529:end,:);
+        learn_y_2 = all_y(529:end,:);
+        clearvars x_y all_x all_y
+        
+        learn_x = [learn_x_1; learn_x_2];
+        learn_y = [learn_y_1; learn_y_2];
+        prior_x = [prior_x_1; prior_x_2];
+        clearvars learn_x_1 learn_y_1 prior_x_1 learn_x_2 learn_y_2 prior_x_2
+        
+        [learn_x, learn_y] = pairshuffle(learn_x, learn_y);
+        prior_x = shuffle(prior_x);
+        
+    case 'mix-mniSTL10'
+        
+        default_hidden = -1;
+        
+        load mnist_uint8;
+        pick = randi(60000,5000,1);
+        learn_x_1 = double(imresize(train_x(pick,:), [length(pick),1000]));
+        learn_y_1 = double(vec2mat(isGPU,mat2vec(isGPU, train_y(pick,:),10),20));
+        prior_x_1 = double(imresize(test_x, [length(test_x),1000]));
+        clearvars train_x train_y test_x test_y
+        
+        disp('picked dataset:');
+        pick = randi(5)
+        [learn_x_2,learn_y_2,prior_x_2] = K_readmatv73(['stl10_data_' num2str(pick)]);
+        pick = randi(size(learn_x_2,1),5000,1);
+        learn_x_2 = learn_x_2(pick,:);
+        learn_y_2 = learn_y_2(pick,:);
+        learn_y_2 = vec2mat(isGPU,mat2vec(isGPU,learn_y_2,10)+10,20);
+        
+        learn_x = [learn_x_1; learn_x_2];
+        %         size(learn_y_1)
+        %         size(learn_y_2)
+        learn_y = [learn_y_1; learn_y_2];
+        prior_x = [prior_x_1; prior_x_2];
+        clearvars learn_x_1 learn_y_1 prior_x_1 learn_x_2 learn_y_2 prior_x_2
+        
+        [learn_x, learn_y] = pairshuffle(learn_x, learn_y);
+        prior_x = shuffle(prior_x);
+        
     otherwise
         disp('wrong dataset.');
 end
@@ -228,7 +304,13 @@ switch dist
     case {'nonstationary','halfnegativenonstationary','randnegativenonstationary'}
         disp('==== nonstationizing dataset =======')
         [learn_x, learn_y, learn_ns_z] = K_nonstationary_track(isGPU,learn_x,learn_y,window);
+        
+    case 'purenonstationary'
+        disp('==== nonstationizing dataset =======')
+        [learn_x, learn_y, learn_ns_z] = K_nonstationary_puretrack(isGPU,learn_x,learn_y,window);
+        
 end
+
 
 
 switch dist
@@ -237,7 +319,7 @@ switch dist
         [learn_x, learn_ng_z] = K_negative_track(isGPU,0.5,learn_x,window);
     case {'randnegativenonstationary','randnegativestationary'}
         disp('==== randomly negativizing dataset =======')
-        [learn_x, learn_ng_z] = K_negative_track(isGPU,2,learn_x,window);
+        [learn_x, learn_ng_z] = K_negative_puretrack(isGPU,2,learn_x,window);
     otherwise
 end
 
@@ -252,7 +334,11 @@ end
 
 disp('==== Pretraining Phase =======')
 
-hiddenSize1 = 100;
+if default_hidden == -1;
+    hiddenSize1 = 100;
+else
+    hiddenSize1 = default_hidden;
+end
 MaxEpochs1 = 500;
 
 if strcmp(type, 'universal_embedding')

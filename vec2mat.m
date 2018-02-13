@@ -14,6 +14,7 @@ else
 end
 
 for t = 1:length(v)
+    disp(int8(v(t)))
     m(t,int8(v(t))) = 1;
 end
 

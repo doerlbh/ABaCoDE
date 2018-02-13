@@ -65,8 +65,8 @@ addpath([path 'log'])
 % dataset = 'CIFAR-10-rand-shuffled'
 % dataset = 'STL10-rand-shuffled'
 
-dataset = 'MNIST-randstat-shuffled'
-% dataset = 'Caltech101S-randstat-shuffled'
+% dataset = 'MNIST-randstat-shuffled'
+dataset = 'Caltech101S-randstat-shuffled'
 % dataset = 'CIFAR-10-randstat-shuffled'
 % dataset = 'STL10-randstat-shuffled'
 
@@ -79,9 +79,10 @@ load(['result-' dataset]);
 %% plotting
 
 % range1 = size(accuracy_b,1);
-range1 = 20000;
+% range1 = 20000;
 % range1 = 10000;
-upperbound = 0.5
+range1 = 8000;
+upperbound = 1
 
 %% Table
 
@@ -127,6 +128,40 @@ plot(1:range1,accuracy_mmfhCB2(1:range1,end),'lineWidth',1); hold on
 % title([dataset ' - cumulative classification accuracy']);
 xlabel('t');
 ylabel('accuracy');
+ylim([0 upperbound]);
+c = { 'baseline',...
+    'universal embedding',...
+    'mini-batch embedding',...
+    'on-line embedding',...
+    'mini-batch-history CB',...
+    'full-history CB',...
+    'multi-mode mini-batch-history CB',...
+    'multi-mode full-history CB'};
+c_short = { 'b',...
+    'uE',...
+    'mE',...
+    'oE',...
+    'mhCB',...
+    'fhCB',...
+    'mmmhCB',...
+    'mmfhCB'};
+legend(c_short);
+
+
+
+%% k = 2 - comprehensive
+
+fig_2 = figure(2);
+plot(1:range1,-sort(-accuracy_b(1:range1,end)),'--','color','k','lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_uE(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_mE2(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_oE2(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_mhCB2(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_fhCB2(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_mmmhCB2(1:range1,end)),'lineWidth',1); hold on
+plot(1:range1,-sort(-accuracy_mmfhCB2(1:range1,end)),'lineWidth',1); hold on
+% xlabel('t');
+ylabel('decending accuracy');
 ylim([0 upperbound]);
 c = { 'baseline',...
     'universal embedding',...

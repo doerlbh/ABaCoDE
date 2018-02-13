@@ -7,6 +7,8 @@
 
 function [chosen_x,chosen_y,chosen_z,left_x,left_y,left_z] = K_pickout_correspond(x,y,z,chosen_size)
 
+chosen_size = int64(chosen_size)
+% size(x)
 chosen_x = x(1:chosen_size,:);
 chosen_y = y(1:chosen_size,:);
 chosen_z = z(1:chosen_size);

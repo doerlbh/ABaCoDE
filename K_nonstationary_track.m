@@ -28,7 +28,10 @@ quarter_N = int64(N/4);
 disp(['--> finish shuffling stationary input']);
 
 disp(['n = ' num2str(n)])
-[z, ~] = kmeans(x,n,'MaxIter',500,'Replicates',5);
+[z, ~] = kmeans(x,n,'MaxIter',100,'Replicates',5);
+z = vec2avg(z,n);
+
+[x,y,z] = trishuffle(x,y,z);
 
 x_first_half = x(1:half_N,:);
 y_first_half = y(1:half_N,:);
@@ -77,28 +80,68 @@ for t = 1:n
     disp('==================');
     disp(['window: ' num2str(t)]);
     
-    [x_t_1, y_t_1, z_t_1, x_first_half_first, y_first_half_first, z_first_half_first, chosen_size_1] = K_pair_shuffle_group(x_first_half_first,y_first_half_first,z_first_half_first,window,seq_first(t),1);
+    [x_t_1, y_t_1, z_t_1, x_first_half_first_t, y_first_half_first_t, z_first_half_first_t, chosen_size_1] = K_pair_shuffle_group(x_first_half_first,y_first_half_first,z_first_half_first,window,seq_first(t),1);
+    [x_t_2, y_t_2, z_t_2, x_first_half_second_t, y_first_half_second_t, z_first_half_second_t, chosen_size_2] = K_pair_shuffle_group(x_first_half_second,y_first_half_second,z_first_half_second,window,seq_second(t),1);
+    
+%     loop1 = 1;
+%     while window - chosen_size_1 - chosen_size_2 < 0
+%         shrink = 0.99^loop1;
+%         if chosen_size_1 > chosen_size_2
+%             [x_t_1, y_t_1, z_t_1, x_first_half_first_t, y_first_half_first_t, z_first_half_first_t, chosen_size_1] = K_pair_shuffle_group_shrink(x_first_half_first,y_first_half_first,z_first_half_first,window,seq_first(t),1,shrink);
+%         else
+%             [x_t_2, y_t_2, z_t_2, x_first_half_second_t, y_first_half_second_t, z_first_half_second_t, chosen_size_2] = K_pair_shuffle_group_shrink(x_first_half_second,y_first_half_second,z_first_half_second,window,seq_second(t),1,shrink);
+%         end
+%         loop1 = loop1 + 1;
+%     end
+%     loop2 = 1;
+%     while window - chosen_size_1 - chosen_size_2 > size(x_second_half, 1)
+%         shrink = 1.01^loop2;
+%         
+%         if chosen_size_1 < chosen_size_2
+%             [x_t_1, y_t_1, z_t_1, x_first_half_first_t, y_first_half_first_t, z_first_half_first_t, chosen_size_1] = K_pair_shuffle_group_shrink(x_first_half_first,y_first_half_first,z_first_half_first,window,seq_first(t),1,shrink);
+%         else
+%             [x_t_2, y_t_2, z_t_2, x_first_half_second_t, y_first_half_second_t, z_first_half_second_t, chosen_size_2] = K_pair_shuffle_group_shrink(x_first_half_second,y_first_half_second,z_first_half_second,window,seq_second(t),1,shrink);
+%         end
+%         loop2 = loop2 + 1;
+%     end
+%     loop1 = 1;
+%     while window - chosen_size_1 - chosen_size_2 < 0
+%         shrink = 0.99^loop1;
+%         if chosen_size_1 > chosen_size_2
+%             [x_t_1, y_t_1, z_t_1, x_first_half_first_t, y_first_half_first_t, z_first_half_first_t, chosen_size_1] = K_pair_shuffle_group_shrink(x_first_half_first,y_first_half_first,z_first_half_first,window,seq_first(t),1,shrink);
+%         else
+%             [x_t_2, y_t_2, z_t_2, x_first_half_second_t, y_first_half_second_t, z_first_half_second_t, chosen_size_2] = K_pair_shuffle_group_shrink(x_first_half_second,y_first_half_second,z_first_half_second,window,seq_second(t),1,shrink);
+%         end
+%         loop1 = loop1 + 1;
+%     end
+    
+    x_first_half_first = x_first_half_first_t;
+    y_first_half_first = y_first_half_first_t;
+    z_first_half_first = z_first_half_first_t;
+    x_first_half_second = x_first_half_second_t;
+    y_first_half_second = y_first_half_second_t;
+    z_first_half_second = z_first_half_second_t;
+    clearvars x_first_half_first_t y_first_half_first_t z_first_half_first_t;
+    clearvars x_first_half_second_t y_first_half_second_t z_first_half_second_t;
+    second_half_size = window - chosen_size_1 - chosen_size_2;
+    
     
     disp(['-> finish first main cluster chosing']);
     tabulate(z_t_1)
-%     tabulate(z_first_half_first)
-    
-    [x_t_2, y_t_2, z_t_2, x_first_half_second, y_first_half_second, z_first_half_second, chosen_size_2] = K_pair_shuffle_group(x_first_half_second,y_first_half_second,z_first_half_second,window,seq_second(t),1);
     
     disp(['-> finish second main cluster chosing']);
     tabulate(z_t_2)
-%     tabulate(z_first_half_second)
-        
-    second_half_size = window - chosen_size_1 - chosen_size_2;
+    
     [fill_x,fill_y,fill_z,x_second_half,y_second_half,z_second_half] = K_pickout_correspond(x_second_half,y_second_half,z_second_half,second_half_size);
     
     disp(['-> finish diversity installing, second half size: ' num2str(second_half_size)]);
     tabulate(fill_z)
-%     tabulate(z_second_half)
+    %     tabulate(z_second_half)
     
+
     x_t = [x_t_1;x_t_2;fill_x];
     y_t = [y_t_1;y_t_2;fill_y];
-    z_t = [z_t_1.';z_t_2.';fill_z];
+    z_t = [z_t_1';z_t_2';fill_z'];
     
     disp(['-> in summary for window :' num2str(t)]);
     tabulate(z_t)
@@ -119,7 +162,7 @@ if isGPU == 1
     new_y = gpuArray(new_y);
     new_z = gpuArray(new_z);
 end
-    
+
 end
 
 

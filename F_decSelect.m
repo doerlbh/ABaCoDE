@@ -17,8 +17,11 @@ for p = 1:P
     sigma = v2*inv(B_p(:,:,p));
     theta = mvnrnd(hat_mu_p(p,:),(sigma + sigma.')/2);
     
-    %     size(Z)
-    %     size(theta.')
+    if size(Z) ==  size(theta.')
+        Z = Z';
+    end
+%     size(Z)
+%     size(theta.')
     
     t_sample(p) = Z*theta.';
 end

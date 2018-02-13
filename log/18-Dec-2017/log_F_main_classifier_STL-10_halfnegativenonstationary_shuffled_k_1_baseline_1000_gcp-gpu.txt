@@ -1,35 +1,3 @@
-
-18-Dec-2017
-running experiment on gcp-gpu
-info: STL-10 halfnegativenonstationary shuffled k = 1 baseline 1000
-===================
-==== Loading data =======
-wrong dataset.
-{Undefined function or variable 'prior_x'.
-
-Error in F_main_classifier (line 190)
-    prior_x = gpuArray(prior_x);
-
-Error in gcpstl10neg (line 3)
-F_main_classifier(1, 'STL-10', 'halfnegativenonstationary','shuffled', 1,
-'baseline', 1000, 'gcp-gpu', 20000)
-} 
-gcpstl10neg
-mkdir: cannot create directory ‘/home/doerlbh/Dropbox/Git/IBM_ABaCoDE/log/18-Dec-2017’: File exists
-18-Dec-2017
-running experiment on gcp-gpu
-info: STL-10 halfnegativenonstationary shuffled k = 1 baseline 1000
-===================
-==== Loading data =======
-wrong dataset.
-{Undefined function or variable 'prior_x'.
-
-Error in F_main_classifier (line 190)
-    prior_x = gpuArray(prior_x);
-
-Error in gcpstl10neg (line 3)
-F_main_classifier(1, 'STL-10', 'halfnegativenonstationary','shuffled', 1,
-'baseline', 1000, 'gcp-gpu', 20000)
-} 
-gcpstl10neg
-mkdir: cannot create directory ‘/home/doerlbh/Dropbox/Git/IBM_ABaCoDE/log/18-Dec-2017’: File exists
+version https://git-lfs.github.com/spec/v1
+oid sha256:0519861995d42febba88e4d528dc29d1cedb69132a3520f7823135fcb160be8e
+size 1097

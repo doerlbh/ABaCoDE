@@ -1,16 +1,18 @@
 % americano - CIFAR-10
 
-F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 1, 'baseline', 1000, 'americano', 10000)
-disp('F_main_classifier_local(1, CIFAR-10, halfnegativenonstationary,unshuffled, 1, baseline, 1000,americano, 10000)')
-system(['echo runcifar2 CIFAR-10 unshuffled half, 1, baseline >> done'  ]);
+gpuDevice(5)
 
-F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 1, 'universal_embedding', 1000, 'americano', 10000)
-disp('F_main_classifier_local(1, CIFAR-10, halfnegativenonstationary,unshuffled, 1, universal_embedding, 1000,americano, 10000)')
-system(['echo runcifar2 CIFAR-10 unshuffled half, 1, universal_embedding >> done'  ]);
+% F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 1, 'baseline', 1000, 'americano', 10000)
+% disp('F_main_classifier_local(1, CIFAR-10, halfnegativenonstationary,unshuffled, 1, baseline, 1000,americano, 10000)')
+% system(['echo runcifar2 CIFAR-10 unshuffled half, 1, baseline >> done'  ]);
 
-F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 2, 'minibatch_embedding', 1000, 'americano', 10000)
-disp('F_main_classifier_local(1,CIFAR-10, halfnegativenonstationary, unshuffled, 2, minibatch_embedding,1000,americano, 10000)')
-system(['echo runcifar2 CIFAR-10 unshuffled half, 2, minibatch_embedding >> done'  ]);
+% F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 1, 'universal_embedding', 1000, 'americano', 10000)
+% disp('F_main_classifier_local(1, CIFAR-10, halfnegativenonstationary,unshuffled, 1, universal_embedding, 1000,americano, 10000)')
+% system(['echo runcifar2 CIFAR-10 unshuffled half, 1, universal_embedding >> done'  ]);
+
+% F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 2, 'minibatch_embedding', 1000, 'americano', 10000)
+% disp('F_main_classifier_local(1,CIFAR-10, halfnegativenonstationary, unshuffled, 2, minibatch_embedding,1000,americano, 10000)')
+% system(['echo runcifar2 CIFAR-10 unshuffled half, 2, minibatch_embedding >> done'  ]);
 
 F_main_classifier_local(1, 'CIFAR-10', 'halfnegativenonstationary','unshuffled', 2, 'online_embedding', 1000, 'americano', 10000)
 disp('F_main_classifier_local(1,CIFAR-10, halfnegativenonstationary, unshuffled, 2, online_embedding,1000,americano, 10000)')

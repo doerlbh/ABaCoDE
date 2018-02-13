@@ -8,6 +8,7 @@
 
 %%
 
+function F_load_results_neg(dataset,loc)
 
 % dataset = 'MNIST-half-unshuffled'
 % dataset = 'Caltech101S-half-unshuffled'
@@ -29,7 +30,7 @@
 % dataset = 'CIFAR-10-randstat-unshuffled'
 % dataset = 'STL10-randstat-unshuffled'
 
-%  dataset = 'MNIST-half-shuffled'
+% dataset = 'MNIST-half-shuffled'
 % dataset = 'Caltech101S-half-shuffled'
 % dataset = 'CIFAR-10-half-shuffled'
 % dataset = 'STL10-half-shuffled'
@@ -44,14 +45,14 @@
 % dataset = 'CIFAR-10-rand-shuffled'
 % dataset = 'STL10-rand-shuffled'
 
-dataset = 'MNIST-randstat-shuffled'
+% dataset = 'MNIST-randstat-shuffled'
 % dataset = 'Caltech101S-randstat-shuffled'
 % dataset = 'CIFAR-10-randstat-shuffled'
 % dataset = 'STL10-randstat-shuffled'
 
 %% setup
 
-loc = 'americano';
+% loc = 'americano';
 
 switch loc
     case {'Hyak', 'Hyakqsub'}
@@ -81,6 +82,101 @@ addpath('/home/sunnylin/Dropbox/Git/IBM_Internal_Attentive_Bandit/')
 
 switch dataset
     
+        case 'Caltech101S-rand-shuffled'
+        
+        output_file_b = 'log/06-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/06-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-rand-unshuffled'
+        
+        output_file_b = 'log/06-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/07-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/08-Jan-2018/F_main_classifier_Caltech101S_randnegativenonstationary_unshuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-randstat-shuffled'
+        
+        output_file_b = 'log/08-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/08-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/08-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-randstat-unshuffled'
+        
+        output_file_b = 'log/08-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/09-Jan-2018/F_main_classifier_Caltech101S_randnegativestationary_unshuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-half-shuffled'
+        
+        output_file_b = 'log/04-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/18-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/18-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/18-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-half-unshuffled'
+        
+        output_file_b = 'log/04-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/18-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/05-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/06-Jan-2018/F_main_classifier_Caltech101S_halfnegativenonstationary_unshuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-halfstat-shuffled'
+        
+        output_file_b = 'log/09-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_shuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
+
+    case 'Caltech101S-halfstat-unshuffled'
+        
+        output_file_b = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_0_baseline_1000_americano.mat'
+        output_file_uE = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_1_universal_embedding_1000_americano.mat'
+        output_file_mE2 = 'log/10-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_minibatch_embedding_1000_americano.mat'
+        output_file_oE2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_online_embedding_1000_americano.mat'
+        output_file_mhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_minibatch_history_CB_1000_americano.mat'
+        output_file_fhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_full_history_CB_1000_americano.mat'
+        output_file_mmmhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_multimode_minibatch_history_CB_1000_americano.mat'
+        output_file_mmfhCB2 = 'log/11-Jan-2018/F_main_classifier_Caltech101S_halfnegativestationary_unshuffled_k_2_multimode_full_history_CB_1000_americano.mat'
+
     case 'MNIST-half-shuffled'
         
         output_file_b = 'log/19-Dec-2017/F_main_classifier_MNIST-s_halfnegativenonstationary_shuffled_k_0_baseline_1000_gcp-gpu.mat'
@@ -279,3 +375,5 @@ end
 [accuracy_mmfhCB2,learn_ns_z_mmfhCB2] = F_read_results(output_file_mmfhCB2,1);
 
 save(['result-' dataset]);
+
+end
