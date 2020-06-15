@@ -1,0 +1,52 @@
+Caltech101S-unshuffled t=8000
+1.175 1.1375 1.0875 1.0625
+MNIST-unshuffled t=8000
+14.85 38.1 30.375 26.35
+CIFAR-10-unshuffled t=8000
+9.3875 14.2 13.2125 11.625
+STL10-unshuffled t=8000
+10.225 15.425 14.9875 13.5625
+MNIST-unshuffled t=20000
+37.235 34.445 28.995 22.32
+CIFAR-10-unshuffled t=10000
+9.62 14.3 13.3 11.73
+STL10-unshuffled t=10000
+10.29 15.81 14.77 13.43
+warfarin-unshuffled t=5000
+62.58 56.7 56.1 56.92
+Caltech101S-shuffled t=8000
+1 1.0875 1.225 1.3
+MNIST-shuffled t=8000
+11.1125 33.45 31.275 25.425
+CIFAR-10-shuffled t=8000
+10.5125 15.35 13.225 11.325
+STL10-shuffled t=8000
+10.025 16.6125 15.1375 13.1625
+MNIST-shuffled t=20000
+12.185 33.75 29.04 23.83
+CIFAR-10-shuffled t=10000
+10.23 14.83 13.13 11.6
+STL10-shuffled t=10000
+10.05 16.64 15.1 12.77
+warfarin-shuffled t=5000
+40.66 55.1 50.56 54.44
+mnisfarin-shuffled t=8000
+21.3125 48.5875 49.8 46.125
+mnisfarin-shuffled t=10000
+23.54 49.33 50.67 49.15
+mnisfarin-unshuffled t=8000
+44.2875 50.425 53.225 48.9375
+mnisfarin-unshuffled t=10000
+45.76 50.58 51.21 47.74
+MNIST-unshuffled t=20000
+37.235 34.445 28.995 22.32
+MNIST-shuffled t=20000
+12.185 33.75 29.04 23.83
+CIFAR-10-unshuffled t=10000
+9.62 14.3 13.3 11.73
+CIFAR-10-shuffled t=10000
+10.23 14.83 13.13 11.6
+STL10-unshuffled t=10000
+10.29 15.81 14.77 13.43
+STL10-shuffled t=10000
+10.05 16.64 15.1 12.77

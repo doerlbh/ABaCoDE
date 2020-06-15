@@ -1,0 +1,102 @@
+MNIST-half-unshuffled t=8000
+10.475 25.0625 25.1625 23.9875
+MNIST-half-unshuffled t=20000
+14.445 25.09 23.815 26.9
+Caltech101S-half-unshuffled t=8000
+1.0375 1.2 1.225 0.9625
+STL10-half-unshuffled t=8000
+9.55 11.25 12.25 11.625
+STL10-half-unshuffled t=10000
+9.88 10.99 12.29 11.56
+MNIST-halfstat-unshuffled t=8000
+10.2125 14.0625 14.2625 16.4625
+MNIST-halfstat-unshuffled t=20000
+13.495 14.695 14.02 16.18
+Caltech101S-halfstat-unshuffled t=8000
+0.975 10.0375 7.975 6.9375
+STL10-halfstat-unshuffled t=8000
+10.125 10.4875 10.5 10.2125
+STL10-halfstat-unshuffled t=10000
+10.06 10.42 10.33 10.04
+MNIST-rand-unshuffled t=8000
+10.3 24.0375 28.425 28.5
+MNIST-rand-unshuffled t=20000
+14.05 24.38 25.895 28.425
+Caltech101S-rand-unshuffled t=8000
+0.9625 1.0875 1.2 0.9875
+STL10-rand-unshuffled t=8000
+9.9 13 14.3 11.6
+STL10-rand-unshuffled t=10000
+9.85 12.99 13.67 11.55
+MNIST-randstat-unshuffled t=8000
+10.4875 17.0625 16 21.5375
+MNIST-randstat-unshuffled t=20000
+13.72 17.135 15.525 17.695
+Caltech101S-randstat-unshuffled t=8000
+0.9375 10.925 8.4 11.675
+STL10-randstat-unshuffled t=8000
+9.675 12.45 12.25 10.2875
+STL10-randstat-unshuffled t=10000
+9.77 12.34 12.33 10.41
+MNIST-half-shuffled t=8000
+9.8625 21.5125 26.9875 24.8375
+MNIST-half-shuffled t=20000
+10.78 23.015 22.33 26.835
+Caltech101S-half-shuffled t=8000
+1.0625 1.025 1 1.2875
+STL10-half-shuffled t=8000
+10.35 11.8125 13.4375 11.0125
+STL10-half-shuffled t=10000
+10.31 11.86 13.17 11.19
+MNIST-halfstat-shuffled t=8000
+9.9375 14.425 14.25 16.625
+MNIST-halfstat-shuffled t=20000
+10.22 14.585 13.855 14.785
+Caltech101S-halfstat-shuffled t=8000
+1.1125 8.7125 6.2125 7.925
+STL10-halfstat-shuffled t=8000
+9.475 11.9 10.6375 10.475
+STL10-halfstat-shuffled t=10000
+9.66 11.51 10.73 10.6
+MNIST-rand-shuffled t=8000
+9.85 24.5875 24.9625 31.6875
+MNIST-rand-shuffled t=20000
+11.265 27.335 24.865 28.355
+Caltech101S-rand-shuffled t=8000
+1.075 1.05 1.125 1.1625
+STL10-rand-shuffled t=8000
+9.25 12.025 11.875 11.7125
+STL10-rand-shuffled t=10000
+9.2 12.62 12.49 11.59
+MNIST-randstat-shuffled t=8000
+9.8 18.825 16.5 17.825
+MNIST-randstat-shuffled t=20000
+9.865 17.84 14.35 17.315
+Caltech101S-randstat-shuffled t=8000
+0.9375 10.3625 9.1125 3.375
+STL10-randstat-shuffled t=8000
+10.0375 11.4625 12.475 11.3875
+STL10-randstat-shuffled t=10000
+9.95 11.44 12.37 11.17
+MNIST-half-unshuffled t=10000
+11.05 25.63 25.04 23.39
+MNIST-half-unshuffled t=20000
+14.445 25.09 23.815 26.9
+MNIST-halfstat-unshuffled t=20000
+13.495 14.695 14.02 16.18
+MNIST-rand-unshuffled t=20000
+14.05 24.38 25.895 28.425
+MNIST-randstat-unshuffled t=20000
+13.72 17.135 15.525 17.695
+MNIST-half-shuffled t=20000
+10.78 23.015 22.33 26.835
+MNIST-halfstat-shuffled t=20000
+10.22 14.585 13.855 14.785
+MNIST-rand-shuffled t=20000
+11.265 27.335 24.865 28.355
+MNIST-randstat-shuffled t=20000
+9.865 17.84 14.35 17.315
+MNIST-half-unshuffled t=20000
+14.445 25.09 23.815 26.9
+MNIST-half-unshuffled t=20000
+14.445 25.09 23.815 26.9
