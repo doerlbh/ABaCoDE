@@ -1,0 +1,14 @@
+cifar-10-data_batch_3.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-data_batch_4.mat filter=lfs diff=lfs merge=lfs -text
+stl10_data_5.mat filter=lfs diff=lfs merge=lfs -text
+stl10_data_1.mat filter=lfs diff=lfs merge=lfs -text
+stl10_data_2.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-test_batch.mat filter=lfs diff=lfs merge=lfs -text
+stl10_data_3.mat filter=lfs diff=lfs merge=lfs -text
+stl10_data_4.mat filter=lfs diff=lfs merge=lfs -text
+caltech101_silhouettes_28.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-batches.meta.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-data_batch_1.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-data_batch_2.mat filter=lfs diff=lfs merge=lfs -text
+cifar-10-data_batch_5.mat filter=lfs diff=lfs merge=lfs -text
+mnist_uint8.mat filter=lfs diff=lfs merge=lfs -text
